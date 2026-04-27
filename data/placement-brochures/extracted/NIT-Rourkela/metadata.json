@@ -1,0 +1,31 @@
+{
+  "college": "NIT-Rourkela",
+  "source_pdf": "NIT-Rourkela-Placement-Brochure-2024-25.pdf",
+  "total_pages": 43,
+  "image_pages": 2,
+  "text_chars": 53300,
+  "extraction_method": "pymupdf4llm",
+  "ocr_applied": false,
+  "structured_data": {
+    "institute": "NIT-Rourkela",
+    "year": "2023-24",
+    "total_companies": 32,
+    "top_recruiters": [
+      "Adobe",
+      "American Express",
+      "Drdo",
+      "Ey",
+      "Facebook",
+      "Google",
+      "Ibm",
+      "Intel",
+      "Iocl",
+      "L&T",
+      "Mahindra",
+      "Meta",
+      "Microsoft",
+      "Pwc",
+      "Tata Steel"
+    ]
+  }
+}

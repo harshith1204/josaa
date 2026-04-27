@@ -1,0 +1,13 @@
+{
+  "college": "NIT-Kurukshetra",
+  "source_pdf": "NIT-Kurukshetra-Placement-Stats-2024-25.pdf",
+  "total_pages": 2,
+  "image_pages": 0,
+  "text_chars": 5682,
+  "extraction_method": "pymupdf4llm",
+  "ocr_applied": false,
+  "structured_data": {
+    "institute": "NIT-Kurukshetra",
+    "year": "2024-25"
+  }
+}

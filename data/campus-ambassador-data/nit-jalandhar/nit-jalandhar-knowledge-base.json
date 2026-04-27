@@ -1,0 +1,220 @@
+{
+  "college": "NIT Jalandhar",
+  "full_name": "Dr. B.R. Ambedkar National Institute of Technology, Jalandhar",
+  "sources": ["whatsapp_chat_with_ambassador", "fee_structure_image_ocr", "mess_menu_image_ocr", "timetable_image_ocr"],
+  "data_date": "2026-04-03",
+
+  "sections": {
+    "overview": {
+      "facts": [
+        "NIT Jalandhar (Dr. B.R. Ambedkar National Institute of Technology) is located at G T Road Bye Pass, Jalandhar-144008, Punjab, India.",
+        "Near Jalandhar City, Pincode 144011.",
+        "Phone: 0181-2690301, 2690302.",
+        "Language spoken: Hindi (most used).",
+        "Climate: Predominantly winter. Rest of seasons (summer, monsoon, autumn) are split equally."
+      ]
+    },
+
+    "transport": {
+      "facts": [
+        "Jalandhar City Railway Station is approximately 13 km from NIT Jalandhar.",
+        "Amritsar Airport is approximately 80 km from NIT Jalandhar.",
+        "Jalandhar City Bus Station is approximately 13 km from NIT Jalandhar."
+      ]
+    },
+
+    "hostels_boys": {
+      "facts": [
+        "NIT Jalandhar has 8 boys hostels.",
+        "BH1: 1st year students, 4 sharing rooms.",
+        "BH2: 1st year students, 4 sharing rooms.",
+        "BH5: 1st year students, 2 sharing rooms.",
+        "BH3: Senior year students, 2 sharing rooms.",
+        "BH4: Senior year students, 2 sharing rooms.",
+        "BH6: Senior year students, 2 sharing rooms.",
+        "BH7: Senior year students, 2 sharing rooms.",
+        "MBH (Mega Boys Hostel): Senior year students, 2 sharing rooms.",
+        "1st year boys are allotted BH1/BH2 (4-sharing) or BH5 (2-sharing). Senior students get 2-sharing rooms in BH3, BH4, BH6, BH7, or MBH."
+      ]
+    },
+
+    "mess": {
+      "assignment": "Separate mess allotted for every hostel.",
+      "mess_schedule": {
+        "monday": {
+          "breakfast": "Bread (6 pcs) + Jam & Butter, Each/Aloo Paratha + Green Chutney + Milk/Tea + Banana/Egg (1pc)",
+          "lunch": "Jeera Rice + Dal + Seasonal Veg + Bhujia + Roti + Fryums + Pickle",
+          "snacks": "Aloo Chop + Chutney + Tea",
+          "dinner": "Plain Rice + Dal + Roti + Onion + Veg: Veg Korma, Non Veg: Chicken (3 pcs)"
+        },
+        "tuesday": {
+          "breakfast": "Bread (6 pcs) + Jam & Butter, Each/Plain Paratha + Vegetable + Milk/Tea + Banana/Egg (1pc)",
+          "lunch": "Plain Rice + Sambhar + Kadi Pakoda + Bhujia + Salad",
+          "snacks": "Moong Dal Kachori + Black Chana + Tea",
+          "dinner": "Plain Rice + Dal + Poori + Dum Aloo + Gulab Jamun + Pickle"
+        },
+        "wednesday": {
+          "breakfast": "Bread (6 pcs) + Jam & Butter, Each/Upma + Coconut Chutney + Milk/Tea + Banana",
+          "lunch": "Plain Rice + Dal Fry + Rajma + Aloo Bhujia (Fry) + Roti + Curd + Pickle",
+          "snacks": "Hakka Noodles + Coffee",
+          "dinner": "Jeera Rice + Chana Dal + Roti + Onion + Veg: Kadhai Paneer, Non Veg: Chicken (4 pcs)"
+        },
+        "thursday": {
+          "breakfast": "Bread (6 pcs) + Jam & Butter, Each/Poori + Aloo Tamatar + Milk/Tea + Banana/Egg (1pc)",
+          "lunch": "Plain Rice + Dal + Soyabean + Bhujia + Roti + Curd + Pickle",
+          "snacks": "Aloo Bread Pakoda (3) + Imly Chutney + Tea",
+          "dinner": "Chana Dal Tadka + Matar Masala + Aloo Bhujia + Alt: Rice Kheer/Suji Kheer"
+        },
+        "friday": {
+          "breakfast": "Bread (6 pcs) + Jam & Butter, Each/Dahi (2 pc) + Vada (2 pc) + Sambhar + Coconut Chutney + Milk/Tea + Banana/Egg (1pc)",
+          "lunch": "Veg Pulao + Dal Makhani + Seasonal Veg + Roti + Salad + Fryums Papad",
+          "snacks": "Papdi Chaat + Coffee",
+          "dinner": "Plain Rice + Roti + Onion + Veg: Pindi Chole, Non Veg: Chicken (4 pcs)"
+        },
+        "saturday": {
+          "breakfast": "Bread (6 pcs) + Jam & Butter, Each/Sattu Paratha + Vegetable + Milk/Tea + Banana/Egg (1pc)",
+          "lunch": "Plain Rice + Roti + Salad + Veg: Paneer Butter Masala, Non Veg: Egg Curry",
+          "snacks": "Samosa + Tea",
+          "dinner": "Khichdi + Ghee + Chokha + Curd + Papad"
+        },
+        "sunday": {
+          "breakfast": "Chole + Bhature, Jalebi (2pc) + Pickle + Tea",
+          "lunch": "Fried Rice + Chana Dal + Veg: Paneer Chilli, Non Veg: Chicken Chilli (4 pcs)",
+          "snacks": "No snacks on Sunday",
+          "dinner": "Plain Rice + Roti + Desi Chana Masala + Non Veg + Ice Cream"
+        }
+      },
+      "cuisine": "Predominantly North Indian with Punjabi staples (parathas, chole bhature, dal makhani, rajma). Both veg and non-veg options served. Non-veg chicken on Monday, Wednesday, Friday, Sunday. Egg curry on Saturday."
+    },
+
+    "fee_structure": {
+      "program": "B.Tech 1st Year New Admission 2024-2025",
+      "per_year": true,
+      "categories": {
+        "GEN_OBC_income_above_5L": {
+          "tuition_fee": "Rs 1,25,000",
+          "other_charges": "Rs 31,930",
+          "total": "Rs 1,56,930"
+        },
+        "GEN_OBC_income_1L_to_5L": {
+          "tuition_fee": "Rs 41,670",
+          "other_charges": "Rs 31,930",
+          "total": "Rs 73,600"
+        },
+        "GEN_OBC_income_below_1L_and_SC_ST_PH": {
+          "tuition_fee": "Rs 0",
+          "other_charges": "Rs 31,930",
+          "total": "Rs 31,930"
+        }
+      },
+      "hostel_extra": "Rs 3,000 extra for single seater room",
+      "note": "Economically backward GEN/OBC students must submit family income certificate (issued on or after 1st April of every financial year) before last date of online reporting to avail tuition fee waiver. Otherwise treated as fee defaulter."
+    },
+
+    "wifi": {
+      "facts": [
+        "WiFi available with 5G connectivity for every network at NIT Jalandhar."
+      ]
+    },
+
+    "attendance": {
+      "facts": [
+        "75% attendance is mandatory at NIT Jalandhar."
+      ]
+    },
+
+    "clubs": {
+      "dance": ["Criminalz Crew", "SI Crew", "Pangada"],
+      "other": ["Marvel (modeling)", "Volleyball", "Cricket", "Kabaddi", "Robotic", "Photography", "Singing", "Art Club", "Short Film"]
+    },
+
+    "fests": {
+      "facts": [
+        "Odd Semester: Red Bull event in December.",
+        "Even Semester: Aramb and Utkarsh in March."
+      ]
+    },
+
+    "laundry": {
+      "facts": [
+        "Laundry facilities are available in every hostel."
+      ]
+    },
+
+    "elections": {
+      "facts": [
+        "Department-level elections for CR (Class Representative) and GR (General Representative)."
+      ]
+    },
+
+    "sports": {
+      "facts": [
+        "Cricket, Kabaddi, Football, Volleyball, Basketball, Carrom, Chess, Table Tennis, Athletics, and Javelin are available."
+      ]
+    },
+
+    "canteen": {
+      "facts": [
+        "Snackers: Open 24 hours.",
+        "Yadav Canteen: Open 18 hours.",
+        "Rim Jim: Open 16 hours.",
+        "Night Canteen: Open 16 hours.",
+        "Nescafe: Open 16 hours.",
+        "Girls Nescafe: Open 16 hours.",
+        "No shops on campus, only canteens."
+      ]
+    },
+
+    "shops": {
+      "facts": [
+        "No shops on NIT Jalandhar campus. Only canteens are available."
+      ]
+    },
+
+    "fines": {
+      "facts": [
+        "Fines imposed for: Damaged items, copying in exams, and fights."
+      ]
+    },
+
+    "gym": {
+      "facts": [
+        "Free/Unpaid for all students at NIT Jalandhar."
+      ]
+    },
+
+    "health_centre": {
+      "facts": [
+        "Unpaid dispensary located approximately 0.5 km from campus.",
+        "Available throughout the day."
+      ]
+    },
+
+    "restaurants": {
+      "nearby": ["Bawarchi Restaurant at Bidhipur (1.5 km)"],
+      "delivery_apps": ["Swiggy", "Zomato"]
+    },
+
+    "nearby_places": {
+      "tourist": ["Golden Temple (Amritsar)", "Wagah Border (near Amritsar)", "Dharmashala (near Jammu)"],
+      "shops": ["Zudio", "Trends", "Max", "VMart"],
+      "malls": ["MBD Neopolis Jalandhar", "PPR Mall Jalandhar"]
+    },
+
+    "language": {
+      "facts": ["Hindi is the most used language in and around NIT Jalandhar."]
+    },
+
+    "climate": {
+      "facts": ["Predominantly winter climate. Rest of seasons (summer, monsoon, autumn) are split equally."]
+    },
+
+    "academics": {
+      "timetable_source": "CSE+DS Section B2, Session 2025-26 Even Semester, Department of Basic Sciences",
+      "subjects": ["Computer Programming (CP)", "Discrete Combinatorics & Graph Theory (DC&G)", "Engineering & Information Sciences (EIS)", "Environmental Studies (ES)", "English Communication Lab", "Design Thinking/Innovation & Research (DT/IR)", "Mathematics-I", "Mathematics-II"],
+      "labs": ["CP Lab (OP B2a)", "DC Lab (B2a)", "EC Lab (B2c)", "English Communication Lab", "DTF8 Combined Lab"],
+      "faculty": ["Swarnima Singh (CP Lab)", "Harsh Kumar Verma (CP Theory)", "Somesela Maddy (DC&G)", "Mandrem Dev (ES Lab)", "Prashant Ram (ES Lab)", "Supreethi (DT/IR)", "Saurabh Kumar Katiyar (Maths)"],
+      "class_timings": "Monday to Friday, 8:30 AM to 4:30 PM"
+    }
+  }
+}

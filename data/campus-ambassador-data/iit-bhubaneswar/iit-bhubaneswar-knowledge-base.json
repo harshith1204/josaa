@@ -1,0 +1,183 @@
+{
+  "college": "IIT Bhubaneswar",
+  "full_name": "Indian Institute of Technology Bhubaneswar",
+  "sources": ["whatsapp_chat_with_ambassador", "mess_menu_pdf", "timetable_pdf"],
+  "data_date": "2026-04-04",
+
+  "sections": {
+    "overview": {
+      "facts": [
+        "IIT Bhubaneswar (Indian Institute of Technology Bhubaneswar) is located at Jatani, Khordha, Odisha 752050.",
+        "Languages: Outside campus Odia and Hindi are spoken. Inside campus Hindi and English are used."
+      ]
+    },
+
+    "transport": {
+      "facts": [
+        "Autos are available 24/7 near IIT Bhubaneswar.",
+        "Ola, Uber, and Rapido are not available near IIT Bhubaneswar.",
+        "Khurda Road Junction railway station is 6.5 km from IIT Bhubaneswar.",
+        "Biju Patnaik International Airport is 29 km from IIT Bhubaneswar.",
+        "College buses run to Bhubaneswar city on weekends."
+      ]
+    },
+
+    "hostels_boys": {
+      "facts": [
+        "IIT Bhubaneswar has 3 boys hostels.",
+        "RHR hostel is for 1st year boys with separate (single) rooms.",
+        "MHR hostel is for 2nd year boys with separate (single) rooms.",
+        "BHR hostel is for 3rd and 4th year boys with separate (single) rooms.",
+        "All boys at IIT Bhubaneswar get single rooms."
+      ]
+    },
+
+    "hostels_girls": {
+      "facts": [
+        "IIT Bhubaneswar has 3 girls hostels.",
+        "Sangam hostel is for 1st year girls with 3-sharing rooms.",
+        "SHR hostel is for MTech/PhD girls with separate rooms.",
+        "GHR hostel is for 2nd to 4th year girls with separate rooms."
+      ]
+    },
+
+    "mess": {
+      "timings": "Breakfast 7:30-10:00 AM, Lunch 12:00-2:00 PM, Dinner 8:00-10:00 PM",
+      "daily_compulsory": "Bread (unlimited), Butter (2 chiplets), Jam (20g), Cornflakes/Oats, Sprouted grains, Milk (250ml), Tea, Salad",
+      "special": "Monthly special dinner",
+      "mess_schedule": {
+        "monday": {
+          "breakfast": "Masala Idli + Vada",
+          "lunch": "Lauki Kofta",
+          "dinner": "Chole Bhature + Gulab Jamun"
+        },
+        "tuesday": {
+          "breakfast": "Upma/Maggi",
+          "lunch": "Kadhi Pakora",
+          "dinner": "Veg Fried Rice + Rice Kheer"
+        },
+        "wednesday": {
+          "breakfast": "Missi Paratha + Paneer/Egg Bhurji",
+          "lunch": "Rajma",
+          "dinner": "Chicken Kasa/Kadai Paneer + Ice Cream"
+        },
+        "thursday": {
+          "breakfast": "Puri + Aloo Dum",
+          "lunch": "Dalma",
+          "dinner": "Egg Kasa/Paneer Butter Masala + Kalakand"
+        },
+        "friday": {
+          "breakfast": "Punugulu/Poha Jalebi",
+          "lunch": "Matar Paneer/Fish Curry",
+          "dinner": "Manchurian + Sewaya Kheer"
+        },
+        "saturday": {
+          "breakfast": "Aloo Onion Paratha",
+          "lunch_dinner": "Chole Paneer + Tehri"
+        },
+        "sunday": {
+          "breakfast": "Masala Dosa",
+          "lunch": "Veg/Chicken Biryani + Cold Drink",
+          "dinner": "Ghee + Veg Pongal + Millet Kheer"
+        }
+      },
+      "cuisine": "Mix of North Indian, South Indian (Masala Dosa, Punugulu, Pongal), and Odia specialties (Dalma). Non-veg options (Chicken Biryani, Fish Curry, Egg dishes) on select days. Desserts served with dinner."
+    },
+
+    "wifi": {
+      "facts": [
+        "WiFi and LAN connectivity available in every hostel room at IIT Bhubaneswar."
+      ]
+    },
+
+    "attendance": {
+      "facts": [
+        "Attendance policy at IIT Bhubaneswar is at the professor's choice. There is no fixed mandatory percentage."
+      ]
+    },
+
+    "clubs": {
+      "technical": ["RISC (robotics)", "Neuromancers (coding)", "WebND (web and design)", "Nakshatra (astronomy)", "FEBS (finance)"],
+      "cultural": ["Clix (photography)", "Aaroh (music)", "D Groovers (dance)", "Kalakrithi (arts)", "Cinewave (film)", "QuizSoc (quizzing)", "Panacea (English literature)", "Abhivyakti (Hindi literature)", "Oracle (journalism)", "Souls for Solace (social service)"],
+      "sports": "Sports clubs available for every sport"
+    },
+
+    "fests": {
+      "facts": [
+        "Pravaah is the annual cultural and tech fest of IIT Bhubaneswar, held in February."
+      ]
+    },
+
+    "laundry": {
+      "facts": [
+        "Washing machines available on every floor in all hostels at IIT Bhubaneswar.",
+        "Paid laundry service is also available."
+      ]
+    },
+
+    "sports": {
+      "facts": [
+        "Basketball, Volleyball, Tennis, Badminton, Football, and Squash courts available at IIT Bhubaneswar.",
+        "Sports clubs exist for every sport."
+      ]
+    },
+
+    "canteen": {
+      "facts": [
+        "Every hostel at IIT Bhubaneswar has a canteen open till 1:15 AM (except Sangam hostel)."
+      ]
+    },
+
+    "rules": {
+      "facts": [
+        "Late registration fine and malpractice fine are applicable at IIT Bhubaneswar.",
+        "Students can go out of campus 24/7 (except 1st year girls)."
+      ]
+    },
+
+    "shops": {
+      "facts": [
+        "Shops inside IIT Bhubaneswar campus: Fruit shop, Bakery, Ice cream shop, Juice shop, Supermarket, Stationery shop, and General store."
+      ]
+    },
+
+    "gym": {
+      "facts": [
+        "Gym is available in the Student Activity Center at IIT Bhubaneswar."
+      ]
+    },
+
+    "health_centre": {
+      "facts": [
+        "24/7 free medical center at IIT Bhubaneswar.",
+        "Ambulance service available.",
+        "Apollo Pharmacy on campus.",
+        "Rs 5000 medical insurance provided to students."
+      ]
+    },
+
+    "restaurants": {
+      "nearby": ["Hyderabadi Biryani House", "ISKCON Canteen", "Saffron Spices", "Red Cottage", "Kebabs Era", "Vickys"],
+      "delivery_apps": ["Swiggy", "Zomato", "Blinkit"],
+      "delivery_hours": "Available till 10 pm"
+    },
+
+    "nearby_places": {
+      "entertainment": ["Veena Theatre (4 km)", "Wonderla Amusement Park (10 km)"],
+      "shopping": ["DN Regalia Mall (19 km)", "Nexus Esplanade Mall (31 km)"],
+      "nature": ["Baruni Hill (beside campus)"],
+      "tourist": ["Nandankanan Zoo (42 km)", "Puri (60 km)", "Konark (63 km)", "Lingaraj Temple (25 km)"]
+    },
+
+    "language": {
+      "facts": ["Outside campus: Odia and Hindi. Inside campus: Hindi and English."]
+    },
+
+    "academics": {
+      "facts": [
+        "IIT Bhubaneswar offers B.Tech in CE (Civil), CSE (Computer Science), EE (Electrical), ECE (Electronics and Communication), EP (Engineering Physics), and ME (Mechanical).",
+        "Spring 2026 (2nd Semester) timetable is available for all branches."
+      ]
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "college": "IIT-Jammu",
+  "source_pdf": "IIT-Jammu-Placement-Report-2023-24.pdf",
+  "total_pages": 9,
+  "image_pages": 4,
+  "text_chars": 4291,
+  "extraction_method": "pymupdf4llm",
+  "ocr_applied": true,
+  "structured_data": {
+    "institute": "IIT-Jammu",
+    "year": "2023-24",
+    "highest_package_lpa": 53.0,
+    "average_package_lpa": 15.5,
+    "total_companies": 175,
+    "placement_percentage": 70.8,
+    "top_recruiters": [
+      "Accenture",
+      "Ey",
+      "Graviton",
+      "L&T",
+      "Samsung"
+    ]
+  }
+}

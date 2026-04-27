@@ -1,0 +1,182 @@
+{
+  "college": "IIT Indore",
+  "sources": ["whatsapp_chat_with_ambassador", "fee_structure_pdf", "timetable_xlsx"],
+  "data_date": "2026-04-03",
+
+  "sections": {
+    "overview": {
+      "facts": [
+        "IIT Indore is located on Khandwa Road, Simrol, Indore, Madhya Pradesh - 452020.",
+        "Distance from campus to Indore city is 21 km."
+      ]
+    },
+
+    "hostels": {
+      "boys": [
+        {"name": "CVR Hostel", "year": "1st year boys", "sharing": "Double occupancy"},
+        {"name": "VSB Hostel", "year": "2nd year boys", "sharing": "Double occupancy"},
+        {"name": "APJ Hostel", "year": "3rd & 4th year boys", "sharing": "Single occupancy"},
+        {"name": "PM Ajay Hostel", "year": "M.Tech & M.Sc", "sharing": "Double occupancy"},
+        {"name": "HJB Hostel", "year": "PG & PhD", "sharing": "Single occupancy"}
+      ],
+      "girls": [
+        {"name": "DA Hostel", "year": "All girls", "sharing": "Double occupancy"}
+      ]
+    },
+
+    "mess": {
+      "caterers": ["Food Sutra", "Sheela", "Surendar Arora"],
+      "system": "3 caterers available. Students can choose their caterer every month."
+    },
+
+    "fee_structure": {
+      "program": "B.Tech and B.Des (2025 batch, tentative)",
+      "first_semester": {
+        "tuition": 100000,
+        "insurance": 1600,
+        "per_semester_fees": 6300,
+        "one_time_admission": 8100,
+        "refundable_deposit": 10000,
+        "accommodation": 16000,
+        "total": 142000
+      },
+      "second_semester": {"total": 122300},
+      "third_semester": {"total": 123900},
+      "subsequent_semesters": "~Rs 1,22,000 - 1,24,000 per semester",
+      "total_4_years": "Approximately Rs 9,90,000 - 10,00,000",
+      "notes": [
+        "SC/ST/PwD exempted from tuition fee.",
+        "Income below Rs 1 lakh: full tuition remission (Rs 1,00,000/sem).",
+        "Income Rs 1-5 lakh: 2/3rd remission (Rs 66,667/sem).",
+        "Fee structure subject to change."
+      ]
+    },
+
+    "wifi": {
+      "facts": ["WiFi available in mostly all places of the campus."]
+    },
+
+    "attendance": {
+      "facts": ["70% attendance criteria observed."]
+    },
+
+    "clubs": {
+      "cultural": [
+        {"name": "Aina", "type": "Dramatics"},
+        {"name": "Avana", "type": "Social Welfare"},
+        {"name": "Kaizen Dance Club", "type": "Dance"},
+        {"name": "Music Club", "type": "Music"},
+        {"name": "Prakriti", "type": "Nature & Wildlife"},
+        {"name": "Mystic Hues", "type": "Photography"},
+        {"name": "Deb Soc", "type": "Debating"},
+        {"name": "Srijan", "type": "Literature"},
+        {"name": "Drapes", "type": "Fashion"}
+      ],
+      "technical": "Programming, Designing, Cybersecurity, AI clubs available.",
+      "sports": "All sports clubs available — Football, Cricket, Hockey, Basketball, Volleyball, Swimming, Chess, Board games."
+    },
+
+    "fests": {
+      "list": [
+        {"name": "E-Summit", "type": "Entrepreneur fest"},
+        {"name": "Lakshya", "type": "Sports fest"},
+        {"name": "Ingenium", "type": "Tech and cultural fest"},
+        {"name": "TEDx", "type": "TED talks"},
+        {"name": "Rangreza", "type": "Garba fest"},
+        {"name": "Apna Cultural", "type": "Multi-cultural fest"}
+      ]
+    },
+
+    "sports": {
+      "facilities": [
+        "2 Football fields",
+        "1 Cricket field",
+        "Fully developed athletic stadium",
+        "Running track, long jump, high jump areas",
+        "Hockey court",
+        "2 Tennis courts",
+        "3 Volleyball courts",
+        "1 Basketball area",
+        "9 Indoor badminton courts",
+        "Swimming pool",
+        "Squash courts"
+      ]
+    },
+
+    "canteen": {
+      "outlets": [
+        "Overnight canteen available",
+        "AS Canteen (tea, samosa, poha)",
+        "Yewale (tea center)",
+        "Cafe Beats (South Indian dishes and snacks)",
+        "Amul Parlour",
+        "Dominos",
+        "Noors (veg and non-veg)",
+        "Jucilicious Cafe"
+      ]
+    },
+
+    "shops": {
+      "facts": ["La Fresco — daily needs and packed snacks."]
+    },
+
+    "laundry": {
+      "facts": [
+        "4 washing machines and 2 dryers available in every hostel.",
+        "Paid service.",
+        "A separate laundry service also available in campus (monthly payment)."
+      ]
+    },
+
+    "elections": {
+      "facts": ["Campus has elections for every academic year, generally held in even semester."]
+    },
+
+    "fines": {
+      "facts": [
+        "Fines for demolition in hostels or labs — amount depends on act and higher officials' decisions.",
+        "No ragging allowed.",
+        "Fighting in campus leads to fines/action."
+      ]
+    },
+
+    "gym": {
+      "facts": ["Gym available on campus."]
+    },
+
+    "medical": {
+      "facts": [
+        "Health center available in campus, approximately 600m from hostels.",
+        "In emergency, ambulance is sent to the respective hostel.",
+        "Treatment is free of cost."
+      ]
+    },
+
+    "transport": {
+      "facts": [
+        "Indore Junction Railway Station (INDB) is 25 km from campus.",
+        "Devi Ahilyabai Holkar International Airport is 31 km from campus.",
+        "Bus facilities available from Indore city to campus.",
+        "Distance from campus to city: 21 km."
+      ]
+    },
+
+    "restaurants": {
+      "nearby": [
+        "Bombay Darbar (500m walkable from campus)",
+        "Sardar Ji (100m from campus)"
+      ],
+      "delivery": "Swiggy and Zomato available."
+    },
+
+    "nearby_places": {
+      "tourist": ["Tincha Waterfalls", "Patalpani", "Jam Gate", "Rajwada Palace", "Lotus Valley", "Indore Zoo Park", "Lal Bagh Palace", "Kaanch Mandir"],
+      "shopping": ["Phoenix Citadel Mall", "C21 Mall", "Treasure Island Mall", "Nexus Mall"]
+    },
+
+    "language_climate": {
+      "language": "Hindi is the general language used.",
+      "climate": "All three seasons experienced at high intensity."
+    }
+  }
+}

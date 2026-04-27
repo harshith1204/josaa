@@ -1,0 +1,13 @@
+{
+  "college": "NIT-Srinagar",
+  "source_pdf": "NIT-Srinagar-Overall-Brochure-2025.pdf",
+  "total_pages": 4,
+  "image_pages": 0,
+  "text_chars": 11573,
+  "extraction_method": "pymupdf4llm",
+  "ocr_applied": false,
+  "structured_data": {
+    "institute": "NIT-Srinagar",
+    "year": "2024-25"
+  }
+}

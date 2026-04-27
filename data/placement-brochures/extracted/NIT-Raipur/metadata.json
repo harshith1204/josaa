@@ -1,0 +1,41 @@
+{
+  "college": "NIT-Raipur",
+  "source_pdf": "NIT-Raipur-Placement-Report-2024-25.pdf",
+  "total_pages": 2,
+  "image_pages": 0,
+  "text_chars": 8166,
+  "extraction_method": "pymupdf4llm",
+  "ocr_applied": false,
+  "structured_data": {
+    "institute": "NIT-Raipur",
+    "year": "2024-25",
+    "top_recruiters": [
+      "Accenture",
+      "Amazon",
+      "Capgemini",
+      "De Shaw",
+      "Deloitte",
+      "Hcl",
+      "Hpcl",
+      "Hyundai",
+      "Intel",
+      "Jp Morgan",
+      "L&T",
+      "Meta",
+      "Oracle",
+      "Paypal",
+      "Phonepe",
+      "Reliance",
+      "Salesforce",
+      "Samsung",
+      "Siemens",
+      "Tata Steel",
+      "Tcs",
+      "Texas Instruments",
+      "Vedanta",
+      "Visa",
+      "Wipro",
+      "Zs Associates"
+    ]
+  }
+}

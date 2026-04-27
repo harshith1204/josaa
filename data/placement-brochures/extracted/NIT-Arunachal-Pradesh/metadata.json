@@ -1,0 +1,19 @@
+{
+  "college": "NIT-Arunachal-Pradesh",
+  "source_pdf": "NIT-Arunachal-Pradesh-Placement-Brochure-2024-25.pdf",
+  "total_pages": 29,
+  "image_pages": 0,
+  "text_chars": 32988,
+  "extraction_method": "pymupdf4llm",
+  "ocr_applied": false,
+  "structured_data": {
+    "institute": "NIT-Arunachal-Pradesh",
+    "year": "2024-25",
+    "top_recruiters": [
+      "Ey",
+      "Flipkart",
+      "Google",
+      "Isro"
+    ]
+  }
+}

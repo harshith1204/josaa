@@ -1,0 +1,158 @@
+{
+  "college": "MNIT Jaipur",
+  "full_name": "Malaviya National Institute of Technology Jaipur",
+  "sources": ["whatsapp_chat_with_ambassador"],
+  "data_date": "2026-04-02",
+
+  "sections": {
+    "overview": {
+      "facts": [
+        "MNIT Jaipur (Malaviya National Institute of Technology Jaipur) is located at JLN Marg, Malviya Nagar, Jaipur, Rajasthan 302017.",
+        "Language spoken: Hindi.",
+        "Climate: Extremely high temperatures depending on season. Jaipur is known for very hot summers."
+      ]
+    },
+
+    "transport": {
+      "facts": [
+        "Jaipur Junction Railway Station is 9 km from MNIT Jaipur.",
+        "Gandhinagar Railway Station is 3.5 km from MNIT Jaipur.",
+        "Durgapura Railway Station is 4 km from MNIT Jaipur.",
+        "Jaipur International Airport is 5 km from MNIT Jaipur.",
+        "Sindhi Camp Bus Stand is 10 km from MNIT Jaipur.",
+        "Narayan Singh Circle Bus Stop is 6 km from MNIT Jaipur."
+      ]
+    },
+
+    "hostels_boys": {
+      "facts": [
+        "MNIT Jaipur has 12 boys hostels.",
+        "H1-Parijat.",
+        "H2-Chaitanya.",
+        "H3-Satpura.",
+        "H4-Lohit.",
+        "H5-Brihaspati.",
+        "H6-Kabir.",
+        "H7-Drona.",
+        "H8-Varun.",
+        "H9-Aurobindo.",
+        "H10-PG Hostel.",
+        "H15-Aravali.",
+        "H16-Chandrashekhar.",
+        "1st year students are allotted 3-sharing rooms. From 2nd year onwards, students get single rooms."
+      ]
+    },
+
+    "hostels_girls": {
+      "facts": [
+        "MNIT Jaipur has 3 girls hostels.",
+        "H11-Maitri.",
+        "H12-Gargi.",
+        "H14-Vinodini."
+      ]
+    },
+
+    "mess": {
+      "assignment": "Every hostel has its own mess.",
+      "notes": "No mess cost or mess menu data was provided by the ambassador."
+    },
+
+    "wifi": {
+      "facts": [
+        "MNIT Jaipur has a 10 Gbps NKN (National Knowledge Network) connection.",
+        "Hostel WiFi speed is 10-25 Mbps.",
+        "LAN speed in hostels is 120-130 Mbps.",
+        "Central Library has 24x7 WiFi.",
+        "ICT Centre is available 24/7."
+      ]
+    },
+
+    "attendance": {
+      "facts": [
+        "75% minimum attendance is mandatory at MNIT Jaipur.",
+        "FA grade (Failed due to Attendance) can be given if attendance falls below the threshold.",
+        "Some professors count attendance as part of internal marks."
+      ]
+    },
+
+    "clubs": {
+      "technical": ["Aeromodelling", "Astronomy", "BIS", "CS Club", "Consultancy", "Data Science", "Economics & Finances", "Entrepreneurship", "Infosec", "Robotics", "Science Club", "Technical Communication House", "Tinkering Lab", "SAE BAJA", "Zine", "Codavids (Coding)"],
+      "cultural": ["Drama (English+Hindi)", "Music", "Photography", "Creative Arts", "Dance", "Literary", "Language", "Debate", "Quiz", "Fashion", "Film Making", "Travel & Heritage", "Limitless Ability (Inclusivity)", "NSS"]
+    },
+
+    "fests": {
+      "facts": [
+        "Blitzschlag is a 3-day cultural fest held in February at MNIT Jaipur. It is one of Rajasthan's largest college cultural fests.",
+        "Sphinx is the technical and management fest.",
+        "MICC is an internal fest.",
+        "Other events: Freshers, Department fests, MST/Athletic Meet, Inter-Branch sports, Inter-NIT sports."
+      ]
+    },
+
+    "laundry": {
+      "facts": [
+        "A laundry person comes twice a week at MNIT Jaipur hostels."
+      ]
+    },
+
+    "sports": {
+      "facts": [
+        "14 sports available at MNIT Jaipur: Athletics, Badminton, Basketball, Cricket, Chess, Football, Table Tennis, Lawn Tennis, Volleyball, Weightlifting, Powerlifting, Kabaddi, Kho-Kho, and Tug of War."
+      ]
+    },
+
+    "canteen": {
+      "facts": [
+        "Every hostel at MNIT Jaipur has its own canteen.",
+        "A Central canteen is also available on campus."
+      ]
+    },
+
+    "shops": {
+      "facts": [
+        "MNIT Shopping Complex is available on campus.",
+        "PMC offers snacks, books, fruits, vegetables, and xerox services.",
+        "Cycle shops are available on campus."
+      ]
+    },
+
+    "fines": {
+      "facts": [
+        "Fines at MNIT Jaipur include: late physical reporting fine, late course registration fine, and disciplinary fines."
+      ]
+    },
+
+    "gym": {
+      "facts": [
+        "Institute gym at MNIT Jaipur is common for both boys and girls."
+      ]
+    },
+
+    "health_centre": {
+      "facts": [
+        "MNIT Jaipur has a Primary Care Dispensary with Medical Officers.",
+        "2 nursing staff are available.",
+        "Part-time Ayurvedic, Homeopathy, and Gynecologist doctors are available.",
+        "Visiting specialists: Orthopedic, Cardiologist, Psychiatrist, Ophthalmologist, Surgeon, and ENT.",
+        "Free medicines are provided for routine ailments."
+      ]
+    },
+
+    "restaurants": {
+      "nearby": ["Hyderabadi Dum Biryani (Andhra Bhawan)", "Lick-a-Chick", "Manpasand (veg only)"]
+    },
+
+    "nearby_places": {
+      "tourist": ["Hawa Mahal", "Jal Mahal", "Nahargarh Fort", "Jaigarh Fort", "Marble Gate Jawahar Circle", "City Palace", "Jhalana Leopard Safari", "Peacock Garden", "Gaitor Ki Chhatriyan", "Galtaji Temple (Monkey Temple)"],
+      "malls": ["GT Central", "World Trade Park (WTP)", "Crystal Court", "JTM Mall", "Pink Square", "Triton Mall"]
+    },
+
+    "language": {
+      "facts": ["Hindi is spoken in and around MNIT Jaipur."]
+    },
+
+    "climate": {
+      "facts": ["Extremely high temperatures depending on season. Jaipur is known for very hot summers."]
+    }
+  }
+}

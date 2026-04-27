@@ -1,0 +1,1550 @@
+{
+  "IIT-Bhilai": {
+    "files": [
+      {
+        "filename": "IIT-Bhilai-Placement-Brochure-2025-26.pdf",
+        "year": "2025-26",
+        "type": "other",
+        "is_official": false,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 60,
+        "size_mb": 48.8,
+        "has_extractable_text": false,
+        "first_100_chars": ""
+      }
+    ],
+    "best_brochure": null,
+    "total_files": 1,
+    "official_count": 0,
+    "institute_wide_count": 0
+  },
+  "IIT-BHU": {
+    "files": [
+      {
+        "filename": "IIT-BHU-Annual-Report-2024-25.pdf",
+        "year": "2024-25",
+        "type": "department_brochure",
+        "is_official": false,
+        "is_institute_wide": false,
+        "is_mba_only": false,
+        "pages": 408,
+        "size_mb": 5.2,
+        "has_extractable_text": true,
+        "first_100_chars": "Annual Report 2024-25 भारतीय  भारतीय  प्रौद्योगिकी  प्रौद्योगिकी  संस्ान  संस्ान  काशी हिन्दू विश्वव"
+      },
+      {
+        "filename": "IIT-BHU-BME-Brochure.pdf",
+        "year": "2022-23",
+        "type": "other",
+        "is_official": false,
+        "is_institute_wide": false,
+        "is_mba_only": false,
+        "pages": 7,
+        "size_mb": 11.2,
+        "has_extractable_text": false,
+        "first_100_chars": "B ROCHURE   D EPARTMENTAL  2022-23"
+      },
+      {
+        "filename": "IIT-BHU-CER-Brochure.pdf",
+        "year": "2022-23",
+        "type": "placement_report",
+        "is_official": true,
+        "is_institute_wide": false,
+        "is_mba_only": false,
+        "pages": 16,
+        "size_mb": 3.7,
+        "has_extractable_text": true,
+        "first_100_chars": "TRAINING & PLACEMENT BROCHURE  2022-23 Ceramic Engineering Department Of"
+      },
+      {
+        "filename": "IIT-BHU-CHY-Brochure.pdf",
+        "year": "2022-23",
+        "type": "other",
+        "is_official": false,
+        "is_institute_wide": false,
+        "is_mba_only": false,
+        "pages": 8,
+        "size_mb": 1.6,
+        "has_extractable_text": true,
+        "first_100_chars": "PLACEMENT  Industrial Chemistry Indian Institute of Technology Banaras Hindu University BROCHURE 202"
+      },
+      {
+        "filename": "IIT-BHU-CIV-Brochure.pdf",
+        "year": "unknown",
+        "type": "department_brochure",
+        "is_official": false,
+        "is_institute_wide": false,
+        "is_mba_only": false,
+        "pages": 22,
+        "size_mb": 17.5,
+        "has_extractable_text": true,
+        "first_100_chars": ""
+      },
+      {
+        "filename": "IIT-BHU-CSE-Brochure.pdf",
+        "year": "unknown",
+        "type": "other",
+        "is_official": false,
+        "is_institute_wide": false,
+        "is_mba_only": false,
+        "pages": 7,
+        "size_mb": 5.4,
+        "has_extractable_text": false,
+        "first_100_chars": ""
+      },
+      {
+        "filename": "IIT-BHU-EE-Brochure.pdf",
+        "year": "2022-23",
+        "type": "department_brochure",
+        "is_official": false,
+        "is_institute_wide": false,
+        "is_mba_only": false,
+        "pages": 8,
+        "size_mb": 1.1,
+        "has_extractable_text": true,
+        "first_100_chars": "Placement Brochure DEPARTMENT OF ELECTRICAL ENGINEERING IIT (BHU) VARANASI TRAINING AND PLACEMENT"
+      },
+      {
+        "filename": "IIT-BHU-MEC-Brochure.pdf",
+        "year": "2022-23",
+        "type": "department_brochure",
+        "is_official": false,
+        "is_institute_wide": false,
+        "is_mba_only": false,
+        "pages": 17,
+        "size_mb": 2.7,
+        "has_extractable_text": true,
+        "first_100_chars": "MECHANICAL   ENGINEERING Placement Brochure  2022-23"
+      },
+      {
+        "filename": "IIT-BHU-MET-Brochure.pdf",
+        "year": "2022-23",
+        "type": "department_brochure",
+        "is_official": false,
+        "is_institute_wide": false,
+        "is_mba_only": false,
+        "pages": 10,
+        "size_mb": 1.9,
+        "has_extractable_text": true,
+        "first_100_chars": "Department Of Metallurgical Engineering Brochure 2022-2023"
+      },
+      {
+        "filename": "IIT-BHU-MIN-Brochure.pdf",
+        "year": "2022-23",
+        "type": "department_brochure",
+        "is_official": false,
+        "is_institute_wide": false,
+        "is_mba_only": false,
+        "pages": 13,
+        "size_mb": 28.9,
+        "has_extractable_text": true,
+        "first_100_chars": "PLACEMENT BROCHURE DEPARTMENT OF MINING ENGINEERING 2022-23                        भारतीय"
+      },
+      {
+        "filename": "IIT-BHU-MST-Brochure.pdf",
+        "year": "2022-23",
+        "type": "department_brochure",
+        "is_official": false,
+        "is_institute_wide": false,
+        "is_mba_only": false,
+        "pages": 17,
+        "size_mb": 29.1,
+        "has_extractable_text": true,
+        "first_100_chars": "School of Materials Science and Technology Placement Brochure Indian  Institute  of  Technology (Ban"
+      },
+      {
+        "filename": "IIT-BHU-PHY-Brochure.pdf",
+        "year": "unknown",
+        "type": "other",
+        "is_official": false,
+        "is_institute_wide": false,
+        "is_mba_only": false,
+        "pages": 10,
+        "size_mb": 1.3,
+        "has_extractable_text": false,
+        "first_100_chars": "Scanned with CamScanner"
+      },
+      {
+        "filename": "IIT-BHU-Placement-Brochure.pdf",
+        "year": "2023-24",
+        "type": "placement_brochure",
+        "is_official": true,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 37,
+        "size_mb": 20.6,
+        "has_extractable_text": true,
+        "first_100_chars": "TRAINING AND PLACEMENT CELL www.placement.iitbhu.ac.in 2023-2024 PLACEMENT BROCHURE tpo@iitbhu.ac.in"
+      }
+    ],
+    "best_brochure": "IIT-BHU-Placement-Brochure.pdf",
+    "total_files": 13,
+    "official_count": 2,
+    "institute_wide_count": 1
+  },
+  "IIT-Bhubaneswar": {
+    "files": [
+      {
+        "filename": "IIT-Bhubaneswar-Placement-Brochure-2024-25.pdf",
+        "year": "2024-25",
+        "type": "other",
+        "is_official": false,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 60,
+        "size_mb": 0.7,
+        "has_extractable_text": true,
+        "first_100_chars": "Skip to content Students Faculty Staff Alumni ERP Directory Old Website Home New [image] •  Home ○"
+      },
+      {
+        "filename": "IIT-Bhubaneswar-Placement-Brochure-2025-26.pdf",
+        "year": "2025-26",
+        "type": "placement_brochure",
+        "is_official": true,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 30,
+        "size_mb": 2.2,
+        "has_extractable_text": true,
+        "first_100_chars": ""
+      }
+    ],
+    "best_brochure": "IIT-Bhubaneswar-Placement-Brochure-2025-26.pdf",
+    "total_files": 2,
+    "official_count": 1,
+    "institute_wide_count": 1
+  },
+  "IIT-Bombay": {
+    "files": [
+      {
+        "filename": "IIT-Bombay-Placement-Brochure-2025-26.pdf",
+        "year": "2025-26",
+        "type": "other",
+        "is_official": false,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 32,
+        "size_mb": 52.3,
+        "has_extractable_text": false,
+        "first_100_chars": ""
+      },
+      {
+        "filename": "IIT-Bombay-Placement-Report-2023-24.pdf",
+        "year": "2023-24",
+        "type": "placement_report",
+        "is_official": true,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 22,
+        "size_mb": 1.1,
+        "has_extractable_text": true,
+        "first_100_chars": "Placement and Internship Report Academic Year 2023 – 2024 Placement Office Indian Institute of Techn"
+      }
+    ],
+    "best_brochure": "IIT-Bombay-Placement-Report-2023-24.pdf",
+    "total_files": 2,
+    "official_count": 1,
+    "institute_wide_count": 1
+  },
+  "IIT-Delhi": {
+    "files": [
+      {
+        "filename": "IIT-Delhi-Textile-Placement-Brochure-2023-24.pdf",
+        "year": "2023-24",
+        "type": "other",
+        "is_official": false,
+        "is_institute_wide": false,
+        "is_mba_only": false,
+        "pages": 10,
+        "size_mb": 2.2,
+        "has_extractable_text": false,
+        "first_100_chars": "2023-2024"
+      }
+    ],
+    "best_brochure": null,
+    "total_files": 1,
+    "official_count": 0,
+    "institute_wide_count": 0
+  },
+  "IIT-Dharwad": {
+    "files": [
+      {
+        "filename": "IIT-Dharwad-Placement-Brochure.pdf",
+        "year": "unknown",
+        "type": "other",
+        "is_official": false,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 16,
+        "size_mb": 2.2,
+        "has_extractable_text": true,
+        "first_100_chars": "Indian Institute of Technology Dharwad"
+      }
+    ],
+    "best_brochure": "IIT-Dharwad-Placement-Brochure.pdf",
+    "total_files": 1,
+    "official_count": 0,
+    "institute_wide_count": 0
+  },
+  "IIT-Gandhinagar": {
+    "files": [
+      {
+        "filename": "IIT-Gandhinagar-CDS-Brochure-2025-26.pdf",
+        "year": "2025-26",
+        "type": "placement_brochure",
+        "is_official": true,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 32,
+        "size_mb": 1.7,
+        "has_extractable_text": true,
+        "first_100_chars": "Career Counselling Industrial  Visit Internship Placement Higher Education  Support INDIAN INSTITUTE"
+      }
+    ],
+    "best_brochure": "IIT-Gandhinagar-CDS-Brochure-2025-26.pdf",
+    "total_files": 1,
+    "official_count": 1,
+    "institute_wide_count": 1
+  },
+  "IIT-Goa": {
+    "files": [
+      {
+        "filename": "IIT-Goa-Placement-Brochure-2023.pdf",
+        "year": "unknown",
+        "type": "other",
+        "is_official": false,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 25,
+        "size_mb": 18.0,
+        "has_extractable_text": true,
+        "first_100_chars": ""
+      },
+      {
+        "filename": "IIT-Goa-Placement-Brochure-2025-26.pdf",
+        "year": "2025-26",
+        "type": "other",
+        "is_official": false,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 25,
+        "size_mb": 3.1,
+        "has_extractable_text": true,
+        "first_100_chars": "Placement Brochure 2025-26 INDIAN INSTITUTE OF TECHNOLOGY GOA"
+      }
+    ],
+    "best_brochure": "IIT-Goa-Placement-Brochure-2025-26.pdf",
+    "total_files": 2,
+    "official_count": 0,
+    "institute_wide_count": 0
+  },
+  "IIT-Guwahati": {
+    "files": [
+      {
+        "filename": "IIT-Guwahati-Placement-Report-2023-24.pdf",
+        "year": "2023-24",
+        "type": "placement_report",
+        "is_official": true,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 13,
+        "size_mb": 0.6,
+        "has_extractable_text": true,
+        "first_100_chars": "PLACEMENT REPORT Academic Year 2023-24 Centre for Career Development Indian Institute of Technology,"
+      },
+      {
+        "filename": "IIT-Guwahati-Placement-Report-2024-25.pdf",
+        "year": "2024-25",
+        "type": "placement_brochure",
+        "is_official": true,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 21,
+        "size_mb": 7.3,
+        "has_extractable_text": true,
+        "first_100_chars": "CENTRE FOR CAREER DEVELOPMENT INDIAN INSTITUTE OF TECHNOLOGY GUWAHATI PLACEMENT REPORT ACADEMIC YEAR"
+      }
+    ],
+    "best_brochure": "IIT-Guwahati-Placement-Report-2024-25.pdf",
+    "total_files": 2,
+    "official_count": 2,
+    "institute_wide_count": 2
+  },
+  "IIT-Hyderabad": {
+    "files": [
+      {
+        "filename": "IIT-Hyderabad-AI-Brochure-2024-25.pdf",
+        "year": "2024-25",
+        "type": "placement_brochure",
+        "is_official": true,
+        "is_institute_wide": false,
+        "is_mba_only": false,
+        "pages": 22,
+        "size_mb": 4.3,
+        "has_extractable_text": true,
+        "first_100_chars": "Department of Artificial Intelligence Placement Brochure 2024-25"
+      },
+      {
+        "filename": "IIT-Hyderabad-CSE-Brochure.pdf",
+        "year": "2024-25",
+        "type": "department_brochure",
+        "is_official": false,
+        "is_institute_wide": false,
+        "is_mba_only": false,
+        "pages": 25,
+        "size_mb": 26.4,
+        "has_extractable_text": true,
+        "first_100_chars": "Placement Brochure 2024 - 2025 Department of  Computer Science and Engineering"
+      },
+      {
+        "filename": "IIT-Hyderabad-MAE-Brochure.pdf",
+        "year": "2024-25",
+        "type": "department_brochure",
+        "is_official": false,
+        "is_institute_wide": false,
+        "is_mba_only": false,
+        "pages": 47,
+        "size_mb": 6.1,
+        "has_extractable_text": true,
+        "first_100_chars": "Department of Mechanical and  Aerospace Engineering Placement Brochure  B.Tech 2021-2025 |  M.Tech 2"
+      },
+      {
+        "filename": "IIT-Hyderabad-Overall-Brochure-2024.pdf",
+        "year": "2022-23",
+        "type": "other",
+        "is_official": false,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 32,
+        "size_mb": 3.2,
+        "has_extractable_text": true,
+        "first_100_chars": "NIRF (INNOVATION) #3 NIRF (NATIONAL - OVERALL) #12 QS  (GLOBAL - OVERALL) 681- 690 NIRF  NATIONAL –"
+      }
+    ],
+    "best_brochure": "IIT-Hyderabad-AI-Brochure-2024-25.pdf",
+    "total_files": 4,
+    "official_count": 1,
+    "institute_wide_count": 0
+  },
+  "IIT-Indore": {
+    "files": [
+      {
+        "filename": "IIT-Indore-Placement-Brochure-Latest.pdf",
+        "year": "2025-26",
+        "type": "placement_brochure",
+        "is_official": true,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 26,
+        "size_mb": 33.0,
+        "has_extractable_text": true,
+        "first_100_chars": "Indian Institute of Technology Indore Placement Brochure 2025-26 Khandwa Road, Simrol, Indore -  453"
+      }
+    ],
+    "best_brochure": "IIT-Indore-Placement-Brochure-Latest.pdf",
+    "total_files": 1,
+    "official_count": 1,
+    "institute_wide_count": 1
+  },
+  "IIT-Jammu": {
+    "files": [
+      {
+        "filename": "IIT-Jammu-Placement-Brochure-2019-20.pdf",
+        "year": "unknown",
+        "type": "placement_brochure",
+        "is_official": true,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 11,
+        "size_mb": 0.8,
+        "has_extractable_text": true,
+        "first_100_chars": "PLACEMENT  BROCHURE 2019-20 IIT Jammu IIT Jammu is an Institute of  National Importance funded  by t"
+      },
+      {
+        "filename": "IIT-Jammu-Placement-Report-2023-24.pdf",
+        "year": "2023-24",
+        "type": "placement_report",
+        "is_official": true,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 9,
+        "size_mb": 3.5,
+        "has_extractable_text": true,
+        "first_100_chars": "Career Development Services PREPARED BY PLACEMENT REPORT 2023-24"
+      }
+    ],
+    "best_brochure": "IIT-Jammu-Placement-Report-2023-24.pdf",
+    "total_files": 2,
+    "official_count": 2,
+    "institute_wide_count": 2
+  },
+  "IIT-Jodhpur": {
+    "files": [
+      {
+        "filename": "IIT-Jodhpur-Placement-Brochure.pdf",
+        "year": "unknown",
+        "type": "other",
+        "is_official": false,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 17,
+        "size_mb": 2.0,
+        "has_extractable_text": false,
+        "first_100_chars": ""
+      }
+    ],
+    "best_brochure": null,
+    "total_files": 1,
+    "official_count": 0,
+    "institute_wide_count": 0
+  },
+  "IIT-Kanpur": {
+    "files": [
+      {
+        "filename": "IIT-Kanpur-AE-Brochure.pdf",
+        "year": "2020-21",
+        "type": "department_brochure",
+        "is_official": false,
+        "is_institute_wide": false,
+        "is_mba_only": false,
+        "pages": 24,
+        "size_mb": 19.7,
+        "has_extractable_text": true,
+        "first_100_chars": "DEPARTMENT OF AEROSPACE ENGINEERING INDIAN INSTITUTE OF TECHNOLOGY KANPUR PLACEMENT BROCHURE 2020-20"
+      },
+      {
+        "filename": "IIT-Kanpur-ChE-Brochure-2025-26.pdf",
+        "year": "2025-26",
+        "type": "department_brochure",
+        "is_official": false,
+        "is_institute_wide": false,
+        "is_mba_only": false,
+        "pages": 19,
+        "size_mb": 16.2,
+        "has_extractable_text": true,
+        "first_100_chars": "Department of Chemical Engineering Class of 2025-26 भारतीय \u0013ौ\u001aोaगक सं:ान कानपुर Indian Institute of"
+      },
+      {
+        "filename": "IIT-Kanpur-MSE-Brochure.pdf",
+        "year": "2024-25",
+        "type": "department_brochure",
+        "is_official": false,
+        "is_institute_wide": false,
+        "is_mba_only": false,
+        "pages": 19,
+        "size_mb": 26.4,
+        "has_extractable_text": true,
+        "first_100_chars": "PLACEMENT BROCHURE   Room #109, Outreach Building,  IIT Kanpur  spo@iitk.ac.in Phone: +91-512 679 44"
+      }
+    ],
+    "best_brochure": "IIT-Kanpur-ChE-Brochure-2025-26.pdf",
+    "total_files": 3,
+    "official_count": 0,
+    "institute_wide_count": 0
+  },
+  "IIT-Madras": {
+    "files": [
+      {
+        "filename": "IIT-Madras-Placement-Brochure-2021.pdf",
+        "year": "unknown",
+        "type": "other",
+        "is_official": false,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 21,
+        "size_mb": 19.8,
+        "has_extractable_text": false,
+        "first_100_chars": ""
+      },
+      {
+        "filename": "IIT-Madras-Placement-Brochure-2022-23.pdf",
+        "year": "2022-23",
+        "type": "placement_brochure",
+        "is_official": true,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 22,
+        "size_mb": 8.1,
+        "has_extractable_text": true,
+        "first_100_chars": "PLACEMENT BROCHURE (2022 - 23) INDIAN INSTITUTE OF TECHNOLOGY MADRAS"
+      },
+      {
+        "filename": "IIT-Madras-Placement-Brochure-2023-24.pdf",
+        "year": "2023-24",
+        "type": "placement_brochure",
+        "is_official": true,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 26,
+        "size_mb": 8.5,
+        "has_extractable_text": true,
+        "first_100_chars": "PLACEMENT & INTERNSHIP BROCHURE (2023 - 24) INDIAN INSTITUTE OF TECHNOLOGY MADRAS"
+      },
+      {
+        "filename": "IIT-Madras-Placement-Brochure-2024-25.pdf",
+        "year": "2024-25",
+        "type": "placement_brochure",
+        "is_official": true,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 26,
+        "size_mb": 10.4,
+        "has_extractable_text": true,
+        "first_100_chars": "PLACEMENT & INTERNSHIP BROCHURE 2024 - 25 INDIAN INSTITUTE OF TECHNOLOGY MADRAS"
+      }
+    ],
+    "best_brochure": "IIT-Madras-Placement-Brochure-2024-25.pdf",
+    "total_files": 4,
+    "official_count": 3,
+    "institute_wide_count": 3
+  },
+  "IIT-Mandi": {
+    "files": [
+      {
+        "filename": "IIT-Mandi-Placement-Brochure-2025-26.pdf",
+        "year": "2025-26",
+        "type": "placement_brochure",
+        "is_official": true,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 20,
+        "size_mb": 20.4,
+        "has_extractable_text": true,
+        "first_100_chars": "PLACEMENT BROCHURE 2025-26 INDIAN INSTITUTE OF TECHNOLOGY, MANDI IIT Mandi"
+      }
+    ],
+    "best_brochure": "IIT-Mandi-Placement-Brochure-2025-26.pdf",
+    "total_files": 1,
+    "official_count": 1,
+    "institute_wide_count": 1
+  },
+  "IIT-Palakkad": {
+    "files": [
+      {
+        "filename": "IIT-Palakkad-CDC-Brochure-2025-26.pdf",
+        "year": "2025-26",
+        "type": "placement_brochure",
+        "is_official": true,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 12,
+        "size_mb": 1.5,
+        "has_extractable_text": true,
+        "first_100_chars": "PLACEMENT PLACEMENT BROCHURE BROCHURE 2025-2026"
+      },
+      {
+        "filename": "IIT-Palakkad-Placement-Brochure-2025-26-v2.pdf",
+        "year": "2025-26",
+        "type": "placement_brochure",
+        "is_official": true,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 12,
+        "size_mb": 1.5,
+        "has_extractable_text": true,
+        "first_100_chars": "PLACEMENT PLACEMENT BROCHURE BROCHURE 2025-2026"
+      }
+    ],
+    "best_brochure": "IIT-Palakkad-CDC-Brochure-2025-26.pdf",
+    "total_files": 2,
+    "official_count": 2,
+    "institute_wide_count": 2
+  },
+  "IIT-Patna": {
+    "files": [
+      {
+        "filename": "IIT-Patna-Placement-Brochure-2024.pdf",
+        "year": "2023-24",
+        "type": "other",
+        "is_official": false,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 28,
+        "size_mb": 26.3,
+        "has_extractable_text": false,
+        "first_100_chars": ""
+      }
+    ],
+    "best_brochure": null,
+    "total_files": 1,
+    "official_count": 0,
+    "institute_wide_count": 0
+  },
+  "NIT-Allahabad": {
+    "files": [
+      {
+        "filename": "MNNIT-Allahabad-Placement-Brochure-2025.pdf",
+        "year": "2024-25",
+        "type": "placement_brochure",
+        "is_official": true,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 26,
+        "size_mb": 7.3,
+        "has_extractable_text": true,
+        "first_100_chars": "CAMPUS PLACEMENT BROCHURE For more information visit -  h t t p : / / w w w . m n n i t . a c . i n"
+      },
+      {
+        "filename": "MNNIT-Allahabad-Placement-Brochure-General.pdf",
+        "year": "unknown",
+        "type": "other",
+        "is_official": false,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 23,
+        "size_mb": 2.6,
+        "has_extractable_text": false,
+        "first_100_chars": ""
+      }
+    ],
+    "best_brochure": "MNNIT-Allahabad-Placement-Brochure-2025.pdf",
+    "total_files": 2,
+    "official_count": 1,
+    "institute_wide_count": 1
+  },
+  "NIT-Andhra-Pradesh": {
+    "files": [
+      {
+        "filename": "NIT-Andhra-Pradesh-UG-Brochure-2025-26.pdf",
+        "year": "2025-26",
+        "type": "placement_brochure",
+        "is_official": true,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 25,
+        "size_mb": 12.4,
+        "has_extractable_text": true,
+        "first_100_chars": "NIT  ANDHRA PRADESH UG PLACEMENT BROCHURE www.nitandhra.ac.in 2025-26"
+      }
+    ],
+    "best_brochure": "NIT-Andhra-Pradesh-UG-Brochure-2025-26.pdf",
+    "total_files": 1,
+    "official_count": 1,
+    "institute_wide_count": 1
+  },
+  "NIT-Arunachal-Pradesh": {
+    "files": [
+      {
+        "filename": "NIT-Arunachal-Pradesh-Placement-Brochure-2023-24.pdf",
+        "year": "2023-24",
+        "type": "placement_brochure",
+        "is_official": true,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 29,
+        "size_mb": 6.9,
+        "has_extractable_text": true,
+        "first_100_chars": "+91 94362 71053 +91 94355 47092 tnp@nitap.ac.in PLACEMENT BROCHURE 2023-24 ARUNACHAL PRADESH राष्ट्र"
+      },
+      {
+        "filename": "NIT-Arunachal-Pradesh-Placement-Brochure-2024-25.pdf",
+        "year": "2024-25",
+        "type": "placement_brochure",
+        "is_official": true,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 29,
+        "size_mb": 4.8,
+        "has_extractable_text": true,
+        "first_100_chars": "राष्ट्रीय प्रौद्योगिकी संस्थान अरुणाचल प्रदेश National Institute of Technology Arunachal  Pradesh ["
+      }
+    ],
+    "best_brochure": "NIT-Arunachal-Pradesh-Placement-Brochure-2024-25.pdf",
+    "total_files": 2,
+    "official_count": 2,
+    "institute_wide_count": 2
+  },
+  "NIT-Bhopal": {
+    "files": [
+      {
+        "filename": "MANIT-Bhopal-ECE-Placement-Brochure-2025-26.pdf",
+        "year": "2025-26",
+        "type": "other",
+        "is_official": false,
+        "is_institute_wide": false,
+        "is_mba_only": false,
+        "pages": 29,
+        "size_mb": 4.7,
+        "has_extractable_text": false,
+        "first_100_chars": ""
+      },
+      {
+        "filename": "MANIT-Bhopal-Placement-Brochure-2023-24.pdf",
+        "year": "2023-24",
+        "type": "placement_brochure",
+        "is_official": true,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 30,
+        "size_mb": 9.6,
+        "has_extractable_text": true,
+        "first_100_chars": "MAULANA AZAD NATIONAL INSTITUTE OF TECHNOLOGY BHOPAL (M.P.) 2023-2024 Placement Brochure"
+      }
+    ],
+    "best_brochure": "MANIT-Bhopal-Placement-Brochure-2023-24.pdf",
+    "total_files": 2,
+    "official_count": 1,
+    "institute_wide_count": 1
+  },
+  "NIT-Calicut": {
+    "files": [
+      {
+        "filename": "NIT-Calicut-Placement-Brochure-2024-25.pdf",
+        "year": "2024-25",
+        "type": "other",
+        "is_official": false,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 36,
+        "size_mb": 14.1,
+        "has_extractable_text": false,
+        "first_100_chars": ""
+      },
+      {
+        "filename": "NIT-Calicut-Placement-Brochure.pdf",
+        "year": "unknown",
+        "type": "placement_brochure",
+        "is_official": true,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 27,
+        "size_mb": 20.9,
+        "has_extractable_text": true,
+        "first_100_chars": "www.soms.nitc.ac.in Placement Brochure MBA Batch of 2021-2023 12 YEARS OF EXCELLENCE National Instit"
+      }
+    ],
+    "best_brochure": "NIT-Calicut-Placement-Brochure.pdf",
+    "total_files": 2,
+    "official_count": 1,
+    "institute_wide_count": 1
+  },
+  "NIT-Delhi": {
+    "files": [
+      {
+        "filename": "NIT-Delhi-Placement-Report-2021-2025.pdf",
+        "year": "2024-25",
+        "type": "placement_report",
+        "is_official": true,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 37,
+        "size_mb": 1.4,
+        "has_extractable_text": true,
+        "first_100_chars": "NIT Delhi Placement Report    (Past 5 Years Overview)    Academic Year: 2021–2025      -"
+      },
+      {
+        "filename": "NIT-Delhi-Placement-Stats.pdf",
+        "year": "2024-25",
+        "type": "placement_report",
+        "is_official": true,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 1,
+        "size_mb": 0.7,
+        "has_extractable_text": true,
+        "first_100_chars": "Placement Stati"
+      }
+    ],
+    "best_brochure": "NIT-Delhi-Placement-Report-2021-2025.pdf",
+    "total_files": 2,
+    "official_count": 2,
+    "institute_wide_count": 2
+  },
+  "NIT-Durgapur": {
+    "files": [
+      {
+        "filename": "NIT-Durgapur-Placement-Brochure-2022-23.pdf",
+        "year": "2022-23",
+        "type": "placement_brochure",
+        "is_official": true,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 46,
+        "size_mb": 7.4,
+        "has_extractable_text": true,
+        "first_100_chars": "PLACEMENT BROCHURE  2022 - 2023 NATIONAL INSTITUTE OF TECHNOLOGY DURGAPUR +91  9886014453 +91-343-27"
+      },
+      {
+        "filename": "NIT-Durgapur-Placement-Brochure-2023-24.pdf",
+        "year": "2023-24",
+        "type": "placement_report",
+        "is_official": true,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 50,
+        "size_mb": 19.8,
+        "has_extractable_text": true,
+        "first_100_chars": "PLACEMENT PLACEMENT BROCHURE BROCHURE NATIONAL NATIONAL INSTITUTE OF INSTITUTE OF  DURGAPUR DURGAPUR"
+      }
+    ],
+    "best_brochure": "NIT-Durgapur-Placement-Brochure-2023-24.pdf",
+    "total_files": 2,
+    "official_count": 2,
+    "institute_wide_count": 2
+  },
+  "NIT-Goa": {
+    "files": [
+      {
+        "filename": "NIT-Goa-Placement-Brochure-2024-25.pdf",
+        "year": "2024-25",
+        "type": "placement_brochure",
+        "is_official": true,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 31,
+        "size_mb": 32.9,
+        "has_extractable_text": true,
+        "first_100_chars": "PLACEMENT BROCHURE 2024 - 2025 NATIONAL INSTITUTE OF TECHNOLOGY GOA 90 RANKING th (ENGINEERING CATEG"
+      },
+      {
+        "filename": "NIT-Goa-TP-Brochure-2025.pdf",
+        "year": "2024-25",
+        "type": "other",
+        "is_official": false,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 23,
+        "size_mb": 43.6,
+        "has_extractable_text": false,
+        "first_100_chars": ""
+      }
+    ],
+    "best_brochure": "NIT-Goa-Placement-Brochure-2024-25.pdf",
+    "total_files": 2,
+    "official_count": 1,
+    "institute_wide_count": 1
+  },
+  "NIT-Hamirpur": {
+    "files": [
+      {
+        "filename": "NIT-Hamirpur-Placement-Brochure-2023.pdf",
+        "year": "unknown",
+        "type": "other",
+        "is_official": false,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 31,
+        "size_mb": 6.6,
+        "has_extractable_text": false,
+        "first_100_chars": ""
+      }
+    ],
+    "best_brochure": null,
+    "total_files": 1,
+    "official_count": 0,
+    "institute_wide_count": 0
+  },
+  "NIT-Jaipur": {
+    "files": [
+      {
+        "filename": "MNIT-Jaipur-Placement-Flier-2024-25.pdf",
+        "year": "2024-25",
+        "type": "placement_brochure",
+        "is_official": true,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 2,
+        "size_mb": 0.7,
+        "has_extractable_text": true,
+        "first_100_chars": "Malaviya National Institute of Technology, Jaipur  JLN Marg, Jaipur- 302017, Rajasthan, India  TRAIN"
+      },
+      {
+        "filename": "MNIT-Jaipur-Placement-Flier-2025-26.pdf",
+        "year": "2025-26",
+        "type": "placement_brochure",
+        "is_official": true,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 2,
+        "size_mb": 0.5,
+        "has_extractable_text": true,
+        "first_100_chars": "Malaviya National Institute of Technology, Jaipur  JLN Marg, Jaipur- 302017, Rajasthan, India  TRAIN"
+      },
+      {
+        "filename": "MNIT-Jaipur-Placement-Report-2022-23.pdf",
+        "year": "2022-23",
+        "type": "placement_report",
+        "is_official": true,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 8,
+        "size_mb": 1.9,
+        "has_extractable_text": true,
+        "first_100_chars": "Malaviya National Institute of Technology,   Jaipur  Placement Report 2022-23"
+      }
+    ],
+    "best_brochure": "MNIT-Jaipur-Placement-Flier-2025-26.pdf",
+    "total_files": 3,
+    "official_count": 3,
+    "institute_wide_count": 3
+  },
+  "NIT-Jalandhar": {
+    "files": [
+      {
+        "filename": "NIT-Jalandhar-Placement-Brochure-2024.pdf",
+        "year": "2023-24",
+        "type": "placement_report",
+        "is_official": true,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 29,
+        "size_mb": 6.8,
+        "has_extractable_text": true,
+        "first_100_chars": "DR BR AMBEDKAR  NATIONAL INSTITUTE OF TECHNOLOGY JALANDHAR PLACEMENT BROCHURE 2023-24 +0181- 5037855"
+      }
+    ],
+    "best_brochure": "NIT-Jalandhar-Placement-Brochure-2024.pdf",
+    "total_files": 1,
+    "official_count": 1,
+    "institute_wide_count": 1
+  },
+  "NIT-Jamshedpur": {
+    "files": [
+      {
+        "filename": "NIT-Jamshedpur-Placement-Brochure-2024-25.pdf",
+        "year": "2024-25",
+        "type": "other",
+        "is_official": false,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 37,
+        "size_mb": 4.8,
+        "has_extractable_text": false,
+        "first_100_chars": ""
+      }
+    ],
+    "best_brochure": null,
+    "total_files": 1,
+    "official_count": 0,
+    "institute_wide_count": 0
+  },
+  "NIT-Kurukshetra": {
+    "files": [
+      {
+        "filename": "NIT-Kurukshetra-Placement-Stats-2024-25.pdf",
+        "year": "2024-25",
+        "type": "placement_report",
+        "is_official": true,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 2,
+        "size_mb": 0.3,
+        "has_extractable_text": true,
+        "first_100_chars": "TRAINING AND PLACEMENT CELL  NATIONAL INSTITUTE OF TECHNOLOGY KURUKSHETRA  Placement Statistics: A"
+      },
+      {
+        "filename": "NIT-Kurukshetra-TP-Brochure-2023-24.pdf",
+        "year": "2023-24",
+        "type": "placement_brochure",
+        "is_official": true,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 36,
+        "size_mb": 11.0,
+        "has_extractable_text": true,
+        "first_100_chars": "2023-24 PLACEMENT  BROCHURE  NIT KURUKSHETRA Institution of National Importance"
+      }
+    ],
+    "best_brochure": "NIT-Kurukshetra-Placement-Stats-2024-25.pdf",
+    "total_files": 2,
+    "official_count": 2,
+    "institute_wide_count": 2
+  },
+  "NIT-Meghalaya": {
+    "files": [
+      {
+        "filename": "NIT-Meghalaya-Placement-Brochure-2022-23.pdf",
+        "year": "2022-23",
+        "type": "placement_brochure",
+        "is_official": true,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 36,
+        "size_mb": 2.7,
+        "has_extractable_text": true,
+        "first_100_chars": ""
+      },
+      {
+        "filename": "NIT-Meghalaya-Placement-Brochure-2023-24.pdf",
+        "year": "2023-24",
+        "type": "placement_brochure",
+        "is_official": true,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 28,
+        "size_mb": 6.7,
+        "has_extractable_text": true,
+        "first_100_chars": "NATIONAL INSTITUTE OF TECHNOLOGY  MEGHAL"
+      }
+    ],
+    "best_brochure": "NIT-Meghalaya-Placement-Brochure-2023-24.pdf",
+    "total_files": 2,
+    "official_count": 2,
+    "institute_wide_count": 2
+  },
+  "NIT-Mizoram": {
+    "files": [
+      {
+        "filename": "NIT-Mizoram-TP-Brochure.pdf",
+        "year": "2025-26",
+        "type": "other",
+        "is_official": false,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 16,
+        "size_mb": 0.1,
+        "has_extractable_text": true,
+        "first_100_chars": "Skip to content  Skip to content Menu •  Visit Old Website •  Alumni •  Webmail •  Feedback •  Conta"
+      }
+    ],
+    "best_brochure": "NIT-Mizoram-TP-Brochure.pdf",
+    "total_files": 1,
+    "official_count": 0,
+    "institute_wide_count": 0
+  },
+  "NIT-Nagaland": {
+    "files": [
+      {
+        "filename": "NIT-Nagaland-Placement-Data-2023.pdf",
+        "year": "unknown",
+        "type": "placement_report",
+        "is_official": true,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 7,
+        "size_mb": 0.7,
+        "has_extractable_text": true,
+        "first_100_chars": "Placement Statistics 4% 23% 35% 38% 10+ LPA Students Placed 80 Highest  CTC  (LPA) 20.61 Overall Pla"
+      },
+      {
+        "filename": "NIT-Nagaland-Placement-Data-2024.pdf",
+        "year": "2023-24",
+        "type": "other",
+        "is_official": false,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 3,
+        "size_mb": 0.5,
+        "has_extractable_text": true,
+        "first_100_chars": "0 5 10 15 20 25 30 35 40 45 CSE ECE EEE EIE Mech Civil B.Tech 2020-24 Total no. of students Total Of"
+      }
+    ],
+    "best_brochure": "NIT-Nagaland-Placement-Data-2023.pdf",
+    "total_files": 2,
+    "official_count": 1,
+    "institute_wide_count": 1
+  },
+  "NIT-Nagpur": {
+    "files": [
+      {
+        "filename": "VNIT-Nagpur-CSE-Brochure-2025.pdf",
+        "year": "2024-25",
+        "type": "other",
+        "is_official": false,
+        "is_institute_wide": false,
+        "is_mba_only": false,
+        "pages": 12,
+        "size_mb": 2.0,
+        "has_extractable_text": false,
+        "first_100_chars": ""
+      },
+      {
+        "filename": "VNIT-Nagpur-ECE-Brochure-2024-25.pdf",
+        "year": "2024-25",
+        "type": "department_brochure",
+        "is_official": false,
+        "is_institute_wide": false,
+        "is_mba_only": false,
+        "pages": 26,
+        "size_mb": 1.4,
+        "has_extractable_text": true,
+        "first_100_chars": "VNIT Nagpur Department of Electronics and Communication Placement office - 4th Floor,  New Academic"
+      },
+      {
+        "filename": "VNIT-Nagpur-TP-Brochure-2025.pdf",
+        "year": "2024-25",
+        "type": "other",
+        "is_official": false,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 21,
+        "size_mb": 3.9,
+        "has_extractable_text": false,
+        "first_100_chars": ""
+      }
+    ],
+    "best_brochure": "VNIT-Nagpur-ECE-Brochure-2024-25.pdf",
+    "total_files": 3,
+    "official_count": 0,
+    "institute_wide_count": 0
+  },
+  "NIT-Puducherry": {
+    "files": [
+      {
+        "filename": "NIT-Puducherry-Placement-Brochure-2025.pdf",
+        "year": "2024-25",
+        "type": "placement_brochure",
+        "is_official": true,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 48,
+        "size_mb": 31.5,
+        "has_extractable_text": true,
+        "first_100_chars": "NIT PUDUCHERRY NIT PUDUCHERRY NIT PUDUCHERRY 2024-25 2024-25 2024-25 PLACEMENT BROCHURE"
+      },
+      {
+        "filename": "NIT-Puducherry-TP-Annual-Report-2024-25.pdf",
+        "year": "2024-25",
+        "type": "placement_report",
+        "is_official": true,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 1,
+        "size_mb": 0.2,
+        "has_extractable_text": true,
+        "first_100_chars": "____________________________________________________________________________________________"
+      }
+    ],
+    "best_brochure": "NIT-Puducherry-Placement-Brochure-2025.pdf",
+    "total_files": 2,
+    "official_count": 2,
+    "institute_wide_count": 2
+  },
+  "NIT-Raipur": {
+    "files": [
+      {
+        "filename": "NIT-Raipur-Placement-Brochure.pdf",
+        "year": "unknown",
+        "type": "other",
+        "is_official": false,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 27,
+        "size_mb": 7.4,
+        "has_extractable_text": true,
+        "first_100_chars": ""
+      },
+      {
+        "filename": "NIT-Raipur-Placement-Record-2023.pdf",
+        "year": "unknown",
+        "type": "other",
+        "is_official": false,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 3,
+        "size_mb": 0.2,
+        "has_extractable_text": true,
+        "first_100_chars": "Placement 2023  S.No  Roll no.  Name of Candidate  Name of Company CTC(LPA)  Type of offer  1  19115"
+      },
+      {
+        "filename": "NIT-Raipur-Placement-Report-2024-25.pdf",
+        "year": "2024-25",
+        "type": "other",
+        "is_official": false,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 2,
+        "size_mb": 0.6,
+        "has_extractable_text": true,
+        "first_100_chars": "B. Arch. MCA MSC Name of the Company Process Date No. of Students placed in B. Arch. Bio -Medical En"
+      }
+    ],
+    "best_brochure": "NIT-Raipur-Placement-Report-2024-25.pdf",
+    "total_files": 3,
+    "official_count": 0,
+    "institute_wide_count": 0
+  },
+  "NIT-Rourkela": {
+    "files": [
+      {
+        "filename": "NIT-Rourkela-Placement-Brochure-2020-21.pdf",
+        "year": "2020-21",
+        "type": "other",
+        "is_official": false,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 36,
+        "size_mb": 5.2,
+        "has_extractable_text": false,
+        "first_100_chars": ""
+      },
+      {
+        "filename": "NIT-Rourkela-Placement-Brochure-2024-25.pdf",
+        "year": "2024-25",
+        "type": "placement_brochure",
+        "is_official": true,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 43,
+        "size_mb": 20.2,
+        "has_extractable_text": true,
+        "first_100_chars": "NIT Rourkela-769008,Odisha 0661-246-2180 0661-246-4840 placements@nitrkl.ac.in\r https://nitrkl.ac.in"
+      }
+    ],
+    "best_brochure": "NIT-Rourkela-Placement-Brochure-2024-25.pdf",
+    "total_files": 2,
+    "official_count": 1,
+    "institute_wide_count": 1
+  },
+  "NIT-Sikkim": {
+    "files": [
+      {
+        "filename": "NIT-Sikkim-Placement-Brochure-2024-25.pdf",
+        "year": "2024-25",
+        "type": "placement_brochure",
+        "is_official": true,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 41,
+        "size_mb": 3.7,
+        "has_extractable_text": true,
+        "first_100_chars": "TRAINING AND PLACEMENT CELL NATIONAL INSTITUTE OF TECHNOLOGY SIKKIM An Institute of National Importa"
+      },
+      {
+        "filename": "NIT-Sikkim-Placement-Brochure.pdf",
+        "year": "unknown",
+        "type": "other",
+        "is_official": false,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 40,
+        "size_mb": 6.5,
+        "has_extractable_text": false,
+        "first_100_chars": ""
+      }
+    ],
+    "best_brochure": "NIT-Sikkim-Placement-Brochure-2024-25.pdf",
+    "total_files": 2,
+    "official_count": 1,
+    "institute_wide_count": 1
+  },
+  "NIT-Silchar": {
+    "files": [
+      {
+        "filename": "NIT-Silchar-Placement-Brochure.pdf",
+        "year": "2025-26",
+        "type": "department_brochure",
+        "is_official": false,
+        "is_institute_wide": false,
+        "is_mba_only": false,
+        "pages": 5,
+        "size_mb": 0.1,
+        "has_extractable_text": true,
+        "first_100_chars": "| Skip to Main Content Select Theme Screen Reader Access + - •  हिन्दी Eng Old Site [image] राष्ट्री"
+      }
+    ],
+    "best_brochure": "NIT-Silchar-Placement-Brochure.pdf",
+    "total_files": 1,
+    "official_count": 0,
+    "institute_wide_count": 0
+  },
+  "NIT-Srinagar": {
+    "files": [
+      {
+        "filename": "NIT-Srinagar-Overall-Brochure-2025.pdf",
+        "year": "2024-25",
+        "type": "other",
+        "is_official": false,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 4,
+        "size_mb": 0.1,
+        "has_extractable_text": true,
+        "first_100_chars": "National Institutional Ranking Framework  Ministry of Education  Government of India  Welcome to Dat"
+      },
+      {
+        "filename": "NIT-Srinagar-Placement-Brochure-2020-21.pdf",
+        "year": "2020-21",
+        "type": "other",
+        "is_official": false,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 24,
+        "size_mb": 3.6,
+        "has_extractable_text": false,
+        "first_100_chars": ""
+      }
+    ],
+    "best_brochure": "NIT-Srinagar-Overall-Brochure-2025.pdf",
+    "total_files": 2,
+    "official_count": 0,
+    "institute_wide_count": 0
+  },
+  "NIT-Surat": {
+    "files": [
+      {
+        "filename": "SVNIT-Surat-CDC-Placement-Summary-2024-25.pdf",
+        "year": "2024-25",
+        "type": "other",
+        "is_official": false,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 1,
+        "size_mb": 0.6,
+        "has_extractable_text": false,
+        "first_100_chars": ""
+      },
+      {
+        "filename": "SVNIT-Surat-Placement-Summary-2024-25.pdf",
+        "year": "2024-25",
+        "type": "other",
+        "is_official": false,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 1,
+        "size_mb": 0.5,
+        "has_extractable_text": false,
+        "first_100_chars": ""
+      },
+      {
+        "filename": "SVNIT-Surat-Placement-Summary-General.pdf",
+        "year": "unknown",
+        "type": "other",
+        "is_official": false,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 1,
+        "size_mb": 0.5,
+        "has_extractable_text": false,
+        "first_100_chars": ""
+      }
+    ],
+    "best_brochure": null,
+    "total_files": 3,
+    "official_count": 0,
+    "institute_wide_count": 0
+  },
+  "NIT-Trichy": {
+    "files": [
+      {
+        "filename": "NIT-Trichy-PG-Brochure-2024-25.pdf",
+        "year": "2024-25",
+        "type": "placement_brochure",
+        "is_official": true,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 58,
+        "size_mb": 15.9,
+        "has_extractable_text": true,
+        "first_100_chars": "NATIONAL INSTITUTE OF TECHNOLOGY, TIRUCHIRAPPALLI POST GRADUATE PLACEMENT BROCHURE NITT 2024 -25"
+      },
+      {
+        "filename": "NIT-Trichy-PG-Brochure-2025-26.pdf",
+        "year": "2025-26",
+        "type": "other",
+        "is_official": false,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 52,
+        "size_mb": 10.8,
+        "has_extractable_text": false,
+        "first_100_chars": ""
+      },
+      {
+        "filename": "NIT-Trichy-Placement-Brochure.pdf",
+        "year": "2020-21",
+        "type": "other",
+        "is_official": false,
+        "is_institute_wide": true,
+        "is_mba_only": true,
+        "pages": 8,
+        "size_mb": 5.7,
+        "has_extractable_text": true,
+        "first_100_chars": "F I N A L  P L A C E M E N T  B R O C H U R E BATCH 2020 - 2022 NATIONAL INSTITUTE OF TECHNOLOGY TIR"
+      },
+      {
+        "filename": "NIT-Trichy-UG-Brochure-2024-25.pdf",
+        "year": "2024-25",
+        "type": "placement_brochure",
+        "is_official": true,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 38,
+        "size_mb": 10.2,
+        "has_extractable_text": true,
+        "first_100_chars": "NIT  TRICHY 2024-25 UG PLACEMENT BROCHURE DEPARTMENT OF TRAINING AND PLACEMENT"
+      },
+      {
+        "filename": "NIT-Trichy-UG-Brochure-2025-26.pdf",
+        "year": "2025-26",
+        "type": "placement_brochure",
+        "is_official": true,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 41,
+        "size_mb": 23.4,
+        "has_extractable_text": true,
+        "first_100_chars": "NIT Trichy DEPARTMENT OF TRAINING & PLACEMENT  UG Placement Brochure 2025-2026"
+      }
+    ],
+    "best_brochure": "NIT-Trichy-UG-Brochure-2025-26.pdf",
+    "total_files": 5,
+    "official_count": 3,
+    "institute_wide_count": 3
+  },
+  "NIT-Uttarakhand": {
+    "files": [
+      {
+        "filename": "NIT-Uttarakhand-Placement-Brochure-2025-26.pdf",
+        "year": "2025-26",
+        "type": "placement_brochure",
+        "is_official": true,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 12,
+        "size_mb": 1.6,
+        "has_extractable_text": true,
+        "first_100_chars": "Annual Placement Brochure 2025 -26"
+      }
+    ],
+    "best_brochure": "NIT-Uttarakhand-Placement-Brochure-2025-26.pdf",
+    "total_files": 1,
+    "official_count": 1,
+    "institute_wide_count": 1
+  },
+  "NIT-Warangal": {
+    "files": [
+      {
+        "filename": "NIT-Warangal-Placement-Brochure-2024-25.pdf",
+        "year": "2024-25",
+        "type": "placement_brochure",
+        "is_official": true,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 24,
+        "size_mb": 2.4,
+        "has_extractable_text": true,
+        "first_100_chars": ""
+      },
+      {
+        "filename": "NIT-Warangal-Placement-Policy-2025-26.pdf",
+        "year": "2025-26",
+        "type": "placement_brochure",
+        "is_official": true,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 5,
+        "size_mb": 2.4,
+        "has_extractable_text": true,
+        "first_100_chars": ",I  CENTRE FOR CAREER PLANNING AND DEVELOPMENT  ,~ <H cilut-11 ~  f4ct>l\"1 ~  NATIONAL INSTITUTE OF"
+      },
+      {
+        "filename": "NIT-Warangal-Placement-Stats-2024-25.pdf",
+        "year": "2024-25",
+        "type": "placement_report",
+        "is_official": true,
+        "is_institute_wide": true,
+        "is_mba_only": false,
+        "pages": 2,
+        "size_mb": 0.1,
+        "has_extractable_text": true,
+        "first_100_chars": "Sl. No Program Name Specialization Total  Students Total  Eligible* On- campus  Placed  % Placed  on"
+      }
+    ],
+    "best_brochure": "NIT-Warangal-Placement-Policy-2025-26.pdf",
+    "total_files": 3,
+    "official_count": 3,
+    "institute_wide_count": 3
+  }
+}

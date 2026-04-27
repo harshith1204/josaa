@@ -1,0 +1,22 @@
+{
+  "college": "IIT-Hyderabad",
+  "source_pdf": "IIT-Hyderabad-AI-Brochure-2024-25.pdf",
+  "total_pages": 22,
+  "image_pages": 2,
+  "text_chars": 23868,
+  "extraction_method": "pymupdf4llm",
+  "ocr_applied": false,
+  "structured_data": {
+    "institute": "IIT-Hyderabad",
+    "year": "2024-25",
+    "top_recruiters": [
+      "Accenture",
+      "Drdo",
+      "Ey",
+      "Google",
+      "Intel",
+      "Qualcomm",
+      "Tcs"
+    ]
+  }
+}

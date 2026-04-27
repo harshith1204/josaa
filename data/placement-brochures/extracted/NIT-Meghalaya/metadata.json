@@ -1,0 +1,21 @@
+{
+  "college": "NIT-Meghalaya",
+  "source_pdf": "NIT-Meghalaya-Placement-Brochure-2023-24.pdf",
+  "total_pages": 28,
+  "image_pages": 1,
+  "text_chars": 57744,
+  "extraction_method": "pymupdf4llm",
+  "ocr_applied": true,
+  "structured_data": {
+    "institute": "NIT-Meghalaya",
+    "top_recruiters": [
+      "Bhel",
+      "Ey",
+      "Intel",
+      "Iocl",
+      "Meta",
+      "Tcs",
+      "Visa"
+    ]
+  }
+}

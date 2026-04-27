@@ -1,0 +1,20 @@
+{
+  "college": "NIT-Bhopal",
+  "source_pdf": "MANIT-Bhopal-Placement-Brochure-2023-24.pdf",
+  "total_pages": 30,
+  "image_pages": 0,
+  "text_chars": 37548,
+  "extraction_method": "pymupdf4llm",
+  "ocr_applied": false,
+  "structured_data": {
+    "institute": "NIT-Bhopal",
+    "year": "2023-24",
+    "total_companies": 200,
+    "top_recruiters": [
+      "Ey",
+      "Google",
+      "Meta",
+      "Texas Instruments"
+    ]
+  }
+}

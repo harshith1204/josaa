@@ -1,0 +1,239 @@
+{
+  "college": "NIT Jamshedpur",
+  "sources": ["whatsapp_chat_with_ambassador", "fee_structure_pdf", "mess_menu_pdf", "timetable_pdf"],
+  "data_date": "2026-04-04",
+  "ambassador": {"phone": "redacted", "email": "redacted", "branch": "B.Tech Civil Engineering", "year": "1st year (2025 batch)"},
+
+  "sections": {
+    "overview": {
+      "facts": [
+        "NIT Jamshedpur is located in Adityapur, District Saraikela Kharsawan, Jamshedpur, Jharkhand 831014.",
+        "Dean Academic office: dean.ac@nitjsr.ac.in, Tel: +91 657-2372001."
+      ]
+    },
+
+    "hostels_boys": {
+      "facts": [
+        "Hostel I is for 2nd year students with single occupancy.",
+        "Hostel L is for 1st year, PG, and PhD students — double sharing for 1st years, single for PhD/PG.",
+        "Hostel E is for 2nd year students with single occupancy.",
+        "Hostel F is for 2nd year students with single occupancy.",
+        "Hostel G is for 2nd year students with single occupancy.",
+        "Hostel H is for 2nd year students with single occupancy."
+      ]
+    },
+
+    "hostels_girls": {
+      "facts": [
+        "Hostel A is a girls hostel.",
+        "Hostel B is a girls hostel.",
+        "Hostel C is a girls hostel.",
+        "Hostel D is a girls hostel.",
+        "Rani Laxmi Bai is a girls hostel.",
+        "Ambedkar Hall of Residence is a girls hostel."
+      ]
+    },
+
+    "mess": {
+      "timing": {
+        "note": "Not provided — data gap"
+      },
+      "mess_advance": "Rs 18,000 per semester (tentative, adjusted at actual)",
+      "daily_items": [
+        "Breakfast: Bread (6 pcs), jam & butter, milk or tea, banana or egg (1 pc)."
+      ],
+      "schedule": [
+        "Monday breakfast: Besan Chila + Green Chutney. Lunch: Jeera Rice, Arhar Dal, Seasonal Veg, Curd. Snacks: Poha + Lal Chana + Tea. Dinner: Masoor Dal, Veg Korma / Chicken Butter Masala (4 pcs).",
+        "Tuesday breakfast: Plain Paratha + Aloo Chana. Lunch: Sambhar, Kadhi Pakoda, Papad. Snacks: Chowmein + Coffee. Dinner: Chana Dal Tadka, Gulab Jamun.",
+        "Wednesday breakfast: Puri + Aloo Tamatar. Lunch: Dal Fry, Aloo Palak Bhujia, Boondi Raita. Snacks: Chatpata Chana + Fried Chilli + Tea. Dinner: Chana Dal, Matar Mushroom / Chicken Hyderabadi (4 pcs).",
+        "Thursday breakfast: Idli + Vada (4 pcs) + Sambhar + Chutney. Lunch: Dal, Rajma, Dahi, Pickle. Snacks: Litti Chokha (2 pcs) + Coffee. Dinner: Veg Pulao, Aloo Gobi Matar, Suji Halwa.",
+        "Friday breakfast: Sattu/Methi Paratha + Aloo Matar. Lunch: Dal Tarka, Green Moong Masala, Veg Raita. Snacks: Samosa + Aloo Matar + Tea. Dinner: Peas Pulao, Paneer Keema / Egg Curry (2 pcs).",
+        "Saturday breakfast: Aloo Paratha + Green Chutney. Lunch: Dal Makhani, Papad.",
+        "Sunday: Not provided — data gap."
+      ],
+      "cuisine": "North Indian, with Jharkhand specialties (Litti Chokha, Sattu Paratha)"
+    },
+
+    "fee_structure": {
+      "btech_tuition_per_sem": {
+        "general_obc": 62500,
+        "sc_st_ph": 0
+      },
+      "institute_fees_per_sem": {
+        "digital_campus": 2000,
+        "examination": 1000,
+        "training_placement": 500,
+        "bus_transport": 1000,
+        "library": 2000,
+        "computer_internet": 1000,
+        "wellness_welfare": 500,
+        "sports": 1500,
+        "cultural_technical": 2000,
+        "medical_insurance": 1000,
+        "total": 12500
+      },
+      "hostel_fees_per_sem": {
+        "room_rent": 6000,
+        "hostel_mess_maintenance": 7000,
+        "electricity": 1500,
+        "water": 500,
+        "total": 15000
+      },
+      "one_time_at_admission": {
+        "caution_money_refundable": 10000,
+        "alumni_membership": 2000,
+        "innovation_project_ug_only": 5000,
+        "total": 17000
+      },
+      "mess_advance_per_sem": 18000,
+      "totals": [
+        "General/OBC 1st semester: Rs 62,500 (tuition) + Rs 12,500 (institute) + Rs 15,000 (hostel) + Rs 17,000 (one-time) + Rs 18,000 (mess) = Rs 1,25,000.",
+        "General/OBC subsequent semesters: Rs 62,500 + Rs 12,500 + Rs 15,000 + Rs 18,000 = Rs 1,08,000.",
+        "SC/ST/PH 1st semester: Rs 0 (tuition) + Rs 12,500 + Rs 15,000 + Rs 17,000 + Rs 18,000 = Rs 62,500.",
+        "SC/ST/PH subsequent semesters: Rs 0 + Rs 12,500 + Rs 15,000 + Rs 18,000 = Rs 45,500."
+      ],
+      "fee_waivers": [
+        "Family income below Rs 1 lakh per annum: full tuition fee waiver.",
+        "Family income Rs 1-5 lakh per annum: 2/3rd tuition fee waiver."
+      ],
+      "source": "Official Notice S-26/2025, Ref. NITJSR/ACD/2025/108, dated 08/05/2025"
+    },
+
+    "wifi": {
+      "facts": [
+        "WiFi is available at NIT Jamshedpur.",
+        "LAN is available at NIT Jamshedpur."
+      ]
+    },
+
+    "attendance": {
+      "facts": [
+        "75% attendance is mandatory at NIT Jamshedpur."
+      ]
+    },
+
+    "clubs": {
+      "list": ["Qnite", "Phocus", "Phoenix", "Rooh", "LDS", "Quod Invicta", "Faces", "Aahwan"]
+    },
+
+    "fests": {
+      "list": [
+        {"name": "Culfest", "type": "Cultural fest", "month": "February-March"},
+        {"name": "Ojass", "type": "Techno-management fest", "month": "February-March"},
+        {"name": "Urja", "type": "Sports fest", "month": "October-November"}
+      ]
+    },
+
+    "sports": {
+      "facts": [
+        "Sports activities fee of Rs 1,500 per semester is included in institute fees."
+      ]
+    },
+
+    "canteen": {
+      "facts": [
+        "On-campus canteens: Amba, Annapurna, Nescafe, Continental.",
+        "Night canteens are available."
+      ]
+    },
+
+    "laundry": {
+      "facts": [
+        "Washing machines are not available in the hostels.",
+        "Washing facilities are available within the campus for students."
+      ]
+    },
+
+    "elections": {
+      "positions": [
+        "President",
+        "Vice-President",
+        "General Secretary",
+        "Joint Secretary",
+        "Technical Secretary",
+        "Cultural Secretary",
+        "Sports Secretary",
+        "Club Secretary"
+      ]
+    },
+
+    "medical": {
+      "facts": [
+        "NIT Dispensary is on campus with ambulances available at any time for emergencies.",
+        "Nearby hospitals: Meditrina Hospital, SaveLife Hospital, ESIC Hospital.",
+        "Medical and insurance fee of Rs 1,000 per semester is included in institute fees."
+      ]
+    },
+
+    "transport": {
+      "facts": [
+        "Nearest airport: Birsa Munda Airport, Ranchi.",
+        "Nearest railway station: Tatanagar Railway Station.",
+        "Nearest bus stand: Mango Bus Stand.",
+        "Bus transport fee of Rs 1,000 per semester is included in institute fees."
+      ]
+    },
+
+    "restaurants": {
+      "facts": [
+        "Nearby restaurants: Just Chill, Hungry Kya, The Lion Restaurant, Blue Diamond.",
+        "Swiggy, Zomato and all food delivery apps are available."
+      ]
+    },
+
+    "nearby_places": {
+      "tourist": ["Dalma Wildlife Sanctuary", "Dimna Lake", "Jubilee Park", "Tata Zoo", "Chandil Dam", "Bhuvneshwari Temple"],
+      "shopping": ["P N M Mall", "Bindal Mall", "V Mart", "V2", "Nagaramal Mall"]
+    },
+
+    "shops": {
+      "facts": [
+        "NIT Store is nearby.",
+        "Sudha Milk Parlour is nearby.",
+        "Basti Shops are nearby."
+      ]
+    },
+
+    "fines": {
+      "facts": [
+        "Serious misconduct: Rs 20,000 to Rs 30,000.",
+        "Hostel expulsion: Rs 30,000.",
+        "Ragging: approximately Rs 20,000.",
+        "Minor offences: Rs 2,000.",
+        "Late registration: Rs 1,000.",
+        "Delayed fee and registration: Rs 2,000."
+      ]
+    },
+
+    "gym": {
+      "facts": [
+        "NIT Gymkhana is free for students.",
+        "Paid options nearby: Fitness Factory, Tiger Hill Gym, Golds Gym."
+      ]
+    },
+
+    "climate": {
+      "facts": [
+        "NIT Jamshedpur has a tropical climate with extreme seasonal shifts.",
+        "Scorching summers, heavy monsoon rains, and mild pleasant winters."
+      ]
+    },
+
+    "language": {
+      "facts": [
+        "Hindi, English, Bengali, and Santhali are spoken at NIT Jamshedpur."
+      ]
+    },
+
+    "timetable": {
+      "facts": [
+        "Spring Semester 2025-26 timetable (Version 2.0, effective 08-01-2026).",
+        "Branches covered: Civil Engineering, CSE, ECE, Electrical Engineering, Mechanical Engineering.",
+        "Class timings: 8:30 AM to 5:55 PM.",
+        "Lunch break: 12:30 PM to 2:00 PM.",
+        "Lab classes have 3 groups: G1 (Roll 1-40), G2 (Roll 41-80), G3 (Roll 81-Last).",
+        "Workshop has 2 groups: G1 (Roll 1-60), G2 (Roll 61-Last)."
+      ]
+    }
+  }
+}

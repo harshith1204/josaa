@@ -1,0 +1,23 @@
+{
+  "college": "NIT-Puducherry",
+  "source_pdf": "NIT-Puducherry-Placement-Brochure-2025.pdf",
+  "total_pages": 48,
+  "image_pages": 5,
+  "text_chars": 57770,
+  "extraction_method": "pymupdf4llm",
+  "ocr_applied": false,
+  "structured_data": {
+    "institute": "NIT-Puducherry",
+    "year": "2024-25",
+    "total_companies": 45,
+    "top_recruiters": [
+      "Amazon",
+      "Ey",
+      "Google",
+      "Intel",
+      "Intuit",
+      "Meta",
+      "Siemens"
+    ]
+  }
+}

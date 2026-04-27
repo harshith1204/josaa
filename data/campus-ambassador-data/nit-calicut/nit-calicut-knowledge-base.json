@@ -1,0 +1,244 @@
+{
+  "college": "NIT Calicut",
+  "full_name": "National Institute of Technology Calicut",
+  "sources": ["whatsapp_chat_with_ambassador", "fee_structure_pdf"],
+  "data_date": "2026-04-04",
+
+  "sections": {
+    "overview": {
+      "facts": [
+        "NIT Calicut (National Institute of Technology Calicut, NITC) is located at NIT Campus P.O., Kattangal, Mukkam Road, Kozhikode-673601, Kerala.",
+        "Languages spoken locally: Malayalam, Hindi, English. Languages spoken in college: Malayalam, Telugu, Hindi, Tamil, English.",
+        "Climate: Tropical monsoon climate with high humidity, hot summers, and heavy rainfall."
+      ]
+    },
+
+    "transport": {
+      "facts": [
+        "Calicut International Airport (Karipur, Kerala) is 20.2 km from NIT Calicut.",
+        "Kozhikode Railway Station is 19 km from NIT Calicut.",
+        "NITC Bus Stop is 800 m from NIT Calicut campus."
+      ]
+    },
+
+    "hostels_boys": {
+      "facts": [
+        "NIT Calicut has multiple boys hostels organized by year.",
+        "1st year boys (juniors) are allotted Hostel A, Hostel B, or Hostel C with 3 sharing per room.",
+        "2nd and 3rd year boys are allotted Mega Hostels with 2 sharing per room.",
+        "4th year boys are allotted Old Mega Hostels, Hostel E, or Hostel D with single rooms.",
+        "PG students are allotted PG1 or PG2 with single rooms."
+      ]
+    },
+
+    "hostels_girls": {
+      "facts": [
+        "NIT Calicut has 3 girls hostels: MLH (Mega Ladies Hostel), Hostel F, and Hostel G."
+      ]
+    },
+
+    "hostels_sharing": {
+      "facts": [
+        "1st year students (juniors): 3 per room.",
+        "2nd and 3rd year students (seniors): 2 per room.",
+        "4th year students: Single room.",
+        "PG students: Single room."
+      ]
+    },
+
+    "hostel_fee": {
+      "facts": [
+        "Hostel seat rent is Rs 12,000 per semester (charged extra, not included in tuition fee totals)."
+      ]
+    },
+
+    "mess": {
+      "timings": {
+        "breakfast": "7 AM - 9 AM",
+        "lunch": "12 PM - 2 PM",
+        "evening_snacks": "4 PM - 5 PM",
+        "dinner": "7 PM - 9 PM"
+      }
+    },
+
+    "fee_structure": {
+      "program": "B.Tech 2025-26 batch",
+      "categories": {
+        "category_1_open_ews_obc_above_5L": {
+          "description": "Open/EWS/OBC with family income above Rs 5 lakh + DASA(CIWG)/MEA",
+          "tuition_per_semester": "Rs 62,500",
+          "other_fees_monsoon": {
+            "total": "Rs 19,100",
+            "breakdown": {
+              "registration": "Rs 2,000",
+              "examination": "Rs 2,000",
+              "activities": "Rs 600",
+              "association_cultural": "Rs 1,200",
+              "student_welfare": "Rs 1,200",
+              "career_development": "Rs 1,200",
+              "library": "Rs 4,000",
+              "computing": "Rs 600",
+              "internet": "Rs 1,200",
+              "sports": "Rs 1,200",
+              "health": "Rs 1,200",
+              "medical_insurance": "Rs 1,500",
+              "campus_amenities": "Rs 1,200"
+            }
+          },
+          "other_fees_winter": {
+            "total": "Rs 6,400",
+            "note": "Only Registration, Examination, Activities, Career Development, and Computing fees charged in winter semester"
+          },
+          "one_time_fees": {
+            "total": "Rs 61,000",
+            "breakdown": {
+              "caution_deposit": "Rs 20,000",
+              "admission_fee": "Rs 5,000",
+              "campus_development": "Rs 25,000",
+              "alumni_association": "Rs 5,000",
+              "convocation": "Rs 5,000",
+              "id_card": "Rs 1,000"
+            }
+          },
+          "semester_totals": {
+            "first_semester_monsoon": "Rs 1,42,600",
+            "second_semester_winter": "Rs 68,900",
+            "subsequent_monsoon": "Rs 81,600",
+            "subsequent_winter": "Rs 68,900"
+          }
+        },
+        "category_2_open_ews_obc_1_to_5L": {
+          "description": "Open/EWS/OBC with family income Rs 1-5 lakh",
+          "tuition_per_semester": "Rs 20,833 (one-third of full tuition)",
+          "other_fees": "Same as Category 1",
+          "one_time_fees": "Same as Category 1",
+          "semester_totals": {
+            "first_semester_monsoon": "Rs 1,00,933",
+            "second_semester_winter": "Rs 27,233"
+          }
+        },
+        "category_3_below_1L_sc_st_ph": {
+          "description": "Open/EWS/OBC with family income below Rs 1 lakh + SC/ST/PH",
+          "tuition_per_semester": "Rs 0 (fully waived)",
+          "other_fees": "Same as Category 1",
+          "one_time_fees": "Same as Category 1",
+          "semester_totals": {
+            "first_semester_monsoon": "Rs 80,100",
+            "second_semester_winter": "Rs 6,400"
+          }
+        },
+        "dasa_non_ciwg_non_saarc": {
+          "description": "DASA Non-CIWG Non-SAARC international students",
+          "tuition_per_semester": "USD 4,000"
+        },
+        "dasa_non_ciwg_saarc": {
+          "description": "DASA Non-CIWG SAARC international students",
+          "tuition_per_semester": "USD 2,000"
+        }
+      },
+      "notes": "Hostel seat rent Rs 12,000 per semester is extra and not included in totals above. Some fees are annual and charged only in the Monsoon semester."
+    },
+
+    "wifi": {
+      "facts": [
+        "WiFi and LAN are both available at NIT Calicut."
+      ]
+    },
+
+    "attendance": {
+      "facts": [
+        "NIT Calicut has a unique attendance range: Maximum 80%, Minimum 70%.",
+        "This differs from most NITs which have a flat 75% requirement."
+      ]
+    },
+
+    "clubs": {
+      "list": [
+        "DnD (Dance & Dramatics)",
+        "CM (Club Mathematica)",
+        "Enquiry Club",
+        "AV Club (movies)",
+        "ISTE Club"
+      ]
+    },
+
+    "fests": {
+      "facts": [
+        "Ragam: Cultural fest of NIT Calicut.",
+        "Tathva: Technical fest of NIT Calicut."
+      ]
+    },
+
+    "laundry": {
+      "facts": [
+        "Washing machines are available in NIT Calicut hostels."
+      ]
+    },
+
+    "elections": {
+      "facts": [
+        "Election positions at NIT Calicut: General Secretary (Gen Sec), UGAS, Technical Affairs Council, Student Affairs Council."
+      ]
+    },
+
+    "sports": {
+      "facts": [
+        "Cricket, Volleyball, Kho-Kho, Kabaddi, Football, and Badminton are available at NIT Calicut."
+      ]
+    },
+
+    "canteen": {
+      "facts": [
+        "5 canteens on NIT Calicut campus: Milma, Swadhistam, Cochin, Samtrupthi, and Amul."
+      ]
+    },
+
+    "shops": {
+      "facts": [
+        "COPS (Co-operative Store) is available on NIT Calicut campus."
+      ]
+    },
+
+    "fines": {
+      "facts": [
+        "Late entry after 12 AM midnight more than 3 times: Rs 1,000 fine.",
+        "Losing ID card: Rs 1,000 fine."
+      ]
+    },
+
+    "gym": {
+      "facts": [
+        "Two gyms available at NIT Calicut: NITC Gym and Mega Gym."
+      ]
+    },
+
+    "health_centre": {
+      "facts": [
+        "Health Center is available on NIT Calicut campus."
+      ]
+    },
+
+    "restaurants": {
+      "nearby": ["Over The Moon (OTM) on Kattangal, Mukkam Road"],
+      "delivery_apps": ["Swiggy Instamart", "Dominos", "Zomato"]
+    },
+
+    "nearby_places": {
+      "tourist": ["Kozhikode Beach", "SM Street", "Kappad Beach", "Tali Temple", "Kozhippara Falls", "Mananchira Square"],
+      "malls": ["Gokulam Mall", "HiLite Mall", "Focus Mall"]
+    },
+
+    "language": {
+      "facts": [
+        "Local languages: Malayalam, Hindi, English.",
+        "College languages: Malayalam, Telugu, Hindi, Tamil, English."
+      ]
+    },
+
+    "climate": {
+      "facts": [
+        "Tropical monsoon climate with high humidity, hot summers, and heavy rainfall."
+      ]
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "college": "IIT-Kanpur",
+  "source_pdf": "IIT-Kanpur-ChE-Brochure-2025-26.pdf",
+  "total_pages": 19,
+  "image_pages": 4,
+  "text_chars": 16024,
+  "extraction_method": "pymupdf4llm",
+  "ocr_applied": true,
+  "structured_data": {
+    "institute": "IIT-Kanpur",
+    "year": "2025-26",
+    "top_recruiters": [
+      "Bajaj",
+      "Ey",
+      "Mckinsey"
+    ]
+  }
+}

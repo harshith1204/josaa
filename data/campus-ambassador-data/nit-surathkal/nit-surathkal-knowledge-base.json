@@ -1,0 +1,79 @@
+{
+  "college": "NIT Surathkal",
+  "full_name": "National Institute of Technology Karnataka, Surathkal",
+  "sources": ["hostel_fee_structure_pdf", "attendance_policy_image"],
+  "data_date": "2026-04-05",
+  "data_quality": "very_limited",
+  "notes": "Ambassador only shared PDFs and images. No text messages about campus life, hostels, clubs, fests, restaurants, transport, etc.",
+
+  "sections": {
+    "overview": {
+      "facts": [
+        "NIT Surathkal (National Institute of Technology Karnataka, Surathkal, NITK) is located at Surathkal, Mangalore, Karnataka 575025."
+      ]
+    },
+
+    "hostel_fee": {
+      "program": "B.Tech/MCA/M.Tech/MBA/M.Sc/Ph.D 2025-26 batch",
+      "new_admission": {
+        "hostel_admission_fee": "Rs 1,000",
+        "establishment_charges": {
+          "maintenance": "Rs 120",
+          "student_concession_fund": "Rs 150",
+          "mess_concession_fund": "Rs 150",
+          "goem": "Rs 550",
+          "students_medical_relief_fund": "Rs 100",
+          "vp_fund": "Rs 250",
+          "winner_cadre_overhead": "Rs 1,000",
+          "security": "Rs 20",
+          "student_contingency_fund": "Rs 70",
+          "games_task_fund": "Rs 70",
+          "diwali_fund": "Rs 30",
+          "hostel_day_celebrations": "Rs 70",
+          "recreation_committee": "Rs 130",
+          "miscellaneous": "Rs 20"
+        },
+        "total_fee": "Rs 3,900",
+        "mess_advance": "Rs 22,000",
+        "grand_total": "Rs 25,300"
+      },
+      "subsequent_semesters": {
+        "odd_semester": "Rs 34,310 (approx)",
+        "even_semester": "Rs 33,790 (approx)"
+      }
+    },
+
+    "attendance": {
+      "facts": [
+        "Minimum 75% attendance required for end-semester exams at NITK Surathkal.",
+        "The 75% requirement can be relaxed up to 65% by the Director.",
+        "An extra 5% relaxation is possible beyond the 65% threshold.",
+        "Medical exigency can further relax attendance requirement to 50%.",
+        "Students below 65% attendance are marked 'Detained' and are not allowed to sit for the end-semester exam."
+      ]
+    },
+
+    "data_gaps": [
+      "Tuition fee structure (only hostel fee available)",
+      "Hostels (names, sharing, boys/girls)",
+      "Mess (timings, cost, menu)",
+      "Clubs and societies",
+      "Fests (cultural, technical)",
+      "Restaurants and delivery apps",
+      "Transport (airport, railway, bus distances)",
+      "Tourist places nearby",
+      "Climate and weather",
+      "Languages spoken locally and in college",
+      "Sports facilities",
+      "Canteen details",
+      "Gym and fitness facilities",
+      "Medical/health centre",
+      "WiFi and internet",
+      "Laundry facilities",
+      "Shops on campus",
+      "Fines and penalties",
+      "Elections and student bodies",
+      "Room furniture and amenities"
+    ]
+  }
+}

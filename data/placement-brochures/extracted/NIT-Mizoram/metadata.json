@@ -1,0 +1,16 @@
+{
+  "college": "NIT-Mizoram",
+  "source_pdf": "NIT-Mizoram-TP-Brochure.pdf",
+  "total_pages": 16,
+  "image_pages": 0,
+  "text_chars": 6325,
+  "extraction_method": "pymupdf4llm",
+  "ocr_applied": false,
+  "structured_data": {
+    "institute": "NIT-Mizoram",
+    "year": "2025-26",
+    "top_recruiters": [
+      "Facebook"
+    ]
+  }
+}

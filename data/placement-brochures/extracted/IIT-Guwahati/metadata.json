@@ -1,0 +1,18 @@
+{
+  "college": "IIT-Guwahati",
+  "source_pdf": "IIT-Guwahati-Placement-Report-2024-25.pdf",
+  "total_pages": 21,
+  "image_pages": 2,
+  "text_chars": 19615,
+  "extraction_method": "pymupdf4llm",
+  "ocr_applied": false,
+  "structured_data": {
+    "institute": "IIT-Guwahati",
+    "year": "2024-25",
+    "total_companies": 260,
+    "top_recruiters": [
+      "Ey",
+      "Intel"
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "college": "NIT-Andhra-Pradesh",
+  "source_pdf": "NIT-Andhra-Pradesh-UG-Brochure-2025-26.pdf",
+  "total_pages": 25,
+  "image_pages": 0,
+  "text_chars": 38656,
+  "extraction_method": "pymupdf4llm",
+  "ocr_applied": false,
+  "structured_data": {
+    "institute": "NIT-Andhra-Pradesh",
+    "year": "2025-26",
+    "total_companies": 20,
+    "top_recruiters": [
+      "Accenture",
+      "Amazon",
+      "Atlassian",
+      "Bhel",
+      "Drdo",
+      "Ey",
+      "Flipkart",
+      "Infosys",
+      "Intel",
+      "Iocl",
+      "Isro",
+      "L&T",
+      "Mahindra",
+      "Meta",
+      "Ongc",
+      "Oracle",
+      "Reliance",
+      "Visa"
+    ]
+  }
+}

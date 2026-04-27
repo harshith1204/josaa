@@ -1,0 +1,141 @@
+{
+  "college": "NIT Hamirpur",
+  "sources": ["whatsapp_chat_with_ambassador", "fee_structure_pdf", "timetable_pdf", "hostel_list_image"],
+  "data_date": "2026-03-31",
+
+  "sections": {
+    "overview": {
+      "facts": [
+        "NIT Hamirpur is located in Hamirpur, Himachal Pradesh - 177 005.",
+        "5G connectivity available on campus along with WiFi and LAN.",
+        "3 free electric vehicles available for campus transport."
+      ]
+    },
+
+    "hostels_boys": {
+      "hostels": ["Kailash Boys Hostel", "Himgiri Boys Hostel", "Udaygiri Boys Hostel", "Neelkanth Boys Hostel", "Dhauladhar Boys Hostel", "Vindhyachal Boys Hostel", "Shivalik Boys Hostel"],
+      "sharing": "All hostels are 3-sharing except Neelkanth which has single rooms.",
+      "first_year": "KBH (Kailash Boys Hostel) is for first year students."
+    },
+
+    "hostels_girls": {
+      "hostels": ["Ambika Girls Hostel", "Parvati Girls Hostel", "Mani-Mahesh Girls Hostel", "Aravali Girls Hostel"]
+    },
+
+    "hostels_other": {
+      "facts": ["Satpura Hostel is also available."]
+    },
+
+    "mess": {
+      "facts": [
+        "Night canteens present in all hostels in the mess area."
+      ]
+    },
+
+    "fee_structure": {
+      "program": "B.Tech (Academic Session 2023-24 onwards)",
+      "open_category": {
+        "first_semester": 96100,
+        "second_to_seventh_semester": 83100,
+        "eighth_semester": 83600,
+        "total_4_years": "Rs 6,77,300 approx"
+      },
+      "sc_st_ph": {
+        "first_semester": 33600,
+        "second_to_seventh_semester": 20600,
+        "eighth_semester": 21100,
+        "total_4_years": "Rs 1,99,100 approx"
+      },
+      "income_below_1L": {
+        "first_semester": 33600,
+        "second_to_seventh_semester": 20600,
+        "eighth_semester": 21100
+      },
+      "income_1L_to_5L": {
+        "first_semester": 54433,
+        "second_to_seventh_semester": 41433,
+        "eighth_semester": 41933
+      },
+      "breakdown": {
+        "tuition_fee": "Rs 62,500 per semester (Open). Exempted for SC/ST/PH. 1/3rd for income 1-5L.",
+        "one_time_institute_charges": "Rs 13,000 (admission, ID card, convocation, dept society, insurance, caution money)",
+        "per_semester_institute_charges": "Rs 20,600 (exam, medical, library, welfare, cultural, technical, seminar, sports, network, common facility, hostel seat, T&P, institute development)",
+        "alumni_fee": "Rs 500 (8th semester only)"
+      },
+      "dual_degree": "Same fee structure as B.Tech for semesters 1-8. Semesters 9-10 have M.Tech tuition Rs 35,000."
+    },
+
+    "wifi": {
+      "facts": [
+        "5G connectivity available on campus.",
+        "WiFi available.",
+        "LAN available."
+      ]
+    },
+
+    "attendance": {
+      "facts": ["70% attendance is mandatory."]
+    },
+
+    "clubs": {
+      "list": ["Organisation Club", "Music Club", "PR Club", "Dance Club", "Fine Art Club", "Discipline Club", "Technical Club", "INS & Control Club", "English Club", "Decoration Club", "Hindi Club", "Informal Club", "Pixonoids", "Web Team", "Dramatics Club", "SPIC MACAY NIT Hamirpur Student Chapter"]
+    },
+
+    "fests": {
+      "list": [
+        {"name": "HillFair", "type": "Cultural fest"},
+        {"name": "Nimbus", "type": "Technical fest"},
+        {"name": "Laalkar", "type": "Sports/other fest"}
+      ]
+    },
+
+    "sports": {
+      "facts": ["Separate grounds available.", "SAC (Student Activity Centre) available.", "Separate gyms available.", "Separate indoor stadiums available."]
+    },
+
+    "canteen": {
+      "outlets": ["NS Cafe", "4H", "Booth4", "Varca", "Eat N Sleep", "Pizza Words"],
+      "night_canteen": "Night canteens present in all hostels in mess area.",
+      "delivery": "Swiggy, Zomato, and Blinkit are all available."
+    },
+
+    "laundry": {
+      "facts": ["Laundries available on campus — pay per use."]
+    },
+
+    "elections": {
+      "facts": ["No student elections at NIT Hamirpur."]
+    },
+
+    "fines": {
+      "facts": ["End semester fine for late registration.", "Backlog fines apply."]
+    },
+
+    "medical": {
+      "facts": ["Hospital available in hostel area.", "Free for students."]
+    },
+
+    "transport": {
+      "facts": ["Dharamshala Airport is 30 km from campus.", "Una Railway Station is 30 km from campus.", "3 electric vehicles available in college for free campus transport."]
+    },
+
+    "restaurants": {
+      "nearby": ["Hotspot", "Dominos", "Lapinous", "Lucknow Food Court"],
+      "delivery": "Swiggy, Zomato, and Blinkit available."
+    },
+
+    "nearby_places": {
+      "tourist": ["Shimla", "Dharamshala", "Manali", "Chandigarh"],
+      "shopping": ["Alikrita Mall", "North Stone", "Hideing Mall"]
+    },
+
+    "language_climate": {
+      "note": "Located in Himachal Pradesh — hilly terrain, cold winters."
+    },
+
+    "academics": {
+      "timetable": "1st year even semester timetable (Jan-May 2026) available. 10 sections (A through J + Z for B.Arch). Classes run 9 AM to 6 PM.",
+      "courses_1st_year": "MA-121 (Maths), PH-101 (Physics), CY-101/102 (Chemistry), CS-121 (Computer Science), EE-101/102 (Electrical), EC-101 (Electronics), CE-101 (Civil/Engineering Drawing), ME-101/102 (Mechanical/Workshop), EN-101 (English), MB-101, HS-101/102/103 (Humanities)"
+    }
+  }
+}

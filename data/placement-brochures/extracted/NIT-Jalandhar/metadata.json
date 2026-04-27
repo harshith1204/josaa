@@ -1,0 +1,19 @@
+{
+  "college": "NIT-Jalandhar",
+  "source_pdf": "NIT-Jalandhar-Placement-Brochure-2024.pdf",
+  "total_pages": 29,
+  "image_pages": 0,
+  "text_chars": 30317,
+  "extraction_method": "pymupdf4llm",
+  "ocr_applied": false,
+  "structured_data": {
+    "institute": "NIT-Jalandhar",
+    "year": "2023-24",
+    "total_companies": 18,
+    "top_recruiters": [
+      "Ey",
+      "Google",
+      "Intel"
+    ]
+  }
+}

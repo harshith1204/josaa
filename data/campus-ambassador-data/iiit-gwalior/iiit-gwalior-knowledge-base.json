@@ -1,0 +1,142 @@
+{
+  "college": "IIIT Gwalior",
+  "full_name": "ABV-Indian Institute of Information Technology and Management, Gwalior",
+  "sources": ["whatsapp_chat_with_ambassador", "mess_schedule_image", "timetable_pdf", "telegram_export_photos", "telegram_export_videos"],
+  "data_date": "2026-04-06",
+  "note": "Fee structure was shared as Google Drive link, not in export. Telegram export processed: 48 photos + 6 videos uploaded to R2, labelled in media-index.json.",
+
+  "sections": {
+    "overview": {
+      "facts": [
+        "ABV-IIITM Gwalior is an Institute of National Importance under Ministry of Education, Government of India.",
+        "Departments: Information Technology, Computer Science and Engineering, Electrical and Electronics, Engineering Sciences, Management Studies.",
+        "Cycles allowed inside campus."
+      ]
+    },
+
+    "hostels": {
+      "boys": [
+        {"name": "IVH", "year": "1st year", "sharing": "4-sharing", "note": "Attached washroom"},
+        {"name": "Satpura", "year": "1st year", "sharing": "3-sharing"},
+        {"name": "BH-2", "year": "2nd year", "sharing": "2-sharing", "note": "CG above 8 can get single room"},
+        {"name": "BH-1", "year": "3rd, 4th, 5th year", "sharing": "Single room"},
+        {"name": "BH-3", "year": "3rd, 4th, 5th year", "sharing": "Single room"},
+        {"name": "Aravali", "year": "Unknown", "sharing": "Unknown", "note": "Confirmed from Telegram photo — Hindi signage reads Aravali Chhatrawas"}
+      ],
+      "girls": "GH — all girls hostel, same sharing pattern as boys.",
+      "first_year_allocation": "IVH or Satpura based on branch. Mess is in the same hostel.",
+      "gate_timing": "Main gate closes at 10 PM. Late entry fine of Rs 5,000. Applies to both boys and girls.",
+      "room_furniture": "Bed (mattress on floor), desk/table, chair, curtained window, electrical outlets, tube light — confirmed from Telegram hostel room photos."
+    },
+
+    "mess": {
+      "facts": [
+        "1st year students eat at mess in their hostel (IVH or Satpura).",
+        "Cafeteria serves veg food.",
+        "OAT canteen serves non-veg food.",
+        "Night canteen available in specific hostels only, timing 10 PM to 2 AM."
+      ],
+      "schedule_summary": "Weekly mess schedule includes: Idli, Dosa, Paratha, Egg Bhurji, Chila for breakfast. Rice, Dal, Sabji, Papad for lunch. Pav Bhaji, Samosa, Pakoda, Chat for snacks. Roti, Rice, Dal, various sabji for dinner. Mix of North Indian cuisine."
+    },
+
+    "fee_structure": {
+      "status": "PENDING — ambassador will provide updated PDF later"
+    },
+
+    "wifi": {
+      "facts": ["Free WiFi available across entire campus including hostels."]
+    },
+
+    "attendance": {
+      "facts": [
+        "75% attendance is mandatory.",
+        "If below 75%, must submit medical certificate. Otherwise not allowed to appear in exam."
+      ]
+    },
+
+    "clubs": {
+      "list": ["Music Club", "Acting Club", "Dance Club", "Coding Club", "Science Club", "Sports Club"]
+    },
+
+    "fests": {
+      "list": [
+        {"name": "Aurora", "type": "Cultural fest"},
+        {"name": "Infotsav", "type": "Technical fest"},
+        {"name": "Urga", "type": "Sports fest"},
+        {"name": "Celistia", "type": "Cultural fest"}
+      ]
+    },
+
+    "sports": {
+      "facilities": ["Cricket", "Football", "Volleyball", "Swimming", "Tennis", "Badminton", "Squash", "Table Tennis", "Basketball", "Gym"],
+      "confirmed_from_photos": ["Sports complex building", "Football ground", "Tennis court", "Open Air Theatre (OAT) — large amphitheatre"]
+    },
+
+    "canteen": {
+      "outlets": ["Cafeteria (veg)", "OAT canteen (non-veg)"],
+      "night_canteen": "Available in specific hostels only, 10 PM to 2 AM."
+    },
+
+    "laundry": {
+      "facts": [
+        "1st year: Laundry service Rs 800/month or pay per pair.",
+        "From 2nd year: Continue service or buy washing machine in group."
+      ]
+    },
+
+    "gym": {
+      "facts": ["Single gym for both boys and girls."]
+    },
+
+    "medical": {
+      "facts": ["Hospital inside campus near all hostels. Free of cost.", "Hospital building confirmed from Telegram photo."]
+    },
+
+    "campus_facilities": {
+      "facts": [
+        "Convention hall with red carpeted stage, projector, podium — used for events and seminars.",
+        "Open Air Theatre (OAT) — large sandstone amphitheatre with tiered seating.",
+        "Auditorium building on campus.",
+        "Bio diversity park within campus.",
+        "International Visitors Hostel (IVH) — also used for 1st year students.",
+        "Lecture hall complex with multiple halls.",
+        "Management Studies department — Block 1.",
+        "EEE Department building.",
+        "Library building on campus.",
+        "Main gate with ABV-IIITM signage in Hindi and English."
+      ]
+    },
+
+    "telegram_media": {
+      "total_photos": 48,
+      "total_videos": 6,
+      "uploaded_to_r2": true,
+      "media_index": "iiit-gwalior-media-index.json",
+      "r2_urls": "iiit-gwalior-r2-urls.json",
+      "sections_covered": ["campus", "hostels_boys", "academics", "mess", "canteen", "sports", "medical"]
+    },
+
+    "transport": {
+      "facts": [
+        "Gwalior Railway Station is 3-4 km from campus.",
+        "Gwalior Airport is 6 km from campus.",
+        "Cycles allowed inside campus."
+      ]
+    },
+
+    "restaurants": {
+      "nearby": ["Biryani by Kilo", "Molecule", "Grace Foods", "Deccan Dhum", "Tandoori Knights"],
+      "delivery": "Swiggy and Zomato available."
+    },
+
+    "nearby_places": {
+      "tourist": ["Gwalior Fort (3 km)", "Sun Temple", "Italian Garden", "Tighra Dam", "Tomb of Tansen", "Zoo"],
+      "shopping": ["DB Mall (3-4 km)", "DD Mall (4-5 km)", "Badha Market (4-5 km)"]
+    },
+
+    "language_climate": {
+      "language": "Hindi is the local language. Professors teach in Hindi and English.",
+      "climate": "Very cold in winter (12-14°C, usually around 18°C). Very hot in summer (up to 42°C)."
+    }
+  }
+}

@@ -1,0 +1,271 @@
+{
+  "college": "NIT Kurukshetra",
+  "full_name": "National Institute of Technology, Kurukshetra",
+  "sources": ["whatsapp_chat_with_ambassador", "fee_structure_pdf", "mess_menu_image"],
+  "data_date": "2026-04-03",
+
+  "sections": {
+    "overview": {
+      "facts": [
+        "NIT Kurukshetra (National Institute of Technology) is located at Thanesar, Kurukshetra, Haryana, 136119, India.",
+        "Language spoken: Hindi.",
+        "Climate: Extremely cold in January-February, mildly cold in October-December, extremely hot in June-August, mildly hot in March-May."
+      ]
+    },
+
+    "transport": {
+      "facts": [
+        "Kurukshetra Junction Railway Station is the nearest railway station to NIT Kurukshetra.",
+        "There is no airport at Kurukshetra.",
+        "Nearest airports are Delhi and Chandigarh international airports.",
+        "Cab, bus, and train facilities are available from Delhi and Chandigarh to Kurukshetra."
+      ]
+    },
+
+    "hostels_boys": {
+      "facts": [
+        "NIT Kurukshetra has 11 boys hostels (H1 to H11).",
+        "H1 Hostel: 3 sharing rooms, for 1st year students.",
+        "H2 Hostel: 3 sharing rooms, for 1st year students.",
+        "H3 Hostel: 3 sharing rooms, for 1st year students.",
+        "H4 Hostel: 1-2 sharing rooms, for 2nd/3rd year students.",
+        "H5 Hostel: 1-2 sharing rooms, for 2nd/3rd year students.",
+        "H6 Hostel: 1-2 sharing rooms, for 2nd/3rd year students.",
+        "H7 Hostel: 1-2 sharing rooms, for 2nd/3rd year students.",
+        "H8 Hostel: Single rooms, for 3rd year students.",
+        "H9 Hostel: Single rooms, for 3rd year students.",
+        "H10 Hostel (Visvesvaraya Bhawan): 1-2-3 sharing rooms, for 2nd/3rd/4th year students.",
+        "H11 Hostel: 2 sharing rooms, for MTech/PhD students.",
+        "Mess is located inside the hostel.",
+        "1st year boys are allotted 3-sharing rooms in H1, H2, or H3. Senior students get 1 or 2 sharing in H4-H7. 3rd years can get single rooms in H8/H9."
+      ]
+    },
+
+    "hostels_girls": {
+      "facts": [
+        "NIT Kurukshetra has 2 girls hostels.",
+        "Cauvery Hostel: For 1st and 2nd year girls.",
+        "Kalpana Hostel: For 3rd and 4th year girls.",
+        "Mess is located inside the hostel."
+      ]
+    },
+
+    "mess": {
+      "location": "Inside the hostel",
+      "daily_mandatory": "Milk, Sprouts, and Banana served every day",
+      "eggs": "Eggs served on Monday, Wednesday, Thursday, Friday, and Sunday",
+      "mess_schedule": {
+        "monday": {
+          "breakfast": "Aaloo Pyaz Roti/Paratha, Chutney, Tea",
+          "lunch": "Rajma, Pulka, Jeera Rice, Dahi, Chapati, Salad, Achaar",
+          "snacks": "Hot Milk",
+          "dinner": "Kadai Paneer, Tandoori/Missi Roti, Mix Dal, Chapati"
+        },
+        "tuesday": {
+          "breakfast": "Bread, Butter, Jam/Sauce/Achaar",
+          "lunch": "Kadi Pakoda, Sambhar, Rice, Chapati, Dahi, Salad, Achaar",
+          "snacks": "Hot Milk",
+          "dinner": "Missi Roti, Rice, Chana Dal, Ice Cream, Chapati, Salad, Achaar"
+        },
+        "wednesday": {
+          "breakfast": "Upma, Chutney, Two Biscuits",
+          "lunch": "Arhar Dal, Palak Paneer, Rice, Chapati",
+          "snacks": "Hot Milk",
+          "dinner": "Aloo Zeera, Dal Makhni, Kheer"
+        },
+        "thursday": {
+          "breakfast": "Paneer Pyaj Parantha, Tea, Dahi",
+          "lunch": "White Chana Gravy, Moong Dal, Chapati, Salad, Achaar",
+          "snacks": "Hot Fried snack",
+          "dinner": "Charcoal Paneer/Bhindi, Malka Dal"
+        },
+        "friday": {
+          "breakfast": "Bread, Butter, Jam/Sauce/Achaar",
+          "lunch": "Fried Rice, Rajma, Seasonal Veg, Chapati, Salad, Achaar, Thundar",
+          "snacks": "Snack (not specified)",
+          "dinner": "Dahi/Chapati, Chabani, Achaar"
+        },
+        "saturday": {
+          "breakfast": "Veg Mayo Sandwich, Bread, Tea",
+          "lunch": "Aloo Zeera, Chana/Chole Dal, Fried Rice, Dahi, Chapati, Pagad, Salad, Achaar",
+          "snacks": "Milk",
+          "dinner": "White Chana Gravy, Musoor Dal, Chapati"
+        },
+        "sunday": {
+          "breakfast": "Chole Kachha, Nampal Chutney",
+          "lunch": "Veg Biryani, Black Chana Dry, Chapati, Salad, Achaar",
+          "snacks": "Pav Bhaji + Tea",
+          "dinner": "Paneer Bhurji/Chilli Paneer, Rajma/Masoor, Tawa Roti, Achaar"
+        }
+      },
+      "cuisine": "Predominantly North Indian food with Haryanvi touches. Staples include chapati, dal, rice, rajma, paneer dishes, and parathas."
+    },
+
+    "fee_structure": {
+      "program": "B.Tech (same structure applies to B.Arch & Planning)",
+      "per_semester": true,
+      "categories": {
+        "General_OBC_EWS_above_5L": {
+          "tuition_fee": "Rs 62,500 per semester",
+          "student_activity_fee": "Rs 5,800 per semester",
+          "institute_dev_fund": "Rs 3,700 per semester",
+          "career_dev_fee": "Rs 800 per semester",
+          "examination_fee": "Rs 1,700 per semester",
+          "seat_rent": "Rs 5,200 per semester",
+          "medical_insurance": "Rs 1,900 per year (odd semesters)",
+          "one_time_fees": {
+            "alumni": "Rs 2,600",
+            "student_welfare": "Rs 1,100",
+            "admission": "Rs 1,700",
+            "watch_and_ward": "Rs 5,900",
+            "convocation": "Rs 2,500",
+            "library_fee": "Rs 700"
+          },
+          "refundable_deposits": {
+            "institute_security": "Rs 7,300",
+            "library_security": "Rs 1,700"
+          },
+          "annual_fees": {
+            "campus_amenities": "Rs 1,100 per year",
+            "entrepreneurship": "Rs 1,100 per year"
+          },
+          "hostel_room_rent": {
+            "triple_sharing": "Rs 4,200 per semester",
+            "double_sharing": "Rs 7,300 per semester",
+            "single_sharing": "Rs 10,500 per semester"
+          },
+          "total_1st_sem_triple": "Rs 1,11,500",
+          "total_1st_sem_double": "Rs 1,14,600",
+          "total_1st_sem_single": "Rs 1,17,800",
+          "subsequent_sem_triple": "Rs 83,900 to Rs 88,000 approx"
+        },
+        "General_OBC_EWS_1_to_5L": {
+          "tuition_fee": "Rs 20,833 per semester (1/3rd of full)",
+          "other_fees": "Same as above",
+          "total_1st_sem_triple": "Rs 70,000 approx"
+        },
+        "SC_ST_PwD": {
+          "tuition_fee": "Rs 0 (fully waived)",
+          "other_fees": "Same as above except tuition",
+          "total_1st_sem_triple": "Rs 49,000 approx"
+        }
+      }
+    },
+
+    "wifi": {
+      "facts": [
+        "Jio 4G and Airtel 5G mobile networks work at NIT Kurukshetra.",
+        "Hostel rooms have WLAN (wireless LAN) connectivity."
+      ]
+    },
+
+    "attendance": {
+      "facts": [
+        "75% attendance is mandatory at NIT Kurukshetra."
+      ]
+    },
+
+    "clubs": {
+      "societies": ["Microbus", "Anant", "MecSoc", "SEC", "Electro", "Synth"],
+      "clubs": ["Colors Club", "SPEC", "LSD", "SUC"]
+    },
+
+    "fests": {
+      "facts": [
+        "Techspardha: Technical fest of NIT Kurukshetra.",
+        "Confluence: Cultural fest of NIT Kurukshetra."
+      ]
+    },
+
+    "laundry": {
+      "facts": [
+        "Laundry facilities are available with washing machines at NIT Kurukshetra."
+      ]
+    },
+
+    "elections": {
+      "facts": [
+        "No student elections are held at NIT Kurukshetra."
+      ]
+    },
+
+    "sports": {
+      "facilities": [
+        "Football Ground",
+        "Cricket Ground",
+        "Hockey Ground",
+        "Kabaddi Ground",
+        "Volleyball Courts",
+        "Basketball Courts",
+        "Tennis Courts",
+        "400m Athletics Track",
+        "Badminton Courts",
+        "Table Tennis",
+        "Chess/Indoor Games",
+        "Gymnasium/Fitness Center",
+        "Swimming Pool (Olympic-size)",
+        "Sports Complex/Stadium"
+      ]
+    },
+
+    "canteen": {
+      "facts": [
+        "Night canteen available at NIT Kurukshetra.",
+        "Maggi Hotspot available at night.",
+        "NIT Market available during daytime for essentials."
+      ]
+    },
+
+    "shops": {
+      "facts": [
+        "Juice shop on campus.",
+        "Haircut shop on campus.",
+        "Grocery shops on campus.",
+        "Dominos on campus.",
+        "Fruit shop on campus."
+      ]
+    },
+
+    "fines": {
+      "late_registration": [
+        "1 week late: Rs 1,000",
+        "2 weeks late: Rs 2,000",
+        "1 month late: Rs 5,000",
+        "After teaching period closes: Rs 10,000"
+      ]
+    },
+
+    "gym": {
+      "facts": [
+        "Separate boys gym and girls gym.",
+        "Free/Unpaid for all students."
+      ]
+    },
+
+    "health_centre": {
+      "facts": [
+        "Health center available on campus.",
+        "Fee is included in the semester fee.",
+        "Timings: 9 AM to 7 PM."
+      ]
+    },
+
+    "restaurants": {
+      "nearby": ["Kurukshetra Kitchen", "Pipli Restaurant", "Chefon", "RK Family Restaurant", "Eat & Fun", "Sahil Sweet House"],
+      "delivery_apps": "Not mentioned"
+    },
+
+    "nearby_places": {
+      "tourist": ["Krishna Museum", "Bramha Sarovar", "Kali Matha Temple"],
+      "malls": ["Kesal Mall", "Divine Mall", "Zudio"]
+    },
+
+    "language": {
+      "facts": ["Hindi is the primary language spoken in and around NIT Kurukshetra."]
+    },
+
+    "climate": {
+      "facts": ["Extremely cold in January-February. Mildly cold in October-December. Extremely hot in June-August. Mildly hot in March-May. Kurukshetra experiences extreme seasonal variations."]
+    }
+  }
+}

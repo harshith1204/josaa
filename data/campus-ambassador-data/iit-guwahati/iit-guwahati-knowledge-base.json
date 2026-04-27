@@ -1,0 +1,183 @@
+{
+  "college": "IIT Guwahati",
+  "sources": ["whatsapp_chat_with_ambassador", "fee_structure_pdf"],
+  "data_date": "2026-03-31",
+
+  "sections": {
+    "overview": {
+      "facts": [
+        "IIT Guwahati is located in Guwahati, Assam - 781039.",
+        "The campus has 13 hostels in total.",
+        "E-autos and e-buggy (paid) are available for transport within campus."
+      ]
+    },
+
+    "hostels_boys": {
+      "sharing": "1st and 2nd year + M.Tech 1st year: sharing rooms. 3rd and 4th year + PhD + M.Tech 2nd year: single rooms.",
+      "facts": [
+        "Brahmaputra Hostel — 1st & 2nd year sharing, 3rd & 4th year single room. Has its own mess.",
+        "Lohit Hostel — same sharing and mess pattern as Brahmaputra.",
+        "Kapili Hostel — same sharing and mess pattern.",
+        "Dihing Hostel — same sharing and mess pattern.",
+        "Kameng Hostel — same sharing and mess pattern.",
+        "Umiam Hostel — same sharing and mess pattern.",
+        "Barak Hostel — same sharing and mess pattern.",
+        "Siang Hostel — same sharing and mess pattern.",
+        "Manas Hostel — same sharing and mess pattern.",
+        "Gaurang Hostel — M.Tech 1st year, double sharing, same mess."
+      ]
+    },
+
+    "hostels_girls": {
+      "facts": [
+        "Subhansiri Hostel — same sharing and mess pattern as boys hostels.",
+        "Disang Hostel — same sharing and mess pattern.",
+        "Dhansiri Hostel — same sharing and mess pattern."
+      ]
+    },
+
+    "hostels_other": {
+      "facts": [
+        "Married Scholar Hostel available for married PhD candidates."
+      ]
+    },
+
+    "mess": {
+      "facts": [
+        "Each hostel has its own mess.",
+        "Mess advance is Rs 22,000 per semester (included in hostel fees)."
+      ]
+    },
+
+    "fee_structure": {
+      "program": "B.Tech/B.Des (General, General-EWS, OBC-NCL paying full fee)",
+      "joining_year": "July 2025",
+      "first_semester": {
+        "tuition": 100000,
+        "hostel_mess_related": 33200,
+        "refundable_deposit": 12000,
+        "other_fees_onetime": 20800,
+        "total": 166000
+      },
+      "subsequent_semesters": {
+        "tuition": 100000,
+        "hostel_mess_related": 33200,
+        "other_fees": 10000,
+        "total_approx": 143200,
+        "note": "Medical insurance premium at actual added in even semesters"
+      },
+      "total_4_years": "Rs 11,68,400 + Medical Insurance Premium",
+      "hostel_includes": "Hostel fund, hostel rent, maintenance charges, electricity, water, mess advance Rs 22,000",
+      "other_fees_include": "Registration Rs 2000, Examination Rs 500, Academic facilities Rs 3000, Benevolent fund Rs 100, Gymkhana Rs 2000, Medical Rs 500, Travel fund Rs 100, Welfare Rs 500, Students Fees Rs 1300",
+      "one_time_admission": "Rs 10,800 non-refundable at time of admission",
+      "refundable_deposit": "Rs 12,000 (1st semester only)"
+    },
+
+    "wifi": {
+      "facts": [
+        "WiFi and LAN are available on campus."
+      ]
+    },
+
+    "attendance": {
+      "facts": [
+        "75% attendance requirement.",
+        "Depends on professor — some are strict, some are lenient."
+      ]
+    },
+
+    "clubs": {
+      "list": ["Lumier", "Debsoc (Debating Society)", "Litsoc (Literary Society)", "Palates", "Equinox", "Cadance", "Octaves", "Expressions"]
+    },
+
+    "fests": {
+      "list": [
+        {"name": "Techniche", "type": "Technical fest"},
+        {"name": "Alcheringa", "type": "Cultural fest"},
+        {"name": "Spirit", "type": "Sports fest"},
+        {"name": "Virasat", "type": "Heritage/cultural fest"}
+      ]
+    },
+
+    "sports": {
+      "facilities": ["Cricket", "Badminton", "Table Tennis", "Archery", "Lawn Tennis", "Football", "Volleyball", "Athletics", "Kabbadi", "Kho Kho"],
+      "gyms": "2 central gyms for boys, 1 for girls. Every hostel also has its own gym."
+    },
+
+    "canteen": {
+      "facts": [
+        "Every hostel has its own canteen.",
+        "Lohit hostel canteen closes at 4 AM.",
+        "Remaining hostel canteens close at 1 AM."
+      ]
+    },
+
+    "shops": {
+      "on_campus": ["Cycle repair shop", "Tailor shop", "Footwear shop", "Laptop repair shop", "Salon", "General store"]
+    },
+
+    "laundry": {
+      "facts": [
+        "Laundry available in all hostels.",
+        "Paid laundry service available in Lohit hostel."
+      ]
+    },
+
+    "fines": {
+      "facts": [
+        "Registration fine of Rs 500.",
+        "Disciplinary fines may apply."
+      ]
+    },
+
+    "elections": {
+      "positions": [
+        "Vice President of Gymkhana Council",
+        "General Secretary - Sports Board",
+        "General Secretary - Student Welfare Board",
+        "General Secretary - Hostel Affairs Board",
+        "General Secretary - Student Welfare Committee",
+        "General Secretary - Student Academic Board",
+        "Senators - UG",
+        "Senators - PG",
+        "Senators - Girls"
+      ]
+    },
+
+    "medical": {
+      "facts": [
+        "Hospital on campus.",
+        "Free for students and campus members."
+      ]
+    },
+
+    "transport": {
+      "facts": [
+        "Kamakhya Railway Station is 12 km from campus.",
+        "Guwahati Railway Station is 9.1 km from campus.",
+        "Lokpriya Gopinath Bordoloi International Airport is 21 km from campus.",
+        "E-autos and e-buggy (paid) available within campus for transport."
+      ]
+    },
+
+    "restaurants": {
+      "on_campus": ["Lauriat", "Urban Tadka"],
+      "delivery": "Swiggy and Zomato have access to campus."
+    },
+
+    "nearby_places": {
+      "tourist": ["Shillong", "Guwahati City", "Kaziranga National Park", "Laitlum Canyon", "Gangtok", "Dzukou Valley", "Tawang", "Aizawl", "Cherrapunji", "Dawki"],
+      "shopping": [
+        "NCS Square Mall (12 km)",
+        "Zudio (9 km)",
+        "West Side (10 km)",
+        "City Central Mall (13 km)"
+      ]
+    },
+
+    "language_climate": {
+      "language": "Hindi and English used on campus.",
+      "climate": "Winter lasts long at IIT Guwahati."
+    }
+  }
+}

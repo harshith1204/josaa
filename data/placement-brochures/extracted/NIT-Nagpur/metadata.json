@@ -1,0 +1,23 @@
+{
+  "college": "NIT-Nagpur",
+  "source_pdf": "VNIT-Nagpur-ECE-Brochure-2024-25.pdf",
+  "total_pages": 26,
+  "image_pages": 4,
+  "text_chars": 16517,
+  "extraction_method": "pymupdf4llm",
+  "ocr_applied": true,
+  "structured_data": {
+    "institute": "NIT-Nagpur",
+    "year": "2024-25",
+    "top_recruiters": [
+      "Adobe",
+      "Drdo",
+      "Ey",
+      "Google",
+      "Intel",
+      "Isro",
+      "Microsoft",
+      "Visa"
+    ]
+  }
+}

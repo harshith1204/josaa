@@ -1,0 +1,23 @@
+{
+  "college": "IIT-Dharwad",
+  "source_pdf": "IIT-Dharwad-Placement-Brochure.pdf",
+  "total_pages": 16,
+  "image_pages": 1,
+  "text_chars": 23122,
+  "extraction_method": "pymupdf4llm",
+  "ocr_applied": true,
+  "structured_data": {
+    "institute": "IIT-Dharwad",
+    "top_recruiters": [
+      "Cognizant",
+      "Drdo",
+      "Ey",
+      "Intel",
+      "L&T",
+      "Microsoft",
+      "Nvidia",
+      "Schlumberger",
+      "Tcs"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "college": "IIT-BHU",
+  "source_pdf": "IIT-BHU-Placement-Brochure.pdf",
+  "total_pages": 37,
+  "image_pages": 2,
+  "text_chars": 36461,
+  "extraction_method": "pymupdf4llm",
+  "ocr_applied": false,
+  "structured_data": {
+    "institute": "IIT-BHU",
+    "year": "2023-24",
+    "total_companies": 35,
+    "top_recruiters": [
+      "Ey",
+      "Google",
+      "Intel",
+      "Isro",
+      "Meta",
+      "Microsoft",
+      "Shell"
+    ]
+  }
+}

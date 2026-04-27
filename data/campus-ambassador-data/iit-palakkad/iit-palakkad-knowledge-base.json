@@ -1,0 +1,169 @@
+{
+  "college": "IIT Palakkad",
+  "sources": ["whatsapp_chat_with_ambassador", "fee_structure_pdf", "elections_image"],
+  "data_date": "2026-04-04",
+
+  "sections": {
+    "overview": {
+      "facts": [
+        "IIT Palakkad is located at Kanjikode, Palakkad, Kerala - 678623."
+      ]
+    },
+
+    "hostels": {
+      "first_year": [
+        {"name": "Brindavani", "for": "1st year boys"},
+        {"name": "Tilang", "for": "1st year girls"}
+      ],
+      "remaining_years": [
+        {"name": "Malhar", "for": "Combined boys and girls"},
+        {"name": "Saveri", "for": "Combined boys and girls"}
+      ]
+    },
+
+    "mess": {
+      "fee": "Rs 35,000 (paid separately from tuition fees)"
+    },
+
+    "fee_structure": {
+      "program": "B.Tech",
+      "breakdown": {
+        "registration_enrollment": 300,
+        "examination": 500,
+        "tuition": 100000,
+        "hostel_seat_rent": 6500,
+        "electricity_water_swd": 1200,
+        "total": 108500
+      },
+      "mess_fee_separate": 35000,
+      "notes": [
+        "Mess fee Rs 35,000 is paid separately.",
+        "Fee structure from official PDF."
+      ]
+    },
+
+    "wifi": {
+      "facts": ["5G and LAN connection available."]
+    },
+
+    "attendance": {
+      "facts": ["85% mandatory attendance."]
+    },
+
+    "clubs": {
+      "cultural": [
+        {"name": "Grafica", "type": "Arts"},
+        {"name": "Vadya", "type": "Music"},
+        {"name": "Sync To Beat", "type": "Dance"},
+        {"name": "Lifestyle Club", "type": "Lifestyle"},
+        {"name": "Yogshala", "type": "Yoga"},
+        {"name": "Athletics Club", "type": "Athletics"}
+      ],
+      "technical": [
+        {"name": "YACC", "full_name": "Yet Another Coding Club", "type": "Coding"},
+        {"name": "TRC", "full_name": "The Robotics Club", "type": "Robotics"},
+        {"name": "DAC", "full_name": "Data Analysis Club", "type": "Data Analysis"},
+        {"name": "Finance Club", "type": "Finance"},
+        {"name": "Astronomy Club", "type": "Astronomy"},
+        {"name": "Y-DYUTHI", "type": "Electrical and Electronics"}
+      ]
+    },
+
+    "fests": {
+      "list": [
+        {"name": "Petrichor", "type": "Major fest"}
+      ]
+    },
+
+    "sports": {
+      "outdoor": [
+        "Cricket ground",
+        "Football ground",
+        "Basketball court",
+        "Volleyball court"
+      ],
+      "indoor": [
+        "Badminton courts",
+        "Table Tennis",
+        "Chess"
+      ]
+    },
+
+    "canteen": {
+      "outlets": [
+        "Amul (10 am to 7 pm)",
+        "Nescafe (9 am to 12 pm)",
+        "3 local canteens (8 am to 12 pm)"
+      ]
+    },
+
+    "shops": {
+      "facts": ["New City Mart", "Ezee Mart"]
+    },
+
+    "laundry": {
+      "facts": [
+        "Free washing machines available in every hostel.",
+        "Each hostel has a separate washing machine room."
+      ]
+    },
+
+    "elections": {
+      "positions": [
+        "Students General Secretary (x2)",
+        "Academic Affairs Secretary",
+        "Media and Cultural Affairs Secretary",
+        "Hostel Affairs Secretary (x2)",
+        "Sports Affairs Secretary",
+        "Technical Affairs Secretary",
+        "Post Graduate Affairs Secretary",
+        "Research Affairs Secretary"
+      ],
+      "total_positions": 10
+    },
+
+    "fines": {
+      "facts": [
+        "Rs 500 per day for coming late to college after semester holiday."
+      ]
+    },
+
+    "gym": {
+      "facts": [
+        "2 gyms available on campus.",
+        "All free, for both boys and girls."
+      ]
+    },
+
+    "medical": {
+      "facts": [
+        "Medical insurance provided.",
+        "Covers 100+ hospitals all over India.",
+        "Free of cost."
+      ]
+    },
+
+    "transport": {
+      "facts": [
+        "Local railway station: Kanjikode.",
+        "Main railway station: Palakkad Junction.",
+        "Nearest airport: Coimbatore."
+      ]
+    },
+
+    "restaurants": {
+      "nearby": ["Ginger", "Malabar"],
+      "delivery": "Swiggy and Zomato available. Instamart not available."
+    },
+
+    "nearby_places": {
+      "tourist": ["Malampuzha Dam", "Palakkad Fort"],
+      "shopping": "Malls under construction."
+    },
+
+    "language_climate": {
+      "language": "Telugu, Malayalam, Hindi, and Tamil are spoken.",
+      "climate": "Rainy season mid May to September. Summer February to April. Winter remaining months, not too cold."
+    }
+  }
+}

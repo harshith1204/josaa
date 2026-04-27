@@ -1,0 +1,202 @@
+{
+  "college": "IIIT Manipur",
+  "full_name": "Indian Institute of Information Technology Senapati, Manipur",
+  "sources": ["whatsapp_chat_with_ambassador", "fee_structure_pdf_ocr"],
+  "data_date": "2026-04-02",
+
+  "sections": {
+    "overview": {
+      "facts": [
+        "IIIT Manipur (Indian Institute of Information Technology Senapati, Manipur) is an IIIT established under PPP mode.",
+        "Permanent campus is under construction. Temporary campus is at NH-39, Mantripukhri, Heingang, Manipur 795002.",
+        "Campus is surrounded by Police HQ, High Court, and CRPF, making it a calm and secure location.",
+        "Mountain views from campus, Langol Hills located behind the campus."
+      ]
+    },
+
+    "hostels": {
+      "boys": [
+        {"name": "HB-1 to HB-7", "location": "Inside campus", "rooms": "Minimum 12 rooms each", "sharing": "Maximum 4 per room"},
+        {"name": "KMR Hostel", "location": "2 km from campus", "floors": 6, "rooms_per_floor": 14, "sharing": "Maximum 2 per room", "note": "Bus service provided to campus"},
+        {"name": "Mantripukhri Hostel", "location": "300 m from campus", "floors": 5, "sharing": "Based on room size"}
+      ],
+      "girls": [
+        {"name": "Girls Hostels (2)", "location": "Within campus", "floors": 3, "rooms_per_floor": 6, "sharing": "Based on room size"}
+      ]
+    },
+
+    "mess": {
+      "facts": [
+        "Mess advance is Rs 45,000 per semester (Rs 9,000 x 5 months).",
+        "Mess deposit of Rs 5,000 in first semester (refundable)."
+      ],
+      "timings": {
+        "breakfast_regular": "7:00 AM - 9:00 AM",
+        "breakfast_holidays": "7:30 AM - 9:30 AM",
+        "lunch": "12:00 PM - 2:00 PM",
+        "snacks": "4:30 PM - 5:30 PM",
+        "dinner": "7:00 PM - 9:00 PM"
+      }
+    },
+
+    "fee_structure": {
+      "per_semester": {
+        "tuition": 140000,
+        "exam_fee": 2400,
+        "gymkhana": 2000,
+        "hostel_rent": 8000,
+        "fan_electricity_water": 2000,
+        "hostel_fund": 2000,
+        "mess_advance": 45000
+      },
+      "first_semester_only": {
+        "admission_fee": 5000,
+        "caution_money_refundable": 10000,
+        "mess_deposit_refundable": 5000,
+        "hall_mess_establishment": 1000
+      },
+      "periodic": {
+        "medical_insurance_per_year": 2500,
+        "medical_insurance_note": "Charged in odd semesters",
+        "alumni_fee_4th_sem": 6000,
+        "convocation_fee_8th_sem": 6000
+      },
+      "grand_total_sem_1": 224900,
+      "category_concession": "NO concession for any category"
+    },
+
+    "wifi": {
+      "facts": [
+        "No institute WiFi. Jio 5G is available in every hostel with decent speed."
+      ]
+    },
+
+    "attendance": {
+      "facts": [
+        "75% attendance is mandatory per subject."
+      ]
+    },
+
+    "clubs": {
+      "technical": [
+        {"name": "VIDYUT", "focus": "VLSI and Embedded Systems"},
+        {"name": "SYNAPSE", "focus": "AI/ML"},
+        {"name": "Coding Club", "focus": "DSA"},
+        {"name": "Cyber Security Club", "focus": "Cyber Security"},
+        {"name": "Android Dev Club", "focus": "Android Development"},
+        {"name": "Cloud Computing Club", "focus": "Cloud Computing"},
+        {"name": "Mathematica", "focus": "Mathematics"},
+        {"name": "Web Dev Club", "focus": "Web Development"}
+      ],
+      "cultural": [
+        {"name": "YouTube X Film Making", "focus": "Film Making"},
+        {"name": "Photography Club", "focus": "Photography"},
+        {"name": "Sketchers Studio", "focus": "Art and Sketching"},
+        {"name": "Octavia Music", "focus": "Music"},
+        {"name": "Stand-up IIITM", "focus": "Stand-up Comedy"},
+        {"name": "Fashion Fusion", "focus": "Fashion"}
+      ],
+      "additional": [
+        {"name": "Qurbat"},
+        {"name": "Darshanam", "focus": "Literature and Debate"},
+        {"name": "Readers Club", "focus": "Reading"}
+      ]
+    },
+
+    "fests": {
+      "list": [
+        {
+          "name": "Ahouba",
+          "type": "Annual fest",
+          "duration": "3 days",
+          "features": ["Invited singers and bands", "Coding competitions", "Hackathons", "Project showcases", "Music", "Dance", "Stand-up comedy", "Fashion shows", "Cash prizes", "Food stalls"]
+        }
+      ]
+    },
+
+    "sports": {
+      "sports_list": ["Football", "E-Sports", "Badminton", "Chess", "Kabaddi", "Table Tennis", "Athletics", "Volleyball", "Cricket", "Basketball"],
+      "facilities": [
+        "Common cricket/football ground",
+        "2 badminton courts",
+        "1 basketball court",
+        "2 table tennis setups",
+        "2 volleyball courts"
+      ]
+    },
+
+    "gym": {
+      "facts": [
+        "No gym inside campus.",
+        "Gym available in front of campus at Rs 1,000 per month."
+      ]
+    },
+
+    "medical": {
+      "facts": [
+        "No clinic on campus. Only basic first aid is available.",
+        "Medical insurance provided to all students (Rs 2,500 per year)."
+      ]
+    },
+
+    "fines": {
+      "facts": [
+        "Fines are not imposed unless the matter reaches Director level.",
+        "ID card loss: Rs 10,000 fine.",
+        "Serious indiscipline: Rs 10,000 fine."
+      ]
+    },
+
+    "elections": {
+      "facts": [
+        "Student council elections held once every 2 semesters.",
+        "Some positions are reserved by year and gender."
+      ]
+    },
+
+    "transport": {
+      "facts": [
+        "Imphal Airport is 12 km from campus.",
+        "Dimapur Railway Station is 190 km from campus.",
+        "Guwahati Railway Station is 450 km from campus.",
+        "KMR Hostel (2 km away) has bus service to campus."
+      ]
+    },
+
+    "restaurants": {
+      "nearby": ["KK South Indian Cafe (near campus)", "D4 Cafe (near campus)"],
+      "after_3km": ["Dominos", "KFC", "Le Zara", "Blue Moon", "Pizza Hut"],
+      "delivery": "Swiggy and Zomato available, deliver to boys hostel till 9 PM."
+    },
+
+    "nearby_places": {
+      "tourist": [
+        "Marjing Polo Statue (5.3 km)",
+        "Kangla Fort (4 km)",
+        "Langol Hills (behind campus)",
+        "Loktak Lake (50 km)",
+        "Waterfalls mostly closed due to security concerns"
+      ],
+      "shopping": [
+        "Mamcy Mall (3 km, has KFC)",
+        "Kumecs City Centre (10 km, has Vishal Mart)",
+        "Bazaar India Rudraksha Mall",
+        "Airport Shopping Mall (10 km)"
+      ],
+      "groceries": [
+        "A3 Mart (200 m)",
+        "Fruit/vegetable market (200 m)"
+      ]
+    },
+
+    "language_climate": {
+      "language": "Campus language is English and Hindi. Locals also understand English and Hindi.",
+      "climate": {
+        "average": "25C morning, 15C night",
+        "winter": "18C morning, 5-6C night, heavy fog",
+        "summer": "25-30C morning, 20-22C night",
+        "monsoon": "Heavy rains during monsoon season"
+      }
+    }
+  }
+}

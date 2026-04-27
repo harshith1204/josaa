@@ -1,0 +1,167 @@
+{
+  "college": "IIT Patna",
+  "full_name": "Indian Institute of Technology Patna",
+  "sources": ["whatsapp_chat_with_ambassador", "fee_structure_pdf", "clubs_fests_image"],
+  "data_date": "2026-04-04",
+
+  "sections": {
+    "overview": {
+      "facts": [
+        "IIT Patna (Indian Institute of Technology Patna) is located at Bihta, Patna, Bihar 801106.",
+        "Languages spoken: Bhojpuri, Hindi, and English (English mostly on campus only).",
+        "Climate: Summer 35-45C with heatwaves. Monsoon has moderate to heavy rain. Winter 5-15C with fog. Spring and Autumn are pleasant. Weather described as pretty weird and confusing."
+      ]
+    },
+
+    "transport": {
+      "facts": [
+        "Airport is accessible via cabs, autos, and buses.",
+        "Bihta is the nearest railway station to IIT Patna.",
+        "Danapur and Patna Junction are also nearby railway stations.",
+        "Patna Bus Stand and Pataliputra Bus Stand serve IIT Patna.",
+        "Ola and Uber are available."
+      ]
+    },
+
+    "hostels_boys": {
+      "facts": [
+        "IIT Patna has 3 boys hostels.",
+        "CV Raman Hostel is for 1st year boys with 3 per room.",
+        "Aryabhatta Hostel A+B is for 2nd year boys with 2 per room.",
+        "Kalam Hostel C+D is for 3rd and 4th year boys with 2 per room.",
+        "1st year boys are allotted 3-sharing rooms in CV Raman. Senior boys get 2-sharing rooms."
+      ]
+    },
+
+    "hostels_girls": {
+      "facts": [
+        "IIT Patna has 2 girls hostels.",
+        "Aryabhatta Hostel is for 1st year girls.",
+        "Asima Hostel is for 2nd year and 3rd/4th year girls."
+      ]
+    },
+
+    "mess": {
+      "assignment": "Each hostel has its own separate mess. All 1st year students eat in the CV Raman mess (combined)."
+    },
+
+    "fee_structure": {
+      "program": "B.Tech 2025 batch",
+      "first_semester": {
+        "indian": "Rs 1,64,750",
+        "international": "Rs 3,64,750",
+        "breakdown": {
+          "one_time_campus_amenities_refundable": "Rs 20,000",
+          "one_time_hostel_refundable": "Rs 5,000",
+          "academic": "Rs 10,750",
+          "tuition": "Rs 1,00,000",
+          "hostel": "Rs 6,500",
+          "other_institute": "Rs 14,000",
+          "gymkhana": "Rs 5,000",
+          "transport": "Rs 1,500",
+          "health_insurance": "Rs 2,000"
+        }
+      },
+      "second_semester_onwards": {
+        "indian": "Rs 1,25,000"
+      },
+      "concessions": {
+        "SC_ST_PH": "Tuition fee exempted",
+        "below_1_lakh_income": "Full fee remission",
+        "1_to_5_lakh_income": "2/3rd fee remission"
+      }
+    },
+
+    "wifi": {
+      "facts": [
+        "WiFi is available in all hostels.",
+        "LAN is available in CV Raman and Aryabhatta hostels.",
+        "Kalam hostel has WiFi only (no LAN).",
+        "5G network is available.",
+        "Poor mobile network in academic departments but WiFi is available there."
+      ]
+    },
+
+    "attendance": {
+      "facts": [
+        "75% attendance is mandatory per semester per course at IIT Patna.",
+        "Below 75% means not eligible for exam and must do a summer term.",
+        "Valid medical reasons are accepted as exceptions."
+      ]
+    },
+
+    "clubs": {
+      "hosca_cultural": ["Exousia", "Aria", "Quiz Club", "Vincestroke", "Yavanika", "Anime Club", "HOOT", "Hexachrome", "Pixxel", "Syahi"],
+      "stc_technical": ["Tinkerers Lab", "Robocon IITP", "MoodBoard Design", "Sparkonics", "Astronomy & Particle Physics Club", "NJACK-ML", "NJACK-CP", "NJACK-Dev", "NJACK-CyberSec", "ChessX", "IITPMotorsports", "Finance Club", "MatES"],
+      "sports": ["Athletics", "Badminton", "Basketball", "Cricket", "Chess", "Football", "Table Tennis", "Lawn Tennis", "Volleyball", "Squash", "Weightlifting/Powerlifting", "Skating"]
+    },
+
+    "fests": {
+      "facts": [
+        "Celesta (tech fest).",
+        "Anwesha (cultural fest).",
+        "Infinito (sports fest).",
+        "TEDx is organized at IIT Patna."
+      ]
+    },
+
+    "laundry": {
+      "facts": [
+        "Each hostel block has separate laundry facilities. Laundry is paid from this year.",
+        "External laundry service Cleanologist is available outside the hostel."
+      ]
+    },
+
+    "elections": {
+      "facts": [
+        "Elections are held for 1st, 2nd, and 3rd year students.",
+        "Positions: Sports Secretary, HoSCA (Head of Student Cultural Affairs), SWB (Student Welfare Board), AIR (Alumni and Industrial Relations, new for 3rd to 4th year), Hostel Affairs Secretary.",
+        "Vice President position is only for students going to 4th year and requires having held a position before."
+      ]
+    },
+
+    "sports": {
+      "facts": [
+        "Cricket, Volleyball, Badminton, Basketball, Table Tennis, Lawn Tennis, Football, Hockey, Chess, and Carrom Board are available."
+      ]
+    },
+
+    "canteen": {
+      "facts": [
+        "Food Court on campus with 2 food shops and 1 grocery/snacks shop.",
+        "Additional shops are available outside Gate 1."
+      ]
+    },
+
+    "medical": {
+      "facts": [
+        "Institute hospital with ambulance facility, located far from hostels.",
+        "NSMCH (Medical College Hospital) is outside campus. Students show ID card, pay first, then get reimbursed via a form."
+      ]
+    },
+
+    "restaurants": {
+      "on_campus": ["Food Court"],
+      "bihta": ["Banjara", "Shahi Darbar", "Bihari Thaath"],
+      "cafes": ["Chai Sutta Bar", "Momo cafes"],
+      "patna_city": ["Pista House", "Barkaas"]
+    },
+
+    "nearby_places": {
+      "near_campus": ["Bihta surroundings", "Temples"],
+      "patna": ["Golghar", "Buddha Smriti Park", "Patna Museum", "Marine Drive"],
+      "weekend_trips": ["Rajgir", "Nalanda", "Bodh Gaya"],
+      "long_trips": ["Sikkim", "Darjeeling", "Mussoorie", "Rishikesh", "Delhi", "Jaipur", "Kolkata"],
+      "malls_patna": ["P&M Mall", "City Centre Patna", "Vasundhara Metro Mall"],
+      "malls_bihta": ["V-Mart"]
+    },
+
+    "language": {
+      "facts": ["Bhojpuri, Hindi, and English are spoken around IIT Patna. English is mostly used on campus only."]
+    },
+
+    "climate": {
+      "facts": ["Summer: 35-45C with heatwaves. Monsoon: moderate to heavy rain. Winter: 5-15C with fog. Spring/Autumn: pleasant. Weather is described as pretty weird and confusing."]
+    }
+  }
+}

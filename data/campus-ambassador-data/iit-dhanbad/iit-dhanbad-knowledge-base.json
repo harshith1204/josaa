@@ -1,0 +1,164 @@
+{
+  "college": "IIT Dhanbad",
+  "full_name": "Indian Institute of Technology (Indian School of Mines), Dhanbad",
+  "sources": ["whatsapp_chat_with_ambassador", "fee_structure_image", "hostel_allocation_pdf", "college_directory_pdf", "timetable_image"],
+  "data_date": "2026-04-02",
+
+  "sections": {
+    "overview": {
+      "facts": [
+        "IIT (ISM) Dhanbad is located in Dhanbad district, Jharkhand - 826004.",
+        "Formerly known as Indian School of Mines, established in 1926.",
+        "One of the oldest technical institutions in India."
+      ]
+    },
+
+    "hostels_boys": {
+      "hostels": [
+        {"name": "Aquamarine", "for": "4th yr UG, 3rd yr UG (23E), 1st yr PhD (newly admitted July 2025), Integrated M.Tech (20E & 21E) + Dual Degree, Double Major"},
+        {"name": "Jasper", "for": "1st yr B.Tech including Prep, 8th yr PhD, 7th yr PhD, 6th-4th yr PhD (multiple departments), 2nd yr PhD, 1st yr PhD (shifted from Sapphire)"},
+        {"name": "Amber", "for": "2nd yr UG (24E), 2nd yr MBA, 2nd yr M.Sc, 3rd/2nd yr M.Tech, 2nd yr MA, Internship M.Tech 2nd yr, 1st yr PhD (newly admitted July 2025), Summer sem backlog"},
+        {"name": "Topaz", "for": "5th yr Ph.D, 4th yr Ph.D, 2nd yr Ph.D, 1st yr Ph.D/MMS"},
+        {"name": "Sapphire", "for": "1st yr M.Tech, 2nd yr M.Sc Tech"},
+        {"name": "Diamond", "for": "3rd yr M.Sc, 1st yr M.A, 1st yr M.Sc Tech"}
+      ],
+      "sharing": "Every hostel has 2 members per room except New Rosaline (1st, 2nd, 3rd year) which has 3 members per room."
+    },
+
+    "hostels_girls": {
+      "hostels": [
+        {"name": "Emerald", "for": "3rd yr PhD, 2nd yr PhD, 1st yr PhD, Int. PhD"},
+        {"name": "Opal", "for": "8th-4th yr PhD (multiple departments)"},
+        {"name": "Ruby & Rosaline", "for": "4th yr B.Tech, 2nd yr B.Tech, M.Sc Tech, M.Tech, MBA, MA, 1st yr PhD (newly July 2025), 1st yr B.Tech"}
+      ]
+    },
+
+    "mess": {
+      "facts": [
+        "Every hostel has their own mess."
+      ]
+    },
+
+    "fee_structure": {
+      "note": "Fee structure from official consolidated fee payment table (Annexure A). B.Tech/M.Tech/Dual Degree fees visible in image.",
+      "btech_approximate": "First semester total approximately Rs 2,25,000+ (includes tuition Rs 1,00,000, hostel, mess, one-time fees). Exact breakdown from image OCR needed for precision.",
+      "status": "Fee image kept for reference — detailed extraction pending"
+    },
+
+    "wifi": {
+      "facts": [
+        "WiFi available across campus.",
+        "WiFi and LAN available in every hostel but connection details change per hostel."
+      ]
+    },
+
+    "attendance": {
+      "facts": [
+        "No mandatory 75% attendance rule.",
+        "Attendance policy is more relaxed compared to other IITs/NITs."
+      ]
+    },
+
+    "clubs": {
+      "from_directory": [
+        {"name": "ARKA", "type": "Aeronautics and Space Technology Club", "year": 2017},
+        {"name": "Fotofreaks", "type": "Photography Club"},
+        {"name": "RoboISM", "type": "Robotics and Tech Club", "year": 2009},
+        {"name": "Abhay", "type": "Dramatics Club"},
+        {"name": "Quiz Club", "year": 2011},
+        {"name": "Lights Camera ISM (LCI)", "type": "Filmography Club"},
+        {"name": "Data and Software Technology Club (formerly Cyber Labs)", "type": "Programming and Tech Club"},
+        {"name": "Literary and Debating Club", "type": "LitDeb"}
+      ],
+      "note": "Many more clubs listed in College Directory 2024 PDF."
+    },
+
+    "fests": {
+      "list": [
+        {"name": "Khanan", "type": "Annual Geo-Mining Fest — biggest mining fest in India, 3-day summit"},
+        {"name": "Srijan", "type": "Biggest Socio-Cultural Fest of Eastern India, since 1977. Annual footfall 30,000+ from 200+ colleges. Prize money Rs 6 lakh+"},
+        {"name": "Parakram", "type": "Annual Sports Fest"},
+        {"name": "Basant", "type": "Alumni Convention (annual)"},
+        {"name": "Concetto", "type": "Annual Techno-Management Fest"}
+      ]
+    },
+
+    "sports": {
+      "facts": [
+        "Parakram is the annual sports fest.",
+        "Multiple sports facilities available on campus."
+      ]
+    },
+
+    "canteen": {
+      "facts": [
+        "Every hostel has separate canteens.",
+        "One main canteen on campus."
+      ]
+    },
+
+    "shops": {
+      "facts": [
+        "Hostels have shops.",
+        "Some shops on ground floor of library building."
+      ]
+    },
+
+    "laundry": {
+      "facts": [
+        "No washing machines available.",
+        "Dhobis (washermen) are available for laundry service."
+      ]
+    },
+
+    "elections": {
+      "system": "Conducted like state elections — MLA equivalent is Senate, CM equivalent is President.",
+      "posts": ["President", "Chairperson", "Finance Convenor", "Gen Sec Cultural and Media", "Gen Sec Sports", "Gen Sec Tech"],
+      "note": "Senate posts are assigned by the President."
+    },
+
+    "fines": {
+      "facts": [
+        "If mobile phone taken to exam — back paper for that subject. Depends on professor."
+      ]
+    },
+
+    "gym": {
+      "facts": [
+        "Boys have separate gym.",
+        "Girls have separate gym.",
+        "Arranged for respective hostels."
+      ]
+    },
+
+    "medical": {
+      "facts": [
+        "Free if checked by doctor on campus."
+      ]
+    },
+
+    "transport": {
+      "facts": [
+        "Dhanbad Junction Railway Station is 4.2 km from campus.",
+        "Ranchi Airport is 156 km away.",
+        "Kazi Nazrul Airport in Durgapur is 90 km away.",
+        "Dhanbad Bus Station nearby."
+      ]
+    },
+
+    "restaurants": {
+      "nearby": ["Donne Biryani House (3.5 km)", "Champaran Meat House (3 km)"],
+      "delivery": "Swiggy and Zomato available."
+    },
+
+    "nearby_places": {
+      "tourist": ["Topchanchi Lake (36 km)", "Parasanath Hills (85 km)", "Sita Falls (26.5 km)", "Bhatinda Waterfalls (20.2 km)", "Maithon Dam (46 km)"],
+      "shopping": ["Ozone Mall (3.5 km)", "Prabhatam (3 km)"]
+    },
+
+    "language_climate": {
+      "language": "Hindi",
+      "climate": "Very cold winters (longer winter season). Very hot summers."
+    }
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "college": "NIT Warangal",
+  "sources": ["whatsapp_chat_with_ambassador", "hostel_fee_receipt_image", "mess_schedule_images"],
+  "data_date": "2026-03-31",
+  "ambassador": {"phone": "redacted", "email": "redacted", "branch": "B.Tech CSE", "year": "1st year (2024 batch)"},
+
+  "sections": {
+    "overview": {
+      "facts": [
+        "NIT Warangal (NITW) is a National Institute of Technology located in Warangal, Telangana - 506 004.",
+        "The campus WiFi details are available at nitw.ac.in/cdis/wificampus."
+      ]
+    },
+
+    "hostels_boys": {
+      "facts": [
+        "1.8K Hostel (Ultra Mega Hostel) is for 1st year UG students with 2-sharing rooms.",
+        "1K Block (Mega Hostel) is for B.Tech 3rd and 4th year students with 2-sharing rooms.",
+        "Azad Hall (S) is for 2nd year students with 2-sharing rooms.",
+        "Bose Hall (S) is for 2nd year students with 2-sharing rooms.",
+        "Ambedkar Hall (T) is for 2nd year students with 2-sharing rooms.",
+        "Bhabha Hall (T) is for 2nd year students with 2-sharing rooms.",
+        "14th Block is typically for PhD scholars with 2-sharing rooms.",
+        "ISH (International Students Hostel) is for DASA/ICCR students with single rooms (1 per room).",
+        "Lift is available in every hostel."
+      ]
+    },
+
+    "hostels_girls": {
+      "facts": [
+        "Priyadarshini Hall has 2-sharing rooms for girls.",
+        "Sarojini Hall has 2-sharing rooms for girls.",
+        "New LH-A, B, C (New Ladies Hostels) have 2-sharing rooms for girls."
+      ]
+    },
+
+    "mess": {
+      "boys_mess": [
+        "IFC-A (Institute Food Court A) serves 1st year students.",
+        "IFC-B (Institute Food Court B) serves 3rd and 4th year students.",
+        "IFC-C (Institute Food Court C) serves 2nd year students.",
+        "IFC-D (Institute Food Court D) serves PhD scholars.",
+        "Godavari Mess-I and Godavari Mess-II are additional messes.",
+        "Krishna Mess serves M.Tech students."
+      ],
+      "girls_mess": [
+        "Priyadarshini Mess is located in the Ladies Hostel premises.",
+        "Sarojini HoR Mess is associated with Sarojini Hall of Residence."
+      ],
+      "timing": {
+        "breakfast": "7:00 AM - 9:00 AM",
+        "lunch": "12:00 PM - 2:30 PM",
+        "dinner": "7:00 PM - 9:00 PM"
+      },
+      "mess_schedule_summary": "The mess serves a variety of South Indian, North Indian, and mixed cuisine. Breakfast includes items like Idly, Vada, Dosa, Pesarattu, Poori, Uthappam, Masala Dosa, Aloo Paratha, Maggie. Lunch includes Roti, Rice, various curries, Dal, Sambhar, Rasam. Dinner includes Roti, Rice, Paneer dishes, Pulao, various curries. Special items: Tuesday has Veg Briyani for lunch and Fruit Custard for dinner. Thursday has Rice Kheer for lunch and Jalebi for dinner. Sunday has Gulab Jamun. Friday has Watermelon.",
+      "cuisine": "Mix of South Indian and North Indian. Strong South Indian presence — Dosa, Idly, Vada, Sambhar, Rasam, Pesarattu. North Indian items like Roti, Paneer, Dal Makhni, Choley also served."
+    },
+
+    "fee_structure": {
+      "hostel_fee_per_semester": {
+        "maintenance_fee": 7500,
+        "seat_rent": 2000,
+        "water_electricity": 5500,
+        "mess_fee": 12000,
+        "total": 27000
+      },
+      "note": "This is hostel fee only (₹27,000/semester). Tuition fee and other academic fees are separate. Data from actual student fee receipt dated 14-Dec-2025 for Even semester 2025-26."
+    },
+
+    "wifi": {
+      "facts": [
+        "WiFi is available campus-wide at NIT Warangal.",
+        "Details available at nitw.ac.in/cdis/wificampus."
+      ]
+    },
+
+    "attendance": {
+      "facts": [
+        "NIT Warangal strictly requires a minimum of 80% attendance in each course to appear for end-semester examinations.",
+        "Students are expected to maintain 100% attendance.",
+        "Maximum 20% condonation is allowed by the HOD for valid reasons (medical/calamity).",
+        "Attendance is calculated from the class commencement date, not registration date."
+      ]
+    },
+
+    "clubs": {
+      "list": ["NSS", "Dance Club", "Singing Club", "Software Engineering Club", "Hackathon Club", "Dramatics Club"]
+    },
+
+    "fests": {
+      "list": [
+        {"name": "SpringSpree", "type": "Cultural fest"},
+        {"name": "Technozion", "type": "Technical fest"},
+        {"name": "CURA", "type": "Social responsibility fest"},
+        {"name": "Ayodhan", "type": "National Sports fest"}
+      ]
+    },
+
+    "sports": {
+      "events": ["Ayodhan (National Sports Fest)", "Inter-NIT Sports Meet", "Inter-Branch/Intramural Tournaments", "FPL (Football Premier League)", "SPL (Slam Premier League - Cricket)", "Freshmen Open Competitions", "Annual Sports Day"],
+      "facilities": ["400m Track Stadium", "Synthetic Basketball Courts (Floodlit)", "Tennis Courts (Synthetic & Clay)", "Wooden Badminton Courts", "Indoor Sports Arena", "Gymnasiums (Fitness Centres)", "Hostel Recreation Rooms"],
+      "gyms": ["1.8K Hostel Gym", "1K Hostel Gym", "SAC Gym"]
+    },
+
+    "canteen": {
+      "food_outlets": ["Food Street", "Country Oven", "Taaza Tiffins"],
+      "store": "NITW Store is available on campus.",
+      "delivery": "Swiggy and Zomato operate in Warangal/Hanamkonda area including service to NIT Warangal."
+    },
+
+    "laundry": {
+      "facts": [
+        "A dedicated laundry shop is located at the Student Facility Complex, beside the Transport Section.",
+        "NITW Washerman Shop is located within campus, open daily 9:00 AM to 9:00 PM.",
+        "As of March 2026, NIT Warangal has invited tenders for Smart Laundry rooms in Mega and Ultra Mega Halls."
+      ]
+    },
+
+    "elections": {
+      "positions": [
+        "Secretaries (B.Tech Final Year): Technical, Cultural, Athletics, Film, and Music",
+        "Joint Secretaries (B.Tech III Year): Technical, Cultural, Athletics, Film, and Music",
+        "PG Representatives (Final Year): Engineering (M.Tech), MSc/MCA/MBA",
+        "UG Representatives (I, II, III, IV Year): Two per year per society",
+        "Student Representative (Nominated): Appointed by Dean (Student Welfare)",
+        "Class Representatives: One from each class/section"
+      ]
+    },
+
+    "medical": {
+      "facility": "Dispensary / Health Centre on campus.",
+      "timing": {
+        "weekdays": "9:30 AM - 1:00 PM and 3:00 PM - 6:00 PM (Monday-Friday)",
+        "weekends": "9:30 AM - 11:30 AM (Saturday & Sunday)"
+      }
+    },
+
+    "transport": {
+      "facts": [
+        "Kazipet Railway Station is 3 km from campus.",
+        "Warangal Railway Station is 9 km from campus.",
+        "Hanamkonda Bus Stand is 5 km from campus."
+      ]
+    },
+
+    "restaurants": {
+      "nearby": ["Pista House", "Chef Table", "Paradise"],
+      "delivery": "Swiggy and Zomato available."
+    },
+
+    "nearby_places": {
+      "tourist": [
+        "Thousand Pillar Temple (~7 km away) — Kakatiya heritage",
+        "Bhadrakali Temple (~8 km away) — Kakatiya heritage"
+      ],
+      "shopping": ["Trends", "West Side", "Zudio"]
+    },
+
+    "language": {
+      "facts": [
+        "Telugu is the primary local language in Warangal.",
+        "The Department of Humanities and Social Sciences has professors focusing on English Language Education, Bilingualism, and Translation.",
+        "Hindi and English are widely understood on campus."
+      ]
+    }
+  }
+}

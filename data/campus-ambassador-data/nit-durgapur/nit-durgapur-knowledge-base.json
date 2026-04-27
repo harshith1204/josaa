@@ -1,0 +1,140 @@
+{
+  "college": "NIT Durgapur",
+  "sources": ["whatsapp_chat_with_ambassador", "fee_structure_image", "mess_menu_pdf"],
+  "data_date": "2026-04-06",
+
+  "sections": {
+    "overview": {
+      "facts": [
+        "National Institute of Technology Durgapur is located at Mahatma Gandhi Avenue, A-Zone, Bardhaman, Durgapur, West Bengal 713209."
+      ]
+    },
+
+    "hostels": {
+      "boys": [
+        "H1 Netaji Subhas Chandra Bose Hall (4th year boys)",
+        "H2 Jagadish Chandra Bose Hall (3rd year boys)",
+        "H3 Rabindranath Tagore Hall (4th year boys)",
+        "H4 CV Raman Hall (MTech 2nd year boys)",
+        "H5 Swami Vivekananda Hall (MTech 1st year boys)",
+        "H9 Satyendra Nath Bose Hall (3rd year boys)",
+        "H11 Meghnad Saha Hall (1st year boys)",
+        "H14 Dr BR Ambedkar Hall (2nd year boys)"
+      ],
+      "girls": [
+        "H6 Rishi Aurobindo Hall (Foreigners girls)",
+        "H7 Sister Nivedita Hall (MTech girls)",
+        "H8 Preetilata Waddader Hall (PhD girls)",
+        "H10 Mother Teresa Hall (1st year girls)",
+        "H13 Sarojini Naidu Hall (2nd/3rd/4th year girls)"
+      ],
+      "international": [
+        "H6 Rishi Aurobindo Hall (Foreigners girls)",
+        "H12 APJ Abdul Kalam International Hall (Foreigners boys)"
+      ],
+      "total": "14 halls"
+    },
+
+    "mess": {
+      "schedule_highlights": "Monday: Puri+Matar Aloo breakfast, Fish (non-veg) or Kadai Paneer (veg). Tuesday: Uttapam with Sambhar. Wednesday: Poha+Bananas breakfast, Matar Paneer/Radhabhallavi + Chicken Do Pyaza + Gulab Jamun + Cold Drink for lunch. Thursday: Bread Butter + Egg.",
+      "notes": "Full weekly menu available in mess menu PDF. Both veg and non-veg options available."
+    },
+
+    "fee_structure": {
+      "hostel_fee": 19000,
+      "caution_deposit": 5000,
+      "source_note": "From image OCR of fee receipt, hard to read but confirmed by ambassador."
+    },
+
+    "wifi": {
+      "facts": ["Every hostel has individual WiFi with individual password and username.", "Speed is 100 Mbps."]
+    },
+
+    "attendance": {
+      "facts": [
+        "Below 75% attendance: 1 grade point deduction.",
+        "Below 50% attendance: 2 grade point deduction.",
+        "Below 25% attendance: Fail.",
+        "NIT Durgapur uses a unique grade-point deduction system rather than a simple pass/fail threshold."
+      ]
+    },
+
+    "fests": {
+      "major": [
+        "Arohan (tech fest, October)",
+        "Cultural Fest (January)"
+      ],
+      "club_fests": [
+        "Runit (January)",
+        "Recrave (October)",
+        "E-Summit (February)",
+        "Verve (March)"
+      ]
+    },
+
+    "laundry": {
+      "facts": ["No washing machines in hostels.", "Self wash only.", "Dhobi service available at Rs 15 per cloth."]
+    },
+
+    "elections": {
+      "gymkhana_positions": ["President", "Vice President", "General Secretary", "Sports Secretary", "Cultural Secretary"]
+    },
+
+    "sports": {
+      "available": ["Football", "Cricket", "Kabaddi", "Badminton", "Kho-Kho", "Yoga", "Basketball", "Running", "Athletics", "Chess", "Handball"]
+    },
+
+    "canteen": {
+      "on_campus": ["Chandu Cafe", "Wonder Cafe", "Spice Delight", "DFC", "Cafeteria", "Nescafe", "Techno"]
+    },
+
+    "fines": {
+      "late_fee": "Rs 20/day for first 15 days, Rs 50/day after 15 days"
+    },
+
+    "gym": {
+      "facilities": [
+        "One gym in girls hostel (girls only)",
+        "Second gym for both boys and girls"
+      ]
+    },
+
+    "medical": {
+      "facts": [
+        "24x7 medical facility with guidance.",
+        "Insurance card provided to students.",
+        "Rs 90,000 insurance policy.",
+        "Rs 10,000 OPD coverage."
+      ]
+    },
+
+    "transport": {
+      "railway": "Durgapur Railway Station (9 km)",
+      "bus": "City Centre Bus Station (2.3 km)",
+      "airport": "Kazi Nazrul Islam Airport (16 km)"
+    },
+
+    "restaurants": {
+      "nearby": [
+        "Suvam Hotel (1.6 km)",
+        "Peerless (1.5 km)",
+        "Fortune (1.7 km)",
+        "Citi Residency (1.6 km)",
+        "Biryani by Kilo (4.6 km)"
+      ]
+    },
+
+    "nearby_places": {
+      "tourist_nearby": ["Durgapur Barrage", "Shiv Shakti Dam"],
+      "kolkata": ["Nico Park (178 km)", "Eco Park (182 km)", "Victoria Memorial (178 km)"],
+      "dhanbad": ["Maithon Dam (60 km)", "Bhatinda Waterfalls (120 km)"],
+      "hill_station": "Darjeeling (554 km)",
+      "shopping": ["Junction Mall (2 km)", "Sentrum Mall (44 km)", "Galaxy Mall (46 km)"]
+    },
+
+    "language_climate": {
+      "language": "Bengali first, Hindi second.",
+      "climate": "Winter 25/13 C, Rainy 32/25 C, Summer 37/28 C."
+    }
+  }
+}

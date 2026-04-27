@@ -1,0 +1,151 @@
+{
+  "college": "NIT Goa",
+  "full_name": "National Institute of Technology Goa",
+  "sources": ["whatsapp_chat_with_ambassador", "mess_menu_image", "fee_structure_pdf_image_based"],
+  "data_date": "2026-04-03",
+
+  "sections": {
+    "overview": {
+      "facts": [
+        "NIT Goa (National Institute of Technology Goa) is located at Cuncolim, Goa 403703.",
+        "Languages spoken locally: Konkani; everyone speaks Hindi outside campus, some English. Languages spoken on campus: Major Telugu, Hindi + English.",
+        "Climate: Summer (hot)."
+      ]
+    },
+
+    "transport": {
+      "facts": [
+        "Dabolim/Vasco da Gama Airport is near NIT Goa.",
+        "Madgaon Railway Station is near NIT Goa.",
+        "Swiggy delivery is available at NIT Goa."
+      ]
+    },
+
+    "hostels": {
+      "facts": [
+        "NIT Goa has 2 hostels: Talpona (boys) and Terekol (girls).",
+        "All years are combined in one hostel (boys and girls separately).",
+        "1st year students get 2 per room (double sharing).",
+        "From 2nd year onwards, students get single rooms."
+      ]
+    },
+
+    "mess": {
+      "facts": [
+        "Mess at NIT Goa is run by Kuber Health Food.",
+        "Full 7-day detailed menu with breakfast, lunch, snacks, and dinner available (Monday to Sunday with specific items)."
+      ]
+    },
+
+    "fee_structure": {
+      "program": "B.Tech",
+      "notes": "Fee structure PDF is image-based (12 pages). Specific fee numbers could not be extracted from the image-based PDF. This is a data gap."
+    },
+
+    "wifi": {
+      "facts": [
+        "WiFi is available at NIT Goa with both 2.4G and 5G bands."
+      ]
+    },
+
+    "attendance": {
+      "facts": [
+        "NIT Goa requires 75% attendance in all subjects."
+      ]
+    },
+
+    "clubs": {
+      "list": [
+        "PRIME (Mathematics)",
+        "Dribble & Sizzle (Dance)",
+        "Chess Club",
+        "Coding Club (CSE, open for all)",
+        "Sports Club",
+        "Music Club",
+        "SPIE (Science)",
+        "CESCO (Civil Engineering)",
+        "Spectra (ECE)",
+        "Tesla (EEE)",
+        "Robotics (MCE, open for all)"
+      ]
+    },
+
+    "fests": {
+      "facts": [
+        "Savyaas: Main fest of NIT Goa.",
+        "Prasang: Fest at NIT Goa."
+      ]
+    },
+
+    "laundry": {
+      "facts": [
+        "3 washing machines per floor in NIT Goa hostels.",
+        "Laundry costs Rs 40 per wash at NIT Goa."
+      ]
+    },
+
+    "elections": {
+      "facts": [
+        "NIT Goa does not have student elections."
+      ]
+    },
+
+    "sports": {
+      "facts": [
+        "Football and Cricket are played on the same shared ground at NIT Goa.",
+        "1 Basketball court, 1 Volleyball court, and 1 Badminton court available at NIT Goa."
+      ]
+    },
+
+    "canteen": {
+      "facts": [
+        "2 canteens on NIT Goa campus, open till 11 PM."
+      ]
+    },
+
+    "fines": {
+      "facts": [
+        "Coming after 9 PM: Rs 5,000 fine at NIT Goa.",
+        "Caught drinking: Rs 20,000 fine at NIT Goa.",
+        "Caught smoking: Rs 10,000 fine at NIT Goa.",
+        "Property damage: Rs 5,000+ fine at NIT Goa."
+      ]
+    },
+
+    "gym": {
+      "facts": [
+        "No gym available on NIT Goa campus."
+      ]
+    },
+
+    "health_centre": {
+      "facts": [
+        "Shushruta Clinic is available on NIT Goa campus.",
+        "The clinic is free for students and operates 24/7."
+      ]
+    },
+
+    "restaurants": {
+      "nearby": ["Restaurants near Cuncolim market, approximately 1 km from campus"],
+      "delivery_apps": ["Swiggy"]
+    },
+
+    "nearby_places": {
+      "tourist": ["Palolem Beach", "Cancona Beach", "Baga Beach", "Calangute Beach", "Dudhsagar Waterfalls", "Chapora Fort"],
+      "malls": ["Big G Mall, Madgaon"]
+    },
+
+    "language": {
+      "facts": [
+        "Local language: Konkani. Everyone speaks Hindi outside campus, some English.",
+        "Campus languages: Major Telugu, Hindi + English."
+      ]
+    },
+
+    "climate": {
+      "facts": [
+        "Summer (hot) climate at NIT Goa."
+      ]
+    }
+  }
+}

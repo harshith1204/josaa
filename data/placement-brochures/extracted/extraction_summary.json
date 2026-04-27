@@ -1,0 +1,1026 @@
+{
+  "total": 45,
+  "processed": 38,
+  "skipped": 7,
+  "colleges": {
+    "IIT-BHU": {
+      "college": "IIT-BHU",
+      "source_pdf": "IIT-BHU-Placement-Brochure.pdf",
+      "total_pages": 37,
+      "image_pages": 2,
+      "text_chars": 36461,
+      "extraction_method": "pymupdf4llm",
+      "ocr_applied": false,
+      "structured_data": {
+        "institute": "IIT-BHU",
+        "year": "2023-24",
+        "total_companies": 35,
+        "top_recruiters": [
+          "Ey",
+          "Google",
+          "Intel",
+          "Isro",
+          "Meta",
+          "Microsoft",
+          "Shell"
+        ]
+      }
+    },
+    "IIT-Bhubaneswar": {
+      "college": "IIT-Bhubaneswar",
+      "source_pdf": "IIT-Bhubaneswar-Placement-Brochure-2025-26.pdf",
+      "total_pages": 30,
+      "image_pages": 3,
+      "text_chars": 69916,
+      "extraction_method": "pymupdf4llm",
+      "ocr_applied": true,
+      "structured_data": {
+        "institute": "IIT-Bhubaneswar",
+        "year": "2025-26",
+        "top_recruiters": [
+          "Accenture",
+          "Adobe",
+          "Amazon",
+          "Bain",
+          "Bhel",
+          "Bosch",
+          "Bpcl",
+          "Deloitte",
+          "Drdo",
+          "Ey",
+          "Flipkart",
+          "Goldman Sachs",
+          "Google",
+          "Hcl",
+          "Hpcl",
+          "Ibm",
+          "Infosys",
+          "Intel",
+          "Isro",
+          "Kpmg",
+          "L&T",
+          "Mahindra",
+          "Meta",
+          "Microsoft",
+          "Ongc",
+          "Oracle",
+          "Paypal",
+          "Qualcomm",
+          "Reliance",
+          "Salesforce",
+          "Shell",
+          "Siemens",
+          "Tata Motors",
+          "Tata Steel",
+          "Tcs",
+          "Vedanta",
+          "Visa",
+          "Wipro"
+        ]
+      }
+    },
+    "IIT-Bombay": {
+      "college": "IIT-Bombay",
+      "source_pdf": "IIT-Bombay-Placement-Report-2023-24.pdf",
+      "total_pages": 22,
+      "image_pages": 0,
+      "text_chars": 23140,
+      "extraction_method": "pymupdf4llm",
+      "ocr_applied": false,
+      "structured_data": {
+        "institute": "IIT-Bombay",
+        "year": "2023-24",
+        "median_package_lpa": 17.92,
+        "total_offers": 22,
+        "total_companies": 364,
+        "top_recruiters": [
+          "Ey",
+          "Intel",
+          "Meta"
+        ]
+      }
+    },
+    "IIT-Dharwad": {
+      "college": "IIT-Dharwad",
+      "source_pdf": "IIT-Dharwad-Placement-Brochure.pdf",
+      "total_pages": 16,
+      "image_pages": 1,
+      "text_chars": 23122,
+      "extraction_method": "pymupdf4llm",
+      "ocr_applied": true,
+      "structured_data": {
+        "institute": "IIT-Dharwad",
+        "top_recruiters": [
+          "Cognizant",
+          "Drdo",
+          "Ey",
+          "Intel",
+          "L&T",
+          "Microsoft",
+          "Nvidia",
+          "Schlumberger",
+          "Tcs"
+        ]
+      }
+    },
+    "IIT-Gandhinagar": {
+      "college": "IIT-Gandhinagar",
+      "source_pdf": "IIT-Gandhinagar-CDS-Brochure-2025-26.pdf",
+      "total_pages": 32,
+      "image_pages": 2,
+      "text_chars": 43072,
+      "extraction_method": "pymupdf4llm",
+      "ocr_applied": false,
+      "structured_data": {
+        "institute": "IIT-Gandhinagar",
+        "top_recruiters": [
+          "Accenture",
+          "Adobe",
+          "Amazon",
+          "Atlassian",
+          "Barclays",
+          "Bosch",
+          "Capgemini",
+          "Cognizant",
+          "Deloitte",
+          "Ey",
+          "Goldman Sachs",
+          "Google",
+          "Graviton",
+          "Hcl",
+          "Hdfc",
+          "Hero",
+          "Hsbc",
+          "Hyundai",
+          "Intel",
+          "Isro",
+          "L&T",
+          "Mahindra",
+          "Maruti",
+          "Meta",
+          "Nvidia",
+          "Oracle",
+          "Paytm",
+          "Reliance",
+          "Salesforce",
+          "Samsung",
+          "Siemens",
+          "Tata Motors",
+          "Tcs",
+          "Texas Instruments",
+          "Tower Research",
+          "Wipro",
+          "Zs Associates"
+        ]
+      }
+    },
+    "IIT-Goa": {
+      "college": "IIT-Goa",
+      "source_pdf": "IIT-Goa-Placement-Brochure-2025-26.pdf",
+      "total_pages": 25,
+      "image_pages": 2,
+      "text_chars": 36231,
+      "extraction_method": "pymupdf4llm",
+      "ocr_applied": true,
+      "structured_data": {
+        "institute": "IIT-Goa",
+        "year": "2025-26",
+        "total_companies": 160,
+        "placement_percentage": 80.0,
+        "top_recruiters": [
+          "Ey",
+          "Google",
+          "Hcl",
+          "Intel",
+          "Isro",
+          "Meta",
+          "Siemens"
+        ]
+      }
+    },
+    "IIT-Guwahati": {
+      "college": "IIT-Guwahati",
+      "source_pdf": "IIT-Guwahati-Placement-Report-2024-25.pdf",
+      "total_pages": 21,
+      "image_pages": 2,
+      "text_chars": 19615,
+      "extraction_method": "pymupdf4llm",
+      "ocr_applied": false,
+      "structured_data": {
+        "institute": "IIT-Guwahati",
+        "year": "2024-25",
+        "total_companies": 260,
+        "top_recruiters": [
+          "Ey",
+          "Intel"
+        ]
+      }
+    },
+    "IIT-Hyderabad": {
+      "college": "IIT-Hyderabad",
+      "source_pdf": "IIT-Hyderabad-AI-Brochure-2024-25.pdf",
+      "total_pages": 22,
+      "image_pages": 2,
+      "text_chars": 23868,
+      "extraction_method": "pymupdf4llm",
+      "ocr_applied": false,
+      "structured_data": {
+        "institute": "IIT-Hyderabad",
+        "year": "2024-25",
+        "top_recruiters": [
+          "Accenture",
+          "Drdo",
+          "Ey",
+          "Google",
+          "Intel",
+          "Qualcomm",
+          "Tcs"
+        ]
+      }
+    },
+    "IIT-Indore": {
+      "college": "IIT-Indore",
+      "source_pdf": "IIT-Indore-Placement-Brochure-Latest.pdf",
+      "total_pages": 26,
+      "image_pages": 2,
+      "text_chars": 41663,
+      "extraction_method": "pymupdf4llm",
+      "ocr_applied": false,
+      "structured_data": {
+        "institute": "IIT-Indore",
+        "year": "2025-26",
+        "top_recruiters": [
+          "Drdo",
+          "Ey",
+          "Google",
+          "Intel",
+          "Maruti",
+          "Meta",
+          "Qualcomm",
+          "Tcs"
+        ]
+      }
+    },
+    "IIT-Jammu": {
+      "college": "IIT-Jammu",
+      "source_pdf": "IIT-Jammu-Placement-Report-2023-24.pdf",
+      "total_pages": 9,
+      "image_pages": 4,
+      "text_chars": 4291,
+      "extraction_method": "pymupdf4llm",
+      "ocr_applied": true,
+      "structured_data": {
+        "institute": "IIT-Jammu",
+        "year": "2023-24",
+        "highest_package_lpa": 53.0,
+        "average_package_lpa": 15.5,
+        "total_companies": 175,
+        "placement_percentage": 70.8,
+        "top_recruiters": [
+          "Accenture",
+          "Ey",
+          "Graviton",
+          "L&T",
+          "Samsung"
+        ]
+      }
+    },
+    "IIT-Kanpur": {
+      "college": "IIT-Kanpur",
+      "source_pdf": "IIT-Kanpur-ChE-Brochure-2025-26.pdf",
+      "total_pages": 19,
+      "image_pages": 4,
+      "text_chars": 16024,
+      "extraction_method": "pymupdf4llm",
+      "ocr_applied": true,
+      "structured_data": {
+        "institute": "IIT-Kanpur",
+        "year": "2025-26",
+        "top_recruiters": [
+          "Bajaj",
+          "Ey",
+          "Mckinsey"
+        ]
+      }
+    },
+    "IIT-Madras": {
+      "college": "IIT-Madras",
+      "source_pdf": "IIT-Madras-Placement-Brochure-2024-25.pdf",
+      "total_pages": 26,
+      "image_pages": 0,
+      "text_chars": 45097,
+      "extraction_method": "pymupdf4llm",
+      "ocr_applied": false,
+      "structured_data": {
+        "institute": "IIT-Madras",
+        "year": "2024-25",
+        "top_recruiters": [
+          "Amazon",
+          "Bosch",
+          "Drdo",
+          "Ey",
+          "Google",
+          "Infosys",
+          "Intel",
+          "Isro",
+          "Meta"
+        ]
+      }
+    },
+    "IIT-Mandi": {
+      "college": "IIT-Mandi",
+      "source_pdf": "IIT-Mandi-Placement-Brochure-2025-26.pdf",
+      "total_pages": 20,
+      "image_pages": 0,
+      "text_chars": 26451,
+      "extraction_method": "pymupdf4llm",
+      "ocr_applied": false,
+      "structured_data": {
+        "institute": "IIT-Mandi",
+        "year": "2025-26",
+        "total_companies": 15,
+        "top_recruiters": [
+          "Accenture",
+          "Adobe",
+          "Amazon",
+          "American Express",
+          "Apple",
+          "Atlassian",
+          "Bosch",
+          "Bpcl",
+          "Cognizant",
+          "De Shaw",
+          "Deloitte",
+          "Ey",
+          "Facebook",
+          "Flipkart",
+          "Google",
+          "Hcl",
+          "Hdfc",
+          "Hpcl",
+          "Infosys",
+          "Intel",
+          "Isro",
+          "L&T",
+          "Mahindra",
+          "Microsoft",
+          "Nvidia",
+          "Qualcomm",
+          "Samsung",
+          "Siemens",
+          "Sprinklr",
+          "Texas Instruments",
+          "Uber",
+          "Wipro"
+        ]
+      }
+    },
+    "IIT-Palakkad": {
+      "college": "IIT-Palakkad",
+      "source_pdf": "IIT-Palakkad-CDC-Brochure-2025-26.pdf",
+      "total_pages": 12,
+      "image_pages": 4,
+      "text_chars": 17052,
+      "extraction_method": "pymupdf4llm",
+      "ocr_applied": true,
+      "structured_data": {
+        "institute": "IIT-Palakkad",
+        "year": "2025-26",
+        "top_recruiters": [
+          "Adobe",
+          "Drdo",
+          "Ey",
+          "Google",
+          "Intel",
+          "Isro"
+        ]
+      }
+    },
+    "NIT-Allahabad": {
+      "college": "NIT-Allahabad",
+      "source_pdf": "MNNIT-Allahabad-Placement-Brochure-2025.pdf",
+      "total_pages": 26,
+      "image_pages": 1,
+      "text_chars": 38762,
+      "extraction_method": "pymupdf4llm",
+      "ocr_applied": false,
+      "structured_data": {
+        "institute": "NIT-Allahabad",
+        "year": "2024-25",
+        "top_recruiters": [
+          "Accenture",
+          "Adobe",
+          "Amazon",
+          "American Express",
+          "Apple",
+          "Atlassian",
+          "Bajaj",
+          "Bhel",
+          "Bosch",
+          "Bpcl",
+          "Capgemini",
+          "Cognizant",
+          "Deloitte",
+          "Deutsche Bank",
+          "Ey",
+          "Facebook",
+          "Flipkart",
+          "Goldman Sachs",
+          "Google",
+          "Hcl",
+          "Hero",
+          "Hpcl",
+          "Ibm",
+          "Infosys",
+          "Intel",
+          "Intuit",
+          "Isro",
+          "Jp Morgan",
+          "L&T",
+          "Mahindra",
+          "Maruti",
+          "Microsoft",
+          "Morgan Stanley",
+          "Nvidia",
+          "Oracle",
+          "Paypal",
+          "Phonepe",
+          "Pwc",
+          "Qualcomm",
+          "Reliance",
+          "Salesforce",
+          "Samsung",
+          "Shell",
+          "Siemens",
+          "Sprinklr",
+          "Tata Steel",
+          "Tcs",
+          "Uber",
+          "Vedanta",
+          "Visa",
+          "Vmware",
+          "Wipro",
+          "Zs Associates"
+        ]
+      }
+    },
+    "NIT-Andhra-Pradesh": {
+      "college": "NIT-Andhra-Pradesh",
+      "source_pdf": "NIT-Andhra-Pradesh-UG-Brochure-2025-26.pdf",
+      "total_pages": 25,
+      "image_pages": 0,
+      "text_chars": 38656,
+      "extraction_method": "pymupdf4llm",
+      "ocr_applied": false,
+      "structured_data": {
+        "institute": "NIT-Andhra-Pradesh",
+        "year": "2025-26",
+        "total_companies": 20,
+        "top_recruiters": [
+          "Accenture",
+          "Amazon",
+          "Atlassian",
+          "Bhel",
+          "Drdo",
+          "Ey",
+          "Flipkart",
+          "Infosys",
+          "Intel",
+          "Iocl",
+          "Isro",
+          "L&T",
+          "Mahindra",
+          "Meta",
+          "Ongc",
+          "Oracle",
+          "Reliance",
+          "Visa"
+        ]
+      }
+    },
+    "NIT-Arunachal-Pradesh": {
+      "college": "NIT-Arunachal-Pradesh",
+      "source_pdf": "NIT-Arunachal-Pradesh-Placement-Brochure-2024-25.pdf",
+      "total_pages": 29,
+      "image_pages": 0,
+      "text_chars": 32988,
+      "extraction_method": "pymupdf4llm",
+      "ocr_applied": false,
+      "structured_data": {
+        "institute": "NIT-Arunachal-Pradesh",
+        "year": "2024-25",
+        "top_recruiters": [
+          "Ey",
+          "Flipkart",
+          "Google",
+          "Isro"
+        ]
+      }
+    },
+    "NIT-Bhopal": {
+      "college": "NIT-Bhopal",
+      "source_pdf": "MANIT-Bhopal-Placement-Brochure-2023-24.pdf",
+      "total_pages": 30,
+      "image_pages": 0,
+      "text_chars": 37548,
+      "extraction_method": "pymupdf4llm",
+      "ocr_applied": false,
+      "structured_data": {
+        "institute": "NIT-Bhopal",
+        "year": "2023-24",
+        "total_companies": 200,
+        "top_recruiters": [
+          "Ey",
+          "Google",
+          "Meta",
+          "Texas Instruments"
+        ]
+      }
+    },
+    "NIT-Calicut": {
+      "college": "NIT-Calicut",
+      "source_pdf": "NIT-Calicut-Placement-Brochure.pdf",
+      "total_pages": 27,
+      "image_pages": 1,
+      "text_chars": 31777,
+      "extraction_method": "pymupdf4llm",
+      "ocr_applied": false,
+      "structured_data": {
+        "institute": "NIT-Calicut",
+        "year": "2023-24",
+        "top_recruiters": [
+          "Accenture",
+          "Amazon",
+          "Bosch",
+          "Cognizant",
+          "Ey",
+          "Infosys",
+          "Intel",
+          "Reliance",
+          "Tcs",
+          "Visa"
+        ]
+      }
+    },
+    "NIT-Delhi": {
+      "college": "NIT-Delhi",
+      "source_pdf": "NIT-Delhi-Placement-Report-2021-2025.pdf",
+      "total_pages": 37,
+      "image_pages": 0,
+      "text_chars": 40468,
+      "extraction_method": "pymupdf4llm",
+      "ocr_applied": false,
+      "structured_data": {
+        "institute": "NIT-Delhi",
+        "highest_package_lpa": 82.63,
+        "average_package_lpa": 10.05,
+        "placement_percentage": 100.0,
+        "top_recruiters": [
+          "Accenture",
+          "Adobe",
+          "Amazon",
+          "American Express",
+          "Apple",
+          "Atlassian",
+          "Bosch",
+          "Capgemini",
+          "Cognizant",
+          "De Shaw",
+          "Deloitte",
+          "Drdo",
+          "Ey",
+          "Flipkart",
+          "Goldman Sachs",
+          "Google",
+          "Hcl",
+          "Hpcl",
+          "Hyundai",
+          "Ibm",
+          "Infosys",
+          "Intel",
+          "Intuit",
+          "Kpmg",
+          "L&T",
+          "Mahindra",
+          "Microsoft",
+          "Morgan Stanley",
+          "Nvidia",
+          "Oracle",
+          "Paypal",
+          "Qualcomm",
+          "Salesforce",
+          "Samsung",
+          "Siemens",
+          "Tcs",
+          "Wipro",
+          "Zs Associates"
+        ]
+      }
+    },
+    "NIT-Durgapur": {
+      "college": "NIT-Durgapur",
+      "source_pdf": "NIT-Durgapur-Placement-Brochure-2023-24.pdf",
+      "total_pages": 50,
+      "image_pages": 4,
+      "text_chars": 50123,
+      "extraction_method": "pymupdf4llm",
+      "ocr_applied": true,
+      "structured_data": {
+        "institute": "NIT-Durgapur",
+        "year": "2023-24",
+        "top_recruiters": [
+          "Ey",
+          "Ibm",
+          "Intel",
+          "Meta"
+        ]
+      }
+    },
+    "NIT-Goa": {
+      "college": "NIT-Goa",
+      "source_pdf": "NIT-Goa-Placement-Brochure-2024-25.pdf",
+      "total_pages": 31,
+      "image_pages": 0,
+      "text_chars": 39512,
+      "extraction_method": "pymupdf4llm",
+      "ocr_applied": false,
+      "structured_data": {
+        "institute": "NIT-Goa",
+        "year": "2024-25",
+        "average_package_lpa": 8.5,
+        "total_companies": 160,
+        "top_recruiters": [
+          "Drdo",
+          "Ey",
+          "Google",
+          "Intel",
+          "Meta"
+        ]
+      }
+    },
+    "NIT-Jaipur": {
+      "college": "NIT-Jaipur",
+      "source_pdf": "MNIT-Jaipur-Placement-Flier-2025-26.pdf",
+      "total_pages": 2,
+      "image_pages": 0,
+      "text_chars": 4119,
+      "extraction_method": "pymupdf4llm",
+      "ocr_applied": false,
+      "structured_data": {
+        "institute": "NIT-Jaipur",
+        "year": "2025-26",
+        "top_recruiters": [
+          "Amazon",
+          "Apple",
+          "Bajaj",
+          "Bpcl",
+          "De Shaw",
+          "Deloitte",
+          "Deutsche Bank",
+          "Ey",
+          "Flipkart",
+          "Goldman Sachs",
+          "Google",
+          "Hero",
+          "Hpcl",
+          "Intel",
+          "Jp Morgan",
+          "L&T",
+          "Maruti",
+          "Meta",
+          "Microsoft",
+          "Nvidia",
+          "Oracle",
+          "Qualcomm",
+          "Reliance",
+          "Salesforce",
+          "Samsung",
+          "Siemens",
+          "Tata Motors",
+          "Tata Steel",
+          "Visa",
+          "Zs Associates"
+        ]
+      }
+    },
+    "NIT-Jalandhar": {
+      "college": "NIT-Jalandhar",
+      "source_pdf": "NIT-Jalandhar-Placement-Brochure-2024.pdf",
+      "total_pages": 29,
+      "image_pages": 0,
+      "text_chars": 30317,
+      "extraction_method": "pymupdf4llm",
+      "ocr_applied": false,
+      "structured_data": {
+        "institute": "NIT-Jalandhar",
+        "year": "2023-24",
+        "total_companies": 18,
+        "top_recruiters": [
+          "Ey",
+          "Google",
+          "Intel"
+        ]
+      }
+    },
+    "NIT-Kurukshetra": {
+      "college": "NIT-Kurukshetra",
+      "source_pdf": "NIT-Kurukshetra-Placement-Stats-2024-25.pdf",
+      "total_pages": 2,
+      "image_pages": 0,
+      "text_chars": 5682,
+      "extraction_method": "pymupdf4llm",
+      "ocr_applied": false,
+      "structured_data": {
+        "institute": "NIT-Kurukshetra",
+        "year": "2024-25"
+      }
+    },
+    "NIT-Meghalaya": {
+      "college": "NIT-Meghalaya",
+      "source_pdf": "NIT-Meghalaya-Placement-Brochure-2023-24.pdf",
+      "total_pages": 28,
+      "image_pages": 1,
+      "text_chars": 57744,
+      "extraction_method": "pymupdf4llm",
+      "ocr_applied": true,
+      "structured_data": {
+        "institute": "NIT-Meghalaya",
+        "top_recruiters": [
+          "Bhel",
+          "Ey",
+          "Intel",
+          "Iocl",
+          "Meta",
+          "Tcs",
+          "Visa"
+        ]
+      }
+    },
+    "NIT-Mizoram": {
+      "college": "NIT-Mizoram",
+      "source_pdf": "NIT-Mizoram-TP-Brochure.pdf",
+      "total_pages": 16,
+      "image_pages": 0,
+      "text_chars": 6325,
+      "extraction_method": "pymupdf4llm",
+      "ocr_applied": false,
+      "structured_data": {
+        "institute": "NIT-Mizoram",
+        "year": "2025-26",
+        "top_recruiters": [
+          "Facebook"
+        ]
+      }
+    },
+    "NIT-Nagaland": {
+      "college": "NIT-Nagaland",
+      "source_pdf": "NIT-Nagaland-Placement-Data-2023.pdf",
+      "total_pages": 7,
+      "image_pages": 4,
+      "text_chars": 2871,
+      "extraction_method": "pymupdf4llm",
+      "ocr_applied": true,
+      "structured_data": {
+        "institute": "NIT-Nagaland",
+        "total_offers": 2
+      }
+    },
+    "NIT-Nagpur": {
+      "college": "NIT-Nagpur",
+      "source_pdf": "VNIT-Nagpur-ECE-Brochure-2024-25.pdf",
+      "total_pages": 26,
+      "image_pages": 4,
+      "text_chars": 16517,
+      "extraction_method": "pymupdf4llm",
+      "ocr_applied": true,
+      "structured_data": {
+        "institute": "NIT-Nagpur",
+        "year": "2024-25",
+        "top_recruiters": [
+          "Adobe",
+          "Drdo",
+          "Ey",
+          "Google",
+          "Intel",
+          "Isro",
+          "Microsoft",
+          "Visa"
+        ]
+      }
+    },
+    "NIT-Puducherry": {
+      "college": "NIT-Puducherry",
+      "source_pdf": "NIT-Puducherry-Placement-Brochure-2025.pdf",
+      "total_pages": 48,
+      "image_pages": 5,
+      "text_chars": 57770,
+      "extraction_method": "pymupdf4llm",
+      "ocr_applied": false,
+      "structured_data": {
+        "institute": "NIT-Puducherry",
+        "year": "2024-25",
+        "total_companies": 45,
+        "top_recruiters": [
+          "Amazon",
+          "Ey",
+          "Google",
+          "Intel",
+          "Intuit",
+          "Meta",
+          "Siemens"
+        ]
+      }
+    },
+    "NIT-Raipur": {
+      "college": "NIT-Raipur",
+      "source_pdf": "NIT-Raipur-Placement-Report-2024-25.pdf",
+      "total_pages": 2,
+      "image_pages": 0,
+      "text_chars": 8166,
+      "extraction_method": "pymupdf4llm",
+      "ocr_applied": false,
+      "structured_data": {
+        "institute": "NIT-Raipur",
+        "year": "2024-25",
+        "top_recruiters": [
+          "Accenture",
+          "Amazon",
+          "Capgemini",
+          "De Shaw",
+          "Deloitte",
+          "Hcl",
+          "Hpcl",
+          "Hyundai",
+          "Intel",
+          "Jp Morgan",
+          "L&T",
+          "Meta",
+          "Oracle",
+          "Paypal",
+          "Phonepe",
+          "Reliance",
+          "Salesforce",
+          "Samsung",
+          "Siemens",
+          "Tata Steel",
+          "Tcs",
+          "Texas Instruments",
+          "Vedanta",
+          "Visa",
+          "Wipro",
+          "Zs Associates"
+        ]
+      }
+    },
+    "NIT-Rourkela": {
+      "college": "NIT-Rourkela",
+      "source_pdf": "NIT-Rourkela-Placement-Brochure-2024-25.pdf",
+      "total_pages": 43,
+      "image_pages": 2,
+      "text_chars": 53300,
+      "extraction_method": "pymupdf4llm",
+      "ocr_applied": false,
+      "structured_data": {
+        "institute": "NIT-Rourkela",
+        "year": "2023-24",
+        "total_companies": 32,
+        "top_recruiters": [
+          "Adobe",
+          "American Express",
+          "Drdo",
+          "Ey",
+          "Facebook",
+          "Google",
+          "Ibm",
+          "Intel",
+          "Iocl",
+          "L&T",
+          "Mahindra",
+          "Meta",
+          "Microsoft",
+          "Pwc",
+          "Tata Steel"
+        ]
+      }
+    },
+    "NIT-Sikkim": {
+      "college": "NIT-Sikkim",
+      "source_pdf": "NIT-Sikkim-Placement-Brochure-2024-25.pdf",
+      "total_pages": 41,
+      "image_pages": 2,
+      "text_chars": 59982,
+      "extraction_method": "pymupdf4llm",
+      "ocr_applied": false,
+      "structured_data": {
+        "institute": "NIT-Sikkim",
+        "year": "2024-25",
+        "total_companies": 16,
+        "top_recruiters": [
+          "Apple",
+          "Ey",
+          "Intel",
+          "Isro"
+        ]
+      }
+    },
+    "NIT-Silchar": {
+      "college": "NIT-Silchar",
+      "source_pdf": "NIT-Silchar-Placement-Brochure.pdf",
+      "total_pages": 5,
+      "image_pages": 0,
+      "text_chars": 3522,
+      "extraction_method": "pymupdf4llm",
+      "ocr_applied": false,
+      "structured_data": {
+        "institute": "NIT-Silchar"
+      }
+    },
+    "NIT-Srinagar": {
+      "college": "NIT-Srinagar",
+      "source_pdf": "NIT-Srinagar-Overall-Brochure-2025.pdf",
+      "total_pages": 4,
+      "image_pages": 0,
+      "text_chars": 11573,
+      "extraction_method": "pymupdf4llm",
+      "ocr_applied": false,
+      "structured_data": {
+        "institute": "NIT-Srinagar",
+        "year": "2024-25"
+      }
+    },
+    "NIT-Trichy": {
+      "college": "NIT-Trichy",
+      "source_pdf": "NIT-Trichy-UG-Brochure-2025-26.pdf",
+      "total_pages": 41,
+      "image_pages": 0,
+      "text_chars": 42056,
+      "extraction_method": "pymupdf4llm",
+      "ocr_applied": false,
+      "structured_data": {
+        "institute": "NIT-Trichy",
+        "year": "2025-26",
+        "placement_percentage": 20.0,
+        "top_recruiters": [
+          "Bhel",
+          "Bpcl",
+          "Cognizant",
+          "Drdo",
+          "Ey",
+          "Hcl",
+          "Intel",
+          "Isro",
+          "Meta",
+          "Nvidia",
+          "Siemens",
+          "Tata Steel",
+          "Visa"
+        ]
+      }
+    },
+    "NIT-Uttarakhand": {
+      "college": "NIT-Uttarakhand",
+      "source_pdf": "NIT-Uttarakhand-Placement-Brochure-2025-26.pdf",
+      "total_pages": 12,
+      "image_pages": 1,
+      "text_chars": 15097,
+      "extraction_method": "pymupdf4llm",
+      "ocr_applied": true,
+      "structured_data": {
+        "institute": "NIT-Uttarakhand",
+        "year": "2025-26",
+        "average_package_lpa": 10.0,
+        "placement_percentage": 42.0,
+        "top_recruiters": [
+          "Accenture",
+          "Adobe",
+          "De Shaw",
+          "Ey",
+          "Google",
+          "Hcl",
+          "Infosys",
+          "Intel",
+          "Samsung",
+          "Tcs",
+          "Wipro"
+        ]
+      }
+    },
+    "NIT-Warangal": {
+      "college": "NIT-Warangal",
+      "source_pdf": "NIT-Warangal-Placement-Policy-2025-26.pdf",
+      "total_pages": 5,
+      "image_pages": 0,
+      "text_chars": 15016,
+      "extraction_method": "pymupdf4llm",
+      "ocr_applied": false,
+      "structured_data": {
+        "institute": "NIT-Warangal",
+        "year": "2025-26",
+        "placement_percentage": 100.0,
+        "top_recruiters": [
+          "Ey"
+        ]
+      }
+    }
+  }
+}

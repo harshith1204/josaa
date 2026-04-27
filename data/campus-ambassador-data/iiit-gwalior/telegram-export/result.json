@@ -1,0 +1,1187 @@
+{
+ "name": "RAVINDRANADH",
+ "type": "personal_chat",
+ "id": 6451758127,
+ "messages": [
+  {
+   "id": 85,
+   "type": "message",
+   "date": "2026-03-31T18:20:28",
+   "date_unixtime": "1774961428",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "text": "Hi",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Hi"
+    }
+   ]
+  },
+  {
+   "id": 86,
+   "type": "message",
+   "date": "2026-03-31T18:27:57",
+   "date_unixtime": "1774961877",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "text": "All photos are included in this zip file",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "All photos are included in this zip file"
+    }
+   ]
+  },
+  {
+   "id": 87,
+   "type": "message",
+   "date": "2026-03-31T18:28:20",
+   "date_unixtime": "1774961900",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "file": "files/campus.zip",
+   "file_name": "campus.zip",
+   "file_size": 96124228,
+   "mime_type": "application/zip",
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 88,
+   "type": "message",
+   "date": "2026-03-31T18:28:20",
+   "date_unixtime": "1774961900",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "text": "If you want any more please let me know",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "If you want any more please let me know"
+    }
+   ]
+  },
+  {
+   "id": 89,
+   "type": "message",
+   "date": "2026-03-31T22:17:18",
+   "date_unixtime": "1774975638",
+   "from": "cutoffs.ai",
+   "from_id": "user8772528277",
+   "text": "Ok",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Ok"
+    }
+   ]
+  },
+  {
+   "id": 137,
+   "type": "message",
+   "date": "2026-04-01T19:02:27",
+   "date_unixtime": "1775050347",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "photo": "photos/photo_1@01-04-2026_19-02-27.jpg",
+   "photo_file_size": 147291,
+   "width": 1280,
+   "height": 960,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 138,
+   "type": "message",
+   "date": "2026-04-01T19:02:27",
+   "date_unixtime": "1775050347",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "photo": "photos/photo_2@01-04-2026_19-02-27.jpg",
+   "photo_file_size": 175885,
+   "width": 1280,
+   "height": 960,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 139,
+   "type": "message",
+   "date": "2026-04-01T19:02:27",
+   "date_unixtime": "1775050347",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "photo": "photos/photo_3@01-04-2026_19-02-27.jpg",
+   "photo_file_size": 181433,
+   "width": 960,
+   "height": 1280,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 140,
+   "type": "message",
+   "date": "2026-04-01T19:02:27",
+   "date_unixtime": "1775050347",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "photo": "photos/photo_4@01-04-2026_19-02-27.jpg",
+   "photo_file_size": 308154,
+   "width": 1280,
+   "height": 960,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 141,
+   "type": "message",
+   "date": "2026-04-01T19:02:27",
+   "date_unixtime": "1775050347",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "photo": "photos/photo_5@01-04-2026_19-02-27.jpg",
+   "photo_file_size": 329513,
+   "width": 960,
+   "height": 1280,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 142,
+   "type": "message",
+   "date": "2026-04-01T19:02:27",
+   "date_unixtime": "1775050347",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "photo": "photos/photo_6@01-04-2026_19-02-27.jpg",
+   "photo_file_size": 221833,
+   "width": 1280,
+   "height": 960,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 143,
+   "type": "message",
+   "date": "2026-04-01T19:02:27",
+   "date_unixtime": "1775050347",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "photo": "photos/photo_7@01-04-2026_19-02-27.jpg",
+   "photo_file_size": 355007,
+   "width": 960,
+   "height": 1280,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 144,
+   "type": "message",
+   "date": "2026-04-01T19:02:27",
+   "date_unixtime": "1775050347",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "photo": "photos/photo_8@01-04-2026_19-02-27.jpg",
+   "photo_file_size": 234177,
+   "width": 1280,
+   "height": 960,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 145,
+   "type": "message",
+   "date": "2026-04-01T19:02:27",
+   "date_unixtime": "1775050347",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "photo": "photos/photo_9@01-04-2026_19-02-27.jpg",
+   "photo_file_size": 243192,
+   "width": 1280,
+   "height": 960,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 146,
+   "type": "message",
+   "date": "2026-04-01T19:02:27",
+   "date_unixtime": "1775050347",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "photo": "photos/photo_10@01-04-2026_19-02-27.jpg",
+   "photo_file_size": 258905,
+   "width": 1280,
+   "height": 960,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 147,
+   "type": "message",
+   "date": "2026-04-01T19:02:31",
+   "date_unixtime": "1775050351",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "file": "video_files/video_1@01-04-2026_19-02-31.mp4",
+   "file_size": 3577939,
+   "thumbnail": "video_files/video_1@01-04-2026_19-02-31.mp4_thumb.jpg",
+   "thumbnail_file_size": 10476,
+   "media_type": "video_file",
+   "mime_type": "video/mp4",
+   "duration_seconds": 5,
+   "width": 1280,
+   "height": 720,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 148,
+   "type": "message",
+   "date": "2026-04-01T19:02:31",
+   "date_unixtime": "1775050351",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "photo": "photos/photo_11@01-04-2026_19-02-31.jpg",
+   "photo_file_size": 116473,
+   "width": 1280,
+   "height": 960,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 149,
+   "type": "message",
+   "date": "2026-04-01T19:02:31",
+   "date_unixtime": "1775050351",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "photo": "photos/photo_12@01-04-2026_19-02-31.jpg",
+   "photo_file_size": 326185,
+   "width": 768,
+   "height": 1024,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 150,
+   "type": "message",
+   "date": "2026-04-01T19:02:31",
+   "date_unixtime": "1775050351",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "photo": "photos/photo_13@01-04-2026_19-02-31.jpg",
+   "photo_file_size": 133689,
+   "width": 1280,
+   "height": 720,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 151,
+   "type": "message",
+   "date": "2026-04-01T19:02:31",
+   "date_unixtime": "1775050351",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "photo": "photos/photo_14@01-04-2026_19-02-31.jpg",
+   "photo_file_size": 281928,
+   "width": 960,
+   "height": 1280,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 152,
+   "type": "message",
+   "date": "2026-04-01T19:02:31",
+   "date_unixtime": "1775050351",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "photo": "photos/photo_15@01-04-2026_19-02-31.jpg",
+   "photo_file_size": 144955,
+   "width": 960,
+   "height": 1280,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 153,
+   "type": "message",
+   "date": "2026-04-01T19:02:32",
+   "date_unixtime": "1775050352",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "photo": "photos/photo_16@01-04-2026_19-02-32.jpg",
+   "photo_file_size": 43578,
+   "width": 632,
+   "height": 406,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 154,
+   "type": "message",
+   "date": "2026-04-01T19:02:32",
+   "date_unixtime": "1775050352",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "photo": "photos/photo_17@01-04-2026_19-02-32.jpg",
+   "photo_file_size": 158061,
+   "width": 960,
+   "height": 1280,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 155,
+   "type": "message",
+   "date": "2026-04-01T19:02:32",
+   "date_unixtime": "1775050352",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "photo": "photos/photo_18@01-04-2026_19-02-32.jpg",
+   "photo_file_size": 123097,
+   "width": 960,
+   "height": 1280,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 156,
+   "type": "message",
+   "date": "2026-04-01T19:02:32",
+   "date_unixtime": "1775050352",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "photo": "photos/photo_19@01-04-2026_19-02-32.jpg",
+   "photo_file_size": 206530,
+   "width": 1280,
+   "height": 960,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 157,
+   "type": "message",
+   "date": "2026-04-01T19:02:39",
+   "date_unixtime": "1775050359",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "file": "video_files/video_2@01-04-2026_19-02-39.mp4",
+   "file_size": 670547,
+   "thumbnail": "video_files/video_2@01-04-2026_19-02-39.mp4_thumb.jpg",
+   "thumbnail_file_size": 10526,
+   "media_type": "video_file",
+   "mime_type": "video/mp4",
+   "duration_seconds": 4,
+   "width": 464,
+   "height": 832,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 158,
+   "type": "message",
+   "date": "2026-04-01T19:02:39",
+   "date_unixtime": "1775050359",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "file": "video_files/video_3@01-04-2026_19-02-39.mp4",
+   "file_size": 16831708,
+   "thumbnail": "video_files/video_3@01-04-2026_19-02-39.mp4_thumb.jpg",
+   "thumbnail_file_size": 14177,
+   "media_type": "video_file",
+   "mime_type": "video/mp4",
+   "duration_seconds": 26,
+   "width": 1280,
+   "height": 720,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 159,
+   "type": "message",
+   "date": "2026-04-01T19:02:39",
+   "date_unixtime": "1775050359",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "photo": "photos/photo_20@01-04-2026_19-02-39.jpg",
+   "photo_file_size": 168180,
+   "width": 1280,
+   "height": 960,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 160,
+   "type": "message",
+   "date": "2026-04-01T19:02:39",
+   "date_unixtime": "1775050359",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "photo": "photos/photo_21@01-04-2026_19-02-39.jpg",
+   "photo_file_size": 125547,
+   "width": 1280,
+   "height": 960,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 161,
+   "type": "message",
+   "date": "2026-04-01T19:02:39",
+   "date_unixtime": "1775050359",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "photo": "photos/photo_22@01-04-2026_19-02-39.jpg",
+   "photo_file_size": 291794,
+   "width": 1280,
+   "height": 960,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 162,
+   "type": "message",
+   "date": "2026-04-01T19:02:39",
+   "date_unixtime": "1775050359",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "photo": "photos/photo_23@01-04-2026_19-02-39.jpg",
+   "photo_file_size": 205716,
+   "width": 1280,
+   "height": 960,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 163,
+   "type": "message",
+   "date": "2026-04-01T19:02:39",
+   "date_unixtime": "1775050359",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "photo": "photos/photo_24@01-04-2026_19-02-39.jpg",
+   "photo_file_size": 223439,
+   "width": 1280,
+   "height": 960,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 164,
+   "type": "message",
+   "date": "2026-04-01T19:02:39",
+   "date_unixtime": "1775050359",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "photo": "photos/photo_25@01-04-2026_19-02-39.jpg",
+   "photo_file_size": 147158,
+   "width": 1280,
+   "height": 960,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 165,
+   "type": "message",
+   "date": "2026-04-01T19:02:39",
+   "date_unixtime": "1775050359",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "photo": "photos/photo_26@01-04-2026_19-02-39.jpg",
+   "photo_file_size": 154819,
+   "width": 1280,
+   "height": 960,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 166,
+   "type": "message",
+   "date": "2026-04-01T19:02:40",
+   "date_unixtime": "1775050360",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "photo": "photos/photo_27@01-04-2026_19-02-40.jpg",
+   "photo_file_size": 188595,
+   "width": 1280,
+   "height": 960,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 167,
+   "type": "message",
+   "date": "2026-04-01T19:02:48",
+   "date_unixtime": "1775050368",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "photo": "photos/photo_28@01-04-2026_19-02-48.jpg",
+   "photo_file_size": 162238,
+   "width": 1280,
+   "height": 960,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 168,
+   "type": "message",
+   "date": "2026-04-01T19:02:48",
+   "date_unixtime": "1775050368",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "file": "video_files/video_4@01-04-2026_19-02-48.mp4",
+   "file_size": 2526894,
+   "thumbnail": "video_files/video_4@01-04-2026_19-02-48.mp4_thumb.jpg",
+   "thumbnail_file_size": 10380,
+   "media_type": "video_file",
+   "mime_type": "video/mp4",
+   "duration_seconds": 3,
+   "width": 1280,
+   "height": 720,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 169,
+   "type": "message",
+   "date": "2026-04-01T19:02:48",
+   "date_unixtime": "1775050368",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "file": "video_files/video_5@01-04-2026_19-02-48.mp4",
+   "file_size": 1707484,
+   "thumbnail": "video_files/video_5@01-04-2026_19-02-48.mp4_thumb.jpg",
+   "thumbnail_file_size": 12035,
+   "media_type": "video_file",
+   "mime_type": "video/mp4",
+   "duration_seconds": 2,
+   "width": 1280,
+   "height": 720,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 170,
+   "type": "message",
+   "date": "2026-04-01T19:02:48",
+   "date_unixtime": "1775050368",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "photo": "photos/photo_29@01-04-2026_19-02-48.jpg",
+   "photo_file_size": 150455,
+   "width": 1280,
+   "height": 960,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 171,
+   "type": "message",
+   "date": "2026-04-01T19:02:48",
+   "date_unixtime": "1775050368",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "photo": "photos/photo_30@01-04-2026_19-02-48.jpg",
+   "photo_file_size": 258943,
+   "width": 960,
+   "height": 1280,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 172,
+   "type": "message",
+   "date": "2026-04-01T19:02:48",
+   "date_unixtime": "1775050368",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "photo": "photos/photo_31@01-04-2026_19-02-48.jpg",
+   "photo_file_size": 146507,
+   "width": 960,
+   "height": 1280,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 173,
+   "type": "message",
+   "date": "2026-04-01T19:02:48",
+   "date_unixtime": "1775050368",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "photo": "photos/photo_32@01-04-2026_19-02-48.jpg",
+   "photo_file_size": 138975,
+   "width": 1280,
+   "height": 960,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 174,
+   "type": "message",
+   "date": "2026-04-01T19:02:48",
+   "date_unixtime": "1775050368",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "photo": "photos/photo_33@01-04-2026_19-02-48.jpg",
+   "photo_file_size": 216825,
+   "width": 960,
+   "height": 1280,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 175,
+   "type": "message",
+   "date": "2026-04-01T19:02:49",
+   "date_unixtime": "1775050369",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "photo": "photos/photo_34@01-04-2026_19-02-49.jpg",
+   "photo_file_size": 123057,
+   "width": 1280,
+   "height": 960,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 176,
+   "type": "message",
+   "date": "2026-04-01T19:02:49",
+   "date_unixtime": "1775050369",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "photo": "photos/photo_35@01-04-2026_19-02-49.jpg",
+   "photo_file_size": 227533,
+   "width": 1280,
+   "height": 960,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 177,
+   "type": "message",
+   "date": "2026-04-01T19:12:55",
+   "date_unixtime": "1775050975",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "photo": "photos/photo_36@01-04-2026_19-12-55.jpg",
+   "photo_file_size": 104096,
+   "width": 1280,
+   "height": 960,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 178,
+   "type": "message",
+   "date": "2026-04-01T19:12:55",
+   "date_unixtime": "1775050975",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "photo": "photos/photo_37@01-04-2026_19-12-55.jpg",
+   "photo_file_size": 161024,
+   "width": 1280,
+   "height": 960,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 194,
+   "type": "message",
+   "date": "2026-04-01T22:17:32",
+   "date_unixtime": "1775062052",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "reply_to_message_id": 177,
+   "text": "Hostel rooms",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Hostel rooms"
+    }
+   ]
+  },
+  {
+   "id": 195,
+   "type": "message",
+   "date": "2026-04-01T22:17:52",
+   "date_unixtime": "1775062072",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "reply_to_message_id": 174,
+   "text": "Boys hostel bh-1",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Boys hostel bh-1"
+    }
+   ]
+  },
+  {
+   "id": 196,
+   "type": "message",
+   "date": "2026-04-01T22:18:08",
+   "date_unixtime": "1775062088",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "reply_to_message_id": 175,
+   "text": "EEE DEPARTMENT",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "EEE DEPARTMENT"
+    }
+   ]
+  },
+  {
+   "id": 197,
+   "type": "message",
+   "date": "2026-04-01T22:18:24",
+   "date_unixtime": "1775062104",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "reply_to_message_id": 171,
+   "text": "Bh-2",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Bh-2"
+    }
+   ]
+  },
+  {
+   "id": 198,
+   "type": "message",
+   "date": "2026-04-01T22:18:44",
+   "date_unixtime": "1775062124",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "reply_to_message_id": 169,
+   "text": "OAT canteen",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "OAT canteen"
+    }
+   ]
+  },
+  {
+   "id": 199,
+   "type": "message",
+   "date": "2026-04-01T22:19:00",
+   "date_unixtime": "1775062140",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "reply_to_message_id": 167,
+   "text": "Sports complex",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Sports complex"
+    }
+   ]
+  },
+  {
+   "id": 200,
+   "type": "message",
+   "date": "2026-04-01T22:19:19",
+   "date_unixtime": "1775062159",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "reply_to_message_id": 159,
+   "text": "Convention hall",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Convention hall"
+    }
+   ]
+  },
+  {
+   "id": 201,
+   "type": "message",
+   "date": "2026-04-01T22:19:38",
+   "date_unixtime": "1775062178",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "reply_to_message_id": 157,
+   "text": "Football ground",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Football ground"
+    }
+   ]
+  },
+  {
+   "id": 202,
+   "type": "message",
+   "date": "2026-04-01T22:19:49",
+   "date_unixtime": "1775062189",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "reply_to_message_id": 156,
+   "text": "Auditorium",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Auditorium"
+    }
+   ]
+  },
+  {
+   "id": 203,
+   "type": "message",
+   "date": "2026-04-01T22:20:03",
+   "date_unixtime": "1775062203",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "reply_to_message_id": 153,
+   "text": "Open air theatre",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Open air theatre"
+    }
+   ]
+  },
+  {
+   "id": 204,
+   "type": "message",
+   "date": "2026-04-01T22:20:17",
+   "date_unixtime": "1775062217",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "reply_to_message_id": 152,
+   "text": "Lecture halls",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Lecture halls"
+    }
+   ]
+  },
+  {
+   "id": 205,
+   "type": "message",
+   "date": "2026-04-01T22:20:40",
+   "date_unixtime": "1775062240",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "reply_to_message_id": 204,
+   "text": "+ department buildings",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "+ department buildings"
+    }
+   ]
+  },
+  {
+   "id": 206,
+   "type": "message",
+   "date": "2026-04-01T22:20:57",
+   "date_unixtime": "1775062257",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "reply_to_message_id": 151,
+   "text": "Ivh",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Ivh"
+    }
+   ]
+  },
+  {
+   "id": 207,
+   "type": "message",
+   "date": "2026-04-01T22:21:38",
+   "date_unixtime": "1775062298",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "reply_to_message_id": 147,
+   "text": "Mess",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Mess"
+    }
+   ]
+  },
+  {
+   "id": 208,
+   "type": "message",
+   "date": "2026-04-01T22:22:00",
+   "date_unixtime": "1775062320",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "reply_to_message_id": 146,
+   "text": "Tennis court",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Tennis court"
+    }
+   ]
+  },
+  {
+   "id": 209,
+   "type": "message",
+   "date": "2026-04-01T22:22:18",
+   "date_unixtime": "1775062338",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "reply_to_message_id": 139,
+   "text": "Academic buliding",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Academic buliding"
+    }
+   ]
+  },
+  {
+   "id": 210,
+   "type": "message",
+   "date": "2026-04-01T22:22:31",
+   "date_unixtime": "1775062351",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "reply_to_message_id": 142,
+   "text": "Hospital",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Hospital"
+    }
+   ]
+  },
+  {
+   "id": 211,
+   "type": "message",
+   "date": "2026-04-01T22:22:46",
+   "date_unixtime": "1775062366",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "reply_to_message_id": 138,
+   "text": "Library",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Library"
+    }
+   ]
+  },
+  {
+   "id": 212,
+   "type": "message",
+   "date": "2026-04-01T22:22:57",
+   "date_unixtime": "1775062377",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "reply_to_message_id": 137,
+   "text": "Cafeteria",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Cafeteria"
+    }
+   ]
+  },
+  {
+   "id": 213,
+   "type": "message",
+   "date": "2026-04-01T22:23:30",
+   "date_unixtime": "1775062410",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "reply_to_message_id": 140,
+   "text": "Bio diversity park",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "Bio diversity park"
+    }
+   ]
+  },
+  {
+   "id": 214,
+   "type": "message",
+   "date": "2026-04-02T15:04:26",
+   "date_unixtime": "1775122466",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "file": "video_files/video_6@02-04-2026_15-04-26.mp4",
+   "file_size": 2713612,
+   "thumbnail": "video_files/video_6@02-04-2026_15-04-26.mp4_thumb.jpg",
+   "thumbnail_file_size": 17241,
+   "media_type": "video_file",
+   "mime_type": "video/mp4",
+   "duration_seconds": 4,
+   "width": 1280,
+   "height": 720,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 215,
+   "type": "message",
+   "date": "2026-04-02T15:04:26",
+   "date_unixtime": "1775122466",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "photo": "photos/photo_38@02-04-2026_15-04-26.jpg",
+   "photo_file_size": 302268,
+   "width": 1280,
+   "height": 960,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 216,
+   "type": "message",
+   "date": "2026-04-02T15:04:26",
+   "date_unixtime": "1775122466",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "photo": "photos/photo_39@02-04-2026_15-04-26.jpg",
+   "photo_file_size": 285814,
+   "width": 1280,
+   "height": 960,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 217,
+   "type": "message",
+   "date": "2026-04-02T15:04:26",
+   "date_unixtime": "1775122466",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "photo": "photos/photo_40@02-04-2026_15-04-26.jpg",
+   "photo_file_size": 113440,
+   "width": 1280,
+   "height": 960,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 218,
+   "type": "message",
+   "date": "2026-04-02T15:04:26",
+   "date_unixtime": "1775122466",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "photo": "photos/photo_41@02-04-2026_15-04-26.jpg",
+   "photo_file_size": 111482,
+   "width": 1280,
+   "height": 960,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 219,
+   "type": "message",
+   "date": "2026-04-02T18:10:08",
+   "date_unixtime": "1775133608",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "photo": "photos/photo_42@02-04-2026_18-10-08.jpg",
+   "photo_file_size": 52408,
+   "width": 640,
+   "height": 385,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 311,
+   "type": "message",
+   "date": "2026-04-03T17:35:24",
+   "date_unixtime": "1775217924",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "photo": "photos/photo_43@03-04-2026_17-35-24.jpg",
+   "photo_file_size": 76292,
+   "width": 1280,
+   "height": 960,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 312,
+   "type": "message",
+   "date": "2026-04-03T17:35:24",
+   "date_unixtime": "1775217924",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "photo": "photos/photo_44@03-04-2026_17-35-24.jpg",
+   "photo_file_size": 80161,
+   "width": 1280,
+   "height": 960,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 313,
+   "type": "message",
+   "date": "2026-04-03T17:35:24",
+   "date_unixtime": "1775217924",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "photo": "photos/photo_45@03-04-2026_17-35-24.jpg",
+   "photo_file_size": 82108,
+   "width": 1280,
+   "height": 960,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 314,
+   "type": "message",
+   "date": "2026-04-03T17:35:24",
+   "date_unixtime": "1775217924",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "photo": "photos/photo_46@03-04-2026_17-35-24.jpg",
+   "photo_file_size": 77747,
+   "width": 1280,
+   "height": 960,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 315,
+   "type": "message",
+   "date": "2026-04-03T17:35:24",
+   "date_unixtime": "1775217924",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "photo": "photos/photo_47@03-04-2026_17-35-24.jpg",
+   "photo_file_size": 74800,
+   "width": 1280,
+   "height": 960,
+   "text": "",
+   "text_entities": []
+  },
+  {
+   "id": 316,
+   "type": "message",
+   "date": "2026-04-03T17:35:24",
+   "date_unixtime": "1775217924",
+   "from": "RAVINDRANADH",
+   "from_id": "user6451758127",
+   "photo": "photos/photo_48@03-04-2026_17-35-24.jpg",
+   "photo_file_size": 90353,
+   "width": 1280,
+   "height": 960,
+   "text": "",
+   "text_entities": []
+  }
+ ]
+}

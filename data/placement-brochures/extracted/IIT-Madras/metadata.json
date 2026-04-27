@@ -1,0 +1,24 @@
+{
+  "college": "IIT-Madras",
+  "source_pdf": "IIT-Madras-Placement-Brochure-2024-25.pdf",
+  "total_pages": 26,
+  "image_pages": 0,
+  "text_chars": 45097,
+  "extraction_method": "pymupdf4llm",
+  "ocr_applied": false,
+  "structured_data": {
+    "institute": "IIT-Madras",
+    "year": "2024-25",
+    "top_recruiters": [
+      "Amazon",
+      "Bosch",
+      "Drdo",
+      "Ey",
+      "Google",
+      "Infosys",
+      "Intel",
+      "Isro",
+      "Meta"
+    ]
+  }
+}

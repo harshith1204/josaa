@@ -1,0 +1,218 @@
+{
+  "college": "IIT Gandhinagar",
+  "sources": ["whatsapp_chat_with_ambassador", "fee_structure_image", "curriculum_image"],
+  "data_date": "2026-04-01",
+  "quality_note": "Exceptional ambassador response — one of the most detailed across all colleges.",
+
+  "sections": {
+    "overview": {
+      "facts": [
+        "IIT Gandhinagar is located in Gandhinagar, Gujarat.",
+        "24/7 WiFi throughout campus. Every hostel room has LAN wire.",
+        "ACs work during summer nights in hostels.",
+        "All classrooms have central AC.",
+        "A pantry with refrigerator, electric stove, oven, and water dispenser is available on every floor in hostels.",
+        "You can go out of campus whenever you want — no curfew.",
+        "Inter-hostel mobility — boys and girls allowed to visit opposite gender hostels with consent.",
+        "Classroom booking available via Google Calendar during exam times.",
+        "Large library (9 AM - 12 AM) and mini library (24/7) with website to check book availability."
+      ]
+    },
+
+    "hostels_boys": {
+      "hostels": ["Duven", "Emite", "Firpeal", "Griwiksh", "Hiqom", "Ijoka", "Jurqia", "Kyzeel", "Lekhaag"],
+      "sharing": {
+        "current_policy": "1st year (BTech + MTech) — double (2 per room). 2nd and 3rd year — triple (3 per room). 4th year, MTech 2nd year, some PhD — single room.",
+        "note": "Changed from previous years. Previously 1st/2nd got triple and 3rd/4th got single. Administration decides sharing for each batch."
+      },
+      "allotment": "Students fill hostel allocation form at start of each academic year. Allocated on first come first serve basis.",
+      "married_phd": "PhD students who are married/with family get housing blocks within campus."
+    },
+
+    "hostels_girls": {
+      "hostels": ["Aibaan", "Beauki", "Chimair"],
+      "sharing": "1st, 2nd, 3rd year — double rooms (2 per room). 4th year, MTech, some PhD — single rooms."
+    },
+
+    "mess": {
+      "messes": ["R Gouras", "Mohani", "Jaiswal", "Bhopal"],
+      "total": "4 messes for entire IITGN community.",
+      "allotment": "Allocated through Google form, first come first serve. Form floated every half semester — students can change mess every half sem.",
+      "first_year": "1st year students: each mess allocated for 2 weeks, then they can choose via Google form."
+    },
+
+    "fee_structure": {
+      "program": "B.Tech/B.S. (Academic Year 2025-26, Semester I)",
+      "general": {
+        "tuition": 100000,
+        "semester_facilities": 2000,
+        "student_welfare": 1000,
+        "medical_insurance": 3000,
+        "one_time_admission": 12150,
+        "hostel_room_rent": 6000,
+        "mess_and_laundry": 28600,
+        "total_first_semester": 152750
+      },
+      "sc_st_pwd": {"total_first_semester": 41750},
+      "income_below_1L": {"total_first_semester": 41750},
+      "income_1L_to_5L": {"total_first_semester": 85950},
+      "notes": [
+        "Tuition fee exempted for SC/ST/PwD.",
+        "Full tuition remission for income below Rs 1 lakh.",
+        "2/3rd tuition remission for income Rs 1-5 lakh.",
+        "Revised tuition of Rs 1,00,000 applicable from July 2022 batch onwards."
+      ]
+    },
+
+    "wifi": {
+      "facts": [
+        "24/7 WiFi throughout campus.",
+        "Every hostel room has a LAN wire to connect.",
+        "All classrooms have central AC."
+      ]
+    },
+
+    "attendance": {
+      "facts": [
+        "80% attendance mandatory in Foundation Programme and Physical Education in 1st year.",
+        "50% attendance mandatory in 2nd year PE.",
+        "For all other courses, attendance policy changes from course to course and depends completely on the professor.",
+        "Can be 0% attendance or 50% or 80% — whatever the professor decides.",
+        "If majority of students feel attendance policy is unfair (like 100%), they can negotiate with the professor."
+      ]
+    },
+
+    "clubs": {
+      "cultural": [
+        {"name": "16 Pixels", "focus": "Photography"},
+        {"name": "Vinteo", "focus": "Filmmaking"},
+        {"name": "Palette", "focus": "Art"},
+        {"name": "Cinematic", "focus": "Film"},
+        {"name": "Samvaad", "focus": "Debating"},
+        {"name": "Abhinaya", "focus": "Drama"},
+        {"name": "Sargam", "focus": "Music"},
+        {"name": "StepUp", "focus": "Dance"},
+        {"name": "Orenda", "focus": "Inclusivity and Expression"}
+      ],
+      "technical": [
+        {"name": "Metis", "focus": "Coding"},
+        {"name": "Mean Mechanics", "focus": "Robotics"},
+        {"name": "Digis", "focus": "Digital Sports"},
+        {"name": "Odyssey", "focus": "Astronomy"},
+        {"name": "Scale", "focus": "Machine Learning"},
+        {"name": "Grasp", "focus": "Competitive Programming"},
+        {"name": "Moksha", "focus": "Motorsport"}
+      ]
+    },
+
+    "fests": {
+      "major": [
+        {"name": "Amalthea", "type": "Tech fest", "duration": "~3 days", "when": "Odd semester Oct/Nov"},
+        {"name": "Blithchron", "type": "Cultural fest", "duration": "3 days", "when": "Even semester Feb", "note": "Most popular fest"}
+      ],
+      "events": ["TEDx (Feb/March, one day)", "Open mic events at Panchayat (hostel area center)", "Club-organized events"],
+      "sports_events": [
+        {"name": "Hallabol", "when": "Jan/Feb", "desc": "Sports with fun rules. Everyone can participate — students, staff, faculty."},
+        {"name": "General Championship", "when": "March/April", "desc": "Batch-wise competition. BTech 1st-4th, Masters, PhDs compete. Highest cumulative points wins."}
+      ]
+    },
+
+    "sports": {
+      "facilities": [
+        "Dedicated sports complex",
+        "1 Football ground",
+        "2 Cricket pitches — 1 professional, 1 casual",
+        "3 Basketball courts — 2 outdoor, 1 indoor",
+        "4 Outdoor tennis courts",
+        "2 Badminton halls with 3 courts each + 4 separate courts in hostel area",
+        "3 Volleyball courts — 2 outdoor, 1 indoor",
+        "400m athletics track",
+        "1 Large gym with weightlifting facility",
+        "2 Swimming pools — 50x25m and 25x10m",
+        "Dedicated Table Tennis hall",
+        "Dedicated Squash hall",
+        "Yoga room",
+        "Hockey field (no team/trainer)",
+        "Almost all sports have trainers"
+      ]
+    },
+
+    "canteen": {
+      "hostel_area": ["1 Bakery", "1 Amul Store", "1 Fruit Juice Stall", "1 Tea Post", "1 South Indian Tiffins", "1 Fast Food Stall", "2 Pure Veg Stalls (coffee, shakes, sandwiches, vadapav, pizza, toasts)", "1 Nescafe", "2 General Stores", "1 Saloon (separate for men and women)"],
+      "academic_area": ["1 Nescafe", "2 Cafeterias"],
+      "sports_complex": ["1 Fruit Juice Stall"],
+      "central_arcade": ["1 Sandwich Stall", "1 Supermart", "1 Bookstall", "1 Laundry Shop", "1 Apollo Pharmacy", "1 Fruits/Veggies Stall", "1 Snack Stall (samosa, chole)", "1 Post Office", "1 IITGN Logo Items Stall"],
+      "note": "Temporary trial stalls appear regularly at hostel area."
+    },
+
+    "laundry": {
+      "facts": [
+        "Common Laundry — contracted service, takes laundry bags twice a week. Schedule depends on hostel.",
+        "3 Smart Laundry machines in Student Lounge — online booking system.",
+        "Safety Laundry — drop off clothes, pay per item, pick up after specified days."
+      ]
+    },
+
+    "elections": {
+      "timing": "March every year",
+      "posts": [
+        "Secretaries: General, Welfare, Sports, Academic, Cultural (for whole IITGN community)",
+        "Senators: 4 from every batch (BTech 1st-4th, whole MTech) + 1 girl senator for whole community",
+        "CRs: every batch, every branch"
+      ],
+      "process": "Election commission conducts elections. Secretary candidates can have campaigners from each batch."
+    },
+
+    "fines": {
+      "policy": "No fines policy unless you break campus property.",
+      "disciplinary": "SSAC (disciplinary committee) handles issues. Punishments include: social hours (charity work), semester back, year back, removing from hostel (stay off campus).",
+      "offenses": "Property damage, cheating, causing problems to others."
+    },
+
+    "medical": {
+      "facts": [
+        "Apollo Pharmacy on campus.",
+        "Ambulance services available.",
+        "Medical center at central arcade — 24/7.",
+        "Daily availability of gynecologist, physician, physiotherapist etc.",
+        "Daily email sent to all students with doctor availability and timings.",
+        "Serious cases referred to outside hospitals — all expenses reimbursed on submitting bills.",
+        "Mental health services available — can talk anytime when stressed."
+      ]
+    },
+
+    "transport": {
+      "facts": [
+        "Free buses from campus to Kudasan daily at specific times.",
+        "Free buses to railway station and airport during vacations.",
+        "Sardar Vallabhbhai Patel International Airport — 16 km.",
+        "Sabarmati Railway Station (Gandhinagar) — 18 km.",
+        "Ahmedabad Junction — 22 km."
+      ]
+    },
+
+    "restaurants": {
+      "facts": [
+        "2 fast-food restaurants that deliver only to campus — order via WhatsApp.",
+        "Zomato available.",
+        "Bigbasket available.",
+        "Kudasan area (5-6 km from campus) has almost any kind of restaurant."
+      ]
+    },
+
+    "nearby_places": {
+      "tourist": ["Akshardham", "Gandhi Ashram", "Sabarmati Ashram", "Sabarmati Riverfronts (Gandhinagar & Ahmedabad)", "Stepwell in Ahmedabad", "Ekta Nagar (day trip)", "Vadodara (day trip)"],
+      "shopping": ["Swagat Mall (Gandhinagar)", "Agora Mall (Gandhinagar)", "Phoenix Mall (Ahmedabad)", "Palladium Mall (Ahmedabad)", "Nexus One (Ahmedabad)", "IMAX (Ahmedabad)"]
+    },
+
+    "language_climate": {
+      "language": "On campus English works well, most prefer Hindi. Outside campus Hindi works. Professors use English. Staff speaks Hindi.",
+      "climate": "Winters 8-25°C, Summers 25-40°C. Very humid — sometimes low temperature feels hot. Winters can feel very cold too."
+    },
+
+    "academics": {
+      "curriculum": "UG Curriculum has Institute Level Plan. 1st sem: Foundation Programme, Intro to Writing, World Civilizations, Calculus, Engineering Graphics, Computing, Design Innovation & Prototyping, Materials for Future, PE. 2nd sem: General Education, Writing II, Differential Equations, Undergrad Science Lab, Data Centric Computing, Probability & Statistics, Electrical Engineering, World of Engineering, PE. Branch-specific courses start from 3rd semester. Students can choose Sci/Math baskets and electives from a given list.",
+      "credits": "28 credits in 1st sem, 22 in 2nd sem, reducing to 8-10 in later semesters as electives increase."
+    }
+  }
+}

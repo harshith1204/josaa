@@ -1,0 +1,21 @@
+{
+  "college": "IIT-Bombay",
+  "source_pdf": "IIT-Bombay-Placement-Report-2023-24.pdf",
+  "total_pages": 22,
+  "image_pages": 0,
+  "text_chars": 23140,
+  "extraction_method": "pymupdf4llm",
+  "ocr_applied": false,
+  "structured_data": {
+    "institute": "IIT-Bombay",
+    "year": "2023-24",
+    "median_package_lpa": 17.92,
+    "total_offers": 22,
+    "total_companies": 364,
+    "top_recruiters": [
+      "Ey",
+      "Intel",
+      "Meta"
+    ]
+  }
+}

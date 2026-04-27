@@ -1,0 +1,22 @@
+{
+  "college": "NIT-Goa",
+  "source_pdf": "NIT-Goa-Placement-Brochure-2024-25.pdf",
+  "total_pages": 31,
+  "image_pages": 0,
+  "text_chars": 39512,
+  "extraction_method": "pymupdf4llm",
+  "ocr_applied": false,
+  "structured_data": {
+    "institute": "NIT-Goa",
+    "year": "2024-25",
+    "average_package_lpa": 8.5,
+    "total_companies": 160,
+    "top_recruiters": [
+      "Drdo",
+      "Ey",
+      "Google",
+      "Intel",
+      "Meta"
+    ]
+  }
+}

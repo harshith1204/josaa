@@ -1,0 +1,136 @@
+{
+  "college": "IIITDM Jabalpur",
+  "full_name": "Indian Institute of Information Technology, Design and Manufacturing, Jabalpur",
+  "sources": ["whatsapp_chat_with_ambassador", "ambassador_text_file"],
+  "data_date": "2026-04-04",
+
+  "sections": {
+    "overview": {
+      "facts": [
+        "IIITDM Jabalpur is located at Meghawa, Dumna Airport Road, P.O Khamaria, Jabalpur 482005.",
+        "An Institution of National Importance under MoE, Government of India."
+      ]
+    },
+
+    "hostels": {
+      "boys": [
+        "Vasishtha Hostel (Hall-I) — 4th year boys",
+        "Aryabhatta Hostel (Hall-III) — 2nd year boys",
+        "Vivekananda Hostel (Hall-IV) — 3rd year boys",
+        "Panini Hostel — 1st year boys"
+      ],
+      "girls": [
+        "Nagarjuna Hostel — 2nd and 3rd year girls",
+        "Maa Saraswati Girls Hostel — 1st year, 4th year, and PhD girls"
+      ],
+      "fines": "Rs 50 fine for absence from hostel. Attendance sheet maintained in every hostel."
+    },
+
+    "mess": {
+      "facts": [
+        "Central Mess 1: Vegetarian.",
+        "Central Mess 2: Non-vegetarian."
+      ]
+    },
+
+    "wifi": {
+      "facts": [
+        "LAN available in hostels."
+      ]
+    },
+
+    "attendance": {
+      "facts": [
+        "75% attendance is mandatory."
+      ]
+    },
+
+    "clubs": {
+      "sports": ["Cricket", "Volleyball", "Football", "Badminton", "Basketball", "Lawn Tennis", "Kabaddi", "Chess", "Carrom", "Gym", "Athletics", "Table Tennis"],
+      "cultural": ["Aavartan (Dance)", "Saaz (Music)", "Jazbaat (Dramatics)", "Abhivyakti (Arts & Craft)", "Aakriti (Film & Photography)", "Samvaad (Literary)"],
+      "technical": ["Robotics (ERS)", "Aero Fabrication", "CAD & 3D Printing Club", "BitByte TPC", "Racing"],
+      "other": ["Business Management"]
+    },
+
+    "fests": {
+      "list": [
+        {"name": "Abhikalpan", "type": "Fest"},
+        {"name": "Tarang", "type": "Fest"},
+        {"name": "Riwayat", "type": "Fest"}
+      ]
+    },
+
+    "sports": {
+      "policy": "Only students who are involved in clubs can play sports on campus; others are not allowed."
+    },
+
+    "canteen": {
+      "outlets": [
+        "Canteen in Aryabhatta Hostel",
+        "Canteen in Vasishtha Hostel",
+        "Canteen in Vivekananda Hostel",
+        "Canteen in Maa Saraswati Hostel"
+      ]
+    },
+
+    "shops": {
+      "on_campus": ["Nescafe", "Vegetable and Fruits Shop", "General Store"]
+    },
+
+    "laundry": {
+      "facts": [
+        "Each hostel is equipped with its own laundry facilities."
+      ]
+    },
+
+    "gym": {
+      "boys": {
+        "1st_year": "5:30 AM to 7:30 AM",
+        "2nd_year": "11 AM to 1 PM, 8:30 PM to 10 PM",
+        "3rd_year": "6:30 PM to 8:30 PM",
+        "4th_year": "6:30 PM to 8:30 PM",
+        "masters_phd": "11 AM to 1 PM, 8:30 PM to 10 PM"
+      },
+      "girls": {
+        "1st_year": "7:30 AM to 9:30 AM",
+        "2nd_year": "7:30 AM to 9:30 AM",
+        "3rd_year": "4:00 PM to 6:30 PM",
+        "4th_year": "4:00 PM to 6:30 PM",
+        "masters_phd": "4:00 PM to 6:30 PM"
+      }
+    },
+
+    "medical": {
+      "facts": ["Primary Health Centre available on campus."]
+    },
+
+    "elections": {
+      "facts": ["Student Affairs conducts elections, hosted and organized by Senate members."]
+    },
+
+    "fines": {
+      "facts": ["Rs 50 fine for absence from hostel. Attendance sheet maintained in every hostel. Applies to all year batches."]
+    },
+
+    "transport": {
+      "facts": [
+        "Dumna Airport is 5 km from campus.",
+        "Jabalpur Railway Station is 10 km from campus."
+      ]
+    },
+
+    "restaurants": {
+      "nearby": ["Charminar Biryani Point", "Barbeque", "Handi"]
+    },
+
+    "nearby_places": {
+      "tourist": ["Dumna Nature Reserve"],
+      "shopping": ["Samdareeya Mall", "PVR Mall"]
+    },
+
+    "language_climate": {
+      "language": "Hindi.",
+      "climate": "23-40 degrees Celsius."
+    }
+  }
+}

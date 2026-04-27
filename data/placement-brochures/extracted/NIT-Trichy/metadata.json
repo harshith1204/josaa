@@ -1,0 +1,29 @@
+{
+  "college": "NIT-Trichy",
+  "source_pdf": "NIT-Trichy-UG-Brochure-2025-26.pdf",
+  "total_pages": 41,
+  "image_pages": 0,
+  "text_chars": 42056,
+  "extraction_method": "pymupdf4llm",
+  "ocr_applied": false,
+  "structured_data": {
+    "institute": "NIT-Trichy",
+    "year": "2025-26",
+    "placement_percentage": 20.0,
+    "top_recruiters": [
+      "Bhel",
+      "Bpcl",
+      "Cognizant",
+      "Drdo",
+      "Ey",
+      "Hcl",
+      "Intel",
+      "Isro",
+      "Meta",
+      "Nvidia",
+      "Siemens",
+      "Tata Steel",
+      "Visa"
+    ]
+  }
+}

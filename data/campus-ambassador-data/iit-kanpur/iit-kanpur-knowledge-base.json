@@ -1,0 +1,214 @@
+{
+  "college": "IIT Kanpur",
+  "sources": ["whatsapp_chat_with_ambassador", "timetable_image", "mess_menu_pdf"],
+  "data_date": "2026-04-04",
+  "ambassador": {"phone": "redacted", "email": "redacted", "branch": "B.Tech Electrical Engineering", "year": "2nd year (2024 batch)"},
+
+  "sections": {
+    "overview": {
+      "facts": [
+        "IIT Kanpur is located in Kalyanpur, Kanpur, Uttar Pradesh 208016.",
+        "IIT Kanpur has 15 halls of residence — 12 for boys and 3 for girls."
+      ]
+    },
+
+    "hostels_boys": {
+      "facts": [
+        "Hall 13 is the 1st year boys hostel with double/triple sharing.",
+        "Hall 2, Hall 3, and Hall 5 are for 2nd and 3rd year students with double/triple sharing.",
+        "Hall 12 is for 3rd year students with single and double sharing.",
+        "Hall 7, Hall 9, and Hall 11 are for 4th year students with single sharing.",
+        "Hall 1 is for 4th year students with higher responsibilities (General Secretary, Organizer, etc.) with single sharing.",
+        "Hall 8 and Hall 10 are for PhD and higher education students with single sharing.",
+        "Hall 14 is for PG and MTech students with single sharing.",
+        "All halls have canteens, stationery shops, and printout facilities.",
+        "All boys halls have barber shops.",
+        "Halls have indoor games: table tennis, carrom, and chess.",
+        "Some halls have outdoor facilities: volleyball, cricket ground, basketball."
+      ]
+    },
+
+    "hostels_girls": {
+      "facts": [
+        "Hall 4 is for 1st year girls with double/single sharing.",
+        "Hall 6 is for 2nd, 3rd, and 4th year girls with double/single sharing.",
+        "Girls Hostel 1 is for PG and higher studies students with double/single sharing."
+      ]
+    },
+
+    "mess": {
+      "system": "Hall-attached (each hall has its own mess)",
+      "cost": "~Rs 4,000 per month (mess + electricity combined)",
+      "timing": {
+        "note": "Not provided — data gap"
+      },
+      "menu_source": "Hall of Residence 12, April 2026",
+      "daily_items": [
+        "Breakfast: Bread (white & brown/rusk), jam, butter, milk (Bournvita/Horlicks/Coffee), egg (2 pcs), tea, dalia, cornflakes.",
+        "Lunch: Roti (plain + buttered), plain rice, pickle, raita/dahi/fruit, chicken fried rice.",
+        "Dinner: Roti (plain + buttered), plain rice, pickle, chicken fried rice, milk."
+      ],
+      "highlights": [
+        "Chicken fried rice available daily at lunch and dinner.",
+        "Monday breakfast: Aloo Pyaz Paratha. Monday dinner extra: Butter Chicken, Roasted Chicken.",
+        "Tuesday breakfast: Khasta Kachori, Paratha. Tuesday lunch extra: Egg Biryani.",
+        "Wednesday breakfast: Uttapam with Sambhar and Coconut Chutney. Wednesday dinner extra: Chicken Bharra, Kadhai Paneer.",
+        "Thursday breakfast: Bombay Sandwich, Paneer Cutlet. Thursday dinner extra: Chilli Chicken, Fish Finger.",
+        "Friday breakfast: Indori Poha with Jalebi and Curd. Friday dinner: Chicken Biryani, Chandrakala.",
+        "Saturday breakfast: Idli, Masala Idli, Wada with Sambhar. Saturday dinner extra: Chicken Malai Tikka, Honey Chilli Potato.",
+        "Sunday breakfast: Mysore Dosa/Masala Dosa with Sambhar. Sunday dinner: Paneer/Chicken Korma, Gulab Jamun, Garlic Naan."
+      ],
+      "extras": "Neebu Pani/Rasna/Roohafza served with lunch daily.",
+      "online_menu": "https://campusmess.in/"
+    },
+
+    "canteen": {
+      "facts": [
+        "DOAA Canteen is open 24 hours.",
+        "Every hall has its own canteen.",
+        "On-campus restaurants: Mama Meow, Tadka Restaurant, Chai Pani Restaurant, Campus Restaurant.",
+        "On-campus chains: Cafe Coffee Day, Starbucks, Burger Singh, Subway, Dominos Pizza.",
+        "Food delivery: Swiggy and Zomato are available."
+      ]
+    },
+
+    "fee_structure": {
+      "facts": [
+        "Full fee structure PDF was shared via Google Drive link (Cumulative Fee Structure 2025-2026) but not included in WhatsApp export.",
+        "Mess and electricity bills combined cost approximately Rs 4,000 per month, in addition to the semester fee."
+      ],
+      "note": "Tuition/academic fee NOT provided — data gap. Only monthly mess+electricity cost known."
+    },
+
+    "wifi": {
+      "facts": [
+        "IIT Kanpur has IITK 5G WiFi network.",
+        "4G connectivity is available across approximately 90% of the campus."
+      ]
+    },
+
+    "attendance": {
+      "facts": [
+        "Attendance is not mandatory for all courses at IIT Kanpur — it depends on the professor.",
+        "A minimum of approximately 75% attendance is required to appear in semester exams."
+      ]
+    },
+
+    "clubs": {
+      "cultural": [
+        "Anime Society — anime watchers and manga readers community.",
+        "Book Club — close knit group of bookworms with wide ranging genre interests.",
+        "Dance Club (Krazzy O've Sync) — dance club of IIT Kanpur.",
+        "Debating Society — inter-university debate tournaments and discussions.",
+        "Design And Animation Club — digital design and animation.",
+        "Dramatics Club (Fursat Mandli) — theatre and nukkad enthusiasts.",
+        "English Literary Society — literature, oratory skills, word games.",
+        "Fine Arts Club (FAC) — diverse forms of art promotion.",
+        "Film Club — short films, sketches, and workshops.",
+        "Hindi Sahitya Sabha — promoting Hindi literature and creativity.",
+        "Humour House — comedy of various forms.",
+        "Music Club — music across genres, jamming sessions.",
+        "Photography Club — photography enthusiasts.",
+        "Quiz Club — esoteric knowledge and quiz competitions.",
+        "Student Film Society — cinema and diverse film formats."
+      ],
+      "technical_and_sports": [
+        "Robotics Club",
+        "Aero Modeling Club",
+        "Skating Club",
+        "Motorsport Club"
+      ]
+    },
+
+    "fests": {
+      "list": [
+        {"name": "Udghosh", "type": "Sports festival", "month": "October"},
+        {"name": "Antaragni", "type": "Cultural festival", "month": "October/November"},
+        {"name": "Techkriti", "type": "Tech festival", "month": "March"},
+        {"name": "E-Summit", "type": "Entrepreneurship summit", "month": "February/March"}
+      ],
+      "freshers_events": ["Galaxy", "Inferno (among halls)"]
+    },
+
+    "sports": {
+      "facilities": [
+        "Old Sports Complex: Gym, Skating Rink, Tennis, Volleyball, Basketball.",
+        "Hall indoor games: Table tennis, carrom, chess.",
+        "Hall outdoor (some halls): Volleyball, cricket ground, basketball."
+      ],
+      "gyms": [
+        "Most halls have gym facilities free of cost.",
+        "Old Sports Complex gym: Rs 350 per month for students (monthly/semester/yearly options)."
+      ]
+    },
+
+    "laundry": {
+      "facts": [
+        "Dhobi service is available in all halls and comes to every room.",
+        "Washing machines are available in halls.",
+        "1 common laundry facility is available for all students."
+      ]
+    },
+
+    "elections": {
+      "facts": [
+        "No data provided on student council/elections — data gap."
+      ]
+    },
+
+    "medical": {
+      "facts": [
+        "IIT Kanpur Health Centre is open 24 hours.",
+        "Medical services are free — insurance is included in the semester fee.",
+        "Ambulances are available for emergencies.",
+        "If admitted to a hospital outside campus, up to Rs 1 lakh is reimbursed upon bill submission."
+      ]
+    },
+
+    "transport": {
+      "facts": [
+        "Kanpur Central Railway Station is approximately 18 km from campus.",
+        "Chakeri Airport is approximately 20 km from campus.",
+        "Jagarkati Bus Stop is approximately 15 km from campus."
+      ]
+    },
+
+    "restaurants": {
+      "facts": [
+        "On-campus: Mama Meow, Tadka Restaurant, Chai Pani Restaurant, Campus Restaurant, Cafe Coffee Day, Starbucks, Burger Singh, Subway, Dominos Pizza.",
+        "Food delivery: Swiggy and Zomato available."
+      ]
+    },
+
+    "nearby_places": {
+      "tourist": [
+        "Zoological Park",
+        "Blueworld Park",
+        "Ganga Barrage"
+      ],
+      "weekend_trips": ["Agra", "Ayodhya", "Vrindavan", "Varanasi"],
+      "shopping": ["Z Square", "Max", "Vishal Mart", "Rave Moti Mall"]
+    },
+
+    "climate": {
+      "facts": [
+        "Winters go below 6°C.",
+        "Summers exceed 45°C.",
+        "The climate is extreme — very cold winters and very hot summers."
+      ]
+    },
+
+    "language": {
+      "facts": [
+        "The primary language at IIT Kanpur is Hindi.",
+        "English is also widely used."
+      ]
+    },
+
+    "fines": {
+      "facts": [
+        "Late academic or pre-registration fine is Rs 2,000 to Rs 2,500."
+      ]
+    }
+  }
+}

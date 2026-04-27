@@ -1,0 +1,17 @@
+{
+  "college": "NIT-Warangal",
+  "source_pdf": "NIT-Warangal-Placement-Policy-2025-26.pdf",
+  "total_pages": 5,
+  "image_pages": 0,
+  "text_chars": 15016,
+  "extraction_method": "pymupdf4llm",
+  "ocr_applied": false,
+  "structured_data": {
+    "institute": "NIT-Warangal",
+    "year": "2025-26",
+    "placement_percentage": 100.0,
+    "top_recruiters": [
+      "Ey"
+    ]
+  }
+}

@@ -1,0 +1,260 @@
+{
+  "college": "NIT Manipur",
+  "full_name": "National Institute of Technology Manipur",
+  "sources": ["whatsapp_chat_with_ambassador", "fee_structure_pdf", "mess_menu_image", "timetable_pdf"],
+  "data_date": "2026-04-03",
+
+  "sections": {
+    "overview": {
+      "facts": [
+        "NIT Manipur (National Institute of Technology Manipur) is located at Langol, Imphal-795004, Manipur.",
+        "Phone: (0385) 2449312/2059391.",
+        "Email: nitmanipur@yahoo.in. Website: www.nitmanipur.ac.in.",
+        "Languages spoken: Official language is Meitei (Manipuri/Meiteilon). Most people also speak Hindi.",
+        "Climate: Moderate, subtropical monsoonal."
+      ]
+    },
+
+    "transport": {
+      "facts": [
+        "Imphal Airport is 9.1 km from NIT Manipur campus.",
+        "Dimapur Railway Station is 200-205 km from NIT Manipur campus.",
+        "Bus from Dimapur to Imphal costs Rs 700.",
+        "Train route: Vivek Dibrugarh Express from Rajahmundry to Dimapur, then winger or bus to Imphal."
+      ]
+    },
+
+    "hostels_boys": {
+      "facts": [
+        "NIT Manipur has 5 boys hostels.",
+        "H01 - inside campus, for 3rd and 4th year students.",
+        "H02 - inside campus, for 3rd and 4th year students.",
+        "H03 - inside campus, for 2nd year students.",
+        "NIT Manipur Private Boys Hostel 05 - 1.5 km from campus, for 1st year students.",
+        "PhD Hostel H04 - 1 km from campus, for MTech and PhD students.",
+        "Room types: Big room (5 students per room) and Small room (3 students per room).",
+        "1st year boys are in Hostel 05 (off-campus). 2nd years in H03. 3rd and 4th years in H01 and H02."
+      ]
+    },
+
+    "hostels_girls": {
+      "facts": [
+        "NIT Manipur has 2 girls hostels.",
+        "NIT Manipur Takyel Girls Hostel - for 1st and 2nd year girls, 4-6 km from airport, 3 km from bus stand.",
+        "NIT Manipur Girls Hostel near campus - walking distance from campus, for 3rd and 4th year girls."
+      ]
+    },
+
+    "mess": {
+      "assignment": "H02 and H03 share the same mess. H01 has a separate mess. Hostel 05 (1st years) has a separate mess. PhD hostel has a separate mess. All hostels follow the same menu.",
+      "timings": "Breakfast 7 AM - 9 AM, Lunch 12 PM - 2 PM, Snacks 5 PM - 6 PM, Dinner 7 PM - 9 PM",
+      "mess_schedule": {
+        "sunday": {
+          "breakfast": "Aloo Paratha, Tea, Tomato Sauce",
+          "lunch": "Rice, Dal, Sambar, Broccoli/Pumpkin, Salad",
+          "snacks": "Milk Tea",
+          "dinner": "Rice, Roti, Dal, Chicken/Paneer"
+        },
+        "monday": {
+          "breakfast": "Puri, Sabji, Tea",
+          "lunch": "Rice, Roti, Bengan, Dal, Uti, Ametpa",
+          "snacks": "Milk Tea",
+          "dinner": "Rice, Dal, Fish Curry/Kabuli Chana"
+        },
+        "tuesday": {
+          "breakfast": "Chowmein, Sauce, Tea",
+          "lunch": "Rice, Roti, Dal, Cauliflower, Ironba",
+          "snacks": "Milk Tea",
+          "dinner": "Rice, Roti, Rajma, Salad Sweet"
+        },
+        "wednesday": {
+          "breakfast": "Plain Paratha, Black Channa, Tea",
+          "lunch": "Rice, Roti, Dal, Sambar, Giya Papad",
+          "snacks": "Milk Tea",
+          "dinner": "Rice, Roti, Dal, Chicken Curry/Paneer"
+        },
+        "thursday": {
+          "breakfast": "Fried Rice, Sauce, Tea",
+          "lunch": "Rice, Roti, Aloo Soyabean, Ironba, Pickle",
+          "snacks": "Milk Tea",
+          "dinner": "Rice, Roti, Dal, Egg Curry/Cauliflower"
+        },
+        "friday": {
+          "breakfast": "Puri, Sabji, Tea",
+          "lunch": "Rice, Roti, Dal, Aloo Gobi, Salad",
+          "snacks": "Milk Tea",
+          "dinner": "Rice, Dal, Paneer"
+        },
+        "saturday": {
+          "breakfast": "Bread, Banana, Jam, Tea",
+          "lunch": "Rice, Roti, Dal, Squash Uti, Ametpa",
+          "snacks": "Milk Tea",
+          "dinner": "Rice, Roti, Dal, Egg Curry/Aloo Peanut"
+        }
+      },
+      "notes": "Menu includes local Manipuri items such as Ironba, Ametpa, and Uti. Chicken is served on Sunday and Wednesday. Fish is served on Monday. Egg is served on Thursday and Saturday.",
+      "cuisine": "Mix of North Indian staples (roti, dal, rice) with local Manipuri dishes (Ironba, Ametpa, Uti) and some Chinese-influenced items (chowmein, fried rice). Non-veg options include chicken, fish, and egg on specific days."
+    },
+
+    "fee_structure": {
+      "program": "B.Tech (2016 batch onwards)",
+      "per_semester": true,
+      "academic_fees": {
+        "tuition_fee": "Rs 62,500",
+        "alumni_fee": "Rs 1,000",
+        "institute_development_fund": "Rs 1,000",
+        "medical_insurance_gpd": "Rs 600",
+        "library_fee": "Rs 500",
+        "exam_fee": "Rs 500",
+        "student_aid": "Rs 500",
+        "grade_card": "Rs 500",
+        "steno_id_fee": "Rs 100"
+      },
+      "one_time_fees": {
+        "admission_fee": "Rs 1,000 (1st semester only)",
+        "mess_caution_deposit": "Rs 7,500 (1st semester only, refundable)"
+      },
+      "hostel_fees": {
+        "hostel_rent": "Rs 2,500 - Rs 3,500",
+        "establishment_amenities_maintenance": "Rs 2,500",
+        "electricity": "Rs 1,000"
+      },
+      "waivers": {
+        "SC_ST_PH": "Complete tuition fee exemption",
+        "family_income_below_1L": "Full tuition remission",
+        "family_income_1L_to_5L": "2/3rd tuition remission",
+        "SC_ST_scholarship": "Tuition fee borne by Ministry of Tribal/Social Development"
+      }
+    },
+
+    "wifi": {
+      "facts": [
+        "Both hostel and college WiFi are available at NIT Manipur.",
+        "Airtel and Jio 5G networks have good coverage."
+      ]
+    },
+
+    "attendance": {
+      "facts": [
+        "75% attendance is required to appear in end semester exams at NIT Manipur."
+      ]
+    },
+
+    "clubs": {
+      "list": [
+        "Inertia (dance club)",
+        "Pixel (photography club)",
+        "Qubit (coding club)"
+      ]
+    },
+
+    "fests": {
+      "facts": [
+        "No large cultural events at NIT Manipur.",
+        "Small events: Flash mob, Regen Hackathon.",
+        "Major events: Freshers and Farewell."
+      ]
+    },
+
+    "laundry": {
+      "facts": [
+        "Washing machine available only in H01 hostel at Rs 50 per kg.",
+        "Outside washing businesses available.",
+        "Most students wash their own clothes."
+      ]
+    },
+
+    "elections": {
+      "facts": [
+        "No student elections at NIT Manipur."
+      ]
+    },
+
+    "sports": {
+      "facts": [
+        "Cricket, Volleyball, Chess, Kho-Kho, and Badminton are available.",
+        "Inter-NIT sports competitions are held.",
+        "One sports meet per year."
+      ]
+    },
+
+    "canteen": {
+      "facts": [
+        "One canteen inside the hostel.",
+        "3 small restaurants near campus belonging to NIT Manipur, open 9 AM - 7 PM."
+      ]
+    },
+
+    "shops": {
+      "facts": [
+        "One stationery shop near campus, located beside the 3 restaurants."
+      ]
+    },
+
+    "fines": {
+      "facts": [
+        "Rs 2,000 late fine for coming late after holidays.",
+        "Rs 5,000 to Rs 10,000 for indisciplinary actions."
+      ]
+    },
+
+    "gym": {
+      "facts": [
+        "No gym facility in NIT Manipur college.",
+        "Nearest private gym is 5 km from campus."
+      ]
+    },
+
+    "health_centre": {
+      "facts": [
+        "No free medicines available at NIT Manipur.",
+        "Nearby hospitals: Shija Hospitals (SHRI) at 10.8 km, RIMS at 5.5 km."
+      ]
+    },
+
+    "restaurants": {
+      "nearby": ["Handi Story (Andhra style, 5.6 km)", "Many small local restaurants near campus"]
+    },
+
+    "nearby_places": {
+      "tourist": ["Loktak Lake (48 km)", "Keibul Lamjao National Park (55 km)", "Ukhrul hill station (83 km)"],
+      "shopping": ["Zudio (5.7 km)", "Trends (5.5 km)", "Mamcy Mall (7.0 km)"]
+    },
+
+    "language": {
+      "facts": ["Official language is Meitei (Manipuri/Meiteilon). Most people also speak Hindi."]
+    },
+
+    "climate": {
+      "facts": ["Moderate, subtropical monsoonal climate."]
+    },
+
+    "academics": {
+      "first_semester": {
+        "session": "July-Dec 2025",
+        "groups": {
+          "group_I": {
+            "branches": "Civil + Mechanical",
+            "room": "LH-18",
+            "subjects": ["CS1201 Intro to Computing", "EE1201 Basic Electrical", "MA1101 Engineering Math-I", "EC1201 Basic Electronics", "CE1201 Environmental Sustainability", "ME1249 Engineering Workshop", "IC1192 NCC/NSS"]
+          },
+          "group_II": {
+            "branches": "Electrical + ECE",
+            "room": "LH-19 New Block",
+            "subjects": ["CS1201 Intro to Computing", "EE1201 Basic Electrical", "MA1101 Engineering Math-I", "EC1201 Basic Electronics", "CE1201 Environmental Sustainability", "ME1249 Engineering Workshop", "IC1192 NCC/NSS"]
+          },
+          "group_III": {
+            "branches": "CSE",
+            "room": "LH-16 New Block",
+            "subjects": ["CH1101 Engineering Chemistry", "ME1101 Engineering Mechanics", "MA1101 Engineering Math-I", "PH1101 Engineering Physics", "HS1101 Communication Skills", "ME1149 Engineering Drawing"]
+          }
+        }
+      },
+      "fourth_semester_cse": {
+        "subjects": ["CS2401 Formal Languages and Automata Theory (FLAT)", "CS2402 Algorithms (ALGO)", "CS2403 Computer Organization and Architecture (COA)", "CS2404 Object Oriented Programming (OOPs)", "MA2401 Probability"],
+        "faculty": ["Dr. Yambem Jina Chanu", "Dr. Oinam Bidyapati Chanu", "Dr. Yumnam Surajkanta", "Dr. Thiyam Susma Devi"]
+      },
+      "class_timings": "9 AM to 5 PM, Monday to Friday"
+    }
+  }
+}

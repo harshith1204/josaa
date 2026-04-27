@@ -1,0 +1,169 @@
+{
+  "college": "NIT Agartala",
+  "sources": ["whatsapp_chat_with_ambassador", "fee_structure_image_ocr"],
+  "data_date": "2026-04-07",
+  "ambassador": {"phone": "redacted", "email": "redacted", "branch": "redacted", "year": "redacted"},
+
+  "sections": {
+    "overview": {
+      "facts": [
+        "NIT Agartala is a National Institute of Technology located in Jirania, Tripura, India.",
+        "Location: State Tripura, District West Tripura, Pincode 799046."
+      ]
+    },
+
+    "hostels_boys": {
+      "facts": [
+        "Aryabhatta Hostel is for boys. 2-sharing per room. Single room from 3rd year onwards.",
+        "RNT Hostel is for boys. 2-sharing per room. Single room from 3rd year onwards."
+      ]
+    },
+
+    "hostels_girls": {
+      "facts": [
+        "Gargi Hostel is for girls. 2-sharing per room."
+      ]
+    },
+
+    "mess": {
+      "facts": [
+        "No detailed mess menu provided by ambassador. Data gap — needs follow-up."
+      ]
+    },
+
+    "fee_structure": {
+      "source": "Student fee receipt (OBC/NCL student, 2024-29 batch, Electronics & Instrumentation Engineering). General category tuition fee not available from this receipt.",
+      "note": "This receipt is for an OBC/NCL student. Tuition fee appears as Rs 0 (likely fee waiver). General category tuition fee is NOT available from this receipt.",
+      "first_semester_total_obc": 37125,
+      "recurring_fees_per_sem": {
+        "institute_development_fee": 9500,
+        "medical_fee": 1200,
+        "student_activity_fund": 1000,
+        "gymkhana_sports_fee": 300,
+        "grade_card_fee": 500
+      },
+      "one_time_fees": {
+        "admission_fee": 1000,
+        "caution_money_refundable": 6000,
+        "prospectus_fee": 200
+      },
+      "variable_fees_per_sem": {
+        "all_other_fees": "Varies between Rs 2,425 and Rs 2,975 per semester.",
+        "computerization_sbi_elec_fee": "Varies: Rs 0 to Rs 1,085 depending on semester.",
+        "training_placement_fee": "Varies by semester."
+      },
+      "totals": [
+        "OBC/NCL 1st semester total: Rs 37,125 (tuition waived for this student).",
+        "General category fees are not available from this receipt. The tuition fee for general category students is unknown from this data source."
+      ],
+      "late_fee": "Rs 5,000 for first five days late, Rs 10,000 after that."
+    },
+
+    "wifi": {
+      "facts": [
+        "WiFi provides 2 GB per day for phones and 3 GB per day for laptops.",
+        "Network is mostly 5G, sometimes 4G."
+      ]
+    },
+
+    "attendance": {
+      "facts": [
+        "75% attendance is not mandatory at NIT Agartala.",
+        "Students can request to write semester examinations even without meeting 75% attendance."
+      ]
+    },
+
+    "clubs": {
+      "list": ["Team Xantronz", "Robotics Club", "DSA Club", "Anima Club", "We Can", "Think India", "TRIAC Club", "Dizire Club", "Pixcles Club"]
+    },
+
+    "fests": {
+      "list": [
+        {"name": "Moksha", "type": "Tech fest"}
+      ]
+    },
+
+    "sports": {
+      "facts": [
+        "Sports available: Cricket, Hockey, Volleyball, Kabaddi, Football, Badminton, Kho-Kho, Basketball, Table Tennis, and Tennis."
+      ]
+    },
+
+    "canteen": {
+      "facts": [
+        "Nescafe cafe inside hostel, open from evening to night.",
+        "Food court available in the college."
+      ]
+    },
+
+    "laundry": {
+      "facts": [
+        "No washing machines in the college.",
+        "Outside laundry service available; students have to pay."
+      ]
+    },
+
+    "elections": {
+      "facts": [
+        "No student elections at NIT Agartala."
+      ]
+    },
+
+    "gym": {
+      "facts": [
+        "Separate gyms for boys and girls.",
+        "Gym is free for all students."
+      ]
+    },
+
+    "medical": {
+      "facts": [
+        "Hospital available on campus.",
+        "In emergencies, an ambulance takes students to an outside hospital.",
+        "Medical fee: Rs 1,200 per semester."
+      ]
+    },
+
+    "transport": {
+      "facts": [
+        "Nearest airport: Bir Bikram Airport, Agartala (28 km).",
+        "Nearest railway station: Jirania Railway Station (3.1 km).",
+        "Nearest bus stand: Jirania Bus Stand (4 km)."
+      ]
+    },
+
+    "restaurants": {
+      "facts": [
+        "Nearby restaurants: John Restaurant, Mark Restaurant.",
+        "Swiggy and Zomato are not available inside or near the college."
+      ]
+    },
+
+    "nearby_places": {
+      "tourist_nearby": ["Ujantha Palace", "Mongtang Valley", "Tripura Sundari"],
+      "tourist_far": ["Unnakoti", "Jampui Hills", "Coconut Island", "Dumboor Waterfalls"],
+      "tourist_far_distance": "100-150 km",
+      "shopping": ["Polo Central Mall", "ML Plaza", "Agartala City Center"]
+    },
+
+    "fines": {
+      "facts": [
+        "Late semester fee: Rs 5,000 for first five days late.",
+        "Rs 10,000 fine after five days late."
+      ]
+    },
+
+    "climate": {
+      "facts": [
+        "Climate at NIT Agartala is mostly sunny and rainy."
+      ]
+    },
+
+    "language": {
+      "facts": [
+        "Home state language is Bengali.",
+        "Languages commonly spoken on campus: Telugu, Hindi, and English."
+      ]
+    }
+  }
+}

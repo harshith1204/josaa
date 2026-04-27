@@ -1,0 +1,206 @@
+{
+  "college": "VNIT Nagpur",
+  "full_name": "Visvesvaraya National Institute of Technology, Nagpur",
+  "sources": ["whatsapp_chat_with_ambassador", "fee_structure_pdf", "mess_menu_image"],
+  "data_date": "2026-04-03",
+
+  "sections": {
+    "overview": {
+      "facts": [
+        "VNIT Nagpur (Visvesvaraya National Institute of Technology) is located at South Ambazari Road, Nagpur-440010, Maharashtra.",
+        "Languages spoken: Hindi and Marathi.",
+        "Climate: All seasons experienced, normal climate. Nagpur is known for hot summers and mild winters."
+      ]
+    },
+
+    "transport": {
+      "facts": [
+        "Nagpur Railway Station is 7 km from VNIT Nagpur.",
+        "Dr. Babasaheb Ambedkar International Airport is 7 km from VNIT Nagpur.",
+        "Nagpur Bus Stand is 6 km from VNIT Nagpur."
+      ]
+    },
+
+    "hostels_boys": {
+      "facts": [
+        "VNIT Nagpur has 10 boys hostels.",
+        "Aryabhatta Hostel has 1 or 2 sharing rooms.",
+        "S. Ramanujan Hostel has 1 or 2 sharing rooms.",
+        "M.S. Swaminathan Hostel has 1 or 2 sharing rooms.",
+        "V.G. Bhide Hostel has 1 or 2 sharing rooms.",
+        "A.P.J. Abdul Kalam Hostel has 1 or 2 sharing rooms.",
+        "C.V. Raman Hostel has 3 sharing rooms and is designated for 1st year students.",
+        "Homi J. Bhabha Hostel has 1 or 2 sharing rooms.",
+        "J.C. Bose Hostel has 3 sharing rooms and is designated for 1st year students.",
+        "Meghnad Saha Hostel has 1 or 2 sharing rooms.",
+        "Vikram Sarabhai Hostel has 1 or 2 sharing rooms.",
+        "1st year boys are allotted 3-sharing rooms in C.V. Raman or J.C. Bose hostels. Senior students get 1 or 2 sharing."
+      ]
+    },
+
+    "hostels_girls": {
+      "facts": [
+        "VNIT Nagpur has 2 girls hostels.",
+        "Kalpana Chawla Hostel.",
+        "Dr. Anandi Gopal Joshi Hostel."
+      ]
+    },
+
+    "mess": {
+      "cost": "Rs 6000 per month",
+      "assignment": "Every academic year is assigned a different mess.",
+      "mess_schedule": {
+        "monday": {
+          "breakfast": "Bisi + Sambhar + Chutney + Bread + Butter + Jam + Banana(2)/Boiled Egg(1pc)",
+          "lunch": "Rice + Dal Palak (Combo) + Methi Malai Mattar + Cucumber + Beetroot + Ragi Roti + Lemon + Poke Chutney + Boondi Raita",
+          "snacks": "Wada Pav + Tea",
+          "dinner": "Rajma Aloo/Baingan Masala + Amti + Roti + Sprouts + Lemon + Poke"
+        },
+        "tuesday": {
+          "breakfast": "Uttapam + Sambhar + Chutney + Bread + Banana(2)/Boiled Egg(1pc)",
+          "lunch": "Rice + Chana Dal Tadka + Sev Bhaji + Sambhar + Cucumber + Carrot + Bajra Roti + Lemon + Poke",
+          "snacks": "Samosa + Tea",
+          "dinner": "Soya Bean/Rajma + Roti + Salad + Lemon + Poke"
+        },
+        "wednesday": {
+          "breakfast": "Aloo Matar Sandwich/Omlet + Ketchup + Banana(2)/Bread + Butter + Jam",
+          "lunch": "Rice + Ragi Parota + Aloo Mattar + Sambhar + Cucumber + Beetroot + Roti + Poke",
+          "snacks": "Popcorn/Onion/Millets Pakoda",
+          "dinner": "Jeera Rice + Moongi Dal + Kadai Paneer/Masala + Bajra + Salad + Roti + Lemon + Gulur"
+        },
+        "thursday": {
+          "breakfast": "Menu Wada + Sambhar + Chutney + Rice + Mix Dal + Veg Mix",
+          "lunch": "Rice + Sambhar + Salad + Cucumber + Beetroot + Roti + Lemon + Poke + Curd/Tomato Chutney",
+          "snacks": "Not specified",
+          "dinner": "Chole + Puri + Rasan/Ragi + Roti + Salad + Lemon + Gulur"
+        },
+        "friday": {
+          "breakfast": "Masala Dosa + Sambhar + Chutney + Bread + Banana(2)/Boiled Egg(1pc)",
+          "lunch": "Rice + Toor Dal + Cauliflower Aloo",
+          "snacks": "Kharma Dhokla + Coffee",
+          "dinner": "Peas Pulav/Masoor Dal + Paneer Tikka/Aloo Curry + Rasam + Roti + Salad"
+        },
+        "saturday": {
+          "breakfast": "Aaloo Paratha/Methi Paratha + Curd + Butter + Jam",
+          "lunch": "Rice + Dal Fry + Palak + Sambhar + Cucumber + Bajra Roti + Roti + Lemon + Poke",
+          "snacks": "Pav Bhaji + Tea",
+          "dinner": "Masala Rice + Rajma Dal + Veg Kofta/Aloo Mattar + Rasam + Beet Roti + Cucumber + Beet Root + Lemon + Poke"
+        },
+        "sunday": {
+          "breakfast": "Poha + Chutney + Banana(2)/Bread + Boiled Egg(1pc) + Butter + Jam",
+          "lunch": "Rice + Usad Dal + Chicken Egg/Paneer + Rumpa/Onion + Ice Cream (Jowar Roti + Boondi Raita + Apple)",
+          "snacks": "Packet Bhel + Coffee",
+          "dinner": "Dal Bhati Bhuji/Pav/Roti Bhaji/Biryani + Dahi + Papad"
+        }
+      },
+      "notes": "Salad includes tomatoes, beetroot, curd (any 2) at serving time. Curd is provided at all meals. 150g chickpea/dahl curry and 100g peas/mattar curry served whenever included. Bhatura served instead of puri once a month.",
+      "cuisine": "Mix of South Indian breakfast items (dosa, uttapam, bisi) with Maharashtrian touches (wada pav, pav bhaji, amti). North and South Indian lunch/dinner."
+    },
+
+    "fee_structure": {
+      "program": "B.Tech/B.Arch 2025 batch (Even Term S-26, Academic Year 2025-26)",
+      "per_semester": true,
+      "categories": {
+        "OPEN_OBC_EWS_CIWG": "Rs 67,725",
+        "SC_ST_PwD": "Rs 5,225",
+        "DASA_Non_SAARC": "4459 USD",
+        "SII_Non_SAARC": "2000 USD + Rs 5,225",
+        "SII_SAARC": "4000 USD + Rs 5,225"
+      }
+    },
+
+    "wifi": {
+      "facts": [
+        "Hostel rooms have LAN connectivity.",
+        "Classrooms, Library, and Mess have WiFi."
+      ]
+    },
+
+    "attendance": {
+      "facts": [
+        "75% attendance is mandatory at VNIT Nagpur."
+      ]
+    },
+
+    "clubs": {
+      "cultural": ["Shadow", "Tolly", "Hallabol", "Octaves", "Comparing"],
+      "technical": ["Syntax", "ACM", "IV Labs", "Tesla", "E-Cell"]
+    },
+
+    "fests": {
+      "facts": [
+        "September: Cult Nite.",
+        "November: Freshers + Aarohi (cultural fest).",
+        "January: Department Gathering.",
+        "March: Institute Gathering."
+      ]
+    },
+
+    "laundry": {
+      "facts": [
+        "3 washing machines are available in every hostel."
+      ]
+    },
+
+    "elections": {
+      "facts": [
+        "Department-level elections for CR (Class Representative) for boys and girls.",
+        "Department-level elections for CSR for boys and girls."
+      ]
+    },
+
+    "sports": {
+      "facts": [
+        "Cricket, Football, Volleyball, Handball, Futsal, Throwball, Kho-Kho, Lawn Tennis, Table Tennis, Chess, Carroms, and Swimming are available."
+      ]
+    },
+
+    "canteen": {
+      "facts": [
+        "Chandramma Canteen operates morning to evening.",
+        "Main Canteen operates morning to evening.",
+        "Night canteens available in Homi J. Bhabha Hostel blocks 6 and 8."
+      ]
+    },
+
+    "shops": {
+      "facts": [
+        "Stationery shops available on campus.",
+        "Cycle repair shops available on campus."
+      ]
+    },
+
+    "gym": {
+      "facts": [
+        "Gym timing: Morning 6 AM - 8 AM, Evening 5 PM - 8 PM.",
+        "Different timing slots for boys and girls.",
+        "Free for all students."
+      ]
+    },
+
+    "health_centre": {
+      "facts": [
+        "Health centre open from morning to evening.",
+        "Free for all students."
+      ]
+    },
+
+    "restaurants": {
+      "nearby": ["Anna Restaurant (1.5 km)", "House of Dum", "Fuel Headquarters"],
+      "delivery_apps": ["Swiggy", "Zomato", "Blinkit", "Zepto", "Eatsure"]
+    },
+
+    "nearby_places": {
+      "tourist": ["Futala Lake", "Ambazari Lake", "Swaminarayan Mandir", "Ganesh Tekdi", "Deekshabhoomi"],
+      "malls": ["VR Nagpur", "Eternity Mall", "Reliance Centro"]
+    },
+
+    "language": {
+      "facts": ["Hindi and Marathi are spoken in and around VNIT Nagpur."]
+    },
+
+    "climate": {
+      "facts": ["All seasons experienced. Normal climate. Nagpur is known for hot summers and mild winters."]
+    }
+  }
+}

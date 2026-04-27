@@ -1,0 +1,252 @@
+{
+  "college": "NIT Rourkela",
+  "full_name": "National Institute of Technology Rourkela",
+  "sources": ["whatsapp_chat_with_ambassador", "fee_structure_pdf", "mess_menu_image", "timetable_image"],
+  "data_date": "2026-04-03",
+
+  "sections": {
+    "overview": {
+      "facts": [
+        "NIT Rourkela (National Institute of Technology Rourkela) is located in District Sundargarh, Odisha, Pin 769008.",
+        "Languages spoken: Odia and Hindi.",
+        "Climate: Winter, summer, and spring seasons."
+      ]
+    },
+
+    "hostels_boys": {
+      "facts": [
+        "NIT Rourkela has 5 boys hostels.",
+        "VS Hall has 2-sharing rooms.",
+        "SD Hall has 2-sharing rooms.",
+        "MV Hall has 2-sharing rooms.",
+        "DBA Hall has 2-sharing rooms.",
+        "MSS Hall has 2-sharing rooms.",
+        "All boys hostels at NIT Rourkela have 2-sharing rooms."
+      ]
+    },
+
+    "hostels_girls": {
+      "facts": [
+        "NIT Rourkela has 3 girls hostels.",
+        "HB Hall has 2 and 3 sharing rooms.",
+        "KMS Hall has 2 and 3 sharing rooms.",
+        "CVR Hall has 2 and 3 sharing rooms."
+      ]
+    },
+
+    "mess": {
+      "timings": {
+        "breakfast": "07:15 AM - 09:15 AM (weekends till 09:45 AM)",
+        "lunch": "12:00 PM - 01:45 PM (weekends till 02:15 PM)",
+        "snacks": "05:00 PM - 05:45 PM",
+        "dinner": "07:30 PM - 09:15 PM"
+      },
+      "common_items": {
+        "lunch": "Zeera Rice, Roti, Hard Dal, Sambhar, Pickle",
+        "dinner": "Rice, Roti, Hard Dal, Sambhar, Pickle"
+      },
+      "mess_schedule": {
+        "monday": {
+          "breakfast": "Dng Idl (plain/full) + Aloo Tomato Bharta + Bread/Butter/Jam + Sprouted Mix/Orange + Milk/Tea",
+          "lunch": "Common items + Sago Mugu/Rajma + Salad + Curd",
+          "snacks": "Prawn/Barwan (1) + Coffee",
+          "dinner_veg": "Chhole Paneer",
+          "dinner_nonveg": "Dry Masala Fish/Lbd"
+        },
+        "tuesday": {
+          "breakfast": "Masoor Idli + Sambar + Chutney + Dhapuri/Cornflakes + Sprout Mix/Orange + Milk/Tea",
+          "lunch": "Common items + Dahi Kadi + Ghanta Curry + Ppad + Salad + Curd + Lemon Rice",
+          "snacks": "Dahi Bada/Sewara (1) + Coffee",
+          "dinner_veg": "Paneer Hyderabadi",
+          "dinner_nonveg": "Chicken Mughlai/French Fry"
+        },
+        "wednesday": {
+          "breakfast": "Chana/Bada + Dhokla/Poha/Uttam + Chutney/Bread + Sprout Mix + Milk/Tea",
+          "lunch": "Common items + Chilly Mushroom/Mugali + Paneer Curry/Bhujia + Aloo Kerala Poriyal + Salad + Curd + Tomato Rice",
+          "snacks": "Bread Curry + Coffee",
+          "dinner_veg": "Soya Paneer",
+          "dinner_nonveg": "Mixed Veg Fry"
+        },
+        "thursday": {
+          "breakfast": "Methi Puri/Patal + Cornflakes/Bada + Sprout Mix/Orange + Milk/Tea",
+          "lunch": "Common items + Lauki Kofta Curry + Masoor Curry + Ambika ka Raita/Curd + Spl Darshila Rui",
+          "snacks": "Per Bhaji/Sewara + D/Goan Roush Pack/Ruti + Coffee",
+          "dinner_veg": "Chill/Soya/Paneer",
+          "dinner_nonveg": "Egg Curry",
+          "dinner_alt": "Pulao/Roti"
+        },
+        "friday": {
+          "breakfast": "Dng Idli/Upma + Bread/Butter + Sprout Mix/Orange + Milk/Tea",
+          "lunch": "Common items + Matar Paneer/Fish + Aloo Bhujia + Salad + Curd",
+          "snacks": "Veg Sandwich + Coffee",
+          "dinner_veg": "Paneer Kofta",
+          "dinner_nonveg": "Paneer Kadhi + Biryani(2)/Raita + Half/Hafi"
+        },
+        "saturday": {
+          "breakfast": "Orange (2)/Milk/Tea + Cornflakes + Sprout Mix",
+          "lunch": "Common items + Budi Rajgor Beryaji + Drumstick Badi + Tomato Kejar Khara + Aloo Cabbage Dry + Salad + Curd",
+          "snacks": "Dahi Sewara (1)/Cream + Fried Rice Pack (1) + Coffee",
+          "dinner_veg": "Rice Kheer/Masala",
+          "dinner_nonveg": "Moong Dal Masala"
+        },
+        "sunday": {
+          "breakfast": "Orange (2)/Milk/Tea",
+          "lunch": "Common items + Masala Dhi + Small Brj(1) + Paneer Butter Masala/Dry + Mah Chana Aloo + Khichdi/Brj + Curd + Dng Ice Cream (M/G)/Panna",
+          "snacks": "No snacks on Sunday",
+          "dinner_veg": "Dhl Bhati Bhuji/Bhayrani/Biryani + Dahi/Rui + Papad"
+        }
+      },
+      "portions": {
+        "curd": "100ml",
+        "milk": "150ml",
+        "cornflakes": "50g",
+        "tea": "70ml",
+        "paneer": "75g",
+        "mushroom": "30g",
+        "egg": "2pcs",
+        "chicken": "120g (2pcs)"
+      },
+      "sprout_mix": "One large spoon (Moong, chickpea, peas, onion, mustard, mixed masala)",
+      "salad": "Cucumber, Tomato, Carrot, Radish",
+      "notes": "Orange must be large and premium quality. Tea/coffee portions fixed for day, no substitutions. Staff must adhere to prescribed dress code. Food items must remain available throughout serving duration. Running out of any item is strictly prohibited. Any breach leads to penalties/compensation on caterer.",
+      "cuisine": "Mix of Odia (Ghanta Curry), North Indian (Paneer dishes, Biryani), and South Indian items. Both veg and non-veg options at dinner. Non-veg includes fish, chicken, and egg."
+    },
+
+    "fee_structure": {
+      "program": "B.Tech 2025-26",
+      "semester_wise": true,
+      "semesters": {
+        "semester_1": {
+          "total": "Rs 1,36,500",
+          "breakdown": {
+            "admission_fee": "Rs 2,500",
+            "tuition_fee": "Rs 62,500",
+            "other_fees": "Rs 5,000",
+            "student_activity_fee": "Rs 2,000",
+            "medical_fee": "Rs 2,000",
+            "hostel_fee": "Rs 5,000",
+            "caution_money": "Rs 10,000 (refundable)",
+            "institute_emergency_fund": "Rs 12,500 (one-time)",
+            "hall_establishment": "Rs 5,000",
+            "mess_advance": "Rs 30,000 (approximate)"
+          }
+        },
+        "semester_2": "Rs 1,11,500",
+        "semester_3": "Rs 1,11,500",
+        "semester_4": "Rs 1,11,500",
+        "semester_5": "Rs 1,11,500",
+        "semester_6": "Rs 1,11,500",
+        "semester_7": {
+          "total": "Rs 1,14,500",
+          "extra_charges": "Souvenir Rs 500, Convocation Rs 2,500"
+        },
+        "semester_8": "Rs 1,11,500"
+      },
+      "waivers": {
+        "SC_ST_PH_income_below_1L": "Complete tuition fee exemption (Rs 62,500 waived)",
+        "income_1L_to_5L": "Tuition fee reduced to 1/3rd = Rs 20,833 per semester"
+      },
+      "notes": "Other fees include Examination, Library, and Electricity charges. Mess advance is approximate."
+    },
+
+    "wifi": {
+      "facts": [
+        "WiFi is available at NIT Rourkela with LAN cable connectivity and 5G."
+      ]
+    },
+
+    "attendance": {
+      "facts": [
+        "75% attendance is mandatory at NIT Rourkela."
+      ]
+    },
+
+    "clubs": {
+      "technical": ["Cyborg", "Black Mamba Racing", "TRR", "Udaan", "Tibiran", "ASME"],
+      "cultural": ["Bless and Blissy Society"]
+    },
+
+    "fests": {
+      "facts": [
+        "Cosmo: Cultural fest, 3 days duration.",
+        "Innovation: Technical fest, 3 days duration.",
+        "Sports fest: 3 days duration."
+      ]
+    },
+
+    "laundry": {
+      "facts": [
+        "All halls have washing machines.",
+        "One bucket laundry charge is Rs 10."
+      ]
+    },
+
+    "elections": {
+      "facts": [
+        "SAC (Students Activity Centre) election.",
+        "Hall election."
+      ]
+    },
+
+    "sports": {
+      "facts": [
+        "Volleyball, Table Tennis, and Cricket are available."
+      ]
+    },
+
+    "canteen": {
+      "facts": [
+        "Day canteen available.",
+        "Night canteen available."
+      ]
+    },
+
+    "shops": {
+      "facts": [
+        "Stationery shop available on campus.",
+        "Barber shop available on campus."
+      ]
+    },
+
+    "fines": {
+      "facts": [
+        "Late registration fine: Rs 500 increment per day."
+      ]
+    },
+
+    "gym": {
+      "facts": [
+        "Every hall at NIT Rourkela has a gym."
+      ]
+    },
+
+    "health_centre": {
+      "facts": [
+        "Hospital at NIT Rourkela is open 24/7."
+      ]
+    },
+
+    "restaurants": {
+      "nearby": ["Dosa Plaza", "KFC", "Dominos", "Hexagon", "Calorie"]
+    },
+
+    "nearby_places": {
+      "tourist": ["Waterfalls and temples near Rourkela", "Puri Jagannath Temple", "Hanuman Vatika Temple", "Konark Sun Temple"],
+      "malls": ["Pluton Mall", "Crossroad Mall", "Cineplex Mall"]
+    },
+
+    "language": {
+      "facts": ["Odia and Hindi are spoken in and around NIT Rourkela."]
+    },
+
+    "climate": {
+      "facts": ["Winter, summer, and spring seasons experienced at NIT Rourkela, Odisha."]
+    },
+
+    "academics": {
+      "class_timings": "8:00-8:55, 9:00-9:55, 10:00-10:55, 11:05-12:00, Lunch 12:00-13:15, 13:15-14:10, 14:15-15:10, 15:15-16:10, 16:20-17:15, 17:20-18:15",
+      "subjects": ["CY1170", "CE1100", "CY1002", "EC1000", "HS1300", "MA1004", "CH1400"],
+      "schedule_notes": "Monday to Friday classes. Wednesday appears to be mostly free."
+    }
+  }
+}

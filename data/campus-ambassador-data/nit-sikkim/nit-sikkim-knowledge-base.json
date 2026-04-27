@@ -1,0 +1,264 @@
+{
+  "college": "NIT Sikkim",
+  "full_name": "National Institute of Technology Sikkim",
+  "sources": ["whatsapp_chat_with_ambassador", "fee_structure_pdf", "mess_menu_pdf", "timetable_pdf"],
+  "data_date": "2026-04-04",
+
+  "sections": {
+    "overview": {
+      "facts": [
+        "NIT Sikkim (National Institute of Technology Sikkim) is located at Ravangla, Barfung Road, Namchi District, Sikkim 737139.",
+        "Languages spoken: Mostly Hindi. Local people speak Nepali, Bengali, and Hindi.",
+        "Climate: Mostly winter weather. Non-stop rain during rainy season. Summer mornings are sunny but afternoon rain is likely."
+      ]
+    },
+
+    "transport": {
+      "facts": [
+        "New Jalpaiguri Station is 120 km from NIT Sikkim.",
+        "Bagdogra Airport is 130 km from NIT Sikkim.",
+        "From airport/station: Take SNT bus or share taxi available till 1 PM. Share taxi costs Rs 450, or Rs 800-900 if there is a landslide on the road.",
+        "Separate cab from airport/station to NIT Sikkim costs Rs 4,000.",
+        "Daily bus available at 1 PM, fare Rs 280."
+      ]
+    },
+
+    "hostels_boys": {
+      "facts": [
+        "BH-1 (Boys Hostel 1) for 2nd year and above, located in campus.",
+        "BH-2 (Boys Hostel 2) for 2nd year and above, located in campus.",
+        "1st year boys hostel is located 1.5 km outside the main campus.",
+        "MTech students have 2 hostels within campus.",
+        "PhD students do not have hostel facility.",
+        "Faculty and staff have a separate FS hostel on campus."
+      ]
+    },
+
+    "hostels_girls": {
+      "facts": [
+        "NIT Sikkim has 3 girls hostels.",
+        "GH-1 (Girls Hostel 1), located in campus.",
+        "GH-2 (Girls Hostel 2), located in campus.",
+        "GH-3 (Girls Hostel 3), located in campus."
+      ]
+    },
+
+    "mess": {
+      "cost": "Rs 140 per day",
+      "structure": "1 boys mess (serves all boys including MTech and PhD) and 1 girls mess (serves all girls). Same menu for everyone.",
+      "timings": {
+        "breakfast_working": "7:00 AM - 9:00 AM",
+        "breakfast_weekends": "8:00 AM - 10:00 AM",
+        "lunch": "12:00 PM - 2:00 PM",
+        "tea": "5:30 PM - 6:30 PM",
+        "dinner": "8:00 PM - 9:45 PM"
+      },
+      "mess_schedule": {
+        "monday": {
+          "breakfast": "Sattu/Aloo Paratha",
+          "lunch": "Arhar Dal/Rajma",
+          "dinner": "Shahi Paneer/Butter Chicken"
+        },
+        "tuesday": {
+          "breakfast": "Pav Bhaji/Medu Vada",
+          "lunch": "Masoor Dal + Mix Veg",
+          "dinner": "Chana Dal Tarka + Aloo Matar"
+        },
+        "wednesday": {
+          "breakfast": "Gobi/Veg Paratha",
+          "lunch": "Chana Dal + Aloo Dam + Palak",
+          "dinner": "Egg Curry/Mushroom Curry"
+        },
+        "thursday": {
+          "breakfast": "Uttapam/Poha + Sev",
+          "lunch": "Masoor Dal + Besan Kadhi",
+          "dinner": "Puri + Aloo/Gobi Dum + Chole"
+        },
+        "friday": {
+          "breakfast": "Bread Butter Jam + Eggs",
+          "lunch": "Arhar Dal + Cabbage Fry + Soyabean",
+          "dinner": "Paneer Chilli/Chicken Chilli OR Biryani (alternate weeks)"
+        },
+        "saturday": {
+          "breakfast": "Dosa/Idli",
+          "lunch": "Khichdi + Chokha + Papad",
+          "dinner": "Fried Rice + Manchurian"
+        },
+        "sunday": {
+          "breakfast": "Chole Bhatura + Fruit",
+          "lunch": "Matar Paneer/Fish Curry",
+          "dinner": "Dal Makhani + Gulab Jamun/Jalebi"
+        }
+      },
+      "portions": {
+        "bread": "4 pcs",
+        "butter": "10g",
+        "jam": "20g",
+        "chicken": "120-135g",
+        "egg": "2 pcs",
+        "fish": "120-135g",
+        "paneer": "70-80g",
+        "tea": "200ml",
+        "pav": "4 pcs"
+      },
+      "notes": "Biryani served every 2 weeks (alternate Fridays). Menu covers South Indian, North Indian, and Sikkim food.",
+      "cuisine": "Mix of North Indian staples (parathas, dal, rajma, chole bhatura), South Indian items (dosa, idli, uttapam, medu vada), and non-veg options (butter chicken, egg curry, fish curry, chicken chilli, biryani). Sikkim food also included."
+    },
+
+    "fee_structure": {
+      "per_semester_fees": {
+        "tuition_full": "Rs 62,500",
+        "tuition_2_3rd_remission": "Rs 20,834",
+        "tuition_SC_ST_PwD_below_1L": "Rs 0",
+        "exam": "Rs 870",
+        "registration": "Rs 298",
+        "library": "Rs 926",
+        "lab": "Rs 1,157",
+        "internet": "Rs 585",
+        "sports": "Rs 992",
+        "medical": "Rs 353",
+        "insurance": "Rs 585",
+        "development_fund": "Rs 585",
+        "training_placement": "Rs 176",
+        "department": "Rs 585",
+        "grade_card": "Rs 231"
+      },
+      "per_semester_totals": {
+        "full_tuition_total": "Rs 70,945",
+        "2_3rd_remission_total": "Rs 29,279"
+      },
+      "one_time_fees": {
+        "admission": "Rs 5,000",
+        "id_card": "Rs 3,000",
+        "welfare": "Rs 500",
+        "alumni": "Rs 7,500",
+        "convocation": "Rs 750",
+        "caution_deposit": "Rs 7,500",
+        "total_first_semester": "Rs 16,750",
+        "total_subsequent_semesters": "Rs 8,250"
+      },
+      "hostel_fees": {
+        "mess_caution": "Rs 7,500 (one-time)",
+        "hostel_caution": "Rs 750",
+        "hostel_fee": "Rs 1,742",
+        "maintenance": "Rs 297",
+        "total_first_semester": "Rs 10,927"
+      },
+      "optional": {
+        "bus": "Rs 1,743 per semester"
+      },
+      "notes": "Mess charges are separate from hostel and tuition fees."
+    },
+
+    "wifi": {
+      "facts": [
+        "10 GB per day per student at NIT Sikkim.",
+        "Uninterrupted WiFi connectivity in hostel rooms, classrooms, and labs."
+      ]
+    },
+
+    "attendance": {
+      "facts": [
+        "75% attendance is mandatory at NIT Sikkim.",
+        "Remaining 25% can be covered by medical certificates."
+      ]
+    },
+
+    "clubs": {
+      "clubs": ["Anuvrat", "Devcans", "Nirmaan", "Photography Club", "The Regnant Club", "Yantrikaa"],
+      "cells": ["E&I Cell (Entrepreneurship & Innovation)", "Web Dev Cell", "T&P Cell (Training & Placement)"]
+    },
+
+    "fests": {
+      "facts": [
+        "Udgam: Cultural fest.",
+        "Abhiyantran: Technical fest.",
+        "2 fests held per year."
+      ]
+    },
+
+    "laundry": {
+      "facts": [
+        "1-2 washing machines available per hostel.",
+        "Costs Rs 50 per wash."
+      ]
+    },
+
+    "elections": {
+      "facts": [
+        "No student elections are held at NIT Sikkim."
+      ]
+    },
+
+    "sports": {
+      "facts": [
+        "Cricket, Football, Volleyball, Badminton, Kho-Kho, Basketball, Chess, and Carrom are available.",
+        "Annual sports event involving the entire college including faculty."
+      ]
+    },
+
+    "canteen": {
+      "facts": [
+        "On-campus canteen serving snacks and food.",
+        "Small canteen located 100 meters outside campus.",
+        "Grocery shop 1 km away from campus.",
+        "2 restaurants 2 km away from campus."
+      ]
+    },
+
+    "shops": {
+      "facts": [
+        "Market is 2 km away from NIT Sikkim campus."
+      ]
+    },
+
+    "fines": {
+      "facts": [
+        "Misbehavior: Rs 20,000 fine plus deregistration for 1 semester. Very strictly enforced.",
+        "Property damage: Rs 20,000 to Rs 50,000 fine. Very strictly enforced."
+      ]
+    },
+
+    "gym": {
+      "facts": [
+        "Boys only gym at NIT Sikkim.",
+        "Free for students.",
+        "Accessible at any time."
+      ]
+    },
+
+    "health_centre": {
+      "facts": [
+        "Health centre open 8 AM to 10 PM.",
+        "Ambulance available for emergencies.",
+        "College bears testing expenses.",
+        "Students must buy medicines themselves if not available at the health centre."
+      ]
+    },
+
+    "restaurants": {
+      "nearby": ["Many restaurants in the market 2 km away from campus"]
+    },
+
+    "nearby_places": {
+      "tourist": ["Namchi (Chardham)", "Pelling", "Gangtok", "North Sikkim (Lachung, Lachen)", "Nathula Pass", "Kalimpong", "Darjeeling", "Lamhatta", "Tinchule", "Downhill"],
+      "malls": ["No malls nearby. Zudio, Trends, Reliance etc. are 26 km away."]
+    },
+
+    "language": {
+      "facts": ["Mostly Hindi spoken at NIT Sikkim. Local people speak Nepali, Bengali, and Hindi."]
+    },
+
+    "climate": {
+      "facts": ["Mostly winter weather at NIT Sikkim (Ravangla). Non-stop rain during rainy season. Summer mornings sunny but afternoon rain is likely."]
+    },
+
+    "academics": {
+      "facts": [
+        "NIT Sikkim offers B.Tech in CSE (Computer Science), ECE (Electronics & Communication), and EE (Electrical Engineering).",
+        "Timetable covers ECE 4th, 6th, and 8th semester; CSE 4th and 6th semester; EE 4th semester.",
+        "Subjects include Signal Processing, Analog Electronics, Microprocessor, Communication Systems, VLSI, Embedded Systems, and more."
+      ]
+    }
+  }
+}

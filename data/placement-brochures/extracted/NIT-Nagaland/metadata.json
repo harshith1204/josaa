@@ -1,0 +1,13 @@
+{
+  "college": "NIT-Nagaland",
+  "source_pdf": "NIT-Nagaland-Placement-Data-2023.pdf",
+  "total_pages": 7,
+  "image_pages": 4,
+  "text_chars": 2871,
+  "extraction_method": "pymupdf4llm",
+  "ocr_applied": true,
+  "structured_data": {
+    "institute": "NIT-Nagaland",
+    "total_offers": 2
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "college": "NIT-Silchar",
+  "source_pdf": "NIT-Silchar-Placement-Brochure.pdf",
+  "total_pages": 5,
+  "image_pages": 0,
+  "text_chars": 3522,
+  "extraction_method": "pymupdf4llm",
+  "ocr_applied": false,
+  "structured_data": {
+    "institute": "NIT-Silchar"
+  }
+}

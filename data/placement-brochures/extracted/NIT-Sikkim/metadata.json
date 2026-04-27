@@ -1,0 +1,20 @@
+{
+  "college": "NIT-Sikkim",
+  "source_pdf": "NIT-Sikkim-Placement-Brochure-2024-25.pdf",
+  "total_pages": 41,
+  "image_pages": 2,
+  "text_chars": 59982,
+  "extraction_method": "pymupdf4llm",
+  "ocr_applied": false,
+  "structured_data": {
+    "institute": "NIT-Sikkim",
+    "year": "2024-25",
+    "total_companies": 16,
+    "top_recruiters": [
+      "Apple",
+      "Ey",
+      "Intel",
+      "Isro"
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "college": "IIT-Goa",
+  "source_pdf": "IIT-Goa-Placement-Brochure-2025-26.pdf",
+  "total_pages": 25,
+  "image_pages": 2,
+  "text_chars": 36231,
+  "extraction_method": "pymupdf4llm",
+  "ocr_applied": true,
+  "structured_data": {
+    "institute": "IIT-Goa",
+    "year": "2025-26",
+    "total_companies": 160,
+    "placement_percentage": 80.0,
+    "top_recruiters": [
+      "Ey",
+      "Google",
+      "Hcl",
+      "Intel",
+      "Isro",
+      "Meta",
+      "Siemens"
+    ]
+  }
+}

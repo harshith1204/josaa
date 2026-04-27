@@ -1,0 +1,98 @@
+{
+  "college": "IIT Bhilai",
+  "full_name": "Indian Institute of Technology Bhilai",
+  "sources": ["admin_provided_data"],
+  "data_date": "2026-04-05",
+
+  "sections": {
+    "overview": {
+      "facts": [
+        "IIT Bhilai (Indian Institute of Technology Bhilai) is located at Kutelabhata, Bhilai, Chhattisgarh.",
+        "Languages spoken: All languages in college, Hindi and local language in the state.",
+        "Climate: High temperatures, low rain, dry weather."
+      ]
+    },
+
+    "transport": {
+      "facts": [
+        "Nearest railway and bus stations are Durg and Raipur.",
+        "Nearest airport is Raipur.",
+        "Modes of transport include car, bus, bike, train, and flight."
+      ]
+    },
+
+    "mess": {
+      "facts": [
+        "IIT Bhilai has two messes: Shree Sai and Galav Foods."
+      ]
+    },
+
+    "laundry": {
+      "facts": [
+        "IIT Bhilai has 8 paid laundry machines."
+      ]
+    },
+
+    "elections": {
+      "facts": [
+        "Election positions at IIT Bhilai: President, Gen-Sec, Cult, and Sci-Tech."
+      ]
+    },
+
+    "sports": {
+      "facts": [
+        "Sports available at IIT Bhilai: Volleyball, Athletics, Football, Cricket, Basketball, Chess, and Table Tennis."
+      ]
+    },
+
+    "canteen": {
+      "facts": [
+        "IIT Bhilai has two canteens.",
+        "Canteen timings: one operates 11AM to 3AM, the other 5PM to 11PM."
+      ]
+    },
+
+    "gym": {
+      "facts": [
+        "One gym available for all students (boys and girls)."
+      ]
+    },
+
+    "fines_and_rules": {
+      "facts": [
+        "Ragging fine: Rs 25,000 to Rs 1 Lakh plus suspension or expulsion.",
+        "Smoking and alcohol are prohibited on campus.",
+        "Hostel and dining misconduct attract fines.",
+        "Academic integrity violations carry penalties.",
+        "Late submission of assignments attracts penalties.",
+        "Caution money is Rs 9,000 (refundable).",
+        "Insurance costs Rs 1,000 per year."
+      ]
+    },
+
+    "medical": {
+      "facts": [
+        "IIT Bhilai has a 24/7 medical facility with 2 ambulances."
+      ]
+    },
+
+    "restaurants": {
+      "near_campus": ["The Nomads Cafe (Italian/Mexican, 5.0 rating)", "H3 Cafe (dosas)", "Nukkad Teafe (tea)", "Apicure (healthy, family)", "Dwarika Restaurant (Junwani Road)"],
+      "civic_centre": ["Hari Raj (veg)", "Kailash Parbat (Indian/Chinese)", "Indian Coffee House", "Veggie India"]
+    },
+
+    "nearby_places": {
+      "tourist": ["ISKCON Temple", "Maitri Bagh Zoo (10km)", "Deobaloda Shiva Temple (6km)", "Civic Center"],
+      "malls": ["Surya Mall (Durg, 4km)", "Magneto Mall (Raipur, via train/car)"],
+      "hotels": ["Super Hotel O Bhilai Near IIT", "The Urban Escape", "Hotel Grand Dhillon", "Chouhan Resort"]
+    },
+
+    "language": {
+      "facts": ["All languages are spoken in the college. Hindi and local language are spoken in the state."]
+    },
+
+    "climate": {
+      "facts": ["High temperatures, low rain, and dry weather around IIT Bhilai."]
+    }
+  }
+}

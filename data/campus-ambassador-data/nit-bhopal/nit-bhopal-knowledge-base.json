@@ -1,0 +1,212 @@
+{
+  "college": "NIT Bhopal",
+  "full_name": "Maulana Azad National Institute of Technology, Bhopal",
+  "short_name": "MANIT Bhopal",
+  "sources": ["whatsapp_chat_with_ambassador", "fee_structure_screenshot", "mess_schedule_pdf", "timetable_pdf"],
+  "data_date": "2026-04-03",
+
+  "sections": {
+    "overview": {
+      "facts": [
+        "Maulana Azad National Institute of Technology (MANIT) Bhopal is located in Bhopal, Madhya Pradesh, PIN 462003.",
+        "MANIT Bhopal is also referred to as NIT Bhopal.",
+        "Hindi is the primary language spoken on campus."
+      ]
+    },
+
+    "hostels_boys": {
+      "count": 10,
+      "sharing": "2-sharing",
+      "hostels": [
+        {"name": "H1", "full_name": "Homi Jehangir Bhabha Bhawan"},
+        {"name": "H2", "full_name": "Vikram Sarabhai Bhawan"},
+        {"name": "H3", "full_name": "H3"},
+        {"name": "H4", "full_name": "H4"},
+        {"name": "H5", "full_name": "M. Visvesvaraya Bhawan"},
+        {"name": "H6", "full_name": "J.C. Bose Bhawan"},
+        {"name": "H8", "full_name": "Ramanujan Bhawan"},
+        {"name": "H9", "full_name": "Raja Ramanna Bhawan"},
+        {"name": "H10", "full_name": "H10 (freshers hostel)"},
+        {"name": "H11", "full_name": "H11"}
+      ],
+      "notes": "H10 is the freshers hostel. All rooms are 2-sharing."
+    },
+
+    "hostels_girls": {
+      "count": 2,
+      "sharing": "2-sharing",
+      "hostels": [
+        {"name": "H7", "full_name": "Kalpana Chawla Bhawan"},
+        {"name": "H12", "full_name": "Bhagini Nivedita Bhawan"}
+      ]
+    },
+
+    "hostel_rent": {
+      "single_occupancy": 6600,
+      "double_occupancy": 2500,
+      "triple_occupancy": 1000,
+      "note": "Per semester room rent."
+    },
+
+    "mess": {
+      "source": "H-8 Hostel Mess",
+      "mess_schedule": {
+        "monday": {"breakfast": "Poha Jalebi + Barik Sev", "lunch": "Dum Aloo + Bundi Raita", "snacks": "Samosa + Green Chutney", "dinner": "Rajma"},
+        "tuesday": {"breakfast": "Idli, Chutney, Sambhar", "lunch": "Pindi Chole, Veg Raita", "snacks": "Aloo Tikki + Green Chutney", "dinner": "Paneer Paratha + Curd"},
+        "wednesday": {"breakfast": "Aloo Sabji Paratha", "lunch": "Kadi Pakoda, Sukhe Aloo Sabzi", "snacks": "Pyaaz Pakoda + Green Chutney", "dinner": "Egg Curry + Mushroom/Paneer"},
+        "thursday": {"breakfast": "Aloo Paratha, Chutney, Achaar", "lunch": "Mix Veg + Bundi Raita", "snacks": "Fried Idli", "dinner": "Chole Bhature + Ice Cream"},
+        "friday": {"breakfast": "Uttapam, Chutney, Sambhar", "lunch": "Rajma, Veg Raita", "snacks": "Vada Pav + Green Chutney", "dinner": "Soya Badi"},
+        "saturday": {"breakfast": "Sandwich", "lunch": "Dal Wafle, Sukhe Aloo, Dal, Lemon Rice, Puri + Bundi Raita + Gulab Jamun/Custard", "snacks": "Tea + Biscuit", "dinner": "Biryani + Raita"},
+        "sunday": {"breakfast": "Dosa, Chutney, Sambhar", "lunch": "Chana Masala, Veg Raita", "snacks": "Bhel", "dinner": "Kadai Paneer, Chicken Curry"}
+      },
+      "daily_mandatory": "Milk, Sprouts, Banana",
+      "egg_days": ["Monday", "Wednesday", "Thursday", "Friday", "Sunday"],
+      "cuisine": "Mix of North Indian and South Indian. Non-veg (chicken) on Sundays. Eggs on 5 days a week.",
+      "night_canteen": "Night canteen available in every hostel."
+    },
+
+    "wifi": {
+      "facts": [
+        "WiFi 5G and LAN available everywhere in the MANIT Bhopal campus."
+      ]
+    },
+
+    "attendance": {
+      "facts": [
+        "75% attendance is mandatory for all students."
+      ]
+    },
+
+    "clubs": {
+      "technical": ["SAE", "ISTE", "IEEE", "E-Cell", "Robotics"],
+      "cultural": ["Roobaroo", "Maffick", "Music"],
+      "social": ["NSS", "Go Green", "Parivartan"],
+      "creative": ["Pixel", "IBC"]
+    },
+
+    "fests": {
+      "facts": [
+        "Maffick NTB is a college fest.",
+        "Tooryanaad LRC is a college fest.",
+        "E-Cell LRC is a college event/fest."
+      ]
+    },
+
+    "sports": {
+      "available": ["Kho-Kho", "Kabaddi", "Badminton", "Table Tennis", "Volleyball", "Cricket", "Football", "Pickle Ball"],
+      "gym": "One gym in sports complex for both boys and girls. Gym is free but requires passing a test."
+    },
+
+    "canteen": {
+      "canteens": [
+        {"name": "Nilam", "location": "Near girls hostel"},
+        {"name": "Dasa", "location": "Near H10"},
+        {"name": "Susanghat", "location": "On campus"},
+        {"name": "Top n Town", "location": "On campus"}
+      ],
+      "night_canteen": "Available in every hostel.",
+      "shops": ["Dasa", "General Store"]
+    },
+
+    "laundry": {
+      "facts": [
+        "Washing machines available in every hostel.",
+        "Dry cleaning service also available."
+      ]
+    },
+
+    "elections": {
+      "roles": [
+        "Student Council",
+        "Student President",
+        "CR (Class Representative) for every class"
+      ]
+    },
+
+    "medical": {
+      "facts": [
+        "Dispensary available on campus, free for all MANIT students.",
+        "Ambulance service free for all MANIT students."
+      ]
+    },
+
+    "transport": {
+      "railway": "Bhopal Junction, 8 km from campus",
+      "airport": "Jabalpur Airport, 97 km from campus"
+    },
+
+    "restaurants": {
+      "nearby": ["Hot n Spicy", "Naddus Fried Chicken", "Badastoor", "Kerala Kitchen", "Kaa Loo Yaar", "The Sambhar Cafe"],
+      "delivery": "Swiggy and Zomato available."
+    },
+
+    "nearby_places": {
+      "tourist": ["Bhojpur", "Pachmarhi", "Indore", "Ujjain", "Upper Lake", "Van Vihar Park", "Bharat Bhavan"],
+      "shopping": ["Aashima Mall", "DB Mall", "Capital Mall"]
+    },
+
+    "language_climate": {
+      "languages": "Hindi",
+      "climate": {
+        "summer": "More than 38C",
+        "winter": "Less than 6C",
+        "rainfall": "Moderate"
+      }
+    },
+
+    "rules": {
+      "facts": [
+        "Fines are imposed based on the type of malpractice.",
+        "Alcohol, cigarettes, ganja, and drugs are strictly prohibited on campus."
+      ]
+    },
+
+    "fee_structure": {
+      "program": "B.Tech ECE",
+      "admission_year": 2024,
+      "warning": "These fees appear to be subsidized/waived (likely SC/ST/EWS category). General category fees will be higher.",
+      "semesters": {
+        "semester_1": {"institute_fees": 22000, "hostel_fees": 23000, "total": 45000},
+        "semester_2": {"institute_fees": 8400, "hostel_fees": 18000, "total": 26400},
+        "semester_3": {"institute_fees": 8400, "hostel_fees": 18000, "total": 26400},
+        "semester_4": {"institute_fees": 8400, "hostel_fees": 18000, "total": 26400},
+        "semester_5": {"institute_fees": 8400, "hostel_fees": 18000, "total": 26400},
+        "semester_6": {"institute_fees": 8400, "hostel_fees": 18000, "total": 26400},
+        "semester_7": {"total": 0},
+        "semester_8": {"total": 0}
+      },
+      "hostel_room_rent": {
+        "single": 6600,
+        "double": 2500,
+        "triple": 1000
+      },
+      "payment": {
+        "method": "SBI Collect (mention Scholar No.) or DD in favor of Director MANIT Bhopal",
+        "account_no": "32078539547",
+        "ifsc": "SBIN0091108"
+      },
+      "notes": [
+        "Fees are subject to change as per authority directives.",
+        "These fees appear to be for a student with tuition fee waiver."
+      ]
+    },
+
+    "academics": {
+      "timetable_note": "B.Tech 2nd Semester, Session 2025-26. Classes from 05/01/2026.",
+      "groups": {
+        "MT": {
+          "sections": "A-E",
+          "subjects": ["Basic Electrical & Electronics", "Mathematics 2", "Engineering Chemistry", "Bio Engineering", "Manufacturing Science", "Environmental Science", "Language Lab I & II"]
+        },
+        "ST": {
+          "sections": "F-J",
+          "subjects": ["Engineering Graphics", "Computer Programming", "Physics", "Engineering Mechanics", "Mathematics 2", "Communication Skills"]
+        }
+      },
+      "total_sections": 10,
+      "class_timing": "9:00 AM to 5:25 PM",
+      "lunch_break": "1:00 PM to 2:30 PM",
+      "first_year_coordinator": "Dr. Fozia Z. Haque"
+    }
+  }
+}

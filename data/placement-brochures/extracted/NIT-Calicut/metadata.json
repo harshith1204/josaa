@@ -1,0 +1,25 @@
+{
+  "college": "NIT-Calicut",
+  "source_pdf": "NIT-Calicut-Placement-Brochure.pdf",
+  "total_pages": 27,
+  "image_pages": 1,
+  "text_chars": 31777,
+  "extraction_method": "pymupdf4llm",
+  "ocr_applied": false,
+  "structured_data": {
+    "institute": "NIT-Calicut",
+    "year": "2023-24",
+    "top_recruiters": [
+      "Accenture",
+      "Amazon",
+      "Bosch",
+      "Cognizant",
+      "Ey",
+      "Infosys",
+      "Intel",
+      "Reliance",
+      "Tcs",
+      "Visa"
+    ]
+  }
+}

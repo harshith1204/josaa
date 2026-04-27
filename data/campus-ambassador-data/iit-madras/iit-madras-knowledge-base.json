@@ -1,0 +1,183 @@
+{
+  "college": "IIT Madras",
+  "sources": ["whatsapp_chat_with_ambassador", "fee_structure_pdf", "timetable_image"],
+  "data_date": "2026-04-01",
+
+  "sections": {
+    "overview": {
+      "facts": [
+        "IIT Madras is located on Sardar Patel Road, Chennai, Tamil Nadu - 600036.",
+        "One of the top-ranked IITs in India.",
+        "Campus is inside Guindy National Park — wildlife on campus."
+      ]
+    },
+
+    "hostels_boys": {
+      "hostels": ["Alakananda", "Brahmaputra", "Cauvery", "Ganga", "Godavari", "Jamuna", "Krishna", "Mahanadhi", "Mandakini A", "Mandakini B", "Narmada", "Pampa", "Saraswathi", "Sindhu", "Tamiraparani", "Tapti"],
+      "total": "16 boys hostels"
+    },
+
+    "hostels_girls": {
+      "hostels": ["Bhadra", "Sabarmati", "Sarayu", "Sharavathi", "Swarnamukhi", "Tunga"],
+      "total": "6 girls hostels"
+    },
+
+    "mess": {
+      "outlets": ["Food Sutra", "Prism Protein Mess", "Prism Food Court", "R Gouras Himalaya", "SRR", "SGR", "Neelkesh", "R Gouras Vindhya", "First Man"],
+      "note": "Multiple mess and food court options across campus."
+    },
+
+    "fee_structure": {
+      "program": "B.Tech / B.S. (2024 batch)",
+      "general_above_5L": {
+        "per_semester": 115402,
+        "breakdown": "Tuition Rs 1,00,000 + Enrolment Rs 1,500 + Medical Rs 1,500 + Seat Rent Rs 7,500 + Extra-Curricular Rs 2,000 + Wellness Rs 500 + Insurance Rs 2,402"
+      },
+      "general_income_1L_to_5L": {
+        "per_semester": 48735,
+        "note": "2/3rd tuition fee remission"
+      },
+      "general_income_below_1L": {
+        "per_semester": 15402,
+        "note": "Full tuition fee remission"
+      },
+      "sc_st_pwd": {
+        "per_semester": 15402,
+        "note": "Tuition fee exempted"
+      },
+      "sc_st_with_scholarship": {
+        "per_semester": 7902,
+        "note": "Tuition exempted + seat rent exempted"
+      },
+      "notes": [
+        "SC/ST/PwD students are exempted from tuition fee.",
+        "Income below Rs 1 lakh: full tuition remission.",
+        "Income Rs 1-5 lakh: 2/3rd tuition remission.",
+        "Interest-free loans available under Vidyalakshmi scheme.",
+        "IIT Madras reserves the right to revise fees."
+      ]
+    },
+
+    "wifi": {
+      "facts": [
+        "Extensive Wi-Fi via iitmwifi SSID across campus including academic zones, hostels, and guest houses.",
+        "10 Gbps internet bandwidth.",
+        "Hostel rooms have LAN ports."
+      ]
+    },
+
+    "attendance": {
+      "policy": "75% attendance required. Students can still complete the course with poor attendance but get a P (poor attendance) grade.",
+      "consequences": [
+        "Parents alerted if attendance is poor.",
+        "P grades result in exclusion from POR (Position of Responsibility).",
+        "Cannot apply for supplementary examination in course with P grade.",
+        "Students with P grades given lower priority for elective allotment in SEAT.",
+        "Students with P grades given lower priority during IDDD allotment.",
+        "More than 3 P grades: not eligible for IDDD, Dual Degree upgradation, PhD upgradation, YRF, or honours.",
+        "Cannot claim a minor if P grade in any minor stream course."
+      ]
+    },
+
+    "clubs": {
+      "sabhas_samitis": ["Marathi Mitra Mandal", "Hindi Mitra Mandal", "Kannada Sangha", "Telugu Samskrita Samiti", "SADINER", "Kerala Kala Samiti", "Diganto (Bengali Society)"],
+      "sangam_clubs": ["Quiz Club", "Word Games Club", "Music Club", "Oratory Club", "Thespian Club", "Writing Club", "Choreo Club", "Fine Arts Club", "Media Club", "E-Sports Club", "Comedy Club", "Lifestyle Club", "Informals Club", "Classical Arts Club", "Film Appreciation Club", "Design & VFX Club"],
+      "cfi_clubs": ["3D Printing Club", "Aero Club", "Electronics Club", "Horizon", "iBot Club", "Product Design Club", "Programming Club", "Team Sahaay", "Team Envisage", "Webops and Blockchain Club", "AI Club", "Biotech Club", "Mathematics Club", "Cybersecurity Club"]
+    },
+
+    "fests": {
+      "major": [
+        {"name": "Shaastra", "type": "Tech Fest", "duration": "5 days"},
+        {"name": "Saarang", "type": "Cultural Fest", "duration": "5 days"}
+      ],
+      "department_fests": ["AMALGAM (Metallurgy)", "BHOUTICS (Physics)", "BIOFEST (Biotech)", "ELEC FEST (Electrical)", "CHEMCLAVE (Chemical)", "CEA FEST (Civil)", "EXEBIT (CSE)", "FORAYS (Maths)", "HSS Conference", "MECHANICA (Mechanical)", "SAMANVAY (Management)", "WAVEZ (Ocean Engg)"]
+    },
+
+    "sports": {
+      "facilities": ["Aquatics", "Athletics", "Badminton", "Cricket", "Football", "Hockey", "Squash", "Table Tennis", "Tennis", "Volleyball", "Weightlifting", "Powerlifting"]
+    },
+
+    "canteen": {
+      "outlets": [
+        {"name": "Usha Cafe", "timing": "8 AM - 1 AM"},
+        {"name": "Cool Bizz", "timing": "8:30 AM - 1 AM"},
+        {"name": "CCD", "timing": "24/7"},
+        {"name": "Cream Stone", "timing": "10 AM - 3 AM"},
+        {"name": "Zaitoon", "timing": "8:30 AM - 3 AM"},
+        {"name": "London Waffle", "timing": "1 PM - 11 PM"},
+        {"name": "Rotormans Food Truck", "timing": "9 PM - 4:30 AM"},
+        {"name": "Nescafe", "timing": "11 AM - 3 AM"}
+      ],
+      "himalaya_food_court": [
+        {"name": "Chai Waale", "timing": "8 AM - 2 AM"},
+        {"name": "EDF Juices", "timing": "9 AM - 1 AM"},
+        {"name": "Vineyard", "timing": "10:30 AM - 2 AM"},
+        {"name": "Deli Pizzeria", "timing": "11 AM - 11:30 PM"},
+        {"name": "Waah Hyderabadi", "timing": "12 PM - 11:30 PM"},
+        {"name": "Hotel Ananda", "timing": "8 AM - 11:30 PM"},
+        {"name": "Five Star", "timing": "12 PM - 11:30 PM"}
+      ],
+      "note": "CCD is 24/7. Multiple outlets open till 3-4 AM. Rotormans food truck operates 9 PM to 4:30 AM."
+    },
+
+    "shops": {
+      "on_campus": ["Shopping Complex", "Prime Mart", "Xerox Shop", "7Star Saloon", "Laundry Bus", "Sunshine Communications", "Cycle Shop"]
+    },
+
+    "laundry": {
+      "facts": [
+        "Every hostel has washing machines.",
+        "There is a laundry bus service for the entire campus."
+      ]
+    },
+
+    "fines": {
+      "facts": [
+        "Rs 10,000 for speeding (above 20 kmph on campus).",
+        "Rs 1 lakh for injuring wildlife (campus is inside Guindy National Park).",
+        "Rs 2,500 for late fees."
+      ]
+    },
+
+    "elections": {
+      "positions": ["Students General Secretary (SGS)", "Student Legislative Council Speaker (SLC Speaker)", "Hostel Affairs Secretary (HAS)", "Cultural Affairs Secretaries", "Research Affairs Secretary (RAS)", "Institute Sports Secretary (ISS)", "Co-Curricular Affairs Secretary (CoCAS)", "Academic Affairs Secretary (AAS)"]
+    },
+
+    "gym": {
+      "facts": ["Institute Gymkhana has gym. Both boys and girls are allowed."]
+    },
+
+    "medical": {
+      "facts": [
+        "Institute Hospital has 24/7 services.",
+        "Team includes general practitioners and visiting specialists: orthopedic, cardiologist, psychiatrist, ophthalmologist, general surgeon, ENT surgeon.",
+        "Hospital fee included in institute fee.",
+        "Students need to pay for medicines only."
+      ]
+    },
+
+    "transport": {
+      "facts": [
+        "Chennai Egmore Railway Station is 12 km from campus.",
+        "Chennai Central Railway Station is 14 km from campus.",
+        "Chennai International Airport is 13.4 km from campus.",
+        "Koyambedu CMBT Bus Stop is 13 km from campus."
+      ]
+    },
+
+    "restaurants": {
+      "nearby": ["Nandhana Palace (Andhra style, Velachery)", "Mummy Daddy Andhra Mess", "Dindigul Thalappakatti Restaurant"],
+      "delivery": "Swiggy and Zomato available."
+    },
+
+    "nearby_places": {
+      "tourist": ["Guindy National Park", "Chennai Eliot Beach", "Thiruvanmiyur Beach", "B.M. Birla Planetarium"],
+      "shopping": ["Phoenix Mall Velachery", "PVR Grand Mall Velachery"]
+    },
+
+    "language_climate": {
+      "languages": ["English", "Telugu", "Hindi", "Other languages"],
+      "climate": "Mostly sunny. Chennai has hot and humid climate."
+    }
+  }
+}

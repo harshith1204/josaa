@@ -1,0 +1,94 @@
+{
+  "college": "NIT Patna",
+  "sources": ["whatsapp_chat_with_ambassador", "fee_structure_pdf", "timetable_pdf", "mess_schedule_images"],
+  "data_date": "2026-04-02",
+
+  "sections": {
+    "overview": {
+      "facts": [
+        "NIT Patna has two campuses: Old Campus at Ashok Rajpath, near Patna University, Patna - 800005 and New Campus at Bihta, Sikandarpur Village, Patna - 801103."
+      ]
+    },
+
+    "hostels": {
+      "old_campus_boys": ["Kosi Hostel", "Sone A Hostel", "Sone B Hostel", "Kosi Extension Hostel", "Brahmaputra Hostel", "Bagmati Hostel"],
+      "old_campus_girls": ["Ganga Hostel"],
+      "total_boys": "6 boys hostels (old campus)",
+      "total_girls": "1 girls hostel (old campus)"
+    },
+
+    "mess": {
+      "timing": {"breakfast": "7:00 AM - 9:30 AM", "evening_time": "5:00 PM - 6:00 PM", "lunch": "12:30 PM - 2:30 PM", "dinner": "8:00 PM - 10:00 PM"},
+      "schedule_highlights": "Mon-Thu breakfast includes Paratha/Puri/Idli/Aloo Paratha with milk, tea, banana, sprouts. Lunch has Dal, Rice, Roti, Sabji, Bhujia, Salad, Seasonal Fruit. Dinner has Dal/Paneer/Kheer with Rice, Roti, Salad. Friday has Halwa+Puri for breakfast, Sewai for dinner. Saturday has Chole Bhature for breakfast, Kadhi Pakora for dinner. Sunday is special: Masala Dosa/Uttapam for breakfast, Veg Biryani+Kofta for lunch, Manchurian+Ice Cream (80ml) for dinner.",
+      "notes": "Evening snacks include Tea+Coffee+Biscuits daily from 5-6 PM. Seasonal fruits served daily. Minimum 3 salad items. Pickles served with every lunch and dinner."
+    },
+
+    "fee_structure": {
+      "program": "B.Tech / B.Arch / Dual Degree (2024-25 onwards)",
+      "first_semester": {
+        "tuition": 62500,
+        "part_b_total": 94250,
+        "grand_total": 156750,
+        "includes": "Institute caution money Rs 10,000 (refundable), Development fee Rs 30,000, Hostel fee Rs 12,000, Mess advance Rs 20,000, Hostel security Rs 6,000 (refundable), and various other fees"
+      },
+      "subsequent_odd_semesters": {
+        "tuition": 62500,
+        "part_b": 42050,
+        "total": "~Rs 1,04,550"
+      },
+      "even_semesters": {
+        "tuition": 62500,
+        "part_b": "~42,250",
+        "total": "~Rs 1,04,750"
+      },
+      "final_even_semester": {
+        "note": "Includes Alumni Activity Fund Rs 1,500 and Convocation Fee Rs 3,000"
+      },
+      "exemptions": [
+        "SC/ST/PwD students exempted from tuition fee.",
+        "Income below Rs 1 lakh: full tuition remission.",
+        "Income Rs 1-5 lakh: 2/3rd tuition remission."
+      ]
+    },
+
+    "wifi": {
+      "facts": ["High speed WiFi with good coverage in both hostels and college."]
+    },
+
+    "attendance": {
+      "facts": ["75% attendance criteria is used."]
+    },
+
+    "clubs": {
+      "facts": ["Over 20+ clubs including both tech and cultural clubs.", "Popular clubs: Coding, Robotics, Drama, Dance, Photography."]
+    },
+
+    "fests": {
+      "facts": ["Annual sports and cultural fest conducted every year.", "Events conducted throughout the year."]
+    },
+
+    "laundry": {
+      "facts": ["Old campus: Paid laundry available in hostels.", "New campus: Washing machines are available."]
+    },
+
+    "transport": {
+      "railway": ["Patna Junction", "Patliputra Junction", "Danapur Junction"],
+      "airport": "Jay Prakash Narayan International Airport, Patna"
+    },
+
+    "restaurants": {
+      "nearby": ["Dominos", "KFC", "McDonalds", "Pista House", "Biryani King"],
+      "delivery": "Swiggy and Zomato likely available (Patna metro city)."
+    },
+
+    "nearby_places": {
+      "tourist": ["Patna Zoo", "Rajgir (90 km)", "Bodh Gaya (140 km)"],
+      "shopping": ["City Center Mall", "Gravity Mall"]
+    },
+
+    "language_climate": {
+      "language": "Mostly Hindi, Bhojpuri, English.",
+      "climate": "Usually moderate. Slightly hot during summer."
+    }
+  }
+}

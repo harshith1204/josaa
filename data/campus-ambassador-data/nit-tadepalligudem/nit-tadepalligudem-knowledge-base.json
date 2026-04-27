@@ -1,0 +1,141 @@
+{
+  "college": "NIT Andhra Pradesh",
+  "short_name": "NITAP",
+  "location": "Ganesh Nagar, Tadepalligudem, West Godavari, Andhra Pradesh 534101",
+  "sources": ["whatsapp_chat_with_ambassador", "fee_structure_image", "hostel_fee_image", "mess_menu_images"],
+  "data_date": "2026-04-04",
+
+  "sections": {
+    "overview": {
+      "facts": [
+        "NIT Andhra Pradesh (NITAP) is located at Ganesh Nagar, Tadepalligudem, West Godavari, Andhra Pradesh 534101.",
+        "Full name: National Institute of Technology Andhra Pradesh."
+      ]
+    },
+
+    "transport": {
+      "bus_stand": "5 km from campus",
+      "railway_station": "7 km from campus",
+      "airport": "Rajahmundry Airport, 50 km from campus"
+    },
+
+    "hostels": {
+      "boys_hostels": [
+        {"name": "Vamsadhara Hall of Residence", "year": "1st year", "occupancy": "4 per room"},
+        {"name": "Nagavalli Hall of Residence", "year": "2nd year", "occupancy": "2 per room"},
+        {"name": "Indravati Hall of Residence", "year": "3rd year", "occupancy": "2 per room"},
+        {"name": "Sabari Hall of Residence", "year": "3rd year", "occupancy": "2 per room"},
+        {"name": "Godavari Hall of Residence", "year": "4th year", "occupancy": "1 per room"},
+        {"name": "Purna Hall of Residence", "year": "4th year", "occupancy": "1 per room"},
+        {"name": "Manjeera Hall of Residence", "year": "4th year", "occupancy": "1 per room"},
+        {"name": "Banganga Hall of Residence", "year": "4th year", "occupancy": "1 per room"},
+        {"name": "Pranahitha Hall of Residence", "year": "4th year", "occupancy": "1 per room"},
+        {"name": "Swarna Mukhi Hall of Residence", "year": "PhD", "occupancy": "single"}
+      ],
+      "girls_hostels": [
+        {"name": "Krishnaveni", "year": "1st year", "occupancy": "4 per room"},
+        {"name": "Bhima", "year": "2nd year", "occupancy": "2 per room"},
+        {"name": "Tungabhadra", "year": "3rd year", "occupancy": "2 per room"},
+        {"name": "Ghata Prabha", "year": "4th year", "occupancy": "1 per room"},
+        {"name": "Munneru", "year": "4th year + PhD", "occupancy": "1 per room"}
+      ],
+      "girls_mess": "Amrutha Mess",
+      "total_boys_hostels": "10 boys hostels",
+      "total_girls_hostels": "5 girls hostels"
+    },
+
+    "mess": {
+      "name": "Amrutha Mess (girls). Boys mess also available.",
+      "schedule_source": "Full 7-day schedule from 2 official images with stamps covering breakfast, lunch, snacks, and dinner.",
+      "notes": "Detailed day-wise menu available for both boys and girls mess. Mess schedule images preserved as WA0019 (girls) and WA0023 (boys)."
+    },
+
+    "fee_structure": {
+      "program": "B.Tech",
+      "odd_semester": {
+        "library_fee": 2400,
+        "exam_fee": 2400,
+        "other_fee": 2400,
+        "tuition_general_above_5L": 62500,
+        "tuition_1L_to_5L": 20833,
+        "tuition_sc_st_below_1L": 0
+      },
+      "even_semester": "Similar structure to odd semester",
+      "notes": [
+        "ARB and OEB students must pay full tuition during admission and semester registration.",
+        "Fee payment through Central Easy Pay."
+      ]
+    },
+
+    "hostel_fee": {
+      "applicable_to": "1st Year B.Tech students AY 2023-24",
+      "includes": "Hostel Caution Deposit, Room Charges, Establishment Charges, Mess Security Deposit",
+      "maintenance": "Rs 140/day"
+    },
+
+    "wifi": {
+      "facts": ["WiFi facility available at NIT Andhra Pradesh.", "Airtel and Jio 5G/4G connectivity available."]
+    },
+
+    "attendance": {
+      "facts": ["80% attendance is mandatory at NIT Andhra Pradesh."]
+    },
+
+    "clubs": {
+      "list": ["Dhvani", "Painting and Photography", "Robotics", "Career Guidance", "Literature and Debate", "I&E Cell", "Nature Club", "Brindavanam Club", "Bhavisya Bharat", "Shilpi"],
+      "total": 10
+    },
+
+    "fests": {
+      "odd_semester": "Techkriya (September/October)",
+      "even_semester": "Vulcanzy (February)"
+    },
+
+    "laundry": {
+      "facts": ["Dhobi available on campus.", "Dhobi Ghaat (clothes washing area) available."]
+    },
+
+    "elections": {
+      "facts": ["No student elections at NIT Andhra Pradesh."]
+    },
+
+    "sports": {
+      "list": ["Cricket", "Badminton", "Football", "Basketball", "Kabaddi", "Kho-Kho", "Chess", "Tennis", "Carroms", "Tug of War", "Weightlifting"]
+    },
+
+    "canteen": {
+      "name": "Dokka Seethamma Canteen",
+      "timing": "9 AM - 10 PM",
+      "shops": "Fast food and stationery shops available on campus."
+    },
+
+    "fines": {
+      "late_registration": "Starts from Rs 500",
+      "kettle_usage": "Rs 10,000 - 20,000",
+      "alcohol_consumption": "Rs 10,000 - 30,000 + suspension for a week"
+    },
+
+    "gym": {
+      "facts": ["Common gym available at NIT Andhra Pradesh. Not free."]
+    },
+
+    "medical": {
+      "facts": ["Dispensary within walkable distance from campus. Free of cost."]
+    },
+
+    "restaurants": {
+      "nearby": ["Food Forest", "Hungry Birds", "Sky Garden", "Kadali", "Ramayya Mess", "Nayudu Gari Biryani"],
+      "distance": "All within 6 km radius"
+    },
+
+    "nearby_places": {
+      "tourist": ["Penugonda", "Maredumilli", "Antharvedi", "Annavaram", "Dwaraka Tirumala", "Vadapalli", "Perupalem Beach", "Gouri Patnam"],
+      "shopping": ["GV Mall (within 3 km)", "Chennai Shopping Mall (within 3 km)", "Vijetha Supermarket (within 5 km)", "Vishal Mart (within 5 km)", "Reliance (within 5 km)"]
+    },
+
+    "language_climate": {
+      "language": "Telugu mostly.",
+      "climate": "Mostly sunny."
+    }
+  }
+}

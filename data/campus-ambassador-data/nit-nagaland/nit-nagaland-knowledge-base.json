@@ -1,0 +1,215 @@
+{
+  "college": "NIT Nagaland",
+  "sources": ["whatsapp_chat_with_ambassador", "fee_structure_pdf", "timetable_image", "mess_schedule_image"],
+  "data_date": "2026-03-31",
+
+  "sections": {
+    "overview": {
+      "facts": [
+        "NIT Nagaland is a National Institute of Technology located in Nagaland, India.",
+        "The college offers B.Tech programs in CIV (Civil), MECH (Mechanical), ECE (Electronics and Communication), CSE (Computer Science), EEE (Electrical and Electronics), and EIE (Electronics and Instrumentation).",
+        "Groups: Grp-I covers CIV, MECH, ECE and Grp-II covers CSE, EEE, EIE."
+      ]
+    },
+
+    "hostels_boys": {
+      "facts": [
+        "Boys hostel Shillo-A is for 2nd year students, each room has 3-sharing.",
+        "Boys hostel Shillo-B is for 4th year students, each room has 3-sharing.",
+        "New boys hostel is for 1st year students, each room has 3-sharing.",
+        "All boys hostels have 3-sharing rooms."
+      ]
+    },
+
+    "hostels_girls": {
+      "facts": [
+        "Girls hostel Patkai-A is for PhD and 2nd year students, each room has 3-sharing.",
+        "Girls hostel Patkai-B is for 2nd year students, each room has 3-sharing.",
+        "Girls hostel Patkai-C is for 2nd year students, each room has 3-sharing."
+      ]
+    },
+
+    "mess": {
+      "boys_mess": [
+        "Japfu mess serves 1st year and 3rd year boys.",
+        "Sholli mess serves 2nd year, PhD, and 4th year boys."
+      ],
+      "girls_mess": [
+        "Girls mess locations: Patkai (A, B, C), Tiyi, Dzukou."
+      ],
+      "mess_schedule": {
+        "monday": {"breakfast": "Bread + Tea", "lunch": "Pakoda Sabji + Rice + Plain Dal", "snacks": "Samosa + Coffee", "dinner": "Egg Curry + Fish Curry + Banana Kopta + Rice + Dal Fry"},
+        "tuesday": {"breakfast": "Poha + Tea", "lunch": "Rajma + Rice + Plain Dal", "snacks": "Britannia Cake + Tea", "dinner": "Chicken + Seasonal Veg + Plain Rice + Dal Fry"},
+        "wednesday": {"breakfast": "Bread + Tea", "lunch": "Nutrela + Chutney + Salad + Rice + Plain Dal", "snacks": "Kurkure + Coffee", "dinner": "Egg Curry + Paneer Chole + Rice + Dal Fry"},
+        "thursday": {"breakfast": "Chowmein + Tea", "lunch": "Mixed Veg (Seasonal) + Rice + Plain Dal + Salad", "snacks": "Namkeen (Aloo Bhujia / Moong Dal) + Tea", "dinner": "Kheer + Chole Bhature + Rice + Dal Fry"},
+        "friday": {"breakfast": "Bread + Tea", "lunch": "Rajma + Rice + Plain Dal", "snacks": "Dark Fantasy + Coffee", "dinner": "Chicken Curry + Seasonal Veg + Rice + Dal Fry"},
+        "saturday": {"breakfast": "Poha + Tea", "lunch": "Salad + Mixed Veg + Rice + Plain Dal", "snacks": "Lays + Tea", "dinner": "Egg Curry + Fish Curry + Malai Kopta + Rice + Dal Fry"},
+        "sunday": {"breakfast": "Bread + Tea", "lunch": "Rajma + Dry Pakoda + Rice + Plain Dal", "snacks": "Kachauri + Coffee", "dinner": "Chicken Bamboo Shoot + Chicken Curry + Kadhai Paneer + Sweet + Plain Rice + Dal Fry"}
+      },
+      "cuisine": "Mix of North Indian, non-veg heavy (chicken, fish, egg curry). Sunday dinner is the most elaborate with Chicken Bamboo Shoot (local Naga dish).",
+      "note": "This is the proposed new mess schedule."
+    },
+
+    "wifi": {
+      "facts": [
+        "WiFi is available on campus.",
+        "LAN is also available."
+      ]
+    },
+
+    "attendance": {
+      "facts": [
+        "75% attendance is mandatory."
+      ]
+    },
+
+    "clubs": {
+      "facts": [
+        "Dance club is available.",
+        "Music club is available.",
+        "Photography club is available.",
+        "Drawing club is available."
+      ]
+    },
+
+    "fests": {
+      "facts": [
+        "Ekarikthin is the college fest.",
+        "Hornbill is another college fest (named after the Hornbill Festival of Nagaland)."
+      ]
+    },
+
+    "sports": {
+      "facts": [
+        "Cricket, football, volleyball, badminton, and basketball facilities are available.",
+        "Gym is located beside Sholli mess."
+      ]
+    },
+
+    "canteen": {
+      "facts": [
+        "South canteen is available on campus.",
+        "No restaurants near campus — only delivery services (Swiggy, Zomato) are available."
+      ]
+    },
+
+    "laundry": {
+      "facts": [
+        "No laundry facilities available on campus. Students wash clothes themselves."
+      ]
+    },
+
+    "elections": {
+      "roles": [
+        "CRS (Class Representative)",
+        "General Secretary",
+        "Culture Secretary",
+        "Sports Secretary",
+        "Finance Secretary",
+        "Assistant General Secretary",
+        "Assistant Culture Secretary",
+        "Assistant Sports Secretary",
+        "Assistant Finance Secretary"
+      ]
+    },
+
+    "medical": {
+      "facts": [
+        "Medical facility is available on campus.",
+        "Medical timing: 8:30 AM to 4:30 PM."
+      ]
+    },
+
+    "transport": {
+      "facts": [
+        "Nearest airport is 14 km from campus.",
+        "Nearest railway station is 19 km from campus."
+      ]
+    },
+
+    "nearby_places": {
+      "tourist": [
+        "Dzukou Valley — famous valley trek near Kohima.",
+        "Kohima War Cemetery — World War II memorial.",
+        "Kisama Heritage Village — cultural hub, hosts the Hornbill Festival."
+      ],
+      "shopping": [
+        "No shopping malls near campus.",
+        "Nearby shops: Trends, Jack & Jill."
+      ]
+    },
+
+    "language_climate": {
+      "languages": "Hindi, English, and Naga languages are spoken.",
+      "climate": "Cool climate throughout the year."
+    },
+
+    "fee_structure": {
+      "program": "B.Tech",
+      "academic_year": "2025-2026",
+      "semester": "1st Semester",
+      "one_time_fees": {
+        "admission_fee": 2000,
+        "grade_card": 500,
+        "medical_exam_fee": 500,
+        "alumni_life_membership": 1500,
+        "institute_deposit_refundable": 3000,
+        "library_deposit_refundable": 500,
+        "degree_certificate_fee": 1500,
+        "convocation_fee": 2000,
+        "id_card_fee": 200,
+        "training_and_placement": 3000,
+        "total_one_time": 14700
+      },
+      "semester_fees": {
+        "tuition_fee": 62500,
+        "computer_fee": 2000,
+        "internet_charges": 1000,
+        "library_fee": 1500,
+        "examination_fee": 1500,
+        "registration_enrolment_fee": 500,
+        "association_and_cultural_fee": 2000,
+        "students_aid_fee": 250,
+        "sports_center": 1000,
+        "medical_and_insurance_fee": 500,
+        "total_semester": 72750,
+        "grand_total_semester": "1,23,450"
+      },
+      "hostel_fees": {
+        "one_time": {
+          "hostel_admission_fee": 1000,
+          "hostel_deposit_refundable": 3000,
+          "total_one_time_hostel": 4000
+        },
+        "per_semester": {
+          "establishment_charges": 6000,
+          "mess_advance_dining_charges": 21000,
+          "hostel_seat_rent_fan_elec_water": 5000,
+          "total_per_semester_hostel": 32000
+        }
+      },
+      "notes": [
+        "Tuition fee is exempted for SC/ST candidates.",
+        "Most economically backward students (family income less than Rs 1 lakh per annum) get full remission of tuition fee.",
+        "Other economically backward students (family income Rs 1 lakh to Rs 5 lakh per annum) get remission of 2/3rd of tuition fee.",
+        "Dining charges are adjusted every month on per day basis calculation."
+      ]
+    },
+
+    "academics": {
+      "timetable_note": "B.Tech SEM-I for all branches runs from August to December 2025.",
+      "courses": [
+        "SH1901 Professional English",
+        "SH1101 Engineering Chemistry",
+        "SH1102 Engineering Mathematics-I",
+        "CS1201 Introduction to Computer Programming",
+        "CE1201 Engineering Graphics",
+        "SH1103 Engineering Chemistry Laboratory",
+        "ME1201 Engineering Workshop",
+        "CS1202 Computer Programming Laboratory"
+      ],
+      "class_timing": "Classes run from 8:30 AM to 4:30 PM with breaks.",
+      "groups": "Grp-I: CIV, MECH, ECE. Grp-II: CSE, EEE, EIE."
+    }
+  }
+}

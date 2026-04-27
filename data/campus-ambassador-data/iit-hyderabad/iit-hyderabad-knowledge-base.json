@@ -1,0 +1,295 @@
+{
+  "college": "IIT Hyderabad",
+  "full_name": "Indian Institute of Technology Hyderabad",
+  "sources": ["whatsapp_chat_with_ambassador", "fee_structure_pdf"],
+  "data_date": "2026-04-01 to 2026-04-04",
+
+  "sections": {
+    "overview": {
+      "facts": [
+        "IIT Hyderabad (Indian Institute of Technology Hyderabad) is located at Kandi, Sangareddy, Hyderabad, Telangana.",
+        "State language: Telugu. Campus languages: English, Hindi, Telugu, and Tamil.",
+        "Climate: A bit sunny, some days cloudy."
+      ]
+    },
+
+    "transport": {
+      "facts": [
+        "Sangareddy Bus Stop is the nearest bus stop to IIT Hyderabad.",
+        "Lingampalli Railway Station is the nearest railway station to IIT Hyderabad.",
+        "Rajiv Gandhi International Airport is the nearest airport to IIT Hyderabad."
+      ]
+    },
+
+    "hostels_1st_year_boys": {
+      "facts": [
+        "IIT Hyderabad has 3 boys hostels for 1st year UG students, all with double sharing rooms.",
+        "Vivekananda Hostel (double sharing, 1st year boys).",
+        "SN Bose Hostel (double sharing, 1st year boys).",
+        "Ramanuja Hostel (double sharing, 1st year boys)."
+      ]
+    },
+
+    "hostels_1st_year_girls": {
+      "facts": [
+        "IIT Hyderabad has 1 girls hostel for 1st year UG students with double sharing rooms.",
+        "Kalpana Chawla Hostel (double sharing, 1st year girls)."
+      ]
+    },
+
+    "hostels_single_boys": {
+      "facts": [
+        "IIT Hyderabad has 12 single sharing boys hostels for senior students.",
+        "Visweswaraya Hostel (single sharing).",
+        "Ramanujan Hostel (single sharing).",
+        "Sarabhai Hostel (single sharing).",
+        "Bhabha Hostel (single sharing).",
+        "Kalam Hostel (single sharing).",
+        "Susruta Hostel (single sharing).",
+        "Kautilya Hostel (single sharing).",
+        "Varahamira Hostel (single sharing).",
+        "Brahmagupta Hostel (single sharing).",
+        "Vyasa Hostel (single sharing).",
+        "Charaka Hostel (single sharing).",
+        "Raman Hostel (single sharing)."
+      ]
+    },
+
+    "hostels_single_girls": {
+      "facts": [
+        "IIT Hyderabad has 6 single sharing girls hostels for senior students.",
+        "Aryabhatta Hostel (single sharing).",
+        "Gargi Hostel (single sharing).",
+        "Maitreyi Hostel (single sharing).",
+        "Anandhi Joshi Hostel (single sharing).",
+        "Sarojini Naidu Hostel (single sharing).",
+        "Bhaskara Hostel (single sharing)."
+      ]
+    },
+
+    "hostels_summary": {
+      "facts": [
+        "Total: 22 hostels at IIT Hyderabad.",
+        "Boys: 15 hostels (3 double sharing for 1st years + 12 single sharing for seniors).",
+        "Girls: 7 hostels (1 double sharing for 1st years + 6 single sharing for seniors)."
+      ]
+    },
+
+    "mess": {
+      "facts": [
+        "IIT Hyderabad has two messes: Old mess and New mess.",
+        "Veg menu is included in the base mess fee.",
+        "Veg and non-veg extras are available and paid separately.",
+        "Mess cost: Rs 130 per day.",
+        "Semester mess expense: Rs 15,470 (Rs 130 x 119 days).",
+        "Mid-semester break of 9 days is not counted (pay-per-meal during break)."
+      ]
+    },
+
+    "fee_structure": {
+      "program": "B.Tech/BDes UG (July-Dec 2025 semester)",
+      "one_time_fees": {
+        "joining_fee": "Rs 7,000",
+        "student_activity_fee": "Rs 6,000",
+        "security_deposit": "Rs 6,000 (refundable)",
+        "total_one_time": "Rs 19,000"
+      },
+      "per_semester": true,
+      "categories": {
+        "Gen_EWS_OBC_OCI_PIO": {
+          "tuition_fee": "Rs 1,00,000",
+          "registration_exam_gymkhana_medical_it_sports_lab_transport": "Rs 13,500",
+          "student_welfare_fund": "Rs 1,000",
+          "hostel_expenses": "Rs 16,000",
+          "mess_expenses": "Rs 15,470 (Rs 130/day x 119 days)",
+          "total_semester_fee": "Rs 1,45,970",
+          "medical_insurance_annual": "Rs 1,888 (Rs 2 lakh coverage)",
+          "grand_total": "Rs 1,66,858"
+        },
+        "SC_ST_PH": {
+          "tuition_fee": "NIL",
+          "registration_exam_gymkhana_medical_it_sports_lab_transport": "Rs 13,500",
+          "student_welfare_fund": "Rs 1,000",
+          "hostel_expenses": "Rs 16,000",
+          "mess_expenses": "Rs 15,470",
+          "total_semester_fee": "Rs 45,970",
+          "medical_insurance_annual": "Rs 1,888",
+          "grand_total": "Rs 66,858"
+        },
+        "Foreign_Nationals": {
+          "tuition_fee": "Rs 3,00,000",
+          "grand_total": "Rs 3,66,858"
+        }
+      }
+    },
+
+    "wifi": {
+      "facts": [
+        "LAN ports are available in hostel rooms at IIT Hyderabad."
+      ]
+    },
+
+    "attendance": {
+      "facts": [
+        "Attendance depends on the courses taken. No fixed mandatory percentage."
+      ]
+    },
+
+    "clubs": {
+      "management": [
+        "FCC (Finance & Consulting Club)",
+        "E-Cell (Entrepreneurship Cell)",
+        "Tinkerers Lab",
+        "TEDx IITH"
+      ],
+      "cultural": [
+        "Infocus (Photography)",
+        "Behind The Lens (Filmmaking)",
+        "Silhouettes (Fashion)",
+        "Vibes (Music)",
+        "Shuffle (Dance)",
+        "Gesture (Arts)",
+        "Rang De Manch (Stage Play)",
+        "Otaku (Anime)",
+        "LitSoc (Literary Society)"
+      ],
+      "technical": [
+        "Aero Club (planes/drones)",
+        "Cepheid (Astronomy)",
+        "Elektronica (Electronics)",
+        "Kludge (Cybersecurity)",
+        "Infero (Competitive Programming)",
+        "Lambda (Web Development)",
+        "Epoch (AI/ML)",
+        "Robotix (Robotics)",
+        "Torque (Automobile Engineering)",
+        "Glitch (Game Development)"
+      ],
+      "fest_related": [
+        "Elan & nVision (Main Fest)",
+        "Milan (Inter Hostel Fest)",
+        "Diesta (Inter Department Fest)"
+      ],
+      "other": [
+        "Sunshine (Mental Health)",
+        "Echo IITH (Media Council)",
+        "Cultural & Literary Council",
+        "EML (Extra Mural Lectures)",
+        "EBSB (Ek Bharat Shreshtha Bharat)",
+        "Prakriti (Nature Club)",
+        "Prayas (Rural Development)"
+      ],
+      "total_count": "~40 clubs across 5 categories"
+    },
+
+    "fests": {
+      "facts": [
+        "Fests are held for almost every cultural occasion, including DJ nights.",
+        "Elan & nVision is the main annual fest of IIT Hyderabad.",
+        "Milan is the inter-hostel fest.",
+        "Diesta is the inter-department fest."
+      ]
+    },
+
+    "laundry": {
+      "facts": [
+        "Washing machines are available in hostels.",
+        "Ironing facility is available in the old canteen area."
+      ]
+    },
+
+    "elections": {
+      "total_positions": 17,
+      "positions": [
+        "President",
+        "General Secretary I (Female)",
+        "General Secretary II (Male)",
+        "Welfare Secretary",
+        "Cultural & Literary Secretary",
+        "Academic Affairs Secretary",
+        "Technical Affairs Secretary",
+        "Sports Secretary",
+        "Mess Secretary",
+        "Media & PR Secretary",
+        "Alumni Affairs Secretary",
+        "UG Representative I (Female)",
+        "UG Representative II (Male)",
+        "PG Representative I (Female)",
+        "PG Representative II (Male)",
+        "Doctoral Representative I (Female)",
+        "Doctoral Representative II (Male)"
+      ]
+    },
+
+    "sports": {
+      "facts": [
+        "Volleyball, Tennis, Basketball, Badminton, Cricket, Athletics, Football, Chess, Carroms, and Foosball are available."
+      ]
+    },
+
+    "canteen": {
+      "facts": [
+        "Old canteen at IIT Hyderabad.",
+        "New canteen with cafes and bakeries."
+      ]
+    },
+
+    "shops": {
+      "facts": [
+        "Mobile accessories shop in old canteen area.",
+        "Stationery shop in old canteen area.",
+        "Barber shop in old canteen area."
+      ]
+    },
+
+    "gym": {
+      "facts": [
+        "Two gyms: one in the sports complex and another nearby.",
+        "No trainer available.",
+        "No membership fee required (FREE for all students)."
+      ]
+    },
+
+    "health_centre": {
+      "facts": [
+        "In-campus hospital at IIT Hyderabad.",
+        "Services are paid.",
+        "Medical Insurance Rs 1,888 per year with Rs 2 lakh coverage."
+      ]
+    },
+
+    "curfew": {
+      "facts": [
+        "No curfew at IIT Hyderabad.",
+        "Students can enter and leave the campus at any time, on any day.",
+        "No fines for late entry or exit."
+      ]
+    },
+
+    "academics": {
+      "facts": [
+        "Every course has a designated time slot.",
+        "Students create their own timetable by selecting course slots."
+      ]
+    },
+
+    "restaurants": {
+      "on_campus": ["Dominos"],
+      "nearby": ["Kings", "Zam Zam"],
+      "delivery_apps": ["Swiggy", "Zomato"]
+    },
+
+    "nearby_places": {
+      "tourist": ["Water Bund (nearby)", "Wonderla", "Charminar", "Tank Bund"],
+      "malls": ["Inorbit Mall (in city)", "Lakeshore Mall", "Lulu Mall (in city)"]
+    },
+
+    "language": {
+      "facts": ["State language: Telugu. On campus: English, Hindi, Telugu, and Tamil."]
+    },
+
+    "climate": {
+      "facts": ["A bit sunny, some days cloudy at IIT Hyderabad, Kandi, Sangareddy."]
+    }
+  }
+}

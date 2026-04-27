@@ -1,0 +1,249 @@
+{
+  "college": "NIT Puducherry",
+  "full_name": "National Institute of Technology Puducherry",
+  "abbreviation": "NITPY",
+  "sources": ["whatsapp_chat_with_ambassador", "fee_circular_pdf", "mess_menu_pdf", "elections_circular_pdf", "timetable_image"],
+  "data_date": "2026-04-03",
+
+  "sections": {
+    "overview": {
+      "facts": [
+        "NIT Puducherry (National Institute of Technology Puducherry, NITPY) is located at Thiruvettakudy, Karaikal-609609, Puducherry State.",
+        "Languages spoken: Tamil (state language). Tamil and English used in college.",
+        "Climate: Very hot."
+      ]
+    },
+
+    "transport": {
+      "facts": [
+        "Nearest railway station is Karaikal Railway Station.",
+        "Nearest bus stop is Karaikal Bus Stop.",
+        "Nearest airport is Chennai Airport (far from campus)."
+      ]
+    },
+
+    "hostels_boys": {
+      "facts": [
+        "NIT Puducherry has 2 boys hostels.",
+        "Bharani Hostel has 2-sharing rooms.",
+        "Ganga Hostel has 4-sharing rooms."
+      ]
+    },
+
+    "hostels_girls": {
+      "facts": [
+        "NIT Puducherry has 1 girls hostel.",
+        "Moyar Hostel has 4-sharing rooms with AC available."
+      ]
+    },
+
+    "mess": {
+      "cost": "Hostel fee approximately Rs 30,000 per semester",
+      "assignment": "Girls and 1st year boys eat at Bhavani Mess. Boys from 2nd year onwards eat at Bharani Mess.",
+      "mess_schedule": {
+        "sunday": {
+          "breakfast": "Veg Upma, Bread, Jam, Banana",
+          "lunch": "Tamarind Rice/Lemon Rice, Aloo Mutter Gravy, White Rice, Curd",
+          "snacks": "Channa Sundal",
+          "dinner": "Kushka, Chicken Gravy, Veg Gravy, Raita"
+        },
+        "monday": {
+          "breakfast": "Corn Flakes, Idly, Sambar, Chutney",
+          "lunch": "Veg Sambar, White Rice, Mixed Veg Poriyal, Butter Milk",
+          "snacks": "Roasted Groundnut",
+          "dinner": "Peas Pulav, Kadai Paneer, Sweet"
+        },
+        "tuesday": {
+          "breakfast": "Ven Pongal, Sambar, Chutney, Bread, Jam",
+          "lunch": "Morkulambu, Koottu, White Rice, Rasam",
+          "snacks": "Green Gram Sundal",
+          "dinner": "Sambar Rice, White Rice, Curd"
+        },
+        "wednesday": {
+          "breakfast": "Dosa, Sambar, Chutney, Boiled Egg",
+          "lunch": "Kuska, Chicken Gravy, Peas Gravy, Raitha, Sweet",
+          "snacks": "Pani Poori (4 pieces)",
+          "dinner": "Chapathi, Dal, Curd Rice"
+        },
+        "thursday": {
+          "breakfast": "Khichdi, Poha, Boiled Egg",
+          "lunch": "Chapathi, Egg Gravy, Jeera Rice, Meal Maker Gravy",
+          "snacks": "Channa Sundal",
+          "dinner": "Veg Biryani, Raita, Boiled Egg"
+        },
+        "friday": {
+          "breakfast": "Rava Upma, Banana",
+          "lunch": "Veg Pulao, Raita, White Rice, Curd",
+          "snacks": "Tea Cake",
+          "dinner": "Kushka, Raita, Banana"
+        },
+        "saturday": {
+          "breakfast": "Idly, Sambar, Chutney, Boiled Egg",
+          "lunch": "Chapathi, Kadai Veg, Sambar, Veg Poriyal, White Rice",
+          "snacks": "Roasted Groundnut",
+          "dinner": "Gheenut Rice, Raitha, Badam Milk"
+        }
+      },
+      "notes": "South Indian style cuisine. Chicken served Sunday lunch/dinner and Wednesday lunch. Boiled egg served Wednesday, Thursday, Saturday breakfast and Thursday dinner.",
+      "cuisine": "Predominantly South Indian with Tamil Nadu style dishes (sambar, rasam, poriyal, pongal, dosa, idly). Non-veg options include chicken and egg."
+    },
+
+    "fee_structure": {
+      "program": "B.Tech (CSAB/JoSAA admission), Academic Year 2025-26",
+      "per_semester": true,
+      "semester_viii": {
+        "GEN_OBC_EWS_above_5L": "Rs 67,750",
+        "GEN_OBC_EWS_1_to_5L": "Rs 26,083",
+        "GEN_OBC_EWS_below_1L": "Rs 5,250",
+        "SC_ST_PH": "Rs 5,250"
+      },
+      "semester_iv_vi": {
+        "GEN_OBC_EWS_above_5L": "Rs 67,950",
+        "GEN_OBC_EWS_1_to_5L": "Rs 26,283",
+        "GEN_OBC_EWS_below_1L": "Rs 5,450",
+        "SC_ST_PH": "Rs 5,450"
+      },
+      "dasa_sii": {
+        "CIWG_SAARC": "Rs 67,950",
+        "Non_CIWG_Non_SAARC": "USD 4,000 tuition + INR 5,450 institute fees"
+      },
+      "hostel_fee": "Approximately Rs 30,000 per semester",
+      "institute_fees_breakdown": {
+        "tuition_fee_gen_above_5L": "Rs 62,500",
+        "tuition_fee_gen_1_to_5L": "Rs 20,833",
+        "tuition_fee_gen_below_1L_SC_ST_PH": "Rs 0 (waived)",
+        "computer_fee": "Rs 1,000",
+        "internet_fee": "Rs 300",
+        "library_fee": "Rs 1,000",
+        "association_cultural_fee": "Rs 1,000",
+        "sports_centre": "Rs 500",
+        "registration_enrollment_fee": "Rs 200",
+        "examination_fee": "Rs 350",
+        "student_aid_fee": "Rs 200",
+        "group_insurance_fee": "Rs 250",
+        "wellness_fee": "Rs 200",
+        "training_placement_fee": "Rs 250"
+      },
+      "payment_deadlines": {
+        "without_fine": "Up to 28-01-2026",
+        "with_500_fine": "Up to 12-02-2026",
+        "with_1000_fine": "Up to 14-03-2026",
+        "after_15_march": "Rs 1,000+ per month additional"
+      },
+      "payment_mode": "Only SB Collect or Samarth Portal. Cash, Cheque, and Pay Orders NOT accepted."
+    },
+
+    "wifi": {
+      "facts": [
+        "WiFi is available at NIT Puducherry but not high speed."
+      ]
+    },
+
+    "attendance": {
+      "facts": [
+        "75% attendance is mandatory at NIT Puducherry."
+      ]
+    },
+
+    "clubs": {
+      "cultural": ["Hotshots (dance)", "Prototype (singing)"],
+      "other": ["RIPA Club", "Gaming Club"],
+      "language_regional": ["Telugu Club", "Tamil Club", "Malayalam Club", "Hindi Club"]
+    },
+
+    "fests": {
+      "facts": [
+        "Even semester: GYANITH (tech fest).",
+        "Odd semester: Leceil."
+      ]
+    },
+
+    "laundry": {
+      "facts": [
+        "Washing machine available in hostels."
+      ]
+    },
+
+    "elections": {
+      "positions": [
+        "President (III Year)",
+        "Vice President-1 (III Year, female only)",
+        "Vice President-2 (II Year)",
+        "General Secretary-1 (II Year, female only)",
+        "General Secretary-2 (III BSc BEd / I Year Masters / PhD)",
+        "Joint Secretary 1-4 (various)"
+      ],
+      "eligibility": "Minimum CGPA 7.00/10, no disciplinary record, must have held positions such as CR/HR/NSS/NCC.",
+      "timeline": {
+        "nominations": "By 16-04-2026",
+        "voting": "22-04-2026",
+        "results": "Same day as voting"
+      }
+    },
+
+    "sports": {
+      "facts": [
+        "Basketball court available (permanent).",
+        "Badminton court available (permanent).",
+        "Other sports facilities are temporary.",
+        "Sports complex is under construction."
+      ]
+    },
+
+    "canteen": {
+      "facts": [
+        "Zee Blue canteen.",
+        "Student Park.",
+        "Mini Super Market."
+      ]
+    },
+
+    "shops": {
+      "facts": [
+        "Mini supermarket on campus.",
+        "Xerox shop on campus."
+      ]
+    },
+
+    "gym": {
+      "facts": [
+        "Gym available only for boys.",
+        "Free of cost."
+      ]
+    },
+
+    "health_centre": {
+      "facts": [
+        "Basic emergency and trauma care available.",
+        "24x7 referral services.",
+        "Standard nursing and pharmacy services.",
+        "Health centre equipped with essential drugs and two beds for observation."
+      ]
+    },
+
+    "restaurants": {
+      "nearby": ["Paradise Restaurant", "Asife Biryani", "Chella Mess"]
+    },
+
+    "nearby_places": {
+      "tourist": ["Pondicherry", "Mangrove Forest", "Karaikal Beach"],
+      "malls": "No malls nearby"
+    },
+
+    "language": {
+      "facts": ["Tamil is the state language. Tamil and English are used in college."]
+    },
+
+    "climate": {
+      "facts": ["Very hot climate at Karaikal, Puducherry."]
+    },
+
+    "academics": {
+      "timetable_civil": {
+        "program": "B.Tech Civil Engineering, Even Semester 2025-26",
+        "subjects": ["MA2002 (Mathematics)", "CE2003", "CE2001", "HS2001"],
+        "timings": "9:00 AM to 4:00 PM, lunch break 1:00 PM - 2:00 PM"
+      }
+    }
+  }
+}

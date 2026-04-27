@@ -1,0 +1,263 @@
+{
+  "college": "NIT Srinagar",
+  "full_name": "National Institute of Technology Srinagar",
+  "sources": ["whatsapp_chat_with_ambassador", "fee_structure_image", "mess_menu_pdf", "timetable_pdf"],
+  "data_date": "2026-04-04",
+
+  "sections": {
+    "overview": {
+      "facts": [
+        "NIT Srinagar (National Institute of Technology Srinagar) is located at Hazratbal, Srinagar, Jammu & Kashmir, 190006.",
+        "Climate: Winter (December-February), Spring (March-April), Summer (May-August), Rainy (June-August), Autumn (September-November).",
+        "Only postpaid SIM works at NIT Srinagar. Prepaid SIMs do not work. 5G and 4G connectivity available."
+      ]
+    },
+
+    "transport": {
+      "facts": [
+        "Srinagar Railway Station is 17 km from NIT Srinagar.",
+        "Srinagar Airport is 19 km from NIT Srinagar.",
+        "Srinagar Bus Stand is 10 km from NIT Srinagar."
+      ]
+    },
+
+    "hostels": {
+      "facts": [
+        "NIT Srinagar has 8 hostels: Indus, Chenab, Mansar, Mansbal, Jhelum Extension, Jhelum, Tawi, and PG Hostel.",
+        "Jhelum Hostel is for 4th year students with single rooms allotted based on CGPA.",
+        "Remaining 4th year students are placed in Tawi Hostel.",
+        "Other year students are allotted hostels randomly.",
+        "Each hostel has its own separate mess.",
+        "Each hostel has separate laundry facilities. Laundry bill is included in the fee structure."
+      ]
+    },
+
+    "mess": {
+      "cost": "Rs 21,000 mess advance per semester (adjustable) + Rs 1,500 BHM Contribution",
+      "assignment": "Each hostel has its own separate mess.",
+      "mess_schedule": {
+        "monday": {
+          "breakfast": "Poha + Aloo Bhujia + Lemon + Tea/Salt Tea OR Kashmiri Roti(2) + Butter + Tea",
+          "lunch": "Mix Dal + Aloo Bhurji + Curd + Roti + Rice",
+          "dinner": "Veg: Matar Paneer + Dal Tadka. Non-veg: Chicken Curry. Roti + Rice"
+        },
+        "tuesday": {
+          "breakfast": "Gobhi Paratha(2)/Kashmiri Roti(2) + Butter + Tea + Sauce + Banana",
+          "lunch": "Rajma + Tomato Onion Shimla Mirchi Matar Sabji + Curd + Roti/Dhaniya Roti + Rice",
+          "dinner": "Kadhi Pakoda + Mix Veg Sabji + Onion Salad + Roti + Rice + Mirchi + Kheer"
+        },
+        "wednesday": {
+          "breakfast": "Bread(4)/Kashmiri Roti(2) + Butter + Tea + Milk",
+          "lunch": "Rice + Roti + Aloo Gobhi + Chana Dal",
+          "dinner": "Veg: Shahi Paneer + Mix Dal + Roti + Rice. Non-veg: Chicken Biryani + Green Chutney + Onion Salad"
+        },
+        "thursday": {
+          "breakfast": "Chole + Poori(4)/Kashmiri Roti(2) + Butter + Tea + Banana(2)",
+          "lunch": "Aloo Matar Sabji + Masala Chole + Roti + Curd + Rice",
+          "dinner": "Tomato Nutry + Rajma + Roti/Dhaniya Roti + Rice + Papad(1) + Halwa"
+        },
+        "friday": {
+          "breakfast": "Methi Paratha(2)/Kashmiri Roti(2) + Butter + Milk + Tea + Sauce",
+          "lunch": "Dal Tadka + Mix Veg + Rice + Roti + Pickle",
+          "dinner": "Veg: Kadhai Paneer + Arhar Dal. Non-veg: Butter Chicken. Roti + Rice"
+        },
+        "saturday": {
+          "breakfast": "Bread Pakoda(2) + Banana(2) + Sauce + Tea",
+          "lunch": "Rajma + Aloo Baigan Bharta + Roti/Dhaniya Roti + Rice",
+          "dinner": "Rice + Roti + Bhindi Masala + Dal Tadka"
+        },
+        "sunday": {
+          "breakfast": "Aloo Paratha(2) + Milk + Tea",
+          "lunch": "Veg Biryani + Curd + Onion Salad",
+          "dinner": "Aloo Zeera + Chana Dal + Roti + Rice + Pickle + Sewaiyan"
+        }
+      },
+      "notes": "Kashmiri Roti is a daily breakfast option (unique to NIT Srinagar). Non-veg chicken available on Monday, Wednesday, and Friday dinners. Butter Chicken on Friday. Desserts: Kheer on Tuesday, Halwa on Thursday, Sewaiyan on Sunday.",
+      "cuisine": "North Indian and Kashmiri cuisine. Kashmiri Roti and Salt Tea as daily breakfast staples. Both veg and non-veg dinner options on Mon/Wed/Fri."
+    },
+
+    "fee_structure": {
+      "program": "B.Tech Batch 2023, Even Semester",
+      "per_semester": true,
+      "part_i_components": {
+        "admission_fee": 1000,
+        "library_fee": 500,
+        "it_system_fee": 1100,
+        "tp_charges": 500,
+        "transport_facility": 500,
+        "medical_facility": 300,
+        "examination_fee": 1200,
+        "gymkhana_sport_fee": 1500,
+        "mediclaim_insurance": 270,
+        "hostel_seat_rent": 1500,
+        "light_and_water": 1000,
+        "cable_tv": 130,
+        "mess_establishment": 1500,
+        "subtotal": 11000
+      },
+      "categories": {
+        "SC_ST_PwD": "Rs 11,000 (tuition fee waived)",
+        "family_income_below_1L": "Rs 11,000 (tuition fee waived)",
+        "family_income_1L_to_5L": "Rs 31,833 (tuition Rs 20,833 + base Rs 11,000)",
+        "family_income_above_5L": "Rs 73,500 (tuition Rs 62,500 + base Rs 11,000)"
+      },
+      "part_ii": {
+        "bhm_contribution": 1500,
+        "mess_advance_adjustable": 21000,
+        "part_ii_total": 22500
+      },
+      "eighth_semester_additional": {
+        "transcript_fee": 1500,
+        "convocation_reg_fee": 50,
+        "tuition_fee": 16500,
+        "totals": {
+          "SC_ST": "Rs 12,500",
+          "income_below_1L": "Rs 12,500",
+          "income_1L_to_5L": "Rs 33,333",
+          "income_above_5L": "Rs 75,000"
+        }
+      },
+      "foreign_students": {
+        "SAARC": "USD 2,000 per semester",
+        "non_SAARC": "USD 4,000 per semester"
+      }
+    },
+
+    "wifi": {
+      "facts": [
+        "WiFi and LAN available in hostel.",
+        "Only postpaid SIM works. Prepaid SIMs do not work.",
+        "5G and 4G mobile connectivity available."
+      ]
+    },
+
+    "attendance": {
+      "facts": [
+        "75% attendance is mandatory at NIT Srinagar."
+      ]
+    },
+
+    "clubs": {
+      "list": ["FOSS Club", "IOT Club", "Band Club (musical)", "Sargam Club (dance)", "Movie Club", "Photography Club"]
+    },
+
+    "fests": {
+      "facts": [
+        "April/May: Rang-e-Chinnar (cultural fest).",
+        "September/October: Techvaganza (tech fest)."
+      ]
+    },
+
+    "laundry": {
+      "facts": [
+        "Separate laundry for each hostel.",
+        "Laundry bill is included in the fee structure."
+      ]
+    },
+
+    "elections": {
+      "facts": [
+        "No elections are conducted at NIT Srinagar."
+      ]
+    },
+
+    "sports": {
+      "facts": [
+        "Badminton, Football, Cricket, Volleyball, Tennis, Table Tennis, and Chess are available."
+      ]
+    },
+
+    "canteen": {
+      "facts": [
+        "5 canteens on campus.",
+        "Operating hours: 10 AM to 11:30 PM / 12 AM."
+      ]
+    },
+
+    "shops": {
+      "facts": [
+        "6 shops are available on campus."
+      ]
+    },
+
+    "fines": {
+      "facts": [
+        "Fines range from Rs 1,000 to Rs 5,000.",
+        "Offences: Inappropriate behavior, Ragging, Smoking/Drinking on premises, Fights, Damaging equipment."
+      ]
+    },
+
+    "gym": {
+      "facts": [
+        "Boys and girls have separate gym facilities.",
+        "Fee must be paid separately (not included in the fee structure)."
+      ]
+    },
+
+    "health_centre": {
+      "facts": [
+        "Medical unit available on campus.",
+        "Medicines provided free of cost."
+      ]
+    },
+
+    "restaurants": {
+      "nearby": ["Shawarma Hut (500 m)", "Zam Zam Mediterranean (8 km)", "Bay Leaf (800 m)"],
+      "notes": "Other Kashmir restaurants also available nearby."
+    },
+
+    "nearby_places": {
+      "tourist": ["Pahalgam (94 km)", "Gulmarg (60 km)", "Sonmarg", "Chandwari", "Amarnath Temple"],
+      "malls": ["City Mall (8 km)", "MS Shopping Mall (8.5 km)"]
+    },
+
+    "climate": {
+      "facts": [
+        "Winter: December-February.",
+        "Spring: March-April.",
+        "Summer: May-August.",
+        "Rainy: June-August.",
+        "Autumn: September-November."
+      ]
+    },
+
+    "academics": {
+      "branches": [
+        "Civil Engineering (2 sections)",
+        "Mechanical Engineering",
+        "Chemical Engineering",
+        "Metallurgical & Materials Engineering",
+        "Electrical Engineering",
+        "Electronics & Communication Engineering",
+        "Computer Science Engineering",
+        "Information Technology"
+      ],
+      "semester": "B.Tech 2nd Semester, Spring 2026",
+      "class_timings": "Monday to Friday, 9 AM to 5:20 PM",
+      "common_subjects": [
+        "Engineering Physics",
+        "Mathematics II",
+        "Advanced English and Communication Skills",
+        "Environmental Studies",
+        "Elements of Mechanical Engineering",
+        "Engineering Mechanics",
+        "Workshop Practice",
+        "Engineering Drawing"
+      ],
+      "branch_specific_subjects_EE_ECE_CSE_IT": [
+        "Engineering Chemistry",
+        "Computer Programming",
+        "Basic Electrical Engineering"
+      ],
+      "labs": [
+        "Physics Lab",
+        "Chemistry Lab",
+        "Language Lab",
+        "Computer Programming Lab",
+        "Workshop Practice"
+      ],
+      "timetable_ic": "Dr. Vijay Kumar",
+      "classroom_ic": "Dr. Bonasi Krishna Srihari"
+    }
+  }
+}

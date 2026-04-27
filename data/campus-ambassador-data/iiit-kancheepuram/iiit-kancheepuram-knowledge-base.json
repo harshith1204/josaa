@@ -1,0 +1,120 @@
+{
+  "college": "IIIT Kancheepuram",
+  "full_name": "Indian Institute of Information Technology, Design and Manufacturing, Kancheepuram",
+  "sources": ["whatsapp_chat_with_ambassador", "fee_structure_pdf", "timetable_pdf"],
+  "data_date": "2026-04-01",
+
+  "sections": {
+    "overview": {
+      "facts": [
+        "IIITDM Kancheepuram is located at Melakottaiyur, off Kelambakkam-Vandalur Road, Kandigai, Nellikuppam, Tamil Nadu - 600127.",
+        "An Institution of National Importance under MoE, Government of India.",
+        "Some hostel blocks are under construction."
+      ]
+    },
+
+    "hostels": {
+      "boys": ["Ashoka Hostel — 2nd and 3rd year", "Aswatha Hostel — 1st and 4th year"],
+      "girls": ["Jasmine Hostel"],
+      "sharing": "2-sharing rooms.",
+      "note": "Some blocks under construction."
+    },
+
+    "mess": {
+      "facts": ["Akshara Mess serves both girls and boys."]
+    },
+
+    "fee_structure": {
+      "program": "B.Tech and Dual Degree (2024-25 batch)",
+      "one_time_fees": {"total": 5000, "includes": "Admission Rs 500, Certificate Rs 500, Student Welfare Rs 1000, Infrastructure Development Rs 1000, Alumni Rs 500, Library Rs 1000, Cultural Rs 500"},
+      "semester_fees": {"total": 85800, "tuition": 81000, "exam": 500, "registration": 300, "sports": 1000, "medical": 1000, "student_amenities": 2000},
+      "medical_insurance": {"per_annum": 600},
+      "hostel_fees_per_semester": {"total": 38200, "admission": 700, "seat_rent": 3500, "maintenance": 15000, "dining_advance": 17000, "establishment": 1000, "development": 1000},
+      "grand_total_first_semester": 129600,
+      "notes": [
+        "SC/ST/PwD students exempted from tuition fee for 4 years.",
+        "Hostel is compulsory for all students.",
+        "General/OBC/EWS income below Rs 1 lakh: full tuition remission.",
+        "General/OBC/EWS income Rs 1-5 lakh: 2/3rd tuition remission.",
+        "Dining charges may vary based on tendering. Additional Rs 5000 for special menu items."
+      ]
+    },
+
+    "wifi": {
+      "facts": [
+        "LAN available in hostels.",
+        "WiFi recently being installed in hostel corridors.",
+        "Some halls in academic block have WiFi."
+      ]
+    },
+
+    "attendance": {
+      "facts": [
+        "85% attendance is mandatory.",
+        "In case of health issues, 75% is acceptable with certificate verified by IIITDM doctor."
+      ]
+    },
+
+    "clubs": {
+      "cultural": ["Aurora (Art Club)", "Cinematics", "E-Sports", "Footlights (Dance)", "Imagix (Photography)", "Literati Society", "Music", "Quorisity (Quiz)", "Theatrix (Drama)"],
+      "technical": ["AUV", "CS Club", "EPIC", "GDSC", "MARS", "Optica", "Robotics", "SAE", "TAD", "IPD", "AMSE", "IEEE", "SSC"]
+    },
+
+    "fests": {
+      "list": [
+        {"name": "Savara", "type": "Cultural fest"},
+        {"name": "Meraki", "type": "Fest"},
+        {"name": "E-Summit", "type": "Tech fest"}
+      ]
+    },
+
+    "sports": {
+      "facilities": ["Football", "Volleyball", "Carrom", "Badminton", "Kho-Kho", "Cricket", "Running/Athletics", "Kabbadi"]
+    },
+
+    "canteen": {
+      "outlets": ["Ultimate Stores", "Night canteen beside hostels", "Cafeteria"],
+      "note": "Night canteen available beside hostels."
+    },
+
+    "shops": {
+      "facts": ["No shops inside campus."]
+    },
+
+    "laundry": {
+      "facts": [
+        "Laundry available near Ultimate Store.",
+        "Washing machines on hostel ground floors."
+      ]
+    },
+
+    "gym": {
+      "facts": ["Gym available — Rs 500 per month for everyone."]
+    },
+
+    "medical": {
+      "note": "Not mentioned by ambassador — data gap."
+    },
+
+    "transport": {
+      "facts": [
+        "Bus 515B drops at Kandigai bus stop, then 1 km walk to campus.",
+        "Bus 55D from Tambaram Railway Station."
+      ]
+    },
+
+    "restaurants": {
+      "nearby": ["Ambrocias", "THBB", "Kalam", "KKR", "ACTC", "Bava"]
+    },
+
+    "nearby_places": {
+      "tourist": ["Vandaloor Zoo", "Kancheepuram Kamakshi Amman Temple", "Mahabalipuram"],
+      "shopping": ["Marna Mall", "Vivira Mall", "Phoenix Mall", "AGS Cinemas", "Mayajaal"]
+    },
+
+    "language_climate": {
+      "language": "Tamil, English. Mostly Telugu-speaking student population.",
+      "climate": "Mostly sunny (Chennai region)."
+    }
+  }
+}

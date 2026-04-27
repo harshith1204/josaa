@@ -1,0 +1,86 @@
+SURROUNDINGS:
+
+Location: Meghawa, Dumna Airport Road, P.O Khamaria, Jabalpur 482005.
+Transport:dumna airport to college:5km,jabalpur railway station to college:10km.
+Restarurants: chamrminar biryani point, barbeque, handi.
+tourist: Dumna Nature Reserve.
+Malls: Samdareeya, PVRmall
+climate:23-40
+language: Hindi
+
+
+ACADEMICS:
+
+CLUBS:
+cricket, volleyball, football, badminton, basketball, lawn tennis, kabaddi, chess, carrom, gym, athletics, table tennis, Business management, Aavartan (Dance), Saaz (Music), Jazbaat (Dramatics), Abhivyakti (Arts & Craft), Aakriti (Film & Photography), and Samvaad (Literary),Robotics (ERS) and Aero Fabrication, CAD & 3D Printing Club, BitByte TPC, Racing.
+
+ATTENDANCE:75%(Mandatory)
+
+WIFI:LAN
+
+FESTS:
+Abhikalpan
+Tarang
+Riwayat
+
+CAMPUS LIFE:
+HOSTELS:
+Vasishtha Hostel  (HALL-I)[4 th year boys]
+Aryabhatta Hostel (HALL-III)[2 nd year boys]
+Vivekananda Hostel (HALL-IV)[3 rd year boys]
+Nagarjuna Hostel [2 nd and 3 rd year girls]
+Panini Hostel [1 st year boys]
+Maa Saraswati Girls Hostel[1st years 4th years PhD girls]
+
+MESS:
+Central mess 1:Vegetarian
+Central mess 2:Non vegetarian
+
+LAUNDRY:
+each hostel is equipped with its own laundry facilities.
+
+ELECTIONS:
+Student Affairs conducts elections, and those elections are hosted/organized by Senate members.
+
+SPORTS:
+Only students who are involved in clubs can play sports on campus; others are not allowed.
+
+CANTEENS:
+Aryabhatta Hostel
+Vasishtha Hostel 
+Vivekananda Hostel
+Maa Saraswati
+
+SHOPS:
+Nescafe
+vegetable and fruits shop
+general store 
+
+FINES:
+Every hostel maintains an attendance sheet. If a student is absent, a fine of ₹50 is mandatory. This rule applies to all year batches.
+
+GYM:
+
+BOYS
+
+1st year : 5:30am-7:30am
+2nd year : 11am-1pm,8:30pm-10pm
+3rd year : 6:30pm-8:30pm
+Final Year : 6:30pm-8:30pm
+Masters and Phd : 11am-1pm,8:30pm-10pm
+
+
+GIRLS
+
+1st year : 7:30-9:30am
+2nd year : 7:30-9:30am
+3rd year : 4:00pm-6:30pm
+Final Year : 4:00pm-6:30pm
+Masters and Phd : 4:00pm-6:30pm
+
+MEDICAL:
+Primary Health Centre
+
+
+
+

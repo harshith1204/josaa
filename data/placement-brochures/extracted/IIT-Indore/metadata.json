@@ -1,0 +1,23 @@
+{
+  "college": "IIT-Indore",
+  "source_pdf": "IIT-Indore-Placement-Brochure-Latest.pdf",
+  "total_pages": 26,
+  "image_pages": 2,
+  "text_chars": 41663,
+  "extraction_method": "pymupdf4llm",
+  "ocr_applied": false,
+  "structured_data": {
+    "institute": "IIT-Indore",
+    "year": "2025-26",
+    "top_recruiters": [
+      "Drdo",
+      "Ey",
+      "Google",
+      "Intel",
+      "Maruti",
+      "Meta",
+      "Qualcomm",
+      "Tcs"
+    ]
+  }
+}

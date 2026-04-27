@@ -1,0 +1,177 @@
+{
+  "college": "IIT Mandi",
+  "sources": ["whatsapp_chat_with_ambassador", "fee_structure_pdf", "timetable_image"],
+  "data_date": "2026-04-04",
+
+  "sections": {
+    "overview": {
+      "facts": [
+        "IIT Mandi is located at Kamand, Mandi, Himachal Pradesh 175075."
+      ]
+    },
+
+    "hostels": {
+      "boys": [
+        {"name": "Dashir", "year": "Boys hostel", "sharing": "1st year 4 per room, remaining 1 or 2 sharing"},
+        {"name": "Sulvalsar", "year": "Boys hostel", "sharing": "1st year 4 per room, remaining 1 or 2 sharing"},
+        {"name": "Surajtal", "year": "Boys hostel", "sharing": "1st year 4 per room, remaining 1 or 2 sharing"}
+      ],
+      "girls": [
+        {"name": "Gauri Kund", "year": "Girls hostel", "sharing": "1st year 4 per room, remaining 1 or 2 sharing"},
+        {"name": "Beaskund", "year": "Girls hostel", "sharing": "1st year 4 per room, remaining 1 or 2 sharing"}
+      ],
+      "total_rooms": 972,
+      "total_capacity": 1398
+    },
+
+    "mess": {
+      "messes": ["Alder", "Peepal", "Tulasi", "Oak", "Pine"],
+      "system": "5 messes available at IIT Mandi."
+    },
+
+    "fee_structure": {
+      "program": "B.Tech",
+      "income_based": [
+        {"income": "Below Rs 1 lakh annual", "fee": "Rs 50,000 per semester"},
+        {"income": "Above Rs 5 lakh annual", "fee": "Rs 1,50,000 per semester"}
+      ],
+      "notes": [
+        "SC/ST/PH: 100% tuition fee exemption.",
+        "Continuation fee: Rs 2,000 per semester for semester break."
+      ]
+    },
+
+    "wifi": {
+      "facts": ["5G Wi-Fi network available on campus at IIT Mandi."]
+    },
+
+    "attendance": {
+      "facts": ["80% attendance is mandatory at IIT Mandi."]
+    },
+
+    "clubs": {
+      "list": [
+        {"name": "HNT"},
+        {"name": "PMC"},
+        {"name": "ART GEEKS"},
+        {"name": "Drama Club", "type": "Dramatics"},
+        {"name": "Dance Club", "type": "Dance"},
+        {"name": "Robotronics", "type": "Robotics"}
+      ]
+    },
+
+    "fests": {
+      "list": [
+        {"name": "Exodia", "type": "Fest"},
+        {"name": "Raneeti", "type": "Fest"},
+        {"name": "Expecto", "type": "Fest"}
+      ]
+    },
+
+    "sports": {
+      "facilities": [
+        "Volleyball",
+        "Football",
+        "Hockey",
+        "Basketball",
+        "Badminton",
+        "Swimming",
+        "Cricket"
+      ]
+    },
+
+    "canteen": {
+      "outlets": [
+        {"name": "Monal", "timing": "11 AM to 1 AM"},
+        {"name": "Parakeet", "timing": "11 AM to 1 AM"},
+        {"name": "Drongo", "timing": "11 AM to 1 AM"}
+      ]
+    },
+
+    "shops": {
+      "facts": [
+        "Supermarket available on campus.",
+        "Redstarter — one of the main shops on campus."
+      ]
+    },
+
+    "laundry": {
+      "facts": [
+        "Free laundry service at IIT Mandi.",
+        "Each hostel has 2 washing machines."
+      ]
+    },
+
+    "elections": {
+      "facts": ["Not mentioned in chat."]
+    },
+
+    "fines": {
+      "facts": [
+        "Smoking or drinking: Rs 2,000 to Rs 10,000 fine.",
+        "Ragging: Rs 10,000 fine."
+      ]
+    },
+
+    "gym": {
+      "facts": [
+        "Different gyms for boys and girls at IIT Mandi.",
+        "Morning timing: 6 AM to 8 AM.",
+        "Evening timing: 7 PM to 10 PM.",
+        "Gym is NOT free."
+      ]
+    },
+
+    "medical": {
+      "facts": [
+        "Campus hospital available at IIT Mandi.",
+        "Medical charges are included in the fees."
+      ]
+    },
+
+    "transport": {
+      "facts": [
+        "Nearest airport: Chandigarh Airport.",
+        "From Chandigarh Airport, take a bus to ISBT Mandi."
+      ]
+    },
+
+    "restaurants": {
+      "nearby": [
+        "Himalayan Cafe",
+        "Babaji Dhaba"
+      ],
+      "delivery": "NO Swiggy or Zomato available at IIT Mandi."
+    },
+
+    "nearby_places": {
+      "tourist": ["Parashar Lake", "Manali", "Kullu"],
+      "shopping": []
+    },
+
+    "language_climate": {
+      "language": "Hindi and Telugu are more commonly spoken.",
+      "climate": "More like rainy climate."
+    },
+
+    "timetable": {
+      "schedule": "Mon-Fri",
+      "class_timings": ["10:00-11:00 AM", "11:00 AM-12:00 PM", "12:00-1:00 PM", "2:00-5:00 PM (labs)"],
+      "subjects": [
+        {"name": "Mechanics", "code": "IC-121"},
+        {"name": "Applied Electronics", "code": "IC-161"},
+        {"name": "Complex Calculus", "code": "IC-113"},
+        {"name": "Probability and Statistics", "code": "IC-203"},
+        {"name": "Calculus and Integral", "code": "IC-119"},
+        {"name": "Graphics for Design", "code": "IC-148"},
+        {"name": "Design Practicum", "code": "IC-107P"}
+      ],
+      "labs": [
+        {"name": "Prob & Stats Lab", "code": "IC-203P"},
+        {"name": "Electronics Lab", "code": "IC-161P"},
+        {"name": "Graphics Lab", "code": "IC-148P"},
+        {"name": "Design Practicum", "code": "IC-107P"}
+      ]
+    }
+  }
+}
