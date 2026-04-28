@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { createMiddlewareClient } from '@/lib/supabase';
+import { createMiddlewareClient } from '@/lib/supabase-middleware';
 
 const PROTECTED_ROUTES = ['/explore', '/cutoffs', '/preferences', '/profile', '/scores', '/simulator'];
 
