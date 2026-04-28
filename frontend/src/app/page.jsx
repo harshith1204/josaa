@@ -4,6 +4,19 @@ import React, { useState, useEffect, useRef, useCallback } from 'react';
 import Link from 'next/link';
 import './landing.css';
 
+const HERO_STORY_COLLEGES = [
+  { id: 'IITB', label: 'IIT Bombay' },
+  { id: 'IITD', label: 'IIT Delhi' },
+  { id: 'IITM', label: 'IIT Madras' },
+  { id: 'NITT', label: 'NIT Trichy' },
+  { id: 'BITS', label: 'BITS Pilani' },
+  { id: 'AIIMS', label: 'AIIMS Delhi' },
+  { id: 'IITK', label: 'IIT Kanpur' },
+  { id: 'NITW', label: 'NIT Warangal' },
+  { id: 'VIT', label: 'VIT Vellore' },
+  { id: 'IIITH', label: 'IIIT Hyd' },
+];
+
 export default function LandingPage() {
   const [searchQuery, setSearchQuery] = useState('');
   const [isSearching, setIsSearching] = useState(false);
@@ -41,18 +54,35 @@ The cutoff has been trending upward ~3% yearly. For 2026, I'd estimate the closi
   // Scroll reveal and Demo typewriter trigger
   const chatWindowRef = useRef(null);
   useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          if (entry.target.classList.contains('chat-window')) {
-            setIsDemoVisible(true);
-          }
-        }
-      });
-    }, { threshold: 0.1 });
+    const elements = document.querySelectorAll('.reveal');
 
-    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    const markIfInViewport = (el) => {
+      const rect = el.getBoundingClientRect();
+      const vh = window.innerHeight;
+      if (rect.top < vh * 0.92 && rect.bottom > vh * 0.05) {
+        el.classList.add('visible');
+        if (el.classList.contains('chat-window')) setIsDemoVisible(true);
+      }
+    };
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            if (entry.target.classList.contains('chat-window')) setIsDemoVisible(true);
+          }
+        });
+      },
+      { threshold: 0.08, rootMargin: '0px 0px 12% 0px' }
+    );
+
+    elements.forEach((el) => {
+      markIfInViewport(el);
+      observer.observe(el);
+    });
+    requestAnimationFrame(() => elements.forEach(markIfInViewport));
+
     return () => observer.disconnect();
   }, []);
 
@@ -187,28 +217,27 @@ The cutoff has been trending upward ~3% yearly. For 2026, I'd estimate the closi
       </nav>
 
       <section className="hero">
-        <div className="stories-row">
-          {[
-            { id: 'IITB', label: 'IIT Bombay' },
-            { id: 'IITD', label: 'IIT Delhi' },
-            { id: 'IITM', label: 'IIT Madras' },
-            { id: 'NITT', label: 'NIT Trichy' },
-            { id: 'BITS', label: 'BITS Pilani' },
-            { id: 'AIIMS', label: 'AIIMS Delhi' },
-            { id: 'IITK', label: 'IIT Kanpur' },
-            { id: 'NITW', label: 'NIT Warangal' },
-            { id: 'VIT', label: 'VIT Vellore' },
-            { id: 'IIITH', label: 'IIIT Hyd' }
-          ].map((col) => (
-            <div key={col.id} className="story-item">
-              <div className="story-ring">
-                <div className="story-avatar">
-                   {col.id.includes('IIT') || col.id.includes('NIT') ? <>{col.id.slice(0,3)}<br/>{col.id.slice(3)}</> : col.id}
+        <div className="stories-row" aria-label="Featured colleges">
+          <div className="stories-track">
+            {[...HERO_STORY_COLLEGES, ...HERO_STORY_COLLEGES].map((col, i) => (
+              <div key={`${col.id}-${i}`} className="story-item">
+                <div className="story-ring">
+                  <div className="story-avatar">
+                    {col.id.includes('IIT') || col.id.includes('NIT') ? (
+                      <>
+                        {col.id.slice(0, 3)}
+                        <br />
+                        {col.id.slice(3)}
+                      </>
+                    ) : (
+                      col.id
+                    )}
+                  </div>
                 </div>
+                <span>{col.label}</span>
               </div>
-              <span>{col.label}</span>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
 
         <div className="hero-badge">
@@ -248,7 +277,7 @@ The cutoff has been trending upward ~3% yearly. For 2026, I'd estimate the closi
           </form>
 
           <div className={`search-hints ${isChatActive ? 'hidden' : ''}`}>
-            {['IIT Bombay CSE cutoff', 'Best NITs for ECE', 'BITS Pilani fees 2026', 'NIT vs IIIT comparison', 'NEET cutoff AIIMS Delhi'].map(hint => (
+            {['IIT Bombay CSE cutoff', 'Best NITs for ECE', 'BITS Pilani fees 2026', 'NIT vs IIIT comparison'].map(hint => (
               <span key={hint} className="hint-tag" onClick={() => fillSearch(hint)}>{hint}</span>
             ))}
           </div>
@@ -305,7 +334,7 @@ The cutoff has been trending upward ~3% yearly. For 2026, I'd estimate the closi
 
         {!isChatActive && (
           <>
-            <div style={{ maxWidth: '480px', margin: '28px auto 0', padding: '0 16px', display: 'flex', flexDirection: 'column', gap: '12px' }}>
+            <div className="hero-promo">
               <Link href="/simulator" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '16px', background: 'linear-gradient(135deg, #1a1510 0%, #15130f 100%)', border: '1px solid rgba(255, 107, 53, 0.2)', borderRadius: '16px', padding: '18px 22px' }}>
                 <div style={{ width: '48px', height: '48px', borderRadius: '12px', background: 'rgba(255, 107, 53, 0.12)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff6b35" strokeWidth="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
@@ -335,7 +364,7 @@ The cutoff has been trending upward ~3% yearly. For 2026, I'd estimate the closi
               <div className="reveal">
                 <div className="section-label">// AI Assistant</div>
                 <h2 className="section-title">Ask like you'd<br/>ask a <em style={{fontFamily:'var(--serif)',color:'var(--accent)'}}>senior</em></h2>
-                <p className="section-desc" style={{marginBottom:'32px'}}>No more scrolling through forums or outdated PDFs. Just ask in plain language and get accurate, sourced answers instantly.</p>
+                <p className="section-desc">No more scrolling through forums or outdated PDFs. Just ask in plain language and get accurate, sourced answers instantly.</p>
                 <div style={{display:'flex',flexDirection:'column',gap:'12px'}}>
                   {['Real-time cutoff data from official sources', 'Compare colleges side-by-side', 'Personalized recommendations based on your rank', 'Covers JEE, NEET, CUET, state CETs & more'].map(text => (
                     <div key={text} style={{display:'flex',alignItems:'center',gap:'10px'}}>
@@ -408,7 +437,7 @@ The cutoff has been trending upward ~3% yearly. For 2026, I'd estimate the closi
           </section>
 
           <section className="marquee-section" id="colleges">
-            <div style={{textAlign:'center',marginBottom:'48px'}} className="reveal">
+            <div className="reveal marquee-intro">
               <div className="section-label">// Top Colleges</div>
               <h2 className="section-title">Tracking India's best</h2>
             </div>

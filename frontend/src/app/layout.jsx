@@ -1,6 +1,6 @@
 import { Inter } from 'next/font/google';
 import './globals.css';
-import BottomNav from '@/components/BottomNav';
+import MainAndNav from '@/components/MainAndNav';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
@@ -19,8 +19,7 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className="bg-bg-primary text-text-primary font-sans antialiased">
-        <main className="pb-20">{children}</main>
-        <BottomNav />
+        <MainAndNav>{children}</MainAndNav>
       </body>
     </html>
   );

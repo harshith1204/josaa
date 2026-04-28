@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "process-data": "node scripts/process-data.js",
-    "dev": "next dev",
+    "dev": "rm -rf .next && next dev",
+    "dev:fast": "next dev",
+    "dev:turbo": "rm -rf .next && next dev --turbo",
     "build": "next build",
     "start": "next start",
     "test-api": "node scripts/test-api.js"

@@ -84,24 +84,44 @@ function AuthForm() {
       <div className="orb orb-2" />
       <div className="orb orb-3" />
 
-      <nav>
-        <Link href="/" className="nav-logo">
-          <span className="dot" />
-          cutoffs.ai
+      <header
+        style={{
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          zIndex: 100,
+          padding: '16px 20px',
+        }}
+      >
+        <Link
+          href="/"
+          style={{
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: '8px',
+            fontSize: '14px',
+            fontWeight: 500,
+            color: 'var(--text-muted)',
+            textDecoration: 'none',
+            fontFamily: 'var(--sans)',
+            transition: 'color 0.2s',
+          }}
+          onMouseEnter={e => { e.currentTarget.style.color = 'var(--text)'; }}
+          onMouseLeave={e => { e.currentTarget.style.color = 'var(--text-muted)'; }}
+        >
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+            <path d="M19 12H5M12 19l-7-7 7-7" />
+          </svg>
+          Back to home
         </Link>
-        <ul className="nav-links">
-          <li><a href="/#features">Features</a></li>
-          <li><a href="/#exams">Exams</a></li>
-          <li><a href="/#colleges">Colleges</a></li>
-        </ul>
-      </nav>
+      </header>
 
       <div style={{
         flex: 1,
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        padding: '100px 24px 60px',
+        padding: '76px 24px 60px',
         position: 'relative',
         zIndex: 1,
       }}>
@@ -393,9 +413,23 @@ function AuthForm() {
   );
 }
 
+function AuthLoadingFallback() {
+  return (
+    <div className="min-h-screen flex items-center justify-center bg-bg-primary text-text-secondary">
+      <div className="flex flex-col items-center gap-3">
+        <div
+          className="h-9 w-9 rounded-full border-2 border-white/10 border-t-orange-500 animate-spin"
+          aria-hidden
+        />
+        <p className="text-sm">Loading…</p>
+      </div>
+    </div>
+  );
+}
+
 export default function AuthPage() {
   return (
-    <Suspense fallback={null}>
+    <Suspense fallback={<AuthLoadingFallback />}>
       <AuthForm />
     </Suspense>
   );

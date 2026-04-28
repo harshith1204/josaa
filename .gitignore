@@ -4,3 +4,6 @@ node_modules
 .vscode
 .env.production
 .env.vercel
+.next
+**/.next/
+*.bak
