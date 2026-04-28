@@ -21,6 +21,7 @@
     "@aws-sdk/s3-request-presigner": "^3.1019.0",
     "@supabase/ssr": "^0.10.2",
     "@supabase/supabase-js": "^2.99.3",
+    "firebase": "^12.12.1",
     "isomorphic-dompurify": "^3.7.0",
     "jspdf": "^4.2.1",
     "next": "^14.2.35",

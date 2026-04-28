@@ -5,7 +5,9 @@ import { cookies } from 'next/headers';
 export async function GET(request) {
   const { searchParams, origin } = new URL(request.url);
   const code = searchParams.get('code');
-  const next = searchParams.get('next') ?? '/explore';
+  // Default to /verify-phone — Supabase strips custom ?next= from emailRedirectTo
+  // OAuth logins pass ?next= explicitly so they still land on the right page
+  const next = searchParams.get('next') ?? '/verify-phone';
 
   if (code) {
     // cookies() is synchronous in Next.js 14
