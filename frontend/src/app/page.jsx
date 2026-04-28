@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect, useRef, useCallback } from 'react';
+import React, { useState, useEffect, useLayoutEffect, useRef } from 'react';
 import Link from 'next/link';
 import './landing.css';
 
@@ -26,6 +26,10 @@ export default function LandingPage() {
   const [comboModalData, setComboModalData] = useState(null);
   const [demoText, setDemoText] = useState('');
   const [isDemoVisible, setIsDemoVisible] = useState(false);
+  const [statValues, setStatValues] = useState({ colleges: 0, exams: 0, points: 0, year: 2020 });
+  const statsRef = useRef(null);
+  const statsDoneRef = useRef(false);
+  const landingRef = useRef(null);
 
   const rotatingWords = [
     'cutoffs', 'cutoffs', 'mess', 'hostel', 'rooms', 
@@ -51,15 +55,34 @@ The cutoff has been trending upward ~3% yearly. For 2026, I'd estimate the closi
     return () => clearInterval(interval);
   }, [rotatingWords.length]);
 
-  // Scroll reveal and Demo typewriter trigger
-  const chatWindowRef = useRef(null);
   useEffect(() => {
-    const elements = document.querySelectorAll('.reveal');
+    if (isChatActive) {
+      setIsDemoVisible(false);
+      setDemoText('');
+    }
+  }, [isChatActive]);
+
+  // Scroll reveal and Demo typewriter trigger (re-bind when #demo remounts after chat closes)
+  const chatWindowRef = useRef(null);
+  useLayoutEffect(() => {
+    if (isChatActive) return undefined;
+
+    const root = landingRef.current;
+    if (!root) return undefined;
+
+    const elements = root.querySelectorAll('.reveal');
 
     const markIfInViewport = (el) => {
       const rect = el.getBoundingClientRect();
       const vh = window.innerHeight;
-      if (rect.top < vh * 0.92 && rect.bottom > vh * 0.05) {
+      const vw = window.innerWidth;
+      // Any real overlap with the viewport (relaxed vs strict ratio thresholds)
+      const overlaps =
+        rect.bottom > 0 &&
+        rect.top < vh &&
+        rect.right > 0 &&
+        rect.left < vw;
+      if (overlaps) {
         el.classList.add('visible');
         if (el.classList.contains('chat-window')) setIsDemoVisible(true);
       }
@@ -74,17 +97,47 @@ The cutoff has been trending upward ~3% yearly. For 2026, I'd estimate the closi
           }
         });
       },
-      { threshold: 0.08, rootMargin: '0px 0px 12% 0px' }
+      { threshold: 0, rootMargin: '0px 0px 15% 0px' }
     );
 
     elements.forEach((el) => {
       markIfInViewport(el);
       observer.observe(el);
     });
-    requestAnimationFrame(() => elements.forEach(markIfInViewport));
 
-    return () => observer.disconnect();
-  }, []);
+    // Separate observer for the chat window (no longer has .reveal)
+    const chatEl = chatWindowRef.current;
+    let chatObserver;
+    if (chatEl) {
+      chatObserver = new IntersectionObserver(
+        ([entry]) => { if (entry.isIntersecting) setIsDemoVisible(true); },
+        { threshold: 0, rootMargin: '0px 0px 15% 0px' }
+      );
+      const chatRect = chatEl.getBoundingClientRect();
+      const vh = window.innerHeight;
+      if (chatRect.bottom > 0 && chatRect.top < vh) setIsDemoVisible(true);
+      else chatObserver.observe(chatEl);
+    }
+
+    const recheck = () => {
+      elements.forEach(markIfInViewport);
+    };
+
+    requestAnimationFrame(() => {
+      recheck();
+      requestAnimationFrame(recheck);
+    });
+
+    const t = window.setTimeout(recheck, 320);
+    window.addEventListener('resize', recheck);
+
+    return () => {
+      window.clearTimeout(t);
+      window.removeEventListener('resize', recheck);
+      observer.disconnect();
+      chatObserver?.disconnect();
+    };
+  }, [isChatActive]);
 
   // Typewriter effect for demo
   useEffect(() => {
@@ -95,6 +148,33 @@ The cutoff has been trending upward ~3% yearly. For 2026, I'd estimate the closi
       return () => clearTimeout(timeout);
     }
   }, [isDemoVisible, demoText, demoResponseText]);
+
+  // Count-up animation for hero stats
+  useEffect(() => {
+    if (!statsRef.current) return;
+    const obs = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting && !statsDoneRef.current) {
+        statsDoneRef.current = true;
+        const targets = { colleges: 6000, exams: 50, points: 10, year: 2026 };
+        const dur = 1800;
+        const start = performance.now();
+        const tick = (now) => {
+          const p = Math.min((now - start) / dur, 1);
+          const e = 1 - Math.pow(1 - p, 3);
+          setStatValues({
+            colleges: Math.round(e * targets.colleges),
+            exams: Math.round(e * targets.exams),
+            points: Math.round(e * targets.points),
+            year: Math.round(2020 + e * (targets.year - 2020)),
+          });
+          if (p < 1) requestAnimationFrame(tick);
+        };
+        requestAnimationFrame(tick);
+      }
+    }, { threshold: 0.5 });
+    obs.observe(statsRef.current);
+    return () => obs.disconnect();
+  }, []);
 
   const handleSearch = async (e) => {
     if (e) e.preventDefault();
@@ -197,7 +277,7 @@ The cutoff has been trending upward ~3% yearly. For 2026, I'd estimate the closi
   };
 
   return (
-    <div className={`landing-container ${isChatActive ? 'chat-active' : ''}`}>
+    <div ref={landingRef} className={`landing-container ${isChatActive ? 'chat-active' : ''}`}>
       <div className="grid-bg"></div>
       <div className="orb orb-1"></div>
       <div className="orb orb-2"></div>
@@ -333,9 +413,9 @@ The cutoff has been trending upward ~3% yearly. For 2026, I'd estimate the closi
         </div>
 
         {!isChatActive && (
-          <>
+          <div className="hero-bottom">
             <div className="hero-promo">
-              <Link href="/simulator" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '16px', background: 'linear-gradient(135deg, #1a1510 0%, #15130f 100%)', border: '1px solid rgba(255, 107, 53, 0.2)', borderRadius: '16px', padding: '18px 22px' }}>
+              <Link href="/simulator" className="hero-promo-link" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '16px', background: 'linear-gradient(135deg, #1a1510 0%, #15130f 100%)', border: '1px solid rgba(255, 107, 53, 0.2)', borderRadius: '16px', padding: '18px 22px' }}>
                 <div style={{ width: '48px', height: '48px', borderRadius: '12px', background: 'rgba(255, 107, 53, 0.12)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff6b35" strokeWidth="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
                 </div>
@@ -347,13 +427,25 @@ The cutoff has been trending upward ~3% yearly. For 2026, I'd estimate the closi
               </Link>
             </div>
 
-            <div className="hero-stats">
-              <div className="stat"><div className="stat-num">6<span>,</span>000<span>+</span></div><div className="stat-label">Colleges Covered</div></div>
-              <div className="stat"><div className="stat-num">50<span>+</span></div><div className="stat-label">Entrance Exams</div></div>
-              <div className="stat"><div className="stat-num">10<span>M+</span></div><div className="stat-label">Data Points</div></div>
-              <div className="stat"><div className="stat-num">2026</div><div className="stat-label">Updated Data</div></div>
+            <div className="hero-stats" ref={statsRef}>
+              <div className="stat">
+                <div className="stat-num">{statValues.colleges.toLocaleString()}<span>+</span></div>
+                <div className="stat-label">Colleges Covered</div>
+              </div>
+              <div className="stat">
+                <div className="stat-num">{statValues.exams}<span>+</span></div>
+                <div className="stat-label">Entrance Exams</div>
+              </div>
+              <div className="stat">
+                <div className="stat-num">{statValues.points}<span>M+</span></div>
+                <div className="stat-label">Data Points</div>
+              </div>
+              <div className="stat">
+                <div className="stat-num">{statValues.year}</div>
+                <div className="stat-label">Updated Data</div>
+              </div>
             </div>
-          </>
+          </div>
         )}
       </section>
 
@@ -365,16 +457,16 @@ The cutoff has been trending upward ~3% yearly. For 2026, I'd estimate the closi
                 <div className="section-label">// AI Assistant</div>
                 <h2 className="section-title">Ask like you'd<br/>ask a <em style={{fontFamily:'var(--serif)',color:'var(--accent)'}}>senior</em></h2>
                 <p className="section-desc">No more scrolling through forums or outdated PDFs. Just ask in plain language and get accurate, sourced answers instantly.</p>
-                <div style={{display:'flex',flexDirection:'column',gap:'12px'}}>
+                <div style={{display:'flex',flexDirection:'column',gap:'14px',marginTop:'8px'}}>
                   {['Real-time cutoff data from official sources', 'Compare colleges side-by-side', 'Personalized recommendations based on your rank', 'Covers JEE, NEET, CUET, state CETs & more'].map(text => (
-                    <div key={text} style={{display:'flex',alignItems:'center',gap:'10px'}}>
-                      <div style={{width:'6px',height:'6px',borderRadius:'50%',background:'var(--accent-2)'}}></div>
-                      <span style={{fontSize:'14px',color:'var(--text-muted)'}}>{text}</span>
+                    <div key={text} style={{display:'flex',alignItems:'center',gap:'12px'}}>
+                      <div style={{width:'7px',height:'7px',borderRadius:'50%',background:'var(--accent-2)',flexShrink:0}}></div>
+                      <span style={{fontSize:'15px',color:'var(--text-muted)',lineHeight:1.5}}>{text}</span>
                     </div>
                   ))}
                 </div>
               </div>
-              <div className="chat-window reveal" ref={chatWindowRef}>
+              <div className={`chat-window stagger-2${isDemoVisible ? ' glow' : ''}`} ref={chatWindowRef}>
                 <div className="chat-header"><span className="online"></span>cutoffs.ai — Online</div>
                 <div className="chat-body" id="chatBody">
                   <div className="msg msg-user">What's the JEE Main cutoff for NIT Trichy CSE for General category?</div>
@@ -403,7 +495,7 @@ The cutoff has been trending upward ~3% yearly. For 2026, I'd estimate the closi
                   { icon: '📈', title: 'Placement Reports', desc: 'Real placement data — median packages, top recruiters, branch-wise stats.', fi: 'fi-5' },
                   { icon: '🗺️', title: 'Seat Matrix', desc: 'Category-wise seat availability, spot round vacancies, and closing rank data.', fi: 'fi-6' }
                 ].map((feat, i) => (
-                  <div key={i} className="feature-card reveal">
+                  <div key={i} className={`feature-card reveal reveal-scale-up stagger-${(i % 3) + 1}`}>
                     <div className={`feature-icon ${feat.fi}`}>{feat.icon}</div>
                     <h3>{feat.title}</h3>
                     <p>{feat.desc}</p>
@@ -424,9 +516,9 @@ The cutoff has been trending upward ~3% yearly. For 2026, I'd estimate the closi
                 [{icon:'🎯', t:'JEE Main & Advanced', s:'IITs, NITs, IIITs, GFTIs', fi:'fi-1'}, {icon:'🩺', t:'NEET UG', s:'AIIMS, JIPMER, GMCs', fi:'fi-2'}, {icon:'📝', t:'CUET', s:'Central Universities', fi:'fi-3'}, {icon:'💻', t:'BITSAT', s:'BITS Pilani, Goa, Hyderabad', fi:'fi-4'}],
                 [{icon:'🏗️', t:'State CETs', s:'MHT-CET, KCET, WBJEE, AP EAMCET', fi:'fi-5'}, {icon:'📐', t:'GATE', s:'IITs, NITs M.Tech admissions', fi:'fi-6'}, {icon:'🎨', t:'NATA / JEE Paper 2', s:'Architecture colleges', fi:'fi-1'}, {icon:'📚', t:'CAT / MAT / XAT', s:'IIMs, Top B-Schools', fi:'fi-2'}]
               ].map((row, ri) => (
-                <div key={ri} className="exams-row reveal">
+                <div key={ri} className="exams-row">
                   {row.map((exam, ei) => (
-                    <div key={ei} className="exam-pill">
+                    <div key={ei} className={`exam-pill reveal stagger-pill-${ei + 1}`}>
                       <div className={`exam-icon ${exam.fi}`}>{exam.icon}</div>
                       <div><h4>{exam.t}</h4><span>{exam.s}</span></div>
                     </div>
@@ -437,7 +529,7 @@ The cutoff has been trending upward ~3% yearly. For 2026, I'd estimate the closi
           </section>
 
           <section className="marquee-section" id="colleges">
-            <div className="reveal marquee-intro">
+            <div className="reveal reveal-scale-up marquee-intro">
               <div className="section-label">// Top Colleges</div>
               <h2 className="section-title">Tracking India's best</h2>
             </div>
@@ -465,7 +557,7 @@ The cutoff has been trending upward ~3% yearly. For 2026, I'd estimate the closi
           </section>
 
           <section className="cta-section">
-            <div className="reveal">
+            <div className="reveal reveal-scale-up">
               <div className="section-label">// Get Started</div>
               <h2 className="section-title">Stop guessing.<br/>Start <em style={{fontFamily:'var(--serif)',color:'var(--accent)'}}>knowing</em>.</h2>
               <p className="section-desc">Join thousands of students making smarter college decisions with AI-powered insights.</p>
@@ -476,12 +568,21 @@ The cutoff has been trending upward ~3% yearly. For 2026, I'd estimate the closi
             </div>
           </section>
 
-          <footer style={{ padding: '48px 40px', borderTop: '1px solid var(--border)', maxWidth:'1200px', margin:'0 auto', display:'flex', justifyContent:'space-between', alignItems:'center' }}>
+          <footer style={{ padding: '48px 40px', borderTop: '1px solid var(--border)', maxWidth:'1200px', margin:'0 auto', display:'flex', justifyContent:'space-between', alignItems:'center', flexWrap:'wrap', gap:'24px' }}>
             <div className="foot-brand">© 2026 cutoffs.ai</div>
+            <div style={{ display:'flex', gap:'24px', alignItems:'center', flexWrap:'wrap' }}>
+              <a href="tel:9030614948" style={{ display:'flex', alignItems:'center', gap:'6px', color:'var(--text-muted)', textDecoration:'none', fontSize:'14px', transition:'color 0.2s' }} onMouseEnter={e=>e.currentTarget.style.color='var(--text)'} onMouseLeave={e=>e.currentTarget.style.color='var(--text-muted)'}>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.77a16 16 0 0 0 6 6l.95-.95a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                9030614948
+              </a>
+              <a href="mailto:Cutoff.ai@gmail.com" style={{ display:'flex', alignItems:'center', gap:'6px', color:'var(--text-muted)', textDecoration:'none', fontSize:'14px', transition:'color 0.2s' }} onMouseEnter={e=>e.currentTarget.style.color='var(--text)'} onMouseLeave={e=>e.currentTarget.style.color='var(--text-muted)'}>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                Cutoff.ai@gmail.com
+              </a>
+            </div>
             <ul className="nav-links" style={{ display: 'flex', gap: '24px' }}>
               <li><a href="#">About</a></li>
               <li><a href="#">Privacy</a></li>
-              <li><a href="#">Contact</a></li>
             </ul>
           </footer>
         </>

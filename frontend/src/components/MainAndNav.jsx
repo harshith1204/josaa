@@ -3,14 +3,14 @@
 import { usePathname } from 'next/navigation';
 import BottomNav from '@/components/BottomNav';
 
-function isAuthRoute(pathname) {
+function isNoNavRoute(pathname) {
   if (!pathname) return false;
-  return pathname === '/auth' || pathname.startsWith('/auth/');
+  return pathname === '/' || pathname === '/auth' || pathname.startsWith('/auth/');
 }
 
 export default function MainAndNav({ children }) {
   const pathname = usePathname();
-  const hideNav = isAuthRoute(pathname);
+  const hideNav = isNoNavRoute(pathname);
 
   return (
     <>

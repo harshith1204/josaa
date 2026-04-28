@@ -13,7 +13,8 @@ export async function GET(request) {
     );
     const { error } = await supabase.auth.exchangeCodeForSession(code);
     if (!error) {
-      return NextResponse.redirect(`${origin}${next}`);
+      const redirectTo = next.startsWith('/') ? `${origin}${next}` : `${origin}/explore`;
+      return NextResponse.redirect(redirectTo);
     }
   }
 

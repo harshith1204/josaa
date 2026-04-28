@@ -1,6 +1,8 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useRouter } from 'next/navigation';
+import { supabase, isSupabaseConfigured } from '@/lib/supabase';
 import { studentNames } from '@/data/students';
 
 const savedPrefs = [
@@ -17,11 +19,39 @@ const institutes = [
 ];
 
 export default function ProfilePage() {
-  const [name, setName] = useState('Aarav Kumar');
+  const router = useRouter();
+  const [user, setUser] = useState(null);
+  const [name, setName] = useState('');
   const [rank, setRank] = useState('12450');
   const [category, setCategory] = useState('General');
   const [examType, setExamType] = useState('JEE Main');
   const [homeState, setHomeState] = useState('Tamil Nadu');
+  const [signingOut, setSigningOut] = useState(false);
+
+  useEffect(() => {
+    if (!isSupabaseConfigured()) return;
+    supabase.auth.getSession().then(({ data: { session } }) => {
+      if (session?.user) {
+        setUser(session.user);
+        setName(session.user.user_metadata?.full_name || session.user.email?.split('@')[0] || 'User');
+      }
+    });
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
+      if (session?.user) {
+        setUser(session.user);
+        setName(session.user.user_metadata?.full_name || session.user.email?.split('@')[0] || 'User');
+      } else {
+        setUser(null);
+      }
+    });
+    return () => subscription.unsubscribe();
+  }, []);
+
+  const handleSignOut = async () => {
+    setSigningOut(true);
+    await supabase.auth.signOut();
+    router.push('/');
+  };
 
   return (
     <div className="min-h-screen">
@@ -30,9 +60,12 @@ export default function ProfilePage() {
         <div className="bg-gradient-to-br from-purple-600/20 to-blue-600/20 border border-white/5 rounded-2xl p-6">
           <div className="flex items-center gap-4">
             <img
-              src={`https://robohash.org/${encodeURIComponent(name)}?set=set4&size=80x80`}
+              src={
+                user?.user_metadata?.avatar_url ||
+                `https://robohash.org/${encodeURIComponent(name)}?set=set4&size=80x80`
+              }
               alt="Avatar"
-              className="w-20 h-20 rounded-2xl bg-[#16162a] border border-white/10"
+              className="w-20 h-20 rounded-2xl bg-[#16162a] border border-white/10 object-cover"
             />
             <div className="flex-1 min-w-0">
               <input
@@ -41,6 +74,9 @@ export default function ProfilePage() {
                 onChange={(e) => setName(e.target.value)}
                 className="text-white text-xl font-bold bg-transparent outline-none border-b border-transparent focus:border-purple-500/50 w-full transition-colors"
               />
+              {user?.email && (
+                <p className="text-gray-500 text-xs mt-0.5 truncate">{user.email}</p>
+              )}
               <div className="flex flex-wrap gap-2 mt-2">
                 <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-medium bg-purple-500/20 text-purple-400 border border-purple-500/30">
                   Rank: {Number(rank).toLocaleString()}
@@ -61,7 +97,6 @@ export default function ProfilePage() {
       <div className="px-4 pb-6">
         <h2 className="text-white font-semibold text-base mb-3">Settings</h2>
         <div className="bg-[#13131a] border border-white/5 rounded-2xl divide-y divide-white/5">
-          {/* Exam Type */}
           <div className="flex items-center justify-between px-4 py-3.5">
             <span className="text-gray-400 text-sm">Exam Type</span>
             <select
@@ -73,7 +108,6 @@ export default function ProfilePage() {
               <option value="JEE Advanced">JEE Advanced</option>
             </select>
           </div>
-          {/* Category */}
           <div className="flex items-center justify-between px-4 py-3.5">
             <span className="text-gray-400 text-sm">Category</span>
             <select
@@ -88,7 +122,6 @@ export default function ProfilePage() {
               <option value="EWS">EWS</option>
             </select>
           </div>
-          {/* Rank */}
           <div className="flex items-center justify-between px-4 py-3.5">
             <span className="text-gray-400 text-sm">Rank</span>
             <input
@@ -98,7 +131,6 @@ export default function ProfilePage() {
               className="bg-[#16162a] border border-white/10 rounded-lg px-3 py-1.5 text-sm text-white outline-none focus:ring-2 focus:ring-purple-500/50 w-28 text-right"
             />
           </div>
-          {/* Home State */}
           <div className="flex items-center justify-between px-4 py-3.5">
             <span className="text-gray-400 text-sm">Home State</span>
             <input
@@ -138,7 +170,7 @@ export default function ProfilePage() {
       </div>
 
       {/* Saved Preferences */}
-      <div className="px-4 pb-8">
+      <div className="px-4 pb-6">
         <h2 className="text-white font-semibold text-base mb-3">Saved Preferences</h2>
         <div className="space-y-2">
           {savedPrefs.map((pref) => (
@@ -173,6 +205,35 @@ export default function ProfilePage() {
           ))}
         </div>
       </div>
+
+      {/* Sign Out */}
+      <div className="px-4 pb-8">
+        <button
+          onClick={handleSignOut}
+          disabled={signingOut}
+          className="w-full flex items-center justify-center gap-2 px-4 py-3 bg-red-500/10 border border-red-500/20 rounded-xl text-red-400 text-sm font-medium hover:bg-red-500/20 transition-colors disabled:opacity-50"
+        >
+          {signingOut ? (
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{ animation: 'spin 1s linear infinite' }}>
+              <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+            </svg>
+          ) : (
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" strokeLinecap="round" strokeLinejoin="round"/>
+              <polyline points="16 17 21 12 16 7" strokeLinecap="round" strokeLinejoin="round"/>
+              <line x1="21" y1="12" x2="9" y2="12" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+          )}
+          {signingOut ? 'Signing out...' : 'Sign Out'}
+        </button>
+      </div>
+
+      <style>{`
+        @keyframes spin {
+          from { transform: rotate(0deg); }
+          to { transform: rotate(360deg); }
+        }
+      `}</style>
     </div>
   );
 }
