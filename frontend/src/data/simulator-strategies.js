@@ -1,7 +1,7 @@
 // Strategy engine — template-based, no LLM needed
 // Uses real cutoff data to generate smart choice lists with explanations
 
-import { simulatorChoices } from './choices';
+import { simulatorChoices } from './simulator-choices';
 
 // ─── Strategy definitions ────────────────────────────────
 const STRATEGIES = {
