@@ -18,12 +18,7 @@ function AuthForm() {
   const [error, setError] = useState('');
   const [success, setSuccess] = useState('');
 
-  // MFA state
-  const [mfaState, setMfaState] = useState(null); // { factorId, challengeId, phone }
-  const [otp, setOtp] = useState('');
-  const [otpLoading, setOtpLoading] = useState(false);
-
-  const redirectTo = searchParams.get('next') || '/explore';
+  const redirectTo = searchParams.get('next') || '/simulator';
 
   useEffect(() => {
     const errParam = searchParams.get('error');
@@ -43,20 +38,6 @@ function AuthForm() {
     if (error) { setError(error.message); setGoogleLoading(false); }
   };
 
-  const checkMFA = async () => {
-    const { data: aal } = await supabase.auth.mfa.getAuthenticatorAssuranceLevel();
-    if (aal?.nextLevel === 'aal2' && aal.nextLevel !== aal.currentLevel) {
-      const { data: factors } = await supabase.auth.mfa.listFactors();
-      const factor = factors?.phone?.[0] || factors?.totp?.[0];
-      if (factor) {
-        const { data: challenge } = await supabase.auth.mfa.challenge({ factorId: factor.id });
-        setMfaState({ factorId: factor.id, challengeId: challenge.id, phone: factor.phone });
-        return true;
-      }
-    }
-    return false;
-  };
-
   const handleEmailAuth = async (e) => {
     e.preventDefault();
     if (!isSupabaseConfigured()) { setError('Authentication is not configured yet.'); return; }
@@ -69,8 +50,7 @@ function AuthForm() {
       if (error) {
         setError(error.message);
       } else {
-        const needsMFA = await checkMFA();
-        if (!needsMFA) router.push(redirectTo);
+        router.push(redirectTo);
       }
     } else {
       const { error } = await supabase.auth.signUp({
@@ -78,7 +58,6 @@ function AuthForm() {
         password,
         options: {
           data: { full_name: name },
-          // After clicking the confirmation link, land on /verify-phone
           emailRedirectTo: `${window.location.origin}/auth/callback`,
         },
       });
@@ -92,110 +71,6 @@ function AuthForm() {
     setLoading(false);
   };
 
-  const handleOTPVerify = async (e) => {
-    e.preventDefault();
-    setOtpLoading(true);
-    setError('');
-    const { error } = await supabase.auth.mfa.verify({
-      factorId: mfaState.factorId,
-      challengeId: mfaState.challengeId,
-      code: otp.trim(),
-    });
-    if (error) {
-      setError(error.message);
-      setOtpLoading(false);
-    } else {
-      router.push(redirectTo);
-    }
-  };
-
-  const handleResendOTP = async () => {
-    setError('');
-    const { data: challenge, error } = await supabase.auth.mfa.challenge({ factorId: mfaState.factorId });
-    if (error) { setError(error.message); return; }
-    setMfaState((s) => ({ ...s, challengeId: challenge.id }));
-    setSuccess('New OTP sent.');
-    setTimeout(() => setSuccess(''), 3000);
-  };
-
-  // ── MFA verification screen ──────────────────────────────────────────────
-  if (mfaState) {
-    return (
-      <div className="landing-container" style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
-        <div className="grid-bg" />
-        <div className="orb orb-1" /><div className="orb orb-2" /><div className="orb orb-3" />
-
-        <div style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '76px 24px 60px', position: 'relative', zIndex: 1 }}>
-          <div style={{ width: '100%', maxWidth: '420px' }}>
-            <div style={{ textAlign: 'center', marginBottom: '32px' }}>
-              <div style={{ width: '56px', height: '56px', borderRadius: '16px', background: 'rgba(255,107,53,0.1)', border: '1px solid rgba(255,107,53,0.2)', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 20px' }}>
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/>
-                </svg>
-              </div>
-              <h1 style={{ fontSize: '24px', fontWeight: 700, color: 'var(--text)', marginBottom: '8px' }}>Verify your identity</h1>
-              <p style={{ fontSize: '14px', color: 'var(--text-muted)', lineHeight: 1.6 }}>
-                We sent a 6-digit code to<br />
-                <span style={{ color: 'var(--text)', fontFamily: 'var(--mono)' }}>
-                  {mfaState.phone ? `••••••${mfaState.phone.slice(-4)}` : 'your phone'}
-                </span>
-              </p>
-            </div>
-
-            <div style={{ background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: '20px', padding: '32px' }}>
-              <form onSubmit={handleOTPVerify} style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-                <div>
-                  <label style={{ fontSize: '12px', color: 'var(--text-muted)', marginBottom: '6px', display: 'block', fontFamily: 'var(--mono)' }}>
-                    6-digit code
-                  </label>
-                  <input
-                    type="text"
-                    inputMode="numeric"
-                    maxLength={6}
-                    value={otp}
-                    onChange={(e) => setOtp(e.target.value.replace(/\D/g, ''))}
-                    placeholder="000000"
-                    autoFocus
-                    required
-                    style={{ ...inputStyle, fontSize: '24px', letterSpacing: '0.3em', textAlign: 'center', fontFamily: 'var(--mono)' }}
-                    onFocus={(e) => { e.currentTarget.style.borderColor = 'rgba(255,107,53,0.5)'; }}
-                    onBlur={(e) => { e.currentTarget.style.borderColor = 'var(--border)'; }}
-                  />
-                </div>
-
-                {error && <div style={{ padding: '10px 14px', background: 'rgba(239,68,68,0.08)', border: '1px solid rgba(239,68,68,0.25)', borderRadius: '10px', fontSize: '13px', color: '#f87171' }}>{error}</div>}
-                {success && <div style={{ padding: '10px 14px', background: 'rgba(0,212,170,0.08)', border: '1px solid rgba(0,212,170,0.25)', borderRadius: '10px', fontSize: '13px', color: 'var(--accent-2)' }}>{success}</div>}
-
-                <button type="submit" disabled={otpLoading || otp.length < 6} style={{ width: '100%', padding: '13px', background: otpLoading || otp.length < 6 ? 'rgba(255,107,53,0.4)' : 'var(--accent)', border: 'none', borderRadius: '12px', cursor: otpLoading || otp.length < 6 ? 'not-allowed' : 'pointer', fontSize: '15px', fontWeight: 600, color: '#fff', fontFamily: 'var(--sans)', transition: 'all 0.2s', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}
-                  onMouseEnter={(e) => { if (!otpLoading && otp.length >= 6) e.currentTarget.style.background = '#e85a28'; }}
-                  onMouseLeave={(e) => { if (!otpLoading && otp.length >= 6) e.currentTarget.style.background = 'var(--accent)'; }}
-                >
-                  {otpLoading ? <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{ animation: 'spin 1s linear infinite' }}><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg> : null}
-                  {otpLoading ? 'Verifying...' : 'Verify & Continue'}
-                </button>
-              </form>
-
-              <p style={{ textAlign: 'center', marginTop: '16px', fontSize: '13px', color: 'var(--text-muted)' }}>
-                Didn't receive it?{' '}
-                <button onClick={handleResendOTP} style={{ color: 'var(--accent)', background: 'none', border: 'none', cursor: 'pointer', fontSize: '13px', fontFamily: 'var(--sans)', fontWeight: 500 }}>
-                  Resend code
-                </button>
-              </p>
-            </div>
-
-            <p style={{ textAlign: 'center', marginTop: '16px', fontSize: '13px', color: 'var(--text-muted)' }}>
-              <button onClick={() => { setMfaState(null); setOtp(''); setError(''); }} style={{ color: 'var(--text-muted)', background: 'none', border: 'none', cursor: 'pointer', fontSize: '13px', fontFamily: 'var(--sans)' }}>
-                ← Back to sign in
-              </button>
-            </p>
-          </div>
-        </div>
-        <style>{`@keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }`}</style>
-      </div>
-    );
-  }
-
-  // ── Normal auth screen ───────────────────────────────────────────────────
   return (
     <div className="landing-container" style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
       <div className="grid-bg" />

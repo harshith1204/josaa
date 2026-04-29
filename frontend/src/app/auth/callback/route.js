@@ -7,7 +7,7 @@ export async function GET(request) {
   const code = searchParams.get('code');
   // Default to /verify-phone — Supabase strips custom ?next= from emailRedirectTo
   // OAuth logins pass ?next= explicitly so they still land on the right page
-  const next = searchParams.get('next') ?? '/verify-phone';
+  const next = searchParams.get('next') ?? '/simulator';
 
   if (code) {
     // cookies() is synchronous in Next.js 14
@@ -29,7 +29,7 @@ export async function GET(request) {
 
     const { error } = await supabase.auth.exchangeCodeForSession(code);
     if (!error) {
-      const redirectTo = next.startsWith('/') ? `${origin}${next}` : `${origin}/explore`;
+      const redirectTo = next.startsWith('/') ? `${origin}${next}` : `${origin}/simulator`;
       return NextResponse.redirect(redirectTo);
     }
   }

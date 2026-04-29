@@ -18,11 +18,11 @@ export default function SimulatorPage() {
   }, [router]);
 
   return (
-    <div style={{ width: '100%', height: '100vh', background: '#0a0a0c', overflow: 'hidden' }}>
-      <iframe 
-        src="https://josaa-simulator-ivory.vercel.app/?direct=1&noai=1" 
+    <div style={{ position: 'fixed', inset: 0, background: '#0a0a0c' }}>
+      <iframe
+        src="https://josaa-simulator-ivory.vercel.app/?direct=1&noai=1"
         allow="fullscreen"
-        style={{ width: '100%', height: '100%', border: 'none' }}
+        style={{ width: '100%', height: '100%', border: 'none', display: 'block' }}
       />
     </div>
   );
