@@ -18,7 +18,7 @@ function AuthForm() {
   const [error, setError] = useState('');
   const [success, setSuccess] = useState('');
 
-  const redirectTo = searchParams.get('next') || '/simulator';
+  const redirectTo = searchParams.get('next') || '/onboarding';
 
   useEffect(() => {
     const errParam = searchParams.get('error');
