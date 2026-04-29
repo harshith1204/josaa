@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import { createMiddlewareClient } from '@/lib/supabase-middleware';
 
-const PROTECTED_ROUTES = ['/simulator', '/onboarding'];
+const PROTECTED_ROUTES = ['/simulator', '/onboarding', '/simulator/details'];
 
 export async function middleware(request) {
   const { pathname } = request.nextUrl;
@@ -32,4 +32,5 @@ export async function middleware(request) {
 
 export const config = {
   matcher: ['/simulator/:path*', '/onboarding/:path*', '/onboarding'],
+  // /simulator/details is matched by /simulator/:path*
 };

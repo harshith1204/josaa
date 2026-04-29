@@ -19,7 +19,7 @@ function AuthForm() {
   const [success, setSuccess] = useState('');
   const [showPassword, setShowPassword] = useState(false);
 
-  const redirectTo = searchParams.get('next') || '/onboarding';
+  const nextParam = searchParams.get('next');
 
   useEffect(() => {
     const errParam = searchParams.get('error');
@@ -32,9 +32,11 @@ function AuthForm() {
     if (!isSupabaseConfigured()) { setError('Authentication is not configured yet.'); return; }
     setGoogleLoading(true);
     setError('');
+    // Google OAuth: always land on /onboarding (which auto-redirects to /simulator for returning users)
+    const oauthNext = nextParam || '/onboarding';
     const { error } = await supabase.auth.signInWithOAuth({
       provider: 'google',
-      options: { redirectTo: `${window.location.origin}/auth/callback?next=${redirectTo}` },
+      options: { redirectTo: `${window.location.origin}/auth/callback?next=${oauthNext}` },
     });
     if (error) { setError(error.message); setGoogleLoading(false); }
   };
@@ -51,7 +53,8 @@ function AuthForm() {
       if (error) {
         setError(error.message);
       } else {
-        router.push(redirectTo);
+        // Existing user signing in → always go through exam selection first
+        router.push(nextParam || '/onboarding');
       }
     } else {
       const { error } = await supabase.auth.signUp({

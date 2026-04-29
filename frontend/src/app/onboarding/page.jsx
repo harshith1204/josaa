@@ -1,25 +1,17 @@
 'use client';
 
-import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
+import { useState } from 'react';
 import '../landing.css';
-
-const STORAGE_KEY = 'exam_selected';
 
 export default function OnboardingPage() {
   const router = useRouter();
   const [selecting, setSelecting] = useState(false);
 
-  useEffect(() => {
-    if (typeof window !== 'undefined' && localStorage.getItem(STORAGE_KEY)) {
-      router.replace('/simulator');
-    }
-  }, [router]);
-
   const handleSelect = (exam) => {
     if (exam !== 'josaa') return;
     setSelecting(true);
-    localStorage.setItem(STORAGE_KEY, exam);
+    localStorage.setItem('exam_selected', exam);
     router.push('/simulator');
   };
 
@@ -42,7 +34,6 @@ export default function OnboardingPage() {
           </div>
         </div>
 
-        {/* Heading */}
         <h1 style={{ textAlign: 'center', fontSize: '28px', fontWeight: 700, color: 'var(--text)', lineHeight: 1.3, marginBottom: '10px' }}>
           Which exam are you preparing for?
         </h1>
@@ -50,7 +41,6 @@ export default function OnboardingPage() {
           We'll personalise your experience based on your exam.
         </p>
 
-        {/* Cards */}
         <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
           {/* JoSAA */}
           <button
@@ -110,8 +100,6 @@ export default function OnboardingPage() {
           </div>
         </div>
       </div>
-
-      <style>{`@keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }`}</style>
     </div>
   );
 }
