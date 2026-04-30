@@ -286,7 +286,10 @@ The cutoff has been trending upward ~3% yearly. For 2026, I'd estimate the closi
       <nav>
         <Link href="/" className="nav-logo">
           <span className="dot"></span>
-          cutoffs.ai
+          <span className="nav-brand-split">
+            <span className="nav-brand-cutoffs">cutoffs</span>
+            <span className="nav-brand-ai">.ai</span>
+          </span>
         </Link>
         <ul className="nav-links">
           <li><a href="#features">Features</a></li>

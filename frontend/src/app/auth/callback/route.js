@@ -2,6 +2,8 @@ import { createServerClient } from '@supabase/ssr';
 import { NextResponse } from 'next/server';
 import { cookies } from 'next/headers';
 
+const ADMIN_EMAILS = ['harshithsai24@gmail.com'];
+
 export async function GET(request) {
   const { searchParams, origin } = new URL(request.url);
   const code = searchParams.get('code');
@@ -27,10 +29,11 @@ export async function GET(request) {
       }
     );
 
-    const { error } = await supabase.auth.exchangeCodeForSession(code);
+    const { data, error } = await supabase.auth.exchangeCodeForSession(code);
     if (!error) {
-      const redirectTo = next.startsWith('/') ? `${origin}${next}` : `${origin}/simulator`;
-      return NextResponse.redirect(redirectTo);
+      const isAdmin = ADMIN_EMAILS.includes(data.session?.user?.email);
+      const destination = isAdmin ? '/admin' : (next.startsWith('/') ? next : '/simulator');
+      return NextResponse.redirect(`${origin}${destination}`);
     }
   }
 

@@ -6,6 +6,8 @@ import { useRouter, useSearchParams } from 'next/navigation';
 import { supabase, isSupabaseConfigured } from '@/lib/supabase';
 import '../landing.css';
 
+const ADMIN_EMAILS = ['harshithsai24@gmail.com'];
+
 function AuthForm() {
   const router = useRouter();
   const searchParams = useSearchParams();
@@ -32,7 +34,7 @@ function AuthForm() {
     if (!isSupabaseConfigured()) { setError('Authentication is not configured yet.'); return; }
     setGoogleLoading(true);
     setError('');
-    // Google OAuth: always land on /onboarding (which auto-redirects to /simulator for returning users)
+    // Google OAuth: callback route checks for admin and redirects accordingly
     const oauthNext = nextParam || '/onboarding';
     const { error } = await supabase.auth.signInWithOAuth({
       provider: 'google',
@@ -49,12 +51,12 @@ function AuthForm() {
     setSuccess('');
 
     if (tab === 'signin') {
-      const { error } = await supabase.auth.signInWithPassword({ email, password });
+      const { data, error } = await supabase.auth.signInWithPassword({ email, password });
       if (error) {
         setError(error.message);
       } else {
-        // Existing user signing in → always go through exam selection first
-        router.push(nextParam || '/onboarding');
+        const isAdmin = ADMIN_EMAILS.includes(data.user?.email);
+        router.push(isAdmin ? '/admin' : (nextParam || '/onboarding'));
       }
     } else {
       const { error } = await supabase.auth.signUp({

@@ -2,6 +2,7 @@
 
 import { useEffect, useState, useMemo, useRef } from 'react';
 import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 import '../landing.css';
 import { getSupabase, isSupabaseConfigured } from '@/lib/supabase';
 import {
@@ -11,6 +12,7 @@ import {
   allPrograms,
 } from '@/data/simulator-choices';
 import { generateStrategy } from '@/data/simulator-strategies';
+import { abbrevInstitute, abbrevProgram } from '@/lib/simulator-abbrev';
 
 function fmtNum(n) {
   return n?.toLocaleString?.() ?? n;
@@ -209,11 +211,11 @@ function ProfileDropdown({ name, email }) {
 
 // ─── Choice detail modal ──────────────────────────────────────────────────────
 
-const TYPE_COLORS = {
-  IIT:  '#a78bfa',
-  NIT:  '#4dd0b1',
-  IIIT: '#ff8c5a',
-  GFTI: '#8a8a95',
+const TYPE_DOT_STYLE = {
+  IIT:  { background: 'var(--accent-3)', boxShadow: '0 0 10px rgba(108, 92, 231, 0.4)' },
+  NIT:  { background: 'var(--accent-2)', boxShadow: '0 0 10px rgba(0, 212, 170, 0.35)' },
+  IIIT: { background: 'var(--accent)',   boxShadow: '0 0 10px rgba(255, 107, 53, 0.35)' },
+  GFTI: { background: 'var(--text-muted)', boxShadow: 'none' },
 };
 
 function ChoiceModal({ choice, userRank, filledIds, onAdd, onRemove, onClose }) {
@@ -224,14 +226,14 @@ function ChoiceModal({ choice, userRank, filledIds, onAdd, onRemove, onClose }) 
   const isInList = filledIds.has(choice.id);
   const canGetSeat = userRank <= choice.closingRank;
   const spread = choice.closingRank - choice.openingRank;
-  const dotColor = TYPE_COLORS[choice.type] || '#8a8a95';
+  const dotStyle = TYPE_DOT_STYLE[choice.type] || TYPE_DOT_STYLE.GFTI;
 
-  const shortInst = choice.institute.split(' ').slice(-2).join(' ');
-  const shortProg = choice.program.length > 24 ? choice.program.substring(0, 24) + '…' : choice.program;
+  const instShort = abbrevInstitute(choice.institute);
+  const progShort = abbrevProgram(choice.program);
   const chips = [
-    `${shortProg} cutoff at ${shortInst}`,
-    `${shortInst} placements`,
-    `${choice.program.split(' ')[0]} scope & salary`,
+    `${progShort} cutoff at ${instShort}`,
+    `${instShort} placements`,
+    `${progShort.split(/[·(]/)[0].trim()} scope & salary`,
   ];
 
   useEffect(() => {
@@ -259,51 +261,54 @@ function ChoiceModal({ choice, userRank, filledIds, onAdd, onRemove, onClose }) 
   };
 
   return (
-    <div
-      onClick={onClose}
-      style={{ position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.65)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 2000, padding: '20px', backdropFilter: 'blur(4px)' }}
-    >
-      <div
-        onClick={e => e.stopPropagation()}
-        style={{ background: '#161428', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '20px', padding: '28px', maxWidth: '500px', width: '100%', position: 'relative', boxShadow: '0 32px 80px rgba(0,0,0,0.6)', maxHeight: '90vh', overflowY: 'auto' }}
-      >
-        <button onClick={onClose}
-          style={{ position: 'absolute', top: '16px', right: '16px', background: 'rgba(255,255,255,0.08)', border: 'none', color: '#aaa', width: '28px', height: '28px', borderRadius: '50%', cursor: 'pointer', fontSize: '16px', display: 'flex', alignItems: 'center', justifyContent: 'center', lineHeight: 1 }}>
+    <div className="sim-choice-modal-overlay" onClick={onClose}>
+      <div className="sim-choice-modal" onClick={e => e.stopPropagation()}>
+        <button type="button" className="sim-choice-close" onClick={onClose} aria-label="Close">
           ×
         </button>
 
         <div style={{ marginBottom: '22px' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px' }}>
-            <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: dotColor, flexShrink: 0, display: 'inline-block', boxShadow: `0 0 6px ${dotColor}` }} />
-            <span style={{ fontSize: '18px', fontWeight: 700, color: '#f0eeff' }}>{choice.institute}</span>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '8px' }}>
+            <span className="sim-choice-type-dot" style={dotStyle} aria-hidden />
+            <span className="sim-choice-institute">{instShort}</span>
           </div>
-          <div style={{ fontSize: '14px', fontWeight: 600, color: '#818cf8', marginBottom: '6px', lineHeight: 1.4 }}>{choice.program}</div>
-          <div style={{ fontSize: '12px', color: '#5a5a7a', fontFamily: 'monospace', letterSpacing: '0.03em' }}>
+          <div className="sim-choice-program">{progShort}</div>
+          {(choice.institute !== instShort || choice.program !== progShort) && (
+            <div className="sim-choice-full-detail">
+              {choice.institute !== instShort && <div>{choice.institute}</div>}
+              {choice.program !== progShort && <div style={{ marginTop: choice.institute !== instShort ? 4 : 0 }}>{choice.program}</div>}
+            </div>
+          )}
+          <div className="sim-choice-meta">
             {choice.type} &nbsp;•&nbsp; JoSAA 2025 R6 &nbsp;•&nbsp; {choice.seatType}
           </div>
         </div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '18px', marginBottom: '18px' }}>
+        <div className="sim-choice-stat-grid">
           {[
-            { label: 'OPENING RANK', value: fmtNum(choice.openingRank), color: '#f0eeff' },
-            { label: 'CLOSING RANK', value: fmtNum(choice.closingRank), color: '#f0eeff' },
-            { label: 'SPREAD',       value: fmtNum(spread),             color: '#f0eeff' },
-            { label: 'YOUR RANK',    value: fmtNum(userRank),           color: canGetSeat ? '#4dd0b1' : '#ff6b35' },
-          ].map(({ label, value, color }) => (
-            <div key={label} style={{ background: 'rgba(255,255,255,0.04)', borderRadius: '10px', padding: '12px 14px' }}>
-              <div style={{ fontSize: '10px', fontWeight: 700, color: '#5a5a7a', letterSpacing: '0.07em', marginBottom: '6px' }}>{label}</div>
-              <div style={{ fontSize: '24px', fontWeight: 700, color, fontFamily: 'monospace' }}>{value}</div>
+            { label: 'OPENING RANK', value: fmtNum(choice.openingRank) },
+            { label: 'CLOSING RANK', value: fmtNum(choice.closingRank) },
+            { label: 'SPREAD',       value: fmtNum(spread) },
+            {
+              label: 'YOUR RANK',
+              value: fmtNum(userRank),
+              valueStyle: { color: canGetSeat ? 'var(--accent-2)' : 'var(--accent)' },
+            },
+          ].map(({ label, value, valueStyle }) => (
+            <div key={label} className="sim-choice-stat-card">
+              <div className="sim-choice-stat-label">{label}</div>
+              <div className="sim-choice-stat-value" style={valueStyle}>{value}</div>
             </div>
           ))}
         </div>
 
         <div style={{ marginBottom: '16px' }}>
           {canGetSeat ? (
-            <div style={{ padding: '10px 16px', background: 'rgba(77,208,177,0.12)', border: '1px solid rgba(77,208,177,0.28)', borderRadius: '10px', fontSize: '13px', color: '#4dd0b1', fontWeight: 600, textAlign: 'center' }}>
+            <div className="sim-choice-banner sim-choice-banner--ok">
               ✓ Your rank qualifies for this seat
             </div>
           ) : (
-            <div style={{ padding: '10px 16px', background: 'rgba(239,68,68,0.12)', border: '1px solid rgba(239,68,68,0.28)', borderRadius: '10px', fontSize: '13px', color: '#f87171', fontWeight: 600, textAlign: 'center' }}>
+            <div className="sim-choice-banner sim-choice-banner--warn">
               Need {fmtNum(userRank - choice.closingRank)} better rank to get this seat
             </div>
           )}
@@ -311,59 +316,57 @@ function ChoiceModal({ choice, userRank, filledIds, onAdd, onRemove, onClose }) 
 
         <div style={{ marginBottom: '20px' }}>
           {isInList ? (
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-              <span style={{ fontSize: '13px', fontWeight: 600, color: '#4dd0b1' }}>✓ Already in your list</span>
-              <button onClick={() => onRemove(choice.id)}
-                style={{ padding: '6px 16px', background: 'rgba(239,68,68,0.12)', border: '1px solid rgba(239,68,68,0.28)', borderRadius: '8px', color: '#f87171', cursor: 'pointer', fontSize: '12px', fontWeight: 600 }}>
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '12px' }}>
+              <span className="sim-choice-in-list">✓ Already in your list</span>
+              <button type="button" className="sim-choice-remove-btn" onClick={() => onRemove(choice.id)}>
                 Remove
               </button>
             </div>
           ) : (
-            <button onClick={() => { onAdd(choice); onClose(); }}
-              style={{ width: '100%', padding: '11px', background: '#ff6b35', border: 'none', borderRadius: '10px', color: '#fff', cursor: 'pointer', fontSize: '14px', fontWeight: 700, boxShadow: '0 4px 14px rgba(255,107,53,0.35)', transition: 'opacity 0.15s' }}
-              onMouseEnter={e => e.currentTarget.style.opacity = '0.88'}
-              onMouseLeave={e => e.currentTarget.style.opacity = '1'}>
+            <button
+              type="button"
+              className="sim-choice-add-btn"
+              onClick={() => { onAdd(choice); onClose(); }}
+            >
               + Add to List
             </button>
           )}
         </div>
 
-        <div style={{ borderTop: '1px solid rgba(255,255,255,0.07)', paddingTop: '18px' }}>
-          <div style={{ fontSize: '11px', fontWeight: 700, color: '#5a5a7a', letterSpacing: '0.07em', marginBottom: '10px' }}>💡 ASK AI</div>
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px', marginBottom: '10px' }}>
+        <div className="sim-choice-ai-section">
+          <div className="sim-choice-ai-label">ASK AI</div>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', marginBottom: '10px' }}>
             {chips.map((chip, i) => (
-              <button key={i} onClick={() => { setAiQuery(chip); askAI(chip); }}
-                style={{ padding: '4px 12px', background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '20px', color: '#b0aed0', cursor: 'pointer', fontSize: '12px', transition: 'background 0.12s' }}
-                onMouseEnter={e => e.currentTarget.style.background = 'rgba(255,255,255,0.11)'}
-                onMouseLeave={e => e.currentTarget.style.background = 'rgba(255,255,255,0.06)'}>
+              <button
+                type="button"
+                key={i}
+                className="sim-choice-chip"
+                onClick={() => { setAiQuery(chip); askAI(chip); }}
+              >
                 {chip}
               </button>
             ))}
           </div>
           {aiLoading && (
-            <div style={{ padding: '10px 12px', background: 'rgba(255,255,255,0.04)', borderRadius: '8px', fontSize: '12px', color: '#5a5a7a', marginBottom: '10px' }}>
-              Thinking…
-            </div>
+            <div className="sim-choice-ai-loading">Thinking…</div>
           )}
           {aiResult && !aiLoading && (
-            <div style={{ padding: '10px 14px', background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.07)', borderRadius: '10px', fontSize: '13px', color: '#c4c2df', lineHeight: 1.65, marginBottom: '10px', whiteSpace: 'pre-wrap' }}>
-              {aiResult}
-            </div>
+            <div className="sim-choice-ai-result">{aiResult}</div>
           )}
-          <div style={{ display: 'flex', gap: '8px' }}>
+          <div className="sim-choice-input-row">
             <input
+              className="sim-choice-input"
               value={aiQuery}
               onChange={e => setAiQuery(e.target.value)}
               onKeyDown={e => e.key === 'Enter' && askAI(aiQuery)}
-              placeholder={`Ask anything about ${shortProg} at ${shortInst}…`}
-              style={{ flex: 1, padding: '9px 13px', background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '10px', color: '#f0eeff', fontSize: '13px', outline: 'none' }}
-              onFocus={e => e.currentTarget.style.borderColor = 'rgba(129,140,248,0.5)'}
-              onBlur={e => e.currentTarget.style.borderColor = 'rgba(255,255,255,0.1)'}
+              placeholder={`Ask anything about ${progShort} at ${instShort}…`}
             />
             <button
+              type="button"
+              className="sim-choice-ask-btn"
               onClick={() => askAI(aiQuery)}
               disabled={aiLoading || !aiQuery.trim()}
-              style={{ padding: '9px 18px', background: '#818cf8', border: 'none', borderRadius: '10px', color: '#fff', cursor: aiLoading || !aiQuery.trim() ? 'not-allowed' : 'pointer', fontSize: '13px', fontWeight: 700, opacity: aiLoading || !aiQuery.trim() ? 0.5 : 1, transition: 'opacity 0.15s' }}>
+            >
               {aiLoading ? '…' : 'Ask'}
             </button>
           </div>
@@ -504,17 +507,27 @@ function BotPanel({
   filterType, setFilterType,
   filterZone, setFilterZone,
   messages, setMessages,
+  filledFilter, setFilledFilter,
 }) {
   const [inputText, setInputText] = useState('');
   const [convoState, setConvoState] = useState('idle'); // 'idle' | 'awaiting_count'
   const [pendingStrategy, setPendingStrategy] = useState(null);
   const messagesEndRef = useRef(null);
 
-  // Safety counts
-  const safeCount  = filledChoices.filter(c => rank / c.closingRank <= 0.75).length;
-  const midCount   = filledChoices.filter(c => { const r = rank / c.closingRank; return r > 0.75 && r <= 1.05; }).length;
-  const riskyCount = filledChoices.filter(c => rank / c.closingRank > 1.05).length;
+  // Safety counts (rank / closingRank); ignore invalid closing ranks
+  const { safeCount, midCount, riskyCount } = useMemo(() => {
+    let s = 0, m = 0, r = 0;
+    for (const c of filledChoices) {
+      if (c.closingRank <= 0) continue;
+      const t = rank / c.closingRank;
+      if (t <= 0.75) s++;
+      else if (t <= 1.05) m++;
+      else r++;
+    }
+    return { safeCount: s, midCount: m, riskyCount: r };
+  }, [filledChoices, rank]);
   const total = filledChoices.length;
+  const ratioSum = safeCount + midCount + riskyCount;
 
   // Best highlights from filled list
   const bestIIT = filledChoices.find(c => c.type === 'IIT');
@@ -621,11 +634,7 @@ function BotPanel({
     }, 500);
   };
 
-  const shortName = (name) => name
-    ? name.replace('Indian Institute of Technology ', 'IIT ')
-          .replace('National Institute of Technology ', 'NIT ')
-          .replace('Indian Institute of Information Technology ', 'IIIT ')
-    : '—';
+  const shortName = (name) => (name ? abbrevInstitute(name) : '—');
 
   // Bold **text** renderer
   const renderText = (text) =>
@@ -635,34 +644,73 @@ function BotPanel({
         : part
     );
 
-  const safeW  = total ? (safeCount  / total) * 100 : 0;
-  const midW   = total ? (midCount   / total) * 100 : 0;
-  const riskyW = total ? (riskyCount / total) * 100 : 0;
-
-  const pillBase = {
-    display: 'flex', alignItems: 'center', gap: '6px',
-    padding: '7px 10px', borderRadius: '20px', cursor: 'pointer',
-    transition: 'all 0.15s', textAlign: 'left', border: '1.5px solid #e8e8e8',
-    background: '#fff',
-  };
+  const safetyDefs = [
+    { filter: 'ratio-safe',  count: safeCount,  bg: '#22c55e', dimBg: '#dcfce7', dimText: '#15803d', label: 'Safe'   },
+    { filter: 'ratio-mid',   count: midCount,   bg: '#f59e0b', dimBg: '#fef3c7', dimText: '#b45309', label: 'Border' },
+    { filter: 'ratio-risky', count: riskyCount, bg: '#ef4444', dimBg: '#fee2e2', dimText: '#b91c1c', label: 'Risky'  },
+  ];
 
   // Inline stats card — rendered as a chat message, reads live state
-  const StatsCard = () => (
+  const StatsCard = () => {
+    const denom = Math.max(ratioSum, 1);
+    return (
     <div style={{ background: '#fff', border: '1px solid #e8e8e8', borderRadius: '16px', padding: '14px', boxShadow: '0 1px 4px rgba(0,0,0,0.05)', marginTop: '4px' }}>
 
-      {/* Safety bar */}
-      <div style={{ display: 'flex', height: '28px', borderRadius: '7px', overflow: 'hidden', marginBottom: '12px', fontSize: '11px', fontWeight: 700 }}>
-        {total === 0 ? (
-          <div style={{ flex: 1, background: '#f5f5f5', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#bbb', fontWeight: 400 }}>
-            No choices filled yet
-          </div>
-        ) : (
-          <>
-            {safeW  > 0 && <div style={{ width: `${safeW}%`,  background: '#4caf50', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', whiteSpace: 'nowrap', overflow: 'hidden', padding: '0 6px' }}>{safeCount} safe</div>}
-            {midW   > 0 && <div style={{ width: `${midW}%`,   background: '#ff9800', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', whiteSpace: 'nowrap', overflow: 'hidden', padding: '0 6px' }}>{midCount} mid</div>}
-            {riskyW > 0 && <div style={{ width: `${riskyW}%`, background: '#f44336', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', whiteSpace: 'nowrap', overflow: 'hidden', padding: '0 6px' }}>{riskyCount} risky</div>}
-          </>
-        )}
+      {/* Safety breakdown */}
+      <div style={{ marginBottom: '14px' }}>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '8px' }}>
+          <span style={{ fontSize: '10px', fontWeight: 700, color: '#9ca3af', letterSpacing: '0.07em', textTransform: 'uppercase' }}>Safety Breakdown</span>
+          <span style={{ fontSize: '10px', color: '#9ca3af' }}>{total} filled · tap to filter</span>
+        </div>
+
+        {/* Proportional bar — text-free, never breaks */}
+        <div style={{ height: '8px', borderRadius: '999px', background: '#f3f4f6', overflow: 'hidden', display: 'flex', marginBottom: '10px' }}>
+          {total === 0 ? (
+            <div style={{ flex: 1, background: '#e5e7eb', borderRadius: '999px' }} />
+          ) : (
+            safetyDefs.map(seg => (
+              <div
+                key={seg.filter}
+                style={{
+                  flex: `${seg.count} 0 0`,
+                  background: seg.bg,
+                  opacity: filledFilter === seg.filter ? 1 : filledFilter !== 'full' ? 0.35 : 1,
+                  transition: 'opacity 0.2s',
+                  minWidth: seg.count > 0 ? '4px' : '0px',
+                }}
+              />
+            ))
+          )}
+        </div>
+
+        {/* Three tappable stat chips — fixed 3-column grid, never squeezes */}
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '6px' }}>
+          {safetyDefs.map(seg => {
+            const active = filledFilter === seg.filter;
+            const pct = ratioSum > 0 ? Math.round((seg.count / denom) * 100) : 0;
+            return (
+              <button
+                key={seg.filter}
+                type="button"
+                onClick={() => setFilledFilter(active ? 'full' : seg.filter)}
+                style={{
+                  border: active ? `1.5px solid ${seg.bg}` : '1.5px solid #e5e7eb',
+                  borderRadius: '10px',
+                  padding: '8px 6px',
+                  background: active ? seg.dimBg : '#fafafa',
+                  cursor: 'pointer',
+                  textAlign: 'center',
+                  transition: 'all 0.15s',
+                  outline: 'none',
+                }}
+              >
+                <div style={{ fontSize: '18px', fontWeight: 800, color: active ? seg.dimText : '#111', lineHeight: 1.1 }}>{seg.count}</div>
+                <div style={{ fontSize: '10px', fontWeight: 600, color: active ? seg.dimText : '#6b7280', marginTop: '2px', letterSpacing: '0.04em' }}>{seg.label}</div>
+                {ratioSum > 0 && <div style={{ fontSize: '9px', color: active ? seg.bg : '#9ca3af', marginTop: '2px', fontWeight: 500 }}>{pct}%</div>}
+              </button>
+            );
+          })}
+        </div>
       </div>
 
       {/* Best IIT / Best CS */}
@@ -729,6 +777,7 @@ function BotPanel({
       </div>
     </div>
   );
+  };
 
   return (
     <div style={{ background: '#fafafa', display: 'flex', flexDirection: 'column', height: '100%', fontFamily: 'Arial, sans-serif', fontSize: '13px' }}>
@@ -857,7 +906,31 @@ function ChoiceFillingScreen({ profile }) {
   const middleCount  = useMemo(() => filledChoices.filter(c => c.openingRank <= rank && c.closingRank >= rank).length, [filledChoices, rank]);
   const closingCount = useMemo(() => filledChoices.filter(c => c.closingRank > rank).length, [filledChoices, rank]);
 
+  const { ratioSafeCount, ratioMidCount, ratioRiskyCount } = useMemo(() => {
+    let s = 0, m = 0, r = 0;
+    for (const c of filledChoices) {
+      if (c.closingRank <= 0) continue;
+      const t = rank / c.closingRank;
+      if (t <= 0.75) s++;
+      else if (t <= 1.05) m++;
+      else r++;
+    }
+    return { ratioSafeCount: s, ratioMidCount: m, ratioRiskyCount: r };
+  }, [filledChoices, rank]);
+
+  const ratioOf = (c) => (c.closingRank > 0 ? rank / c.closingRank : Infinity);
+
   const displayedFilled = useMemo(() => {
+    if (filledFilter === 'ratio-safe')
+      return filledChoices.filter(c => c.closingRank > 0 && ratioOf(c) <= 0.75);
+    if (filledFilter === 'ratio-mid')
+      return filledChoices.filter(c => {
+        if (c.closingRank <= 0) return false;
+        const r = ratioOf(c);
+        return r > 0.75 && r <= 1.05;
+      });
+    if (filledFilter === 'ratio-risky')
+      return filledChoices.filter(c => c.closingRank > 0 && ratioOf(c) > 1.05);
     if (filledFilter === 'opening') return filledChoices.filter(c => c.openingRank < rank);
     if (filledFilter === 'middle')  return filledChoices.filter(c => c.openingRank <= rank && c.closingRank >= rank);
     if (filledFilter === 'closing') return filledChoices.filter(c => c.closingRank > rank);
@@ -916,8 +989,8 @@ function ChoiceFillingScreen({ profile }) {
     filledChoices.forEach((c, i) => {
       if (y > 275) { doc.addPage(); y = 16; }
       doc.text(String(i + 1), 14, y);
-      doc.text(c.institute.substring(0, 40), 22, y);
-      doc.setFontSize(8); doc.text(c.program.substring(0, 36), 100, y); doc.setFontSize(10);
+      doc.text(abbrevInstitute(c.institute), 22, y);
+      doc.setFontSize(8); doc.text(abbrevProgram(c.program), 100, y); doc.setFontSize(10);
       doc.text(fmtNum(c.openingRank), 155, y); doc.text(fmtNum(c.closingRank), 178, y);
       y += 8; doc.setDrawColor(235, 235, 235); doc.line(14, y - 3, 196, y - 3);
     });
@@ -952,23 +1025,25 @@ function ChoiceFillingScreen({ profile }) {
         borderBottom: '1px solid #2a2a32',
         flexShrink: 0, zIndex: 100,
       }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '18px' }}>
-          {/* Logo */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-            <span style={{
-              width: '8px', height: '8px', borderRadius: '50%',
-              background: 'var(--accent)', display: 'inline-block',
-              boxShadow: '0 0 8px var(--accent)',
-              animation: 'pulse 2s ease-in-out infinite',
-            }} />
-            <span style={{ fontSize: '16px', fontFamily: 'var(--mono)', fontWeight: 700, color: 'var(--text)', letterSpacing: '-0.02em' }}>cutoffs.ai</span>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '18px', flexWrap: 'wrap', minWidth: 0 }}>
+          {/* Logo — same wordmark treatment as landing nav */}
+          <Link
+            href="/"
+            style={{ display: 'flex', alignItems: 'center', gap: '8px', textDecoration: 'none', flexShrink: 0 }}
+          >
+            <span className="brand-dot" aria-hidden />
+            <span className="nav-brand-split" style={{ fontSize: 'clamp(15px, 1.5vw, 18px)' }}>
+              <span className="nav-brand-cutoffs">cutoffs</span>
+              <span className="nav-brand-ai">.ai</span>
+            </span>
+          </Link>
+          <span style={{ width: '1px', height: '16px', background: 'var(--border)', flexShrink: 0 }} />
+          <div className="sim-nav-pill-row" style={{ minWidth: 0 }}>
+            <span className="sim-nav-pill sim-nav-pill--accent">
+              Rank {fmtNum(rank)} · {profile.category}
+            </span>
+            <span className="sim-nav-pill sim-nav-pill--muted">{profile.home_state}</span>
           </div>
-          {/* Divider */}
-          <span style={{ width: '1px', height: '16px', background: 'var(--border)', display: 'inline-block' }} />
-          {/* Rank badge */}
-          <span style={{ fontSize: '12px', color: 'var(--text-muted)', fontFamily: 'var(--mono)' }}>
-            Rank {fmtNum(rank)} · {profile.category} · {profile.home_state}
-          </span>
         </div>
         <ProfileDropdown name={profile.name} email={profile.email} />
       </div>
@@ -1013,59 +1088,134 @@ function ChoiceFillingScreen({ profile }) {
             </div>
           </div>
 
-          {/* Action buttons */}
-          <div style={{ display: 'flex', justifyContent: 'center', gap: '12px', marginBottom: '14px' }}>
-            <button onClick={handleSave} disabled={saving}
-              style={{ padding: '9px 24px', background: saving ? '#aaa' : '#28a745', color: '#fff', border: 'none', borderRadius: '4px', cursor: saving ? 'not-allowed' : 'pointer', fontWeight: 600, fontSize: '13px' }}>
-              {saving ? 'Saving...' : saved ? '✓ Saved' : 'Save and Continue'}
-            </button>
-            <button onClick={handleSaveAndHome}
-              style={{ padding: '9px 24px', background: '#198754', color: '#fff', border: 'none', borderRadius: '4px', cursor: 'pointer', fontWeight: 600, fontSize: '13px' }}>
-              Save and Go to Home
-            </button>
-            <button onClick={handleDownloadPDF}
-              style={{ padding: '9px 24px', background: '#fd7e14', color: '#fff', border: 'none', borderRadius: '4px', cursor: 'pointer', fontWeight: 600, fontSize: '13px' }}>
-              📄 Download PDF
-            </button>
+          {/* Action buttons — symmetric bar, aligned with filter card + app accent */}
+          <div
+            className="sim-choice-action-bar-wrap"
+            style={{
+              marginBottom: '14px',
+              padding: '12px 14px',
+              background: '#fff',
+              border: '1px solid #dee2e6',
+              borderRadius: '6px',
+            }}
+          >
+            <div className="sim-choice-action-bar">
+              <button
+                type="button"
+                onClick={handleSave}
+                disabled={saving}
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  gap: '6px',
+                  minHeight: '44px',
+                  padding: '10px 16px',
+                  fontFamily: 'var(--sans)',
+                  fontSize: '13px',
+                  fontWeight: 700,
+                  color: '#fff',
+                  background: saving ? '#9ca3af' : 'var(--accent)',
+                  border: 'none',
+                  borderRadius: '10px',
+                  cursor: saving ? 'not-allowed' : 'pointer',
+                  boxShadow: saving ? 'none' : '0 2px 8px rgba(255, 107, 53, 0.22)',
+                  transition: 'background 0.2s, box-shadow 0.2s',
+                }}
+              >
+                {saving ? 'Saving...' : saved ? '✓ Saved' : 'Save and Continue'}
+              </button>
+              <button
+                type="button"
+                onClick={handleSaveAndHome}
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  gap: '6px',
+                  minHeight: '44px',
+                  padding: '10px 16px',
+                  fontFamily: 'var(--sans)',
+                  fontSize: '13px',
+                  fontWeight: 600,
+                  color: '#2d2d33',
+                  background: '#fff',
+                  border: '1px solid #ced4da',
+                  borderRadius: '10px',
+                  cursor: 'pointer',
+                  transition: 'border-color 0.2s, background 0.2s',
+                }}
+              >
+                Save and Go to Home
+              </button>
+              <button
+                type="button"
+                onClick={handleDownloadPDF}
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  minHeight: '44px',
+                  padding: '10px 16px',
+                  fontFamily: 'var(--sans)',
+                  fontSize: '13px',
+                  fontWeight: 600,
+                  color: '#f4f4f5',
+                  background: '#3f3f46',
+                  border: '1px solid #27272a',
+                  borderRadius: '10px',
+                  cursor: 'pointer',
+                  boxShadow: '0 1px 2px rgba(0, 0, 0, 0.06)',
+                  transition: 'background 0.2s, border-color 0.2s',
+                }}
+              >
+                Download PDF
+              </button>
+            </div>
           </div>
 
-          {/* Two-panel grid: Available + Filled */}
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '14px', alignItems: 'start' }}>
+          {/* Two-panel grid: compact tables; wider bot rail */}
+          <div style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 1fr) minmax(0, 1fr)', gap: '10px', alignItems: 'start' }}>
 
-            {/* Available Choices */}
-            <div style={{ background: '#fff', border: '1px solid #dee2e6', borderRadius: '6px', overflow: 'hidden' }}>
-              <div style={{ padding: '10px 14px', borderBottom: '1px solid #dee2e6' }}>
+            {/* Available Choices — compact row density */}
+            <div style={{ background: '#fff', border: '1px solid #dee2e6', borderRadius: '6px', overflow: 'hidden', minWidth: 0 }}>
+              <div style={{ padding: '8px 12px', borderBottom: '1px solid #dee2e6' }}>
                 <strong style={{ fontSize: '14px', color: '#333' }}>Available Choice(s)</strong>
-                <div style={{ color: '#d32f2f', fontSize: '13px', fontWeight: 600, marginTop: '4px' }}>
+                <div style={{ color: '#d32f2f', fontSize: '13px', fontWeight: 600, marginTop: '2px' }}>
                   Total available : {availableChoices.length}
                 </div>
               </div>
-              <div style={{ maxHeight: 'calc(100vh - 300px)', overflowY: 'auto' }}>
-                <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '13px' }}>
+              <div style={{ maxHeight: 'calc(100vh - 300px)', overflowX: 'auto', overflowY: 'auto', minWidth: 0 }}>
+                <table style={{ width: '100%', minWidth: 0, borderCollapse: 'collapse', fontSize: '12px', tableLayout: 'fixed' }}>
+                  <colgroup>
+                    <col style={{ width: '40%' }} />
+                    <col />
+                    <col style={{ width: '74px' }} />
+                  </colgroup>
                   <thead>
                     <tr style={{ background: '#495057', color: '#fff', position: 'sticky', top: 0 }}>
-                      <th style={{ padding: '9px 12px', textAlign: 'left', fontWeight: 600, width: '44%' }}>Institute</th>
-                      <th style={{ padding: '9px 12px', textAlign: 'left', fontWeight: 600, width: '40%' }}>Program</th>
-                      <th style={{ padding: '9px 12px', textAlign: 'center', fontWeight: 600, width: '16%' }}>Action</th>
+                      <th style={{ padding: '5px 6px 5px 8px', textAlign: 'left', fontWeight: 600 }}>Institute</th>
+                      <th style={{ padding: '5px 2px 5px 6px', textAlign: 'left', fontWeight: 600 }}>Program</th>
+                      <th style={{ padding: '5px 4px', textAlign: 'center', fontWeight: 600 }}>Action</th>
                     </tr>
                   </thead>
                   <tbody>
                     {availableChoices.length === 0 ? (
-                      <tr><td colSpan={3} style={{ padding: '24px', textAlign: 'center', color: '#888' }}>No choices match the current filters.</td></tr>
+                      <tr><td colSpan={3} style={{ padding: '18px', textAlign: 'center', color: '#888' }}>No choices match the current filters.</td></tr>
                     ) : availableChoices.map((c, i) => (
                       <tr key={c.id} style={{ background: i % 2 === 0 ? '#fff' : '#f8f9fa', borderBottom: '1px solid #e9ecef' }}>
-                        <td style={{ padding: '8px 12px' }}>
+                        <td style={{ padding: '4px 6px 4px 8px', overflow: 'hidden', textOverflow: 'ellipsis' }}>
                           <button onClick={() => setSelectedChoice(c)}
-                            style={{ background: 'none', border: 'none', padding: 0, color: '#1a73e8', cursor: 'pointer', fontSize: '13px', textAlign: 'left', textDecoration: 'underline', textDecorationColor: 'transparent', transition: 'text-decoration-color 0.15s' }}
+                            style={{ background: 'none', border: 'none', padding: 0, color: '#1a73e8', cursor: 'pointer', fontSize: '12px', textAlign: 'left', textDecoration: 'underline', textDecorationColor: 'transparent', transition: 'text-decoration-color 0.15s', maxWidth: '100%', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', display: 'block' }}
                             onMouseEnter={e => e.currentTarget.style.textDecorationColor = '#1a73e8'}
                             onMouseLeave={e => e.currentTarget.style.textDecorationColor = 'transparent'}>
-                            {c.institute}
+                            {abbrevInstitute(c.institute)}
                           </button>
                         </td>
-                        <td style={{ padding: '8px 12px', color: '#333' }}>{c.program}</td>
-                        <td style={{ padding: '8px 12px', textAlign: 'center' }}>
+                        <td style={{ padding: '4px 2px 4px 6px', color: '#333', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{abbrevProgram(c.program)}</td>
+                        <td style={{ padding: '4px 4px', textAlign: 'center', verticalAlign: 'middle', whiteSpace: 'nowrap' }}>
                           <button onClick={() => addChoice(c)}
-                            style={{ padding: '4px 16px', background: '#1a73e8', color: '#fff', border: 'none', borderRadius: '4px', cursor: 'pointer', fontSize: '12px', fontWeight: 600 }}>
+                            style={{ padding: '3px 10px', background: '#1a73e8', color: '#fff', border: 'none', borderRadius: '4px', cursor: 'pointer', fontSize: '12px', fontWeight: 600 }}>
                             Add
                           </button>
                         </td>
@@ -1076,81 +1226,117 @@ function ChoiceFillingScreen({ profile }) {
               </div>
             </div>
 
-            {/* Filled Choices */}
-            <div style={{ background: '#fff', border: '1px solid #dee2e6', borderRadius: '6px', overflow: 'hidden' }}>
-              <div style={{ padding: '10px 14px', borderBottom: '1px solid #dee2e6' }}>
-                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '8px' }}>
-                  <div>
-                    <strong style={{ fontSize: '14px', color: '#333' }}>Filled Choice(s)</strong>
-                    <div style={{ color: '#d32f2f', fontSize: '13px', fontWeight: 600, marginTop: '4px' }}>
+            {/* Filled Choices — even vertical spacing (stack uses same gap throughout) */}
+            <div style={{ background: '#fff', border: '1px solid #dee2e6', borderRadius: '6px', overflow: 'hidden', minWidth: 0 }}>
+              <div
+                style={{
+                  padding: '10px 12px',
+                  borderBottom: '1px solid #dee2e6',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  gap: '6px',
+                }}
+              >
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '8px', rowGap: '6px' }}>
+                  <div style={{ display: 'flex', alignItems: 'baseline', gap: '10px', flexWrap: 'wrap', minWidth: 0 }}>
+                    <strong style={{ fontSize: '14px', color: '#333', lineHeight: 1.25 }}>Filled Choice(s)</strong>
+                    <span style={{ color: '#d32f2f', fontSize: '13px', fontWeight: 600, lineHeight: 1.3 }}>
                       Total Filled : {filledChoices.length}
-                    </div>
+                    </span>
                   </div>
-                  <div style={{ fontSize: '13px', color: '#555', fontWeight: 600 }}>
+                  <div style={{ fontSize: '13px', color: '#555', fontWeight: 600, lineHeight: 1.25, flexShrink: 0 }}>
                     Saved: {saved ? filledChoices.length : 0}
                   </div>
                 </div>
-                <div style={{ display: 'flex', gap: '8px', marginTop: '10px', flexWrap: 'wrap' }}>
-                  <button onClick={() => setFilledFilter('full')} style={pillStyle(filledFilter === 'full')}>
+                <div
+                  className="sim-filled-pills-scroll"
+                  style={{
+                    display: 'flex',
+                    gap: '6px',
+                    flexWrap: 'nowrap',
+                    overflowX: 'auto',
+                    overflowY: 'hidden',
+                    minWidth: 0,
+                    WebkitOverflowScrolling: 'touch',
+                  }}
+                >
+                  <button type="button" onClick={() => setFilledFilter('full')} style={{ ...pillStyle(filledFilter === 'full'), flexShrink: 0 }}>
                     {pillBadge(filledChoices.length, filledFilter === 'full')} Full List
                   </button>
-                  <button onClick={() => setFilledFilter('opening')} style={pillStyle(filledFilter === 'opening')}>
+                  <button type="button" onClick={() => setFilledFilter('opening')} style={{ ...pillStyle(filledFilter === 'opening'), flexShrink: 0 }}>
                     {pillBadge(openingCount, filledFilter === 'opening')} Opening &lt;{fmtNum(rank)}
                   </button>
-                  <button onClick={() => setFilledFilter('middle')} style={pillStyle(filledFilter === 'middle')}>
+                  <button type="button" onClick={() => setFilledFilter('middle')} style={{ ...pillStyle(filledFilter === 'middle'), flexShrink: 0 }}>
                     {pillBadge(middleCount, filledFilter === 'middle')} Mid
                   </button>
-                  <button onClick={() => setFilledFilter('closing')} style={pillStyle(filledFilter === 'closing')}>
+                  <button type="button" onClick={() => setFilledFilter('closing')} style={{ ...pillStyle(filledFilter === 'closing'), flexShrink: 0 }}>
                     {pillBadge(closingCount, filledFilter === 'closing')} Closing &gt;{fmtNum(rank)}
+                  </button>
+                  <button type="button" onClick={() => setFilledFilter(filledFilter === 'ratio-safe' ? 'full' : 'ratio-safe')} style={{ ...pillStyle(filledFilter === 'ratio-safe'), flexShrink: 0 }}>
+                    {pillBadge(ratioSafeCount, filledFilter === 'ratio-safe')} Safe
+                  </button>
+                  <button type="button" onClick={() => setFilledFilter(filledFilter === 'ratio-mid' ? 'full' : 'ratio-mid')} style={{ ...pillStyle(filledFilter === 'ratio-mid'), flexShrink: 0 }}>
+                    {pillBadge(ratioMidCount, filledFilter === 'ratio-mid')} Border
+                  </button>
+                  <button type="button" onClick={() => setFilledFilter(filledFilter === 'ratio-risky' ? 'full' : 'ratio-risky')} style={{ ...pillStyle(filledFilter === 'ratio-risky'), flexShrink: 0 }}>
+                    {pillBadge(ratioRiskyCount, filledFilter === 'ratio-risky')} Risky
                   </button>
                 </div>
               </div>
-              <div style={{ maxHeight: 'calc(100vh - 350px)', overflowY: 'auto' }}>
-                <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '13px' }}>
+              <div style={{ maxHeight: 'calc(100vh - 300px)', overflowX: 'auto', overflowY: 'auto', minWidth: 0 }}>
+                <table style={{ width: '100%', minWidth: 0, borderCollapse: 'collapse', fontSize: '12px', tableLayout: 'fixed' }}>
+                  <colgroup>
+                    <col style={{ width: '28%' }} />
+                    <col />
+                    <col style={{ width: '34px' }} />
+                    <col style={{ width: '68px' }} />
+                    <col style={{ width: '36px' }} />
+                    <col style={{ width: '52px' }} />
+                  </colgroup>
                   <thead>
                     <tr style={{ background: '#198754', color: '#fff', position: 'sticky', top: 0 }}>
-                      <th style={{ padding: '9px 10px', textAlign: 'left', fontWeight: 600, width: '34%' }}>Institute</th>
-                      <th style={{ padding: '9px 10px', textAlign: 'left', fontWeight: 600, width: '30%' }}>Program</th>
-                      <th style={{ padding: '9px 6px', textAlign: 'center', fontWeight: 600, width: '10%' }}>No.</th>
-                      <th style={{ padding: '9px 6px', textAlign: 'center', fontWeight: 600, width: '10%' }}>Remove</th>
-                      <th style={{ padding: '9px 6px', textAlign: 'center', fontWeight: 600, width: '8%' }}>Up</th>
-                      <th style={{ padding: '9px 6px', textAlign: 'center', fontWeight: 600, width: '8%' }}>Down</th>
+                      <th style={{ padding: '5px 6px 5px 8px', textAlign: 'left', fontWeight: 600 }}>Institute</th>
+                      <th style={{ padding: '5px 2px 5px 6px', textAlign: 'left', fontWeight: 600 }}>Program</th>
+                      <th style={{ padding: '5px 2px', textAlign: 'center', fontWeight: 600 }}>No.</th>
+                      <th style={{ padding: '5px 4px', textAlign: 'center', fontWeight: 600 }}>Remove</th>
+                      <th style={{ padding: '5px 4px', textAlign: 'center', fontWeight: 600 }}>Up</th>
+                      <th style={{ padding: '5px 4px', textAlign: 'center', fontWeight: 600 }}>Down</th>
                     </tr>
                   </thead>
                   <tbody>
                     {displayedFilled.length === 0 ? (
-                      <tr><td colSpan={6} style={{ padding: '24px', textAlign: 'center', color: '#888' }}>
+                      <tr><td colSpan={6} style={{ padding: '18px', textAlign: 'center', color: '#888' }}>
                         {filledChoices.length === 0 ? 'No choices filled yet. Use the Add button or ask the bot for a strategy.' : 'No choices in this category.'}
                       </td></tr>
                     ) : displayedFilled.map((c, dispIdx) => {
                       const gIdx = globalIdx(c.id);
                       return (
                         <tr key={c.id} style={{ background: dispIdx % 2 === 0 ? '#fff' : '#f8f9fa', borderBottom: '1px solid #e9ecef' }}>
-                          <td style={{ padding: '8px 10px' }}>
+                          <td style={{ padding: '4px 6px 4px 8px', overflow: 'hidden', textOverflow: 'ellipsis' }}>
                             <button onClick={() => setSelectedChoice(c)}
-                              style={{ background: 'none', border: 'none', padding: 0, color: '#1a73e8', cursor: 'pointer', fontSize: '13px', textAlign: 'left', textDecoration: 'underline', textDecorationColor: 'transparent', transition: 'text-decoration-color 0.15s' }}
+                              style={{ background: 'none', border: 'none', padding: 0, color: '#1a73e8', cursor: 'pointer', fontSize: '12px', textAlign: 'left', textDecoration: 'underline', textDecorationColor: 'transparent', transition: 'text-decoration-color 0.15s', display: 'block', maxWidth: '100%', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}
                               onMouseEnter={e => e.currentTarget.style.textDecorationColor = '#1a73e8'}
                               onMouseLeave={e => e.currentTarget.style.textDecorationColor = 'transparent'}>
-                              {c.institute}
+                              {abbrevInstitute(c.institute)}
                             </button>
                           </td>
-                          <td style={{ padding: '8px 10px', color: '#333' }}>{c.program}</td>
-                          <td style={{ padding: '8px 6px', textAlign: 'center', fontWeight: 700, color: '#333' }}>{gIdx + 1}</td>
-                          <td style={{ padding: '8px 6px', textAlign: 'center' }}>
-                            <button onClick={() => removeChoice(c.id)}
-                              style={{ padding: '3px 10px', background: '#d32f2f', color: '#fff', border: 'none', borderRadius: '3px', cursor: 'pointer', fontSize: '12px', fontWeight: 600 }}>
+                          <td style={{ padding: '4px 2px 4px 6px', color: '#333', lineHeight: 1.35, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{abbrevProgram(c.program)}</td>
+                          <td style={{ padding: '4px 2px', textAlign: 'center', fontWeight: 700, color: '#333', fontSize: '12px' }}>{gIdx + 1}</td>
+                          <td style={{ padding: '4px 4px', textAlign: 'center' }}>
+                            <button type="button" onClick={() => removeChoice(c.id)}
+                              style={{ padding: '2px 6px', background: '#d32f2f', color: '#fff', border: 'none', borderRadius: '3px', cursor: 'pointer', fontSize: '11px', fontWeight: 600 }}>
                               ✕
                             </button>
                           </td>
-                          <td style={{ padding: '8px 6px', textAlign: 'center' }}>
-                            <button onClick={() => moveUp(gIdx)} disabled={gIdx === 0}
-                              style={{ padding: '3px 10px', background: gIdx === 0 ? '#ccc' : '#6c757d', color: '#fff', border: 'none', borderRadius: '3px', cursor: gIdx === 0 ? 'not-allowed' : 'pointer', fontSize: '12px', fontWeight: 600 }}>
+                          <td style={{ padding: '4px 3px', textAlign: 'center' }}>
+                            <button type="button" onClick={() => moveUp(gIdx)} disabled={gIdx === 0}
+                              style={{ padding: '2px 6px', background: gIdx === 0 ? '#ccc' : '#6c757d', color: '#fff', border: 'none', borderRadius: '3px', cursor: gIdx === 0 ? 'not-allowed' : 'pointer', fontSize: '11px', fontWeight: 600 }}>
                               ↑
                             </button>
                           </td>
-                          <td style={{ padding: '8px 6px', textAlign: 'center' }}>
-                            <button onClick={() => moveDown(gIdx)} disabled={gIdx >= filledChoices.length - 1}
-                              style={{ padding: '3px 10px', background: gIdx >= filledChoices.length - 1 ? '#ccc' : '#6c757d', color: '#fff', border: 'none', borderRadius: '3px', cursor: gIdx >= filledChoices.length - 1 ? 'not-allowed' : 'pointer', fontSize: '12px', fontWeight: 600 }}>
+                          <td style={{ padding: '4px 3px', textAlign: 'center' }}>
+                            <button type="button" onClick={() => moveDown(gIdx)} disabled={gIdx >= filledChoices.length - 1}
+                              style={{ padding: '2px 6px', background: gIdx >= filledChoices.length - 1 ? '#ccc' : '#6c757d', color: '#fff', border: 'none', borderRadius: '3px', cursor: gIdx >= filledChoices.length - 1 ? 'not-allowed' : 'pointer', fontSize: '11px', fontWeight: 600 }}>
                               ↓
                             </button>
                           </td>
@@ -1166,7 +1352,7 @@ function ChoiceFillingScreen({ profile }) {
         </div>
 
         {/* Right: Bot sidebar — full height from nav to bottom */}
-        <div style={{ width: '320px', flexShrink: 0, borderLeft: '1px solid #dee2e6', display: 'flex', flexDirection: 'column' }}>
+        <div style={{ width: 'min(500px, 44vw)', minWidth: '300px', flexShrink: 0, borderLeft: '1px solid #dee2e6', display: 'flex', flexDirection: 'column' }}>
           <BotPanel
             filledChoices={filledChoices}
             setFilledChoices={(choices) => { setFilledChoices(choices); setSaved(false); }}
@@ -1178,6 +1364,8 @@ function ChoiceFillingScreen({ profile }) {
             setFilterZone={setFilterZone}
             messages={botMessages}
             setMessages={setBotMessages}
+            filledFilter={filledFilter}
+            setFilledFilter={setFilledFilter}
           />
         </div>
 
@@ -1198,6 +1386,26 @@ function ChoiceFillingScreen({ profile }) {
       <style>{`
         @keyframes spin  { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
         @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
+        .sim-choice-action-bar {
+          display: grid;
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+          gap: 10px;
+          align-items: stretch;
+          width: 100%;
+        }
+        @media (max-width: 720px) {
+          .sim-choice-action-bar {
+            grid-template-columns: 1fr;
+          }
+        }
+        .sim-filled-pills-scroll {
+          scrollbar-width: none;
+          -ms-overflow-style: none;
+        }
+        .sim-filled-pills-scroll::-webkit-scrollbar {
+          display: none;
+          height: 0;
+        }
       `}</style>
     </div>
   );
