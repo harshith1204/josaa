@@ -23,12 +23,12 @@ CREATE TABLE IF NOT EXISTS college_placements (
   UNIQUE(college_id, year)
 );
 
--- Stores R2 media URLs per college per category
+-- Media URLs per college (admin uploads → S3; URL stored here for chatbot + site)
 CREATE TABLE IF NOT EXISTS college_media (
   id          SERIAL PRIMARY KEY,
   college_id  TEXT NOT NULL REFERENCES colleges(college_id) ON DELETE CASCADE,
-  category    TEXT NOT NULL,             -- hostel | classrooms | campus | extra_curricular
-  url         TEXT NOT NULL,             -- Cloudflare R2 public URL
+  category    TEXT NOT NULL,             -- hostel | class | campus | extra (admin API)
+  url         TEXT NOT NULL,             -- public HTTPS URL (e.g. S3)
   filename    TEXT,
   uploaded_at TIMESTAMPTZ DEFAULT now()
 );

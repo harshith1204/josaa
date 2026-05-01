@@ -11,9 +11,9 @@ CREATE TABLE IF NOT EXISTS knowledge_chunks (
   id          BIGSERIAL PRIMARY KEY,
   college_id  TEXT NOT NULL,             -- matches colleges.college_id, e.g. "iit-bombay"
   college     TEXT,                      -- human-readable name (legacy compat, optional)
-  section     TEXT NOT NULL,             -- overview | hostel | placements | campus | extra_curricular | academics
+  section     TEXT NOT NULL,             -- e.g. overview, hostels_boys, mess, placements (ingest / D1 parity)
   chunk_text  TEXT NOT NULL,
-  media_urls  TEXT[],                    -- R2 URLs contextually relevant to this chunk
+  media_urls  TEXT[],                    -- optional image/video URLs tied to this chunk (e.g. S3)
   embedding   VECTOR(1024),              -- BGE-M3 output (1024-dim)
   token_count INT,
   updated_at  TIMESTAMPTZ DEFAULT now()
