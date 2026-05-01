@@ -1,12 +1,14 @@
 'use client';
 
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { supabase, isSupabaseConfigured } from '@/lib/supabase';
 import '../landing.css';
 
 const OWNER_EMAIL = 'harshithsai24@gmail.com';
+const CATEGORIES = ['hostel', 'class', 'campus', 'extra'];
+const CAT_LABELS  = { hostel: 'Hostel', class: 'Classrooms', campus: 'Campus', extra: 'Extra' };
 
 // ── Toast ────────────────────────────────────────────────────────────────────
 function Toast({ message, type = 'info', onDone }) {
@@ -69,6 +71,334 @@ function JsonModal({ title, placeholder, initialValue, onProceed, onClose }) {
           <button onClick={() => { if (valid !== false && value.trim()) onProceed(value.trim()); }} disabled={valid === false || !value.trim()} style={{ ...mBtn('#fff', valid === false || !value.trim() ? 'rgba(255,107,53,0.35)' : 'var(--accent)', 'transparent'), cursor: valid === false || !value.trim() ? 'not-allowed' : 'pointer' }}>
             Proceed →
           </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// ── College Detail Dialog ─────────────────────────────────────────────────────
+function CollegeDialog({ college, token, onClose }) {
+  const [detail, setDetail]   = useState(null);
+  const [media, setMedia]     = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [mediaTab, setMediaTab] = useState('hostel');
+
+  useEffect(() => {
+    async function load() {
+      setLoading(true);
+      const [detailRes, mediaRes] = await Promise.all([
+        fetch(`/api/admin/college?college_id=${encodeURIComponent(college.college_id)}`, { headers: { Authorization: `Bearer ${token}` } }),
+        fetch(`/api/admin/media?college_id=${encodeURIComponent(college.college_id)}`, { headers: { Authorization: `Bearer ${token}` } }),
+      ]);
+      const detailJson = await detailRes.json();
+      const mediaJson  = await mediaRes.json();
+      if (detailRes.ok) setDetail(detailJson);
+      if (mediaRes.ok)  setMedia(mediaJson.media ?? []);
+      setLoading(false);
+    }
+    load();
+  }, [college.college_id, token]);
+
+  const mediaByCategory = CATEGORIES.reduce((acc, cat) => {
+    acc[cat] = media.filter(m => m.category === cat);
+    return acc;
+  }, {});
+
+  const typeColor = { IIT: 'var(--accent)', NIT: 'var(--accent-2)', IIIT: 'var(--accent-3)', GFTI: '#a78bfa' };
+
+  return (
+    <div onClick={onClose} style={{ position: 'fixed', inset: 0, zIndex: 600, background: 'rgba(0,0,0,0.78)', backdropFilter: 'blur(8px)', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '24px' }}>
+      <div onClick={e => e.stopPropagation()} style={{ width: '100%', maxWidth: '740px', maxHeight: '88vh', background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: '20px', boxShadow: '0 28px 80px rgba(0,0,0,0.65)', display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
+
+        {/* Dialog header */}
+        <div style={{ flexShrink: 0, padding: '22px 24px 18px', borderBottom: '1px solid var(--border)', display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: '16px' }}>
+          <div style={{ minWidth: 0 }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '5px', flexWrap: 'wrap' }}>
+              <h2 style={{ fontSize: '18px', fontWeight: 700, color: 'var(--text)', margin: 0 }}>{college.name}</h2>
+              {college.type && (
+                <span style={{ flexShrink: 0, fontSize: '11px', padding: '2px 9px', borderRadius: '20px', fontFamily: 'var(--mono)', fontWeight: 600, letterSpacing: '0.05em', background: `${typeColor[college.type] ?? 'var(--accent)'}18`, border: `1px solid ${typeColor[college.type] ?? 'var(--accent)'}40`, color: typeColor[college.type] ?? 'var(--accent)' }}>{college.type}</span>
+              )}
+            </div>
+            <p style={{ fontSize: '12px', color: 'var(--text-muted)', fontFamily: 'var(--mono)' }}>
+              {[college.state, college.zone ? `${college.zone} Zone` : null].filter(Boolean).join(' · ')}
+              {college.updated_at && ` · Updated ${new Date(college.updated_at).toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' })}`}
+            </p>
+          </div>
+          <button onClick={onClose} style={{ flexShrink: 0, background: 'none', border: 'none', cursor: 'pointer', color: 'var(--text-muted)', display: 'flex', padding: '4px', transition: 'color 0.15s', marginTop: '2px' }} onMouseEnter={e => e.currentTarget.style.color = 'var(--text)'} onMouseLeave={e => e.currentTarget.style.color = 'var(--text-muted)'}><XIcon size={18} /></button>
+        </div>
+
+        {/* Scrollable body */}
+        <div style={{ flex: 1, overflowY: 'auto', padding: '20px 24px', display: 'flex', flexDirection: 'column', gap: '22px' }}>
+
+          {loading ? (
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
+              {[120, 80, 200].map((h, i) => (
+                <div key={i} style={{ height: `${h}px`, borderRadius: '12px', background: 'var(--surface-2)', border: '1px solid var(--border)', opacity: 1 - i * 0.2 }} />
+              ))}
+            </div>
+          ) : (
+            <>
+              {/* ── College Data ── */}
+              <section>
+                <SectionLabel>College Data</SectionLabel>
+                <div style={{ padding: '14px 16px', borderRadius: '12px', background: 'rgba(0,212,170,0.05)', border: '1px solid rgba(0,212,170,0.2)', display: 'flex', alignItems: 'center', gap: '12px' }}>
+                  <div style={{ width: '32px', height: '32px', borderRadius: '9px', background: 'rgba(0,212,170,0.12)', border: '1px solid rgba(0,212,170,0.25)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                    <CheckIcon size={15} color="var(--accent-2)" />
+                  </div>
+                  <div style={{ flex: 1, minWidth: 0 }}>
+                    <p style={{ fontSize: '13px', fontWeight: 600, color: 'var(--text)', marginBottom: '2px' }}>Data uploaded</p>
+                    <p style={{ fontSize: '11px', color: 'var(--text-muted)', fontFamily: 'var(--mono)' }}>
+                      Last updated {new Date(college.updated_at).toLocaleDateString('en-IN', { day: 'numeric', month: 'long', year: 'numeric' })}
+                    </p>
+                  </div>
+                  {detail?.college?.data && (
+                    <button
+                      onClick={() => { const w = window.open('', '_blank'); w.document.write(`<pre style="background:#0a0a0c;color:#e2e8f0;padding:24px;font-size:13px;font-family:monospace">${JSON.stringify(detail.college.data, null, 2)}</pre>`); }}
+                      style={{ flexShrink: 0, ...mBtn('var(--text-muted)', 'var(--surface-2)', 'var(--border)'), padding: '7px 13px', fontSize: '12px' }}
+                      onMouseEnter={e => { e.currentTarget.style.borderColor = 'rgba(255,107,53,0.4)'; e.currentTarget.style.color = 'var(--text)'; }}
+                      onMouseLeave={e => { e.currentTarget.style.borderColor = 'var(--border)'; e.currentTarget.style.color = 'var(--text-muted)'; }}
+                    >
+                      View JSON ↗
+                    </button>
+                  )}
+                </div>
+              </section>
+
+              {/* ── Placements ── */}
+              <section>
+                <SectionLabel>Placements</SectionLabel>
+                {(detail?.placements?.length ?? 0) === 0 ? (
+                  <div style={{ padding: '14px 16px', borderRadius: '12px', background: 'var(--surface-2)', border: '1px solid var(--border)' }}>
+                    <p style={{ fontSize: '13px', color: 'var(--text-muted)' }}>No placement data uploaded yet.</p>
+                  </div>
+                ) : (
+                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
+                    {detail.placements.map(p => (
+                      <span key={p.year} style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', padding: '6px 14px', borderRadius: '20px', background: 'rgba(0,212,170,0.08)', border: '1px solid rgba(0,212,170,0.25)', fontSize: '13px', fontWeight: 600, fontFamily: 'var(--mono)', color: 'var(--accent-2)' }}>
+                        {p.year}
+                      </span>
+                    ))}
+                  </div>
+                )}
+              </section>
+
+              {/* ── Media ── */}
+              <section>
+                <SectionLabel>Media</SectionLabel>
+                {media.length === 0 ? (
+                  <div style={{ padding: '14px 16px', borderRadius: '12px', background: 'var(--surface-2)', border: '1px solid var(--border)' }}>
+                    <p style={{ fontSize: '13px', color: 'var(--text-muted)' }}>No media uploaded yet.</p>
+                  </div>
+                ) : (
+                  <>
+                    {/* Category tabs */}
+                    <div style={{ display: 'flex', gap: '2px', background: 'var(--surface-2)', border: '1px solid var(--border)', borderRadius: '10px', padding: '3px', width: 'fit-content', marginBottom: '14px' }}>
+                      {CATEGORIES.map(cat => {
+                        const count = mediaByCategory[cat].length;
+                        return (
+                          <button key={cat} onClick={() => setMediaTab(cat)} style={{ display: 'flex', alignItems: 'center', gap: '6px', padding: '6px 14px', borderRadius: '7px', border: 'none', cursor: 'pointer', fontSize: '12px', fontWeight: 500, fontFamily: 'var(--sans)', transition: 'all 0.15s', background: mediaTab === cat ? 'var(--accent)' : 'transparent', color: mediaTab === cat ? '#fff' : count === 0 ? 'var(--text-muted)' : 'var(--text)', opacity: count === 0 ? 0.5 : 1 }}>
+                            {CAT_LABELS[cat]}
+                            {count > 0 && <span style={{ fontSize: '11px', fontFamily: 'var(--mono)', background: mediaTab === cat ? 'rgba(255,255,255,0.25)' : 'rgba(255,255,255,0.08)', borderRadius: '10px', padding: '1px 6px' }}>{count}</span>}
+                          </button>
+                        );
+                      })}
+                    </div>
+
+                    {/* Media grid */}
+                    {mediaByCategory[mediaTab].length === 0 ? (
+                      <div style={{ padding: '14px 16px', borderRadius: '12px', background: 'var(--surface-2)', border: '1px solid var(--border)' }}>
+                        <p style={{ fontSize: '13px', color: 'var(--text-muted)' }}>No {CAT_LABELS[mediaTab].toLowerCase()} media uploaded.</p>
+                      </div>
+                    ) : (
+                      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(130px, 1fr))', gap: '10px' }}>
+                        {mediaByCategory[mediaTab].map(item => (
+                          <a key={item.id} href={item.url} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', display: 'block', borderRadius: '10px', overflow: 'hidden', border: '1px solid var(--border)', background: 'var(--surface-2)', transition: 'border-color 0.18s' }}
+                            onMouseEnter={e => e.currentTarget.style.borderColor = 'rgba(255,107,53,0.4)'}
+                            onMouseLeave={e => e.currentTarget.style.borderColor = 'var(--border)'}
+                          >
+                            <div style={{ position: 'relative', width: '100%', paddingTop: '75%', background: 'var(--surface-2)' }}>
+                              {item.media_type === 'video' ? (
+                                <div style={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'rgba(0,0,0,0.3)' }}>
+                                  <div style={{ width: '36px', height: '36px', borderRadius: '50%', background: 'rgba(255,255,255,0.15)', border: '1px solid rgba(255,255,255,0.25)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="white"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                                  </div>
+                                </div>
+                              ) : (
+                                <img src={item.url} alt={item.caption || item.filename || ''} loading="lazy" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover' }} />
+                              )}
+                            </div>
+                            <div style={{ padding: '7px 9px' }}>
+                              <p style={{ fontSize: '11px', color: 'var(--text-muted)', fontFamily: 'var(--mono)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', marginBottom: item.caption ? '2px' : 0 }}>{item.filename || item.url.split('/').pop()}</p>
+                              {item.caption && <p style={{ fontSize: '11px', color: 'var(--text)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{item.caption}</p>}
+                              <p style={{ fontSize: '10px', color: item.media_type === 'video' ? 'var(--accent-3)' : 'var(--accent-2)', fontFamily: 'var(--mono)', marginTop: '2px', textTransform: 'uppercase', letterSpacing: '0.05em' }}>{item.media_type}</p>
+                            </div>
+                          </a>
+                        ))}
+                      </div>
+                    )}
+                  </>
+                )}
+              </section>
+            </>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function SectionLabel({ children }) {
+  return <p style={{ fontSize: '11px', fontFamily: 'var(--mono)', color: 'var(--accent)', fontWeight: 600, letterSpacing: '0.08em', marginBottom: '10px', textTransform: 'uppercase' }}>{children}</p>;
+}
+
+// ── Dashboard Tab ─────────────────────────────────────────────────────────────
+function DashboardTab({ data, loading, onRefresh, onSelectCollege }) {
+  const stats = data?.stats ?? {};
+  const colleges = data?.colleges ?? [];
+
+  const statCards = [
+    {
+      label: 'Total Users',
+      value: stats.total_users ?? '—',
+      icon: <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>,
+      color: 'var(--accent)',
+    },
+    {
+      label: 'Colleges',
+      value: stats.total_colleges ?? '—',
+      icon: <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>,
+      color: 'var(--accent-2)',
+    },
+    {
+      label: 'Media Files',
+      value: stats.total_media ?? '—',
+      icon: <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>,
+      color: 'var(--accent-3)',
+    },
+  ];
+
+  const typeColor = { IIT: 'var(--accent)', NIT: 'var(--accent-2)', IIIT: 'var(--accent-3)', GFTI: '#a78bfa' };
+
+  return (
+    <div style={{ height: '100%', display: 'flex', flexDirection: 'column', gap: '14px', animation: 'fadeUp 0.22s ease' }}>
+
+      {/* Stats row */}
+      <div style={{ flexShrink: 0, display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '12px' }}>
+        {statCards.map(({ label, value, icon, color }) => (
+          <div key={label} style={{ padding: '16px 20px', borderRadius: '14px', background: 'var(--surface)', border: '1px solid var(--border)', display: 'flex', alignItems: 'center', gap: '14px' }}>
+            <div style={{ width: '40px', height: '40px', borderRadius: '11px', flexShrink: 0, background: `${color}12`, border: `1px solid ${color}30`, display: 'flex', alignItems: 'center', justifyContent: 'center', color }}>
+              {icon}
+            </div>
+            <div>
+              <p style={{ fontSize: '22px', fontWeight: 700, color: 'var(--text)', fontFamily: 'var(--mono)', lineHeight: 1.1 }}>
+                {loading && value === '—' ? <span style={{ display: 'inline-block', width: '40px', height: '22px', borderRadius: '6px', background: 'var(--surface-2)', verticalAlign: 'middle' }} /> : value}
+              </p>
+              <p style={{ fontSize: '12px', color: 'var(--text-muted)', marginTop: '2px' }}>{label}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* Colleges table card */}
+      <div style={{ flex: 1, minHeight: 0, background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: '16px', display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
+
+        {/* Table header */}
+        <div style={{ flexShrink: 0, padding: '16px 20px 14px', borderBottom: '1px solid var(--border)', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '12px' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+            <p style={{ fontSize: '11px', fontFamily: 'var(--mono)', color: 'var(--accent)', fontWeight: 600, letterSpacing: '0.08em' }}>COLLEGES</p>
+            {colleges.length > 0 && (
+              <span style={{ fontSize: '11px', fontFamily: 'var(--mono)', padding: '1px 8px', borderRadius: '10px', background: 'rgba(255,107,53,0.1)', border: '1px solid rgba(255,107,53,0.2)', color: 'var(--accent)' }}>{colleges.length}</span>
+            )}
+          </div>
+          <button onClick={onRefresh} disabled={loading} style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', padding: '7px 13px', borderRadius: '9px', border: '1px solid var(--border)', background: 'var(--surface-2)', color: 'var(--text-muted)', fontSize: '12px', fontFamily: 'var(--sans)', cursor: loading ? 'not-allowed' : 'pointer', transition: 'all 0.18s', opacity: loading ? 0.6 : 1 }}
+            onMouseEnter={e => { if (!loading) { e.currentTarget.style.borderColor = 'rgba(255,107,53,0.4)'; e.currentTarget.style.color = 'var(--text)'; } }}
+            onMouseLeave={e => { e.currentTarget.style.borderColor = 'var(--border)'; e.currentTarget.style.color = 'var(--text-muted)'; }}
+          >
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={loading ? { animation: 'spin 1s linear infinite' } : {}}><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+            {loading ? 'Loading…' : 'Refresh'}
+          </button>
+        </div>
+
+        {/* Column headers */}
+        <div style={{ flexShrink: 0, display: 'grid', gridTemplateColumns: '2.5fr 0.7fr 0.6fr 1.1fr 0.8fr 0.8fr 0.8fr 0.8fr', gap: '0 4px', padding: '8px 20px', borderBottom: '1px solid var(--border)', background: 'var(--surface-2)' }}>
+          {['College', 'Type', 'Data', 'Placements', 'Hostel', 'Class', 'Campus', 'Extra'].map(h => (
+            <p key={h} style={{ fontSize: '10px', fontFamily: 'var(--mono)', color: 'var(--text-muted)', fontWeight: 600, letterSpacing: '0.06em', textTransform: 'uppercase', textAlign: h === 'College' ? 'left' : 'center' }}>{h}</p>
+          ))}
+        </div>
+
+        {/* Rows */}
+        <div style={{ flex: 1, overflowY: 'auto', minHeight: 0 }}>
+          {loading && colleges.length === 0 && (
+            <div style={{ padding: '12px 20px', display: 'flex', flexDirection: 'column', gap: '6px' }}>
+              {[...Array(5)].map((_, i) => (
+                <div key={i} style={{ height: '48px', borderRadius: '8px', background: 'var(--surface-2)', border: '1px solid var(--border)', opacity: 1 - i * 0.15 }} />
+              ))}
+            </div>
+          )}
+
+          {!loading && colleges.length === 0 && (
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100%', gap: '10px', padding: '40px' }}>
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--border)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+              <p style={{ fontSize: '13px', color: 'var(--text-muted)', textAlign: 'center' }}>No colleges yet. Upload college JSON from the Data tab.</p>
+            </div>
+          )}
+
+          {colleges.map((c, idx) => {
+            const totalMedia = CATEGORIES.reduce((sum, cat) => sum + (c.media[cat]?.photos ?? 0) + (c.media[cat]?.videos ?? 0), 0);
+            return (
+              <div
+                key={c.college_id}
+                onClick={() => onSelectCollege(c)}
+                style={{ display: 'grid', gridTemplateColumns: '2.5fr 0.7fr 0.6fr 1.1fr 0.8fr 0.8fr 0.8fr 0.8fr', gap: '0 4px', padding: '10px 20px', borderBottom: idx < colleges.length - 1 ? '1px solid var(--border)' : 'none', cursor: 'pointer', transition: 'background 0.15s', alignItems: 'center' }}
+                onMouseEnter={e => e.currentTarget.style.background = 'rgba(255,255,255,0.02)'}
+                onMouseLeave={e => e.currentTarget.style.background = 'transparent'}
+              >
+                {/* Name */}
+                <div style={{ minWidth: 0 }}>
+                  <p style={{ fontSize: '13px', fontWeight: 600, color: 'var(--text)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{c.short_name || c.name}</p>
+                  {c.short_name && <p style={{ fontSize: '11px', color: 'var(--text-muted)', fontFamily: 'var(--mono)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{c.college_id}</p>}
+                </div>
+
+                {/* Type */}
+                <div style={{ display: 'flex', justifyContent: 'center' }}>
+                  {c.type ? (
+                    <span style={{ fontSize: '10px', padding: '2px 7px', borderRadius: '20px', fontFamily: 'var(--mono)', fontWeight: 600, background: `${typeColor[c.type] ?? 'var(--accent)'}14`, border: `1px solid ${typeColor[c.type] ?? 'var(--accent)'}35`, color: typeColor[c.type] ?? 'var(--accent)' }}>{c.type}</span>
+                  ) : <span style={{ color: 'var(--text-muted)', fontSize: '12px' }}>—</span>}
+                </div>
+
+                {/* Data */}
+                <div style={{ display: 'flex', justifyContent: 'center' }}>
+                  <CheckIcon size={14} color="var(--accent-2)" />
+                </div>
+
+                {/* Placements */}
+                <div style={{ display: 'flex', justifyContent: 'center' }}>
+                  {c.placement_years.length > 0 ? (
+                    <span title={c.placement_years.join(', ')} style={{ fontSize: '11px', padding: '2px 9px', borderRadius: '20px', fontFamily: 'var(--mono)', fontWeight: 600, background: 'rgba(0,212,170,0.08)', border: '1px solid rgba(0,212,170,0.22)', color: 'var(--accent-2)', whiteSpace: 'nowrap' }}>
+                      {c.placement_years.length} yr{c.placement_years.length !== 1 ? 's' : ''}
+                    </span>
+                  ) : <span style={{ color: 'var(--text-muted)', fontSize: '13px' }}>—</span>}
+                </div>
+
+                {/* Media per category */}
+                {CATEGORIES.map(cat => {
+                  const photos = c.media[cat]?.photos ?? 0;
+                  const videos = c.media[cat]?.videos ?? 0;
+                  const total  = photos + videos;
+                  return (
+                    <div key={cat} style={{ display: 'flex', justifyContent: 'center' }}>
+                      {total > 0 ? (
+                        <span title={`${photos} photo${photos !== 1 ? 's' : ''}, ${videos} video${videos !== 1 ? 's' : ''}`} style={{ fontSize: '12px', fontFamily: 'var(--mono)', fontWeight: 600, color: 'var(--text)', background: 'rgba(108,92,231,0.1)', border: '1px solid rgba(108,92,231,0.22)', borderRadius: '10px', padding: '2px 8px' }}>
+                          {total}
+                        </span>
+                      ) : <span style={{ color: 'var(--text-muted)', fontSize: '13px' }}>—</span>}
+                    </div>
+                  );
+                })}
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>
@@ -159,14 +489,13 @@ function DataTab({ savedJson, onOpenJson, jsonSaving, mediaFiles, mediaRefs, onM
                   }
                   <span style={{ fontSize: '13px', fontWeight: 600, fontFamily: 'var(--sans)', textAlign: 'center', lineHeight: 1.3 }}>{label}</span>
                   <span style={{ fontSize: '11px', fontFamily: 'var(--mono)', opacity: 0.65 }}>
-                    {isUploading ? 'Uploading…' : uploaded ? `${urlCount} uploaded to S3` : count > 0 ? `${count} file${count > 1 ? 's' : ''} selected` : 'Click to upload'}
+                    {isUploading ? 'Uploading…' : uploaded ? `${urlCount} uploaded` : count > 0 ? `${count} file${count > 1 ? 's' : ''} selected` : 'Click to upload'}
                   </span>
                 </button>
               </div>
             );
           })}
         </div>
-
       </div>
     </div>
   );
@@ -220,10 +549,8 @@ function AdminAccessTab({ users, usersLoading, usersError, searchQuery, setSearc
           </div>
         )}
 
-        {/* List area — scrolls internally */}
+        {/* List */}
         <div style={{ flex: 1, overflowY: 'auto', minHeight: 0 }}>
-
-          {/* Loading skeleton */}
           {usersLoading && users.length === 0 && (
             <div style={{ display: 'flex', flexDirection: 'column', gap: '7px' }}>
               {[...Array(6)].map((_, i) => (
@@ -231,23 +558,17 @@ function AdminAccessTab({ users, usersLoading, usersError, searchQuery, setSearc
               ))}
             </div>
           )}
-
-          {/* Empty prompt */}
           {!usersLoading && users.length === 0 && !usersError && (
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100%', gap: '12px' }}>
               <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="var(--border)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
               <p style={{ fontSize: '13px', color: 'var(--text-muted)' }}>Click Refresh to load users from Supabase.</p>
             </div>
           )}
-
-          {/* No results */}
           {!usersLoading && users.length > 0 && filtered.length === 0 && (
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%' }}>
               <p style={{ fontSize: '14px', color: 'var(--text-muted)' }}>No users match "<strong style={{ color: 'var(--text)' }}>{searchQuery}</strong>"</p>
             </div>
           )}
-
-          {/* User rows */}
           {filtered.length > 0 && (
             <div style={{ display: 'flex', flexDirection: 'column', gap: '6px', paddingRight: '2px' }}>
               {filtered.map(u => {
@@ -255,21 +576,18 @@ function AdminAccessTab({ users, usersLoading, usersError, searchQuery, setSearc
                 const isToggling = togglingUser === u.id;
                 return (
                   <div key={u.id} style={{ display: 'flex', alignItems: 'center', gap: '12px', padding: '10px 12px', borderRadius: '11px', background: 'var(--surface-2)', border: `1px solid ${u.is_owner ? 'rgba(108,92,231,0.22)' : u.is_admin ? 'rgba(255,107,53,0.18)' : 'var(--border)'}`, transition: 'border-color 0.2s' }}>
-                    <div style={{ width: '36px', height: '36px', borderRadius: '50%', flexShrink: 0, background: u.is_owner ? 'rgba(108,92,231,0.18)' : u.is_admin ? 'rgba(255,107,53,0.12)' : 'rgba(255,255,255,0.04)', border: `1px solid ${u.is_owner ? 'rgba(108,92,231,0.35)' : u.is_admin ? 'rgba(255,107,53,0.3)' : 'var(--border)'}`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '13px', fontWeight: 700, color: u.is_owner ? 'var(--accent-3)' : u.is_admin ? 'var(--accent)' : 'var(--text-muted)', overflow: 'hidden' }}>
-                      {u.avatar_url ? <img src={u.avatar_url} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} /> : initial}
+                    <div style={{ width: '36px', height: '36px', borderRadius: '50%', flexShrink: 0, background: u.is_owner ? 'rgba(108,92,231,0.18)' : u.is_admin ? 'rgba(255,107,53,0.12)' : 'rgba(255,255,255,0.04)', border: `1px solid ${u.is_owner ? 'rgba(108,92,231,0.35)' : u.is_admin ? 'rgba(255,107,53,0.3)' : 'var(--border)'}`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '13px', fontWeight: 700, color: u.is_owner ? 'var(--accent-3)' : u.is_admin ? 'var(--accent)' : 'var(--text-muted)' }}>
+                      {initial}
                     </div>
-
                     <div style={{ flex: 1, minWidth: 0 }}>
                       {u.full_name && <p style={{ fontSize: '13px', fontWeight: 500, color: 'var(--text)', marginBottom: '1px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{u.full_name}</p>}
                       <p style={{ fontSize: u.full_name ? '11px' : '13px', color: u.full_name ? 'var(--text-muted)' : 'var(--text)', fontFamily: 'var(--mono)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{u.email}</p>
                     </div>
-
                     {u.is_admin && (
                       <span style={{ flexShrink: 0, fontSize: '10px', padding: '2px 9px', borderRadius: '20px', fontFamily: 'var(--mono)', fontWeight: 600, letterSpacing: '0.05em', background: u.is_owner ? 'rgba(108,92,231,0.12)' : 'rgba(255,107,53,0.08)', border: `1px solid ${u.is_owner ? 'rgba(108,92,231,0.3)' : 'rgba(255,107,53,0.2)'}`, color: u.is_owner ? 'var(--accent-3)' : 'var(--accent)' }}>
                         {u.is_owner ? 'OWNER' : 'ADMIN'}
                       </span>
                     )}
-
                     <button
                       onClick={() => !u.is_owner && onToggle(u.id, u.is_admin)}
                       disabled={u.is_owner || isToggling}
@@ -279,9 +597,7 @@ function AdminAccessTab({ users, usersLoading, usersError, searchQuery, setSearc
                     >
                       {isToggling
                         ? <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{ animation: 'spin 0.8s linear infinite' }}><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
-                        : u.is_admin
-                          ? <XIcon size={12} />
-                          : <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                        : u.is_admin ? <XIcon size={12} /> : <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
                       }
                       {!isToggling && (u.is_admin ? 'Remove' : 'Make Admin')}
                     </button>
@@ -292,7 +608,6 @@ function AdminAccessTab({ users, usersLoading, usersError, searchQuery, setSearc
           )}
         </div>
 
-        {/* Footer */}
         {users.length > 0 && (
           <p style={{ flexShrink: 0, marginTop: '12px', fontSize: '11px', color: 'var(--text-muted)', fontFamily: 'var(--mono)' }}>
             {filtered.length} of {users.length} user{users.length !== 1 ? 's' : ''} · {adminCount} admin{adminCount !== 1 ? 's' : ''}
@@ -311,7 +626,7 @@ export default function AdminPage() {
   const [user, setUser]                 = useState(null);
   const [accessDenied, setAccessDenied] = useState(false);
   const [isOwner, setIsOwner]           = useState(false);
-  const [tab, setTab]                   = useState('data');
+  const [tab, setTab]                   = useState('dashboard');
 
   const [jsonModal, setJsonModal] = useState(null);
   const [savedJson, setSavedJson] = useState({ college: null, placements: null });
@@ -329,7 +644,25 @@ export default function AdminPage() {
   const [mediaUploading, setMediaUploading] = useState({ hostel: false, class: false, campus: false, extra: false });
   const [mediaUrls, setMediaUrls]       = useState({ hostel: [], class: [], campus: [], extra: [] });
 
+  const [dashData, setDashData]         = useState(null);
+  const [dashLoading, setDashLoading]   = useState(false);
+  const [selectedCollege, setSelectedCollege] = useState(null);
+  const [sessionToken, setSessionToken] = useState(null);
+
   const showToast = (message, type = 'info') => setToast({ message, type });
+
+  const fetchDashboard = useCallback(async (token) => {
+    setDashLoading(true);
+    try {
+      const t = token || sessionToken;
+      if (!t) return;
+      const res = await fetch('/api/admin/dashboard', { headers: { Authorization: `Bearer ${t}` } });
+      const json = await res.json();
+      if (!res.ok) throw new Error(json.error || 'Failed to load dashboard');
+      setDashData(json);
+    } catch (e) { showToast(e.message, 'error'); }
+    setDashLoading(false);
+  }, [sessionToken]);
 
   useEffect(() => {
     async function checkAuth() {
@@ -337,11 +670,16 @@ export default function AdminPage() {
       const { data: { user } } = await supabase.auth.getUser();
       if (!user) { router.push('/auth?next=/admin'); return; }
       setUser(user);
-      if (user.email === OWNER_EMAIL) setIsOwner(true);
-      else setAccessDenied(true);
+      if (user.email !== OWNER_EMAIL) { setAccessDenied(true); setLoading(false); return; }
+      setIsOwner(true);
+      const { data: { session } } = await supabase.auth.getSession();
+      const token = session?.access_token;
+      setSessionToken(token);
       setLoading(false);
+      if (token) fetchDashboard(token);
     }
     checkAuth();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [router]);
 
   useEffect(() => {
@@ -391,7 +729,8 @@ export default function AdminPage() {
       });
       const json = await res.json();
       if (!res.ok) throw new Error(json.error || 'Failed to save');
-      showToast(`${key === 'college' ? 'College' : 'Placements'} data saved to Supabase`, 'success');
+      showToast(`${key === 'college' ? 'College' : 'Placements'} data saved`, 'success');
+      fetchDashboard(token);
     } catch (e) {
       showToast(e.message, 'error');
       setSavedJson(p => ({ ...p, [key]: null }));
@@ -405,7 +744,6 @@ export default function AdminPage() {
     setMediaFiles(prev => ({ ...prev, [key]: [...prev[key], ...files] }));
     e.target.value = '';
 
-    // Extract college_id from the already-saved college JSON
     let college_id = null;
     try {
       const parsed = savedJson.college ? JSON.parse(savedJson.college) : null;
@@ -426,7 +764,6 @@ export default function AdminPage() {
 
       const uploaded = [];
       for (const file of files) {
-        // Step 1: get S3 presigned PUT URL
         const urlRes = await fetch('/api/admin/media', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` },
@@ -435,33 +772,21 @@ export default function AdminPage() {
         const urlJson = await urlRes.json();
         if (!urlRes.ok) throw new Error(urlJson.error || 'Failed to get upload URL');
 
-        // Step 2: upload file directly to S3
-        const s3Res = await fetch(urlJson.uploadUrl, {
-          method: 'PUT',
-          body: file,
-          headers: { 'Content-Type': file.type },
-        });
+        const s3Res = await fetch(urlJson.uploadUrl, { method: 'PUT', body: file, headers: { 'Content-Type': file.type } });
         if (!s3Res.ok) throw new Error('S3 upload failed');
 
-        // Step 3: record URL in Supabase college_media
         const recRes = await fetch('/api/admin/media', {
           method: 'PUT',
           headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` },
-          body: JSON.stringify({
-            college_id,
-            category: key,
-            url: urlJson.fileUrl,
-            filename: file.name,
-            media_type: file.type.startsWith('video/') ? 'video' : 'photo',
-          }),
+          body: JSON.stringify({ college_id, category: key, url: urlJson.fileUrl, filename: file.name, media_type: file.type.startsWith('video/') ? 'video' : 'photo' }),
         });
         const recJson = await recRes.json();
         if (!recRes.ok) throw new Error(recJson.error || 'Failed to record media');
-
         uploaded.push(urlJson.fileUrl);
       }
       setMediaUrls(prev => ({ ...prev, [key]: [...prev[key], ...uploaded] }));
-      showToast(`${files.length} file${files.length > 1 ? 's' : ''} uploaded to S3`, 'success');
+      showToast(`${files.length} file${files.length > 1 ? 's' : ''} uploaded`, 'success');
+      fetchDashboard(token);
     } catch (err) {
       showToast(`Upload failed: ${err.message}`, 'error');
     }
@@ -494,6 +819,12 @@ export default function AdminPage() {
   );
 
   const userInitial = (user?.email?.[0] ?? '?').toUpperCase();
+
+  const tabs = [
+    { id: 'dashboard', label: 'Dashboard', icon: <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg> },
+    { id: 'data',      label: 'Data',      icon: <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg> },
+    { id: 'admins',    label: 'Admin Access', icon: <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg> },
+  ];
 
   return (
     <div className="landing-container" style={{ height: '100vh', overflow: 'hidden', display: 'flex', flexDirection: 'column' }}>
@@ -530,10 +861,8 @@ export default function AdminPage() {
         </div>
       </header>
 
-      {/* ── Content wrapper ── */}
+      {/* ── Content ── */}
       <div style={{ flex: 1, overflow: 'hidden', display: 'flex', flexDirection: 'column', position: 'relative', zIndex: 1 }}>
-
-        {/* Title + tabs */}
         <div style={{ flexShrink: 0, padding: '20px 28px 0' }}>
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '14px' }}>
             <div>
@@ -542,12 +871,8 @@ export default function AdminPage() {
             </div>
           </div>
 
-          {/* Tabs */}
           <div style={{ display: 'flex', gap: '2px', background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: '10px', padding: '3px', width: 'fit-content' }}>
-            {[
-              { id: 'data',   label: 'Data',         icon: <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg> },
-              { id: 'admins', label: 'Admin Access',  icon: <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg> },
-            ].map(t => (
+            {tabs.map(t => (
               <button key={t.id} onClick={() => setTab(t.id)} style={{ display: 'flex', alignItems: 'center', gap: '6px', padding: '7px 16px', borderRadius: '8px', border: 'none', cursor: 'pointer', fontSize: '13px', fontWeight: 500, fontFamily: 'var(--sans)', transition: 'all 0.18s', background: tab === t.id ? 'var(--accent)' : 'transparent', color: tab === t.id ? '#fff' : 'var(--text-muted)' }}>
                 {t.icon}{t.label}
               </button>
@@ -555,8 +880,15 @@ export default function AdminPage() {
           </div>
         </div>
 
-        {/* Tab content */}
         <div style={{ flex: 1, minHeight: 0, padding: '14px 28px 20px' }}>
+          {tab === 'dashboard' && (
+            <DashboardTab
+              data={dashData}
+              loading={dashLoading}
+              onRefresh={() => fetchDashboard()}
+              onSelectCollege={setSelectedCollege}
+            />
+          )}
           {tab === 'data' && (
             <DataTab
               savedJson={savedJson}
@@ -586,9 +918,14 @@ export default function AdminPage() {
 
       {/* JSON Modal */}
       {jsonModal && (() => {
-        const cfg = { college: { title: 'College Data', ph: '{\n  "colleges": [\n    { "name": "IIT Bombay", "code": "IITB" }\n  ]\n}' }, placements: { title: 'Placements Data', ph: '{\n  "placements": [\n    { "year": 2024, "avg_ctc": "18 LPA" }\n  ]\n}' } }[jsonModal];
+        const cfg = { college: { title: 'College Data', ph: '{\n  "college_id": "iit-bombay",\n  "name": "IIT Bombay"\n}' }, placements: { title: 'Placements Data', ph: '{\n  "college_id": "iit-bombay",\n  "year": 2024\n}' } }[jsonModal];
         return <JsonModal title={cfg.title} placeholder={cfg.ph} initialValue={savedJson[jsonModal] || ''} onProceed={v => handleJsonSave(jsonModal, v)} onClose={() => setJsonModal(null)} />;
       })()}
+
+      {/* College Detail Dialog */}
+      {selectedCollege && sessionToken && (
+        <CollegeDialog college={selectedCollege} token={sessionToken} onClose={() => setSelectedCollege(null)} />
+      )}
 
       {toast && <Toast message={toast.message} type={toast.type} onDone={() => setToast(null)} />}
       <style>{keyframes}</style>

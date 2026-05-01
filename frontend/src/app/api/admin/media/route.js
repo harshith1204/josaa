@@ -31,6 +31,13 @@ function s3Client() {
   return new S3Client({ region, credentials: { accessKeyId, secretAccessKey } });
 }
 
+/** Public URL stored in DB / shown to users. Use AWS_S3_PUBLIC_BASE_URL for Cloudflare (or any CDN) in front of the bucket. */
+function publicObjectUrl(bucket, region, key) {
+  const base = process.env.AWS_S3_PUBLIC_BASE_URL?.trim().replace(/\/+$/, '');
+  if (base) return `${base}/${key}`;
+  return `https://${bucket}.s3.${region}.amazonaws.com/${key}`;
+}
+
 // POST /api/admin/media
 // Body: { college_id, category, filename, contentType }
 // Returns a short-lived S3 presigned PUT URL + the final public URL.
@@ -74,7 +81,7 @@ export async function POST(request) {
   });
 
   const uploadUrl = await getSignedUrl(s3, command, { expiresIn: 300 });
-  const fileUrl   = `https://${bucket}.s3.${region}.amazonaws.com/${key}`;
+  const fileUrl = publicObjectUrl(bucket, region, key);
 
   return NextResponse.json({ uploadUrl, fileUrl, key });
 }
