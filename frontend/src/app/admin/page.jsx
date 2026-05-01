@@ -76,7 +76,7 @@ function JsonModal({ title, placeholder, initialValue, onProceed, onClose }) {
 }
 
 // ── Data Tab ──────────────────────────────────────────────────────────────────
-function DataTab({ savedJson, onOpenJson, mediaFiles, mediaRefs, onMediaChange }) {
+function DataTab({ savedJson, onOpenJson, jsonSaving, mediaFiles, mediaRefs, onMediaChange, mediaUploading, mediaUrls }) {
   const jsonItems = [
     { key: 'college',    label: 'College',    sub: 'Cutoffs, branches, seats & institute info',
       icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg> },
@@ -103,7 +103,7 @@ function DataTab({ savedJson, onOpenJson, mediaFiles, mediaRefs, onMediaChange }
           {jsonItems.map(({ key, label, sub, icon }) => {
             const has = !!savedJson[key];
             return (
-              <button key={key} onClick={() => onOpenJson(key)} style={{ display: 'flex', alignItems: 'center', gap: '14px', padding: '16px', borderRadius: '13px', border: `1px solid ${has ? 'rgba(0,212,170,0.35)' : 'var(--border)'}`, background: has ? 'rgba(0,212,170,0.05)' : 'var(--surface-2)', cursor: 'pointer', transition: 'all 0.2s', textAlign: 'left', width: '100%' }}
+              <button key={key} onClick={() => jsonSaving !== key && onOpenJson(key)} disabled={jsonSaving === key} style={{ display: 'flex', alignItems: 'center', gap: '14px', padding: '16px', borderRadius: '13px', border: `1px solid ${has ? 'rgba(0,212,170,0.35)' : 'var(--border)'}`, background: has ? 'rgba(0,212,170,0.05)' : 'var(--surface-2)', cursor: jsonSaving === key ? 'not-allowed' : 'pointer', opacity: jsonSaving === key ? 0.7 : 1, transition: 'all 0.2s', textAlign: 'left', width: '100%' }}
                 onMouseEnter={e => { e.currentTarget.style.borderColor = has ? 'rgba(0,212,170,0.6)' : 'rgba(255,107,53,0.4)'; e.currentTarget.style.background = has ? 'rgba(0,212,170,0.09)' : 'rgba(255,107,53,0.04)'; }}
                 onMouseLeave={e => { e.currentTarget.style.borderColor = has ? 'rgba(0,212,170,0.35)' : 'var(--border)'; e.currentTarget.style.background = has ? 'rgba(0,212,170,0.05)' : 'var(--surface-2)'; }}
               >
@@ -114,9 +114,11 @@ function DataTab({ savedJson, onOpenJson, mediaFiles, mediaRefs, onMediaChange }
                   <p style={{ fontSize: '14px', fontWeight: 600, color: 'var(--text)', marginBottom: '2px' }}>{label}</p>
                   <p style={{ fontSize: '11px', color: 'var(--text-muted)', fontFamily: 'var(--mono)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{has ? 'Data loaded' : sub}</p>
                 </div>
-                {has
-                  ? <CheckIcon size={16} color="var(--accent-2)" />
-                  : <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                {jsonSaving === key
+                  ? <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent-2)" strokeWidth="2" style={{ animation: 'spin 0.8s linear infinite' }}><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+                  : has
+                    ? <CheckIcon size={16} color="var(--accent-2)" />
+                    : <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
                 }
               </button>
             );
@@ -132,24 +134,32 @@ function DataTab({ savedJson, onOpenJson, mediaFiles, mediaRefs, onMediaChange }
         <div style={{ flex: 1, display: 'grid', gridTemplateColumns: '1fr 1fr', gridTemplateRows: '1fr 1fr', gap: '12px', minHeight: 0 }}>
           {mediaPills.map(({ key, label, icon }) => {
             const count = mediaFiles[key]?.length ?? 0;
+            const urlCount = mediaUrls[key]?.length ?? 0;
+            const isUploading = mediaUploading[key] ?? false;
+            const displayCount = urlCount > 0 ? urlCount : count;
+            const uploaded = urlCount > 0;
             return (
               <div key={key}>
                 <input ref={el => mediaRefs.current[key] = el} type="file" accept="image/*,video/*" multiple style={{ display: 'none' }} onChange={e => onMediaChange(key, e)} />
                 <button
-                  onClick={() => mediaRefs.current[key]?.click()}
-                  style={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '8px', borderRadius: '14px', border: `1px solid ${count > 0 ? 'rgba(108,92,231,0.35)' : 'var(--border)'}`, background: count > 0 ? 'rgba(108,92,231,0.06)' : 'var(--surface-2)', cursor: 'pointer', transition: 'all 0.2s', color: count > 0 ? 'var(--accent-3)' : 'var(--text-muted)', position: 'relative' }}
-                  onMouseEnter={e => { e.currentTarget.style.borderColor = count > 0 ? 'rgba(108,92,231,0.6)' : 'rgba(255,107,53,0.4)'; e.currentTarget.style.color = count > 0 ? 'var(--accent-3)' : 'var(--text)'; e.currentTarget.style.background = count > 0 ? 'rgba(108,92,231,0.1)' : 'rgba(255,107,53,0.04)'; }}
-                  onMouseLeave={e => { e.currentTarget.style.borderColor = count > 0 ? 'rgba(108,92,231,0.35)' : 'var(--border)'; e.currentTarget.style.color = count > 0 ? 'var(--accent-3)' : 'var(--text-muted)'; e.currentTarget.style.background = count > 0 ? 'rgba(108,92,231,0.06)' : 'var(--surface-2)'; }}
+                  onClick={() => !isUploading && mediaRefs.current[key]?.click()}
+                  disabled={isUploading}
+                  style={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '8px', borderRadius: '14px', border: `1px solid ${uploaded ? 'rgba(0,212,170,0.35)' : count > 0 ? 'rgba(108,92,231,0.35)' : 'var(--border)'}`, background: uploaded ? 'rgba(0,212,170,0.06)' : count > 0 ? 'rgba(108,92,231,0.06)' : 'var(--surface-2)', color: uploaded ? 'var(--accent-2)' : count > 0 ? 'var(--accent-3)' : 'var(--text-muted)', cursor: isUploading ? 'not-allowed' : 'pointer', transition: 'all 0.2s', position: 'relative' }}
+                  onMouseEnter={e => { if (!isUploading) { e.currentTarget.style.borderColor = uploaded ? 'rgba(0,212,170,0.6)' : count > 0 ? 'rgba(108,92,231,0.6)' : 'rgba(255,107,53,0.4)'; e.currentTarget.style.color = uploaded ? 'var(--accent-2)' : count > 0 ? 'var(--accent-3)' : 'var(--text)'; e.currentTarget.style.background = uploaded ? 'rgba(0,212,170,0.1)' : count > 0 ? 'rgba(108,92,231,0.1)' : 'rgba(255,107,53,0.04)'; } }}
+                  onMouseLeave={e => { e.currentTarget.style.borderColor = uploaded ? 'rgba(0,212,170,0.35)' : count > 0 ? 'rgba(108,92,231,0.35)' : 'var(--border)'; e.currentTarget.style.color = uploaded ? 'var(--accent-2)' : count > 0 ? 'var(--accent-3)' : 'var(--text-muted)'; e.currentTarget.style.background = uploaded ? 'rgba(0,212,170,0.06)' : count > 0 ? 'rgba(108,92,231,0.06)' : 'var(--surface-2)'; }}
                 >
-                  {count > 0 && (
-                    <span style={{ position: 'absolute', top: '10px', right: '10px', minWidth: '20px', height: '20px', padding: '0 5px', borderRadius: '10px', background: 'rgba(108,92,231,0.2)', border: '1px solid rgba(108,92,231,0.4)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '11px', fontFamily: 'var(--mono)', fontWeight: 700, color: 'var(--accent-3)' }}>
-                      {count}
+                  {displayCount > 0 && (
+                    <span style={{ position: 'absolute', top: '10px', right: '10px', minWidth: '20px', height: '20px', padding: '0 5px', borderRadius: '10px', background: uploaded ? 'rgba(0,212,170,0.2)' : 'rgba(108,92,231,0.2)', border: `1px solid ${uploaded ? 'rgba(0,212,170,0.4)' : 'rgba(108,92,231,0.4)'}`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '11px', fontFamily: 'var(--mono)', fontWeight: 700, color: uploaded ? 'var(--accent-2)' : 'var(--accent-3)' }}>
+                      {displayCount}
                     </span>
                   )}
-                  <span style={{ opacity: count > 0 ? 1 : 0.55 }}>{icon}</span>
+                  {isUploading
+                    ? <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{ animation: 'spin 0.8s linear infinite', opacity: 0.7 }}><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+                    : <span style={{ opacity: displayCount > 0 ? 1 : 0.55 }}>{icon}</span>
+                  }
                   <span style={{ fontSize: '13px', fontWeight: 600, fontFamily: 'var(--sans)', textAlign: 'center', lineHeight: 1.3 }}>{label}</span>
                   <span style={{ fontSize: '11px', fontFamily: 'var(--mono)', opacity: 0.65 }}>
-                    {count > 0 ? `${count} file${count > 1 ? 's' : ''} selected` : 'Click to upload'}
+                    {isUploading ? 'Uploading…' : uploaded ? `${urlCount} uploaded to S3` : count > 0 ? `${count} file${count > 1 ? 's' : ''} selected` : 'Click to upload'}
                   </span>
                 </button>
               </div>
@@ -315,6 +325,9 @@ export default function AdminPage() {
   const [searchQuery, setSearchQuery]   = useState('');
   const [togglingUser, setTogglingUser] = useState(null);
   const [toast, setToast]               = useState(null);
+  const [jsonSaving, setJsonSaving]     = useState(null);
+  const [mediaUploading, setMediaUploading] = useState({ hostel: false, class: false, campus: false, extra: false });
+  const [mediaUrls, setMediaUrls]       = useState({ hostel: [], class: [], campus: [], extra: [] });
 
   const showToast = (message, type = 'info') => setToast({ message, type });
 
@@ -363,12 +376,96 @@ export default function AdminPage() {
     setTogglingUser(null);
   };
 
-  const handleMediaChange = (key, e) => {
+  const handleJsonSave = async (key, value) => {
+    setJsonModal(null);
+    setSavedJson(p => ({ ...p, [key]: value }));
+    setJsonSaving(key);
+    try {
+      const { data: { session } } = await supabase.auth.getSession();
+      const token = session?.access_token;
+      if (!token) throw new Error('No session');
+      const res = await fetch('/api/admin/save-json', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` },
+        body: JSON.stringify({ key, data: value }),
+      });
+      const json = await res.json();
+      if (!res.ok) throw new Error(json.error || 'Failed to save');
+      showToast(`${key === 'college' ? 'College' : 'Placements'} data saved to Supabase`, 'success');
+    } catch (e) {
+      showToast(e.message, 'error');
+      setSavedJson(p => ({ ...p, [key]: null }));
+    }
+    setJsonSaving(null);
+  };
+
+  const handleMediaChange = async (key, e) => {
     const files = Array.from(e.target.files);
     if (!files.length) return;
     setMediaFiles(prev => ({ ...prev, [key]: [...prev[key], ...files] }));
-    showToast(`${files.length} file${files.length > 1 ? 's' : ''} selected`, 'success');
     e.target.value = '';
+
+    // Extract college_id from the already-saved college JSON
+    let college_id = null;
+    try {
+      const parsed = savedJson.college ? JSON.parse(savedJson.college) : null;
+      college_id = parsed?.college_id || null;
+    } catch { /* ignore */ }
+
+    if (!college_id) {
+      showToast('Save the College JSON first — media must be tied to a college.', 'error');
+      setMediaFiles(prev => ({ ...prev, [key]: prev[key].slice(0, -files.length) }));
+      return;
+    }
+
+    setMediaUploading(prev => ({ ...prev, [key]: true }));
+    try {
+      const { data: { session } } = await supabase.auth.getSession();
+      const token = session?.access_token;
+      if (!token) throw new Error('No session');
+
+      const uploaded = [];
+      for (const file of files) {
+        // Step 1: get S3 presigned PUT URL
+        const urlRes = await fetch('/api/admin/media', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` },
+          body: JSON.stringify({ college_id, category: key, filename: file.name, contentType: file.type }),
+        });
+        const urlJson = await urlRes.json();
+        if (!urlRes.ok) throw new Error(urlJson.error || 'Failed to get upload URL');
+
+        // Step 2: upload file directly to S3
+        const s3Res = await fetch(urlJson.uploadUrl, {
+          method: 'PUT',
+          body: file,
+          headers: { 'Content-Type': file.type },
+        });
+        if (!s3Res.ok) throw new Error('S3 upload failed');
+
+        // Step 3: record URL in Supabase college_media
+        const recRes = await fetch('/api/admin/media', {
+          method: 'PUT',
+          headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` },
+          body: JSON.stringify({
+            college_id,
+            category: key,
+            url: urlJson.fileUrl,
+            filename: file.name,
+            media_type: file.type.startsWith('video/') ? 'video' : 'photo',
+          }),
+        });
+        const recJson = await recRes.json();
+        if (!recRes.ok) throw new Error(recJson.error || 'Failed to record media');
+
+        uploaded.push(urlJson.fileUrl);
+      }
+      setMediaUrls(prev => ({ ...prev, [key]: [...prev[key], ...uploaded] }));
+      showToast(`${files.length} file${files.length > 1 ? 's' : ''} uploaded to S3`, 'success');
+    } catch (err) {
+      showToast(`Upload failed: ${err.message}`, 'error');
+    }
+    setMediaUploading(prev => ({ ...prev, [key]: false }));
   };
 
   if (loading) return (
@@ -464,9 +561,12 @@ export default function AdminPage() {
             <DataTab
               savedJson={savedJson}
               onOpenJson={setJsonModal}
+              jsonSaving={jsonSaving}
               mediaFiles={mediaFiles}
               mediaRefs={mediaRefs}
               onMediaChange={handleMediaChange}
+              mediaUploading={mediaUploading}
+              mediaUrls={mediaUrls}
             />
           )}
           {tab === 'admins' && (
@@ -487,7 +587,7 @@ export default function AdminPage() {
       {/* JSON Modal */}
       {jsonModal && (() => {
         const cfg = { college: { title: 'College Data', ph: '{\n  "colleges": [\n    { "name": "IIT Bombay", "code": "IITB" }\n  ]\n}' }, placements: { title: 'Placements Data', ph: '{\n  "placements": [\n    { "year": 2024, "avg_ctc": "18 LPA" }\n  ]\n}' } }[jsonModal];
-        return <JsonModal title={cfg.title} placeholder={cfg.ph} initialValue={savedJson[jsonModal] || ''} onProceed={v => { setSavedJson(p => ({ ...p, [jsonModal]: v })); setJsonModal(null); showToast(`${jsonModal === 'college' ? 'College' : 'Placements'} data saved`, 'success'); }} onClose={() => setJsonModal(null)} />;
+        return <JsonModal title={cfg.title} placeholder={cfg.ph} initialValue={savedJson[jsonModal] || ''} onProceed={v => handleJsonSave(jsonModal, v)} onClose={() => setJsonModal(null)} />;
       })()}
 
       {toast && <Toast message={toast.message} type={toast.type} onDone={() => setToast(null)} />}

@@ -252,10 +252,37 @@ function ChoiceModal({ choice, userRank, filledIds, onAdd, onRemove, onClose }) 
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ question: q }),
       });
-      const data = await res.json();
-      setAiResult(data.answer || 'No response received.');
-    } catch {
-      setAiResult('Could not connect to AI. Please try again.');
+
+      if (!res.ok) throw new Error('Could not connect to AI. Please try again.');
+
+      // Consume SSE stream — stream tokens in real-time
+      const reader = res.body.getReader();
+      const decoder = new TextDecoder();
+      let accumulated = '';
+
+      while (true) {
+        const { done, value } = await reader.read();
+        if (done) break;
+
+        const chunk = decoder.decode(value, { stream: true });
+        for (const line of chunk.split('\n')) {
+          if (!line.startsWith('data: ')) continue;
+          const payload = line.slice(6).trim();
+          if (payload === '[DONE]') break;
+          try {
+            const { token, error } = JSON.parse(payload);
+            if (error) throw new Error(error);
+            if (token) {
+              accumulated += token;
+              setAiResult(accumulated);
+            }
+          } catch { /* ignore malformed SSE lines */ }
+        }
+      }
+
+      if (!accumulated) setAiResult('No response received.');
+    } catch (err) {
+      setAiResult(err.message || 'Could not connect to AI. Please try again.');
     }
     setAiLoading(false);
   };

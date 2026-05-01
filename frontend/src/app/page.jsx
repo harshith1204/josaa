@@ -182,7 +182,7 @@ The cutoff has been trending upward ~3% yearly. For 2026, I'd estimate the closi
 
     setIsSearching(true);
     setIsChatActive(true);
-    setAiResult({ body: 'Searching cutoff data...', meta: '' });
+    setAiResult({ type: 'text', body: '', meta: 'AI Generated · Source: JoSAA Official' });
 
     try {
       const res = await fetch('/api/ask', {
@@ -193,23 +193,34 @@ The cutoff has been trending upward ~3% yearly. For 2026, I'd estimate the closi
 
       if (!res.ok) throw new Error('Search failed');
 
-      const data = await res.json();
-      
-      if (data.type === 'preference') {
-        setAiResult({ 
-          type: 'preference', 
-          data: data,
-          meta: `${data.combos.length} strategies generated · Source: JoSAA Official`
-        });
-      } else {
-        setAiResult({
-          type: 'text',
-          body: data.answer || 'No response received.',
-          meta: `${data.source === 'template' ? 'Instant' : 'AI Generated'} · Source: JoSAA Official`
-        });
+      // Consume SSE stream — accumulate tokens into aiResult.body
+      const reader = res.body.getReader();
+      const decoder = new TextDecoder();
+      let accumulated = '';
+
+      while (true) {
+        const { done, value } = await reader.read();
+        if (done) break;
+
+        const chunk = decoder.decode(value, { stream: true });
+        for (const line of chunk.split('\n')) {
+          if (!line.startsWith('data: ')) continue;
+          const payload = line.slice(6).trim();
+          if (payload === '[DONE]') break;
+          try {
+            const { token, error } = JSON.parse(payload);
+            if (error) throw new Error(error);
+            if (token) {
+              accumulated += token;
+              setAiResult(prev => ({ ...prev, body: accumulated }));
+            }
+          } catch { /* ignore malformed SSE lines */ }
+        }
       }
+
+      if (!accumulated) setAiResult(prev => ({ ...prev, body: 'No response received.' }));
     } catch (err) {
-      setAiResult({ body: 'Error: ' + err.message, meta: '' });
+      setAiResult({ type: 'text', body: 'Error: ' + err.message, meta: '' });
     } finally {
       setIsSearching(false);
     }
